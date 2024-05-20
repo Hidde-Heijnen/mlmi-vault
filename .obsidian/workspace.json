@@ -35,11 +35,9 @@
             "id": "be782a1f61ed5745",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "000 - Introduction/003 - About the Mphil.md",
-                "mode": "source",
-                "source": false
+                "file": "z - Attachments/obsidian-assets-settings.png"
               }
             }
           }
@@ -110,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "000 - Introduction/003 - About the Mphil.md",
+                "file": "z - Attachments/obsidian-assets-settings.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +125,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "000 - Introduction/003 - About the Mphil.md",
+                "file": "z - Attachments/obsidian-assets-settings.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +148,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "000 - Introduction/003 - About the Mphil.md"
+                "file": "z - Attachments/obsidian-assets-settings.png"
               }
             }
           }
@@ -174,8 +172,8 @@
   },
   "active": "be782a1f61ed5745",
   "lastOpenFiles": [
-    "040 - Tags/basic income.md",
     "000 - Introduction/003 - About the Mphil.md",
+    "040 - Tags/basic income.md",
     "000 - Introduction/004 - Preliminary Reading + Preparation.md",
     "000 - Introduction/002 - How to Use This Vault.md",
     "000 - Introduction/001 - Welcome to the MLMI Vault.md",
