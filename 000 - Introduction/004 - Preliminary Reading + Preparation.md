@@ -1,10 +1,15 @@
 ---
 aliases:
   - Preliminary Reading
+  - Preparation
 link: https://www.mlmi.eng.cam.ac.uk/preliminary-reading
 ---
-## 
-In the summer before students arrive we will send through some preparation work to be completed before term begins.
+## Preparation
+In the summer before students arrive we will send through some preparation work to be completed before term begins. This is material for the first module and you'll go over it again very quickly the first week of the course. 
+
+The master is very theoretical, so make sure your Statistics, Calculus and Linear Algebra are up to date. 
+
+However general reading which would be appropriate for the course includes:
 ## Computing
 Basic Python shouldn't be that hard, I assume you've programmed before. I would recommend doing the latter two. 
 

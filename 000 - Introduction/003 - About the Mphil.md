@@ -1,7 +1,10 @@
+## Course part
 
-The 
+### Michealmas (M) term
 
-## Preperation
-Besides the [[004 - Preliminary Reading|Preliminary Reading]], you will be sent a 
+### Lent (L) term
 
-The master is very theoretical, so make sure your Statistics, Calculus and Linear Algebra are up to date. 
+## Thesis
+The second part of the MPhil consist of a research project. You can submit your top 3
+
+For more tracks 

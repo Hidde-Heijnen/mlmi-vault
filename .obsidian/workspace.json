@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "000 - Introduction/004 - Preliminary Reading.md",
+                "file": "000 - Introduction/003 - About the Mphil.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "000 - Introduction/004 - Preliminary Reading.md",
+                "file": "000 - Introduction/003 - About the Mphil.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "000 - Introduction/004 - Preliminary Reading.md",
+                "file": "000 - Introduction/003 - About the Mphil.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "000 - Introduction/004 - Preliminary Reading.md"
+                "file": "000 - Introduction/003 - About the Mphil.md"
               }
             }
           }
@@ -174,8 +174,9 @@
   },
   "active": "fad0c1a584946018",
   "lastOpenFiles": [
+    "000 - Introduction/004 - Preliminary Reading + Preparation.md",
     "000 - Introduction/003 - About the Mphil.md",
-    "000 - Introduction/004 - Preliminary Reading.md",
+    "000 - Introduction/002 - How to Use This Vault.md",
     "000 - Introduction/001 - Welcome to the MLMI Vault.md",
     "030 - Notes/Preliminary Reading/S.B McGrayne Bayes' rule/S.B. McGrayne Book.epub",
     "030 - Notes/Preliminary Reading/S.B McGrayne Bayes' rule",
@@ -184,7 +185,6 @@
     "030 - Notes/Preliminary Reading/N. Silver - Signal and Noise",
     "030 - Notes/Preliminary Reading",
     "050 - Files",
-    "000 - Introduction/002 - How to Use This Vault.md",
     "040 - Tags/basic income.md",
     "Readme.md",
     "000 - Introduction",
