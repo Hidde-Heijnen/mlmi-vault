@@ -23,10 +23,10 @@ Basic Python shouldn't be that hard, I assume you've programmed before. I would 
 ## General Reading
 These don't seem very important to read for the theoretical aspect of the course. Maybe to understand the philosophy of the course. I would skip them unless you like to read normally, they seem like good stories with decent reviews. It might give more weight to the theory you will be learning during the course.
 
-| Title                                                                                                                                                            | Author                         | Epub                        | Summary                        |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ | --------------------------- | ------------------------------ |
-| The Signal and the Noise: The Art and Science of Prediction                                                                                                      | Nate Silver (2013)             | [[N. Silver Book.epub]] |   [[N. Silver Summary 32p.epub]] |
-| The Theory That Would Not Die: How Bayes' Rule Cracked the Enigma Code, Hunted Down Russian Submarines, and Emerged Triumphant from Two Centuries of Controversy | Sharon Bertsch Mcgrayne (2011) | - [[S.B. McGrayne Book.epub]]                                |
+| Title                                                                                                                                                            | Author                         | Epub                          | Summary                                                                                                 |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ | ----------------------------- | ------------------------------------------------------------------------------------------------------- |
+| The Signal and the Noise: The Art and Science of Prediction                                                                                                      | Nate Silver (2013)             | [[N. Silver Book.epub]]       | [[N. Silver Summary 32p.epub]]                                                                          |
+| The Theory That Would Not Die: How Bayes' Rule Cracked the Enigma Code, Hunted Down Russian Submarines, and Emerged Triumphant from Two Centuries of Controversy | Sharon Bertsch Mcgrayne (2011) | - [[S.B. McGrayne Book.epub]] | [online summary](https://rkbookreviews.wordpress.com/2011/08/13/the-theory-that-would-not-die-summary/) |
 
 ## Course Specific Reading
 
