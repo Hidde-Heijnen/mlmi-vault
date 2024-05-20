@@ -1,10 +1,8 @@
 ---
 aliases:
   - Preliminary Reading
+link: https://www.mlmi.eng.cam.ac.uk/preliminary-reading
 ---
-
-link to website: [Preliminary Reading](https://www.mlmi.eng.cam.ac.uk/preliminary-reading)
-
 ## Computing
 
 | Title                                             | Link                                                                                                                                                           |
