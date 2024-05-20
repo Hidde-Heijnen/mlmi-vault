@@ -110,7 +110,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "000 - Introduction/004 - Preliminary Reading + Preparation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +126,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "000 - Introduction/004 - Preliminary Reading + Preparation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +148,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "000 - Introduction/004 - Preliminary Reading + Preparation.md"
+                "file": "Untitled.md"
               }
             }
           }
@@ -172,12 +170,15 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "be782a1f61ed5745",
+  "active": "1b9c0ca6e568a32b",
   "lastOpenFiles": [
+    "999 - Inbox/test.md",
+    "Untitled.md",
+    "999 - Inbox",
+    "000 - Introduction/004 - Preliminary Reading + Preparation.md",
     "z - Attachments/obsidian-assets-settings.png",
     "000 - Introduction/003 - About the Mphil.md",
     "040 - Tags/basic income.md",
-    "000 - Introduction/004 - Preliminary Reading + Preparation.md",
     "000 - Introduction/002 - How to Use This Vault.md",
     "000 - Introduction/001 - Welcome to the MLMI Vault.md",
     "030 - Notes/Preliminary Reading/S.B McGrayne Bayes' rule/S.B. McGrayne Book.epub",
@@ -198,7 +199,6 @@
     "010 - Classes/Family Counselling 201/June 10 Class Notes.md",
     "020 - Assignments/Archived Assignments",
     "010 - Classes/Family Counselling 201/000 - Syllabus.md",
-    "z - Templates",
     "010 - Classes/Psych 101/June 12 Class Notes.md",
     "010 - Classes/Psych 101/000 - Syllabus.md"
   ]

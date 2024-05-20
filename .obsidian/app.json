@@ -1,7 +1,7 @@
 {
   "attachmentFolderPath": "z - Attachments",
   "newFileLocation": "folder",
-  "newFileFolderPath": "000 - Inbox",
+  "newFileFolderPath": "999 - Inbox",
   "showUnsupportedFiles": true,
   "vimMode": true,
   "alwaysUpdateLinks": true
