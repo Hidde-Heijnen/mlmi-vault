@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "000 - Introduction/004 - Preliminary Reading.md",
+                "file": "000 - Introduction/003 - About the Mphil.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "000 - Introduction/004 - Preliminary Reading.md",
+                "file": "000 - Introduction/003 - About the Mphil.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "000 - Introduction/004 - Preliminary Reading.md",
+                "file": "000 - Introduction/003 - About the Mphil.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "000 - Introduction/004 - Preliminary Reading.md"
+                "file": "000 - Introduction/003 - About the Mphil.md"
               }
             }
           }
@@ -172,8 +172,11 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "1b9c0ca6e568a32b",
+  "active": "fad0c1a584946018",
   "lastOpenFiles": [
+    "000 - Introduction/004 - Preliminary Reading.md",
+    "000 - Introduction/003 - About the Mphil.md",
+    "000 - Introduction/001 - Welcome to the MLMI Vault.md",
     "030 - Notes/Preliminary Reading/S.B McGrayne Bayes' rule/S.B. McGrayne Book.epub",
     "030 - Notes/Preliminary Reading/S.B McGrayne Bayes' rule",
     "030 - Notes/Preliminary Reading/N. Silver - Signal and Noise/N. Silver Summary 32p.epub",
@@ -183,9 +186,6 @@
     "050 - Files",
     "000 - Introduction/002 - How to Use This Vault.md",
     "040 - Tags/basic income.md",
-    "000 - Introduction/003 - About the Mphil.md",
-    "000 - Introduction/004 - Preliminary Reading.md",
-    "000 - Introduction/001 - Welcome to the mlmi Vault.md",
     "Readme.md",
     "000 - Introduction",
     "z - Attachments/obsidian-assets-settings.png",
@@ -199,7 +199,6 @@
     "020 - Assignments/Archived Assignments",
     "010 - Classes/Family Counselling 201/000 - Syllabus.md",
     "z - Templates",
-    "z - Attachments",
     "010 - Classes/Psych 101/June 12 Class Notes.md",
     "010 - Classes/Psych 101/000 - Syllabus.md"
   ]
