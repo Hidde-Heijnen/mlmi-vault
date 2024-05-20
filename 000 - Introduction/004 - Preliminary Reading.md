@@ -11,10 +11,10 @@ link to website: [Preliminary Reading](https://www.mlmi.eng.cam.ac.uk/preliminar
 
 ## General Reading
 
-| Title                                                                                                                                                            | Author                         | Link |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ | ---- |
-| The Signal and the Noise: The Art and Science of Prediction                                                                                                      | Nate Silver (2013)             | -    |
-| The Theory That Would Not Die: How Bayes' Rule Cracked the Enigma Code, Hunted Down Russian Submarines, and Emerged Triumphant from Two Centuries of Controversy | Sharon Bertsch Mcgrayne (2011) | -    |
+| Title                                                                                                                                                            | Author                         | Link                         | Summary                        |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ | ---------------------------- | ------------------------------ |
+| The Signal and the Noise: The Art and Science of Prediction                                                                                                      | Nate Silver (2013)             | [[N. Silver Book.epub]] | [[N. Silver Summary 32p.epub]] |
+| The Theory That Would Not Die: How Bayes' Rule Cracked the Enigma Code, Hunted Down Russian Submarines, and Emerged Triumphant from Two Centuries of Controversy | Sharon Bertsch Mcgrayne (2011) | -                            |                                |
 
 ## Course Specific Reading
 

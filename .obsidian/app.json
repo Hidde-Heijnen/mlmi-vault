@@ -3,5 +3,6 @@
   "newFileLocation": "folder",
   "newFileFolderPath": "000 - Inbox",
   "showUnsupportedFiles": true,
-  "vimMode": true
+  "vimMode": true,
+  "alwaysUpdateLinks": true
 }
