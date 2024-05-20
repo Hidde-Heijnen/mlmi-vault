@@ -3,7 +3,10 @@ aliases:
   - Preliminary Reading
 link: https://www.mlmi.eng.cam.ac.uk/preliminary-reading
 ---
+## 
+In the summer before students arrive we will send through some preparation work to be completed before term begins.
 ## Computing
+Basic Python shouldn't be that hard, I assume you've programmed before. I would recommend doing the latter two. 
 
 | Title                                             | Link                                                                                                                                                           |
 | ------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -13,7 +16,7 @@ link: https://www.mlmi.eng.cam.ac.uk/preliminary-reading
 | Natural Language Processing with Python           | [http://www.nltk.org/book/](http://www.nltk.org/book/), [http://www.nltk.org/](http://www.nltk.org/)                                                           |
 
 ## General Reading
-These don't seem very important to read for the theoretical aspect of the course. I would skip them unless you like to read anyways, they seem like good stories with decent reviews. It might give more importance to the theory you will be learning during the course.
+These don't seem very important to read for the theoretical aspect of the course. Maybe to understand the philosophy of the course. I would skip them unless you like to read normally, they seem like good stories with decent reviews. It might give more weight to the theory you will be learning during the course.
 
 | Title                                                                                                                                                            | Author                         | Epub                        | Summary                        |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ | --------------------------- | ------------------------------ |
@@ -22,12 +25,12 @@ These don't seem very important to read for the theoretical aspect of the course
 
 ## Course Specific Reading
 
-| Title | Author | Link |
-|-------|--------|------|
-| Pattern Recognition and Machine Learning | C. Bishop (2007) | - |
-| Speech and Language Processing: An Introduction to Natural Language Processing, Computational Linguistics, and Speech Recognition | D. Jurafsky & J. Martin (2008) | - |
-| Text-to-Speech Synthesis | P. Taylor (2009) | - |
-| Machine Learning: A probabilistic perspective | K. P. Murphy (2012) | - |
-| Bayesian Reasoning and Machine Learning | D. Barber (2007) | [http://web4.cs.ucl.ac.uk/staff/D.Barber/textbook/090310.pdf](http://web4.cs.ucl.ac.uk/staff/D.Barber/textbook/090310.pdf) |
-| Information Theory, Inference and Learning Algorithms | D J C. MacKay (2003) | [http://www.inference.eng.cam.ac.uk/mackay/itila/](http://www.inference.eng.cam.ac.uk/mackay/itila/) |
-| Bayesian nonparametrics and the probabilistic approach to modelling | Z. Ghahramani (2013) | - |
+| Title                                                                                                                             | Author                         | Link                                                                                                                       |
+| --------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------- |
+| Pattern Recognition and Machine Learning                                                                                          | C. Bishop (2007)               | -                                                                                                                          |
+| Speech and Language Processing: An Introduction to Natural Language Processing, Computational Linguistics, and Speech Recognition | D. Jurafsky & J. Martin (2008) | -                                                                                                                          |
+| Text-to-Speech Synthesis                                                                                                          | P. Taylor (2009)               | -                                                                                                                          |
+| Machine Learning: A probabilistic perspective                                                                                     | K. P. Murphy (2012)            | -                                                                                                                          |
+| Bayesian Reasoning and Machine Learning                                                                                           | D. Barber (2007)               | [http://web4.cs.ucl.ac.uk/staff/D.Barber/textbook/090310.pdf](http://web4.cs.ucl.ac.uk/staff/D.Barber/textbook/090310.pdf) |
+| Information Theory, Inference and Learning Algorithms                                                                             | D J C. MacKay (2003)           | [http://www.inference.eng.cam.ac.uk/mackay/itila/](http://www.inference.eng.cam.ac.uk/mackay/itila/)                       |
+| Bayesian nonparametrics and the probabilistic approach to modelling                                                               | Z. Ghahramani (2013)           | -                                                                                                                          |
