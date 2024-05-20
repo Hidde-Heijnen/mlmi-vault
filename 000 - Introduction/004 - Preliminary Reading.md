@@ -2,12 +2,12 @@ link to website: [Preliminary Reading](https://www.mlmi.eng.cam.ac.uk/preliminar
 
 ## Computing
 
-| Title                                             | Author | Link                                                                                                                                                           |
-| ------------------------------------------------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Python                                            | -      | [https://www.python.org/](https://www.python.org/)                                                                                                             |
-| An introduction to Python                         | -      | [https://notebooks.azure.com/garth-wells/projects/CUED-IA-Computing-Michaelmas](https://notebooks.azure.com/garth-wells/projects/CUED-IA-Computing-Michaelmas) |
-| An introduction to Scientific Computing in Python | -      | [https://github.com/damonjw/scicomp](https://github.com/damonjw/scicomp)                                                                                       |
-| Natural Language Processing with Python           | -      | [http://www.nltk.org/book/](http://www.nltk.org/book/), [http://www.nltk.org/](http://www.nltk.org/)                                                           |
+| Title                                             | Link                                                                                                                                                           |
+| ------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Python                                            | [https://www.python.org/](https://www.python.org/)                                                                                                             |
+| An introduction to Python                         | [https://notebooks.azure.com/garth-wells/projects/CUED-IA-Computing-Michaelmas](https://notebooks.azure.com/garth-wells/projects/CUED-IA-Computing-Michaelmas) |
+| An introduction to Scientific Computing in Python | [https://github.com/damonjw/scicomp](https://github.com/damonjw/scicomp)                                                                                       |
+| Natural Language Processing with Python           | [http://www.nltk.org/book/](http://www.nltk.org/book/), [http://www.nltk.org/](http://www.nltk.org/)                                                           |
 
 ## General Reading
 
