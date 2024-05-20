@@ -44,7 +44,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -172,10 +172,11 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "fad0c1a584946018",
+  "active": "be782a1f61ed5745",
   "lastOpenFiles": [
-    "000 - Introduction/004 - Preliminary Reading + Preparation.md",
+    "040 - Tags/basic income.md",
     "000 - Introduction/003 - About the Mphil.md",
+    "000 - Introduction/004 - Preliminary Reading + Preparation.md",
     "000 - Introduction/002 - How to Use This Vault.md",
     "000 - Introduction/001 - Welcome to the MLMI Vault.md",
     "030 - Notes/Preliminary Reading/S.B McGrayne Bayes' rule/S.B. McGrayne Book.epub",
@@ -185,7 +186,6 @@
     "030 - Notes/Preliminary Reading/N. Silver - Signal and Noise",
     "030 - Notes/Preliminary Reading",
     "050 - Files",
-    "040 - Tags/basic income.md",
     "Readme.md",
     "000 - Introduction",
     "z - Attachments/obsidian-assets-settings.png",
