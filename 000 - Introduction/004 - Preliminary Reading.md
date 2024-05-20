@@ -10,11 +10,12 @@ link to website: [Preliminary Reading](https://www.mlmi.eng.cam.ac.uk/preliminar
 | Natural Language Processing with Python           | [http://www.nltk.org/book/](http://www.nltk.org/book/), [http://www.nltk.org/](http://www.nltk.org/)                                                           |
 
 ## General Reading
+These don't seem very important to read for the theoretical aspect of the course. I would skip them unless you like to read anyways, they seem like good stories with decent reviews. It might give more importance to the theory you will be learning during the course.
 
-| Title                                                                                                                                                            | Author                         | Link                         | Summary                        |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ | ---------------------------- | ------------------------------ |
-| The Signal and the Noise: The Art and Science of Prediction                                                                                                      | Nate Silver (2013)             | [[N. Silver Book.epub]] | [[N. Silver Summary 32p.epub]] |
-| The Theory That Would Not Die: How Bayes' Rule Cracked the Enigma Code, Hunted Down Russian Submarines, and Emerged Triumphant from Two Centuries of Controversy | Sharon Bertsch Mcgrayne (2011) | -                            |                                |
+| Title                                                                                                                                                            | Author                         | Epub                        | Summary                        |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ | --------------------------- | ------------------------------ |
+| The Signal and the Noise: The Art and Science of Prediction                                                                                                      | Nate Silver (2013)             | [[N. Silver Book.epub]] |   [[N. Silver Summary 32p.epub]] |
+| The Theory That Would Not Die: How Bayes' Rule Cracked the Enigma Code, Hunted Down Russian Submarines, and Emerged Triumphant from Two Centuries of Controversy | Sharon Bertsch Mcgrayne (2011) | - [[S.B. McGrayne Book.epub]]                                |
 
 ## Course Specific Reading
 
