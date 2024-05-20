@@ -1,3 +1,29 @@
 link to website: [Preliminary Reading](https://www.mlmi.eng.cam.ac.uk/preliminary-reading)
 
+## Computing
 
+| Title                                             | Author | Link                                                                                                                                                           |
+| ------------------------------------------------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Python                                            | -      | [https://www.python.org/](https://www.python.org/)                                                                                                             |
+| An introduction to Python                         | -      | [https://notebooks.azure.com/garth-wells/projects/CUED-IA-Computing-Michaelmas](https://notebooks.azure.com/garth-wells/projects/CUED-IA-Computing-Michaelmas) |
+| An introduction to Scientific Computing in Python | -      | [https://github.com/damonjw/scicomp](https://github.com/damonjw/scicomp)                                                                                       |
+| Natural Language Processing with Python           | -      | [http://www.nltk.org/book/](http://www.nltk.org/book/), [http://www.nltk.org/](http://www.nltk.org/)                                                           |
+
+## General Reading
+
+| Title                                                                                                                                                            | Author                         | Link |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ | ---- |
+| The Signal and the Noise: The Art and Science of Prediction                                                                                                      | Nate Silver (2013)             | -    |
+| The Theory That Would Not Die: How Bayes' Rule Cracked the Enigma Code, Hunted Down Russian Submarines, and Emerged Triumphant from Two Centuries of Controversy | Sharon Bertsch Mcgrayne (2011) | -    |
+
+## Course Specific Reading
+
+| Title | Author | Link |
+|-------|--------|------|
+| Pattern Recognition and Machine Learning | C. Bishop (2007) | - |
+| Speech and Language Processing: An Introduction to Natural Language Processing, Computational Linguistics, and Speech Recognition | D. Jurafsky & J. Martin (2008) | - |
+| Text-to-Speech Synthesis | P. Taylor (2009) | - |
+| Machine Learning: A probabilistic perspective | K. P. Murphy (2012) | - |
+| Bayesian Reasoning and Machine Learning | D. Barber (2007) | [http://web4.cs.ucl.ac.uk/staff/D.Barber/textbook/090310.pdf](http://web4.cs.ucl.ac.uk/staff/D.Barber/textbook/090310.pdf) |
+| Information Theory, Inference and Learning Algorithms | D J C. MacKay (2003) | [http://www.inference.eng.cam.ac.uk/mackay/itila/](http://www.inference.eng.cam.ac.uk/mackay/itila/) |
+| Bayesian nonparametrics and the probabilistic approach to modelling | Z. Ghahramani (2013) | - |
