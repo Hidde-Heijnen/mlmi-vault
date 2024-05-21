@@ -1,4 +1,8 @@
+## General 
+- It was the 2nd most competitive admission rate for Cambridge postgraduate programs in 2023-2024
+	- If anyone knowss
 ## Course part
+
 
 ### Michealmas (M) term
 

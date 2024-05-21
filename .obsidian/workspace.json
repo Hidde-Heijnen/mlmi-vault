@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "000 - Introduction/004 - Preliminary Reading + Preparation.md",
+                "file": "000 - Introduction/003 - About the Mphil.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,6 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "000 - Introduction/003 - About the Mphil.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,6 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "000 - Introduction/003 - About the Mphil.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled.md"
+                "file": "000 - Introduction/003 - About the Mphil.md"
               }
             }
           }
@@ -170,12 +172,12 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "1b9c0ca6e568a32b",
+  "active": "be782a1f61ed5745",
   "lastOpenFiles": [
-    "999 - Inbox/test.md",
-    "Untitled.md",
-    "999 - Inbox",
     "000 - Introduction/004 - Preliminary Reading + Preparation.md",
+    "Untitled.md",
+    "999 - Inbox/test.md",
+    "999 - Inbox",
     "z - Attachments/obsidian-assets-settings.png",
     "000 - Introduction/003 - About the Mphil.md",
     "040 - Tags/basic income.md",
