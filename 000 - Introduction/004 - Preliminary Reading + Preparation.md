@@ -10,11 +10,11 @@ In the summer before students arrive we will send through some preparation work 
 The master is very theoretical, so make sure your Statistics, Calculus and Linear Algebra are up to date. 
 
 
-| Title | Description              | Link                                                                                 |
-| ----- | ------------------------ | ------------------------------------------------------------------------------------ |
-|       | All the python notebooks | [mphil-intro- module on github](https://github.com/cambridge-mlg/mphil-intro-module) |
-|       |                          |                                                                                      |
-|       |                          |                                                                                      |
+| Title | Description                                                     | Link                                                                                         |
+| ----- | --------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+|       | All the python notebooks                                        | [mphil-intro- module on github](https://github.com/cambridge-mlg/mphil-intro-module)         |
+|       | Book                                                            | https://pmi-book.org/content/home.html                                                       |
+|       | Youtube course from 3 years ago (but a guy from previous year ) | [youtube playlist](https://www.youtube.com/playlist?list=PLyXv258Xt2PRhkou67NwiQD9OmiNMzdfa) |
 
 
 However general reading which would be appropriate for the course includes:
