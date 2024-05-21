@@ -7,14 +7,14 @@ link: https://www.mlmi.eng.cam.ac.uk/preliminary-reading
 ## Preparation
 In the summer before students arrive we will send through some preparation work to be completed before term begins. This is material for the first module and you'll go over it again very quickly the first week of the course. 
 
-The master is very theoretical, so make sure your Statistics, Calculus and Linear Algebra are up to date. 
+The master is very theoretical, so make sure your Statistics, Calculus, Gaussian Processes, and Linear Algebra are up to date. 
 
 
-| Title | Description                                                                                 | Link                                                                                         |
-| ----- | ------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
-|       | All the python notebooks                                                                    | [mphil-intro- module on github](https://github.com/cambridge-mlg/mphil-intro-module)         |
-|       | Book (only contains the first half)                                                         | https://pmi-book.org/content/home.html                                                       |
-|       | Youtube playlist of the whole first module from 3 years ago (but a guy from previous year ) | [youtube playlist](https://www.youtube.com/playlist?list=PLyXv258Xt2PRhkou67NwiQD9OmiNMzdfa) |
+| Title | Description                                                                                                                    | Link                                                                                         |
+| ----- | ------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------- |
+|       | All the python notebooks (1st part of the course)                                                                              | [mphil-intro- module on github](https://github.com/cambridge-mlg/mphil-intro-module)         |
+|       | Book (only contains the first half of the course)                                                                              | https://pmi-book.org/content/home.html                                                       |
+|       | Youtube playlist of the whole first module from 3 years ago (but a guy from previous year ). This is second part of the course | [youtube playlist](https://www.youtube.com/playlist?list=PLyXv258Xt2PRhkou67NwiQD9OmiNMzdfa) |
 
 
 However general reading which would be appropriate for the course includes:
