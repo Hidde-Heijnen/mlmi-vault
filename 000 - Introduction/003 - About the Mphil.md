@@ -28,3 +28,5 @@ NLP is kinda easy
 The second part of the MPhil consist of a research project. You cannot come up with your own subject, but they will give you some choices. Either from the University/Professors, but sometimes also in collaboration with external companies. You can submit your top 3 choices and they will try to match everyone's preferences. If two people have the same top pick, they will decide randomly who gets it. 
 
 For more popular tracks (like ML) there is a bit more competition to get the thesis you want. 
+
+Deadline previous year was the 15th of August and it is always on a Thursday in that week. After the thesis deadline you are basically done, nothing you have to do afterwards. 
