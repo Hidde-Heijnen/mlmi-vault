@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "000 - Introduction/003 - About the Mphil.md",
+                "file": "000 - Introduction/004 - Preliminary Reading + Preparation.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "000 - Introduction/003 - About the Mphil.md",
+                "file": "000 - Introduction/004 - Preliminary Reading + Preparation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "000 - Introduction/003 - About the Mphil.md",
+                "file": "000 - Introduction/004 - Preliminary Reading + Preparation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "000 - Introduction/003 - About the Mphil.md"
+                "file": "000 - Introduction/004 - Preliminary Reading + Preparation.md"
               }
             }
           }
@@ -174,12 +174,12 @@
   },
   "active": "be782a1f61ed5745",
   "lastOpenFiles": [
+    "000 - Introduction/003 - About the Mphil.md",
     "000 - Introduction/004 - Preliminary Reading + Preparation.md",
     "Untitled.md",
     "999 - Inbox/test.md",
     "999 - Inbox",
     "z - Attachments/obsidian-assets-settings.png",
-    "000 - Introduction/003 - About the Mphil.md",
     "040 - Tags/basic income.md",
     "000 - Introduction/002 - How to Use This Vault.md",
     "000 - Introduction/001 - Welcome to the MLMI Vault.md",
