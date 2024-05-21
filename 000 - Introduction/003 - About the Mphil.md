@@ -6,10 +6,16 @@
 There are 4 tracks in the MPhil: Machine learning is the most popular one. 
 
 ## Course part
-I will fo
+I will focus on the Mphil courses
 
 
 ### Michealmas (M) term
+Michealmas isn't as intense as it looks like at first sight. 
+
+Ethics course is basically nothing (4x a lecture of an hour, and no grade)
+Deep learning is only graded with one exam in April, so except the lectures you don't have to do much for it during Michaelmas
+
+On the ML track he recommends picking one of the elective courses in the M term still, since it isn't as busy as it might appear and many electives are not available after the M term. 
 
 ### Lent (L) term
 
