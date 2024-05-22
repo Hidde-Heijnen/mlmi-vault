@@ -10,7 +10,7 @@ Your job is to learn in class, learn in your reading, and then produce thoughts 
 
 Now, lets start by looking at the basic setup I recommend for students, which you can see outlined below.
 
-- 000 - Inbox
+- 000 - Introduction
 - 010 - Classes
 	- Psych 101
 		- One note per day of class
@@ -19,6 +19,7 @@ Now, lets start by looking at the basic setup I recommend for students, which yo
 - 020 - Assignments
 - 030 - Notes
 - 040 - Tags
+- 999 - Inbox
 - z - Attachments
 - z - Templates
 
