@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "000 - Introduction/003 - About the Mphil.md",
+                "file": "z - Templates/Tagnote Template.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "000 - Introduction/003 - About the Mphil.md",
+                "file": "z - Templates/Tagnote Template.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "000 - Introduction/003 - About the Mphil.md",
+                "file": "z - Templates/Tagnote Template.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "000 - Introduction/003 - About the Mphil.md"
+                "file": "z - Templates/Tagnote Template.md"
               }
             }
           }
@@ -174,9 +174,12 @@
   },
   "active": "be782a1f61ed5745",
   "lastOpenFiles": [
-    "000 - Introduction/002 - How to Use This Vault.md",
+    "030 - Notes/New Resource.md",
     "z - Templates/Tagnote Template.md",
     "000 - Introduction/003 - About the Mphil.md",
+    "030 - Notes/Resource Title.md",
+    "030 - Notes/Machine Learning",
+    "000 - Introduction/002 - How to Use This Vault.md",
     "030 - Notes/Math",
     "000 - Introduction/004 - Preliminary Reading + Preparation.md",
     "z - Attachments/CleanShot 2024-05-21 at 21.14.49.png",
@@ -194,11 +197,8 @@
     "030 - Notes/Preliminary Reading",
     "050 - Files",
     "Readme.md",
-    "000 - Introduction",
     "z - Templates/Research Resource Template.md",
-    "030 - Notes/New Resource.md",
     "040 - Tags/000 - Using Tagnotes.md",
-    "030 - Notes/Resource Title.md",
     "020 - Assignments/Assignment Title.md",
     "010 - Classes/Family Counselling 201/June 10 Class Notes.md",
     "010 - Classes/Family Counselling 201/000 - Syllabus.md",
