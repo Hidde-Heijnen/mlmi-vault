@@ -35,11 +35,9 @@
             "id": "be782a1f61ed5745",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "z - Templates/Tagnote Template.md",
-                "mode": "source",
-                "source": false
+                "file": "z - Attachments/CleanShot 2024-05-21 at 21.14.49.png"
               }
             }
           }
@@ -110,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "z - Templates/Tagnote Template.md",
+                "file": "z - Attachments/CleanShot 2024-05-21 at 21.14.49.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +125,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "z - Templates/Tagnote Template.md",
+                "file": "z - Attachments/CleanShot 2024-05-21 at 21.14.49.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +148,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "z - Templates/Tagnote Template.md"
+                "file": "z - Attachments/CleanShot 2024-05-21 at 21.14.49.png"
               }
             }
           }
@@ -174,19 +172,19 @@
   },
   "active": "be782a1f61ed5745",
   "lastOpenFiles": [
-    "030 - Notes/New Resource.md",
+    "z - Attachments/obsidian-assets-settings.png",
+    "z - Attachments/CleanShot 2024-05-21 at 21.14.49.png",
+    "000 - Introduction/002 - How to Use This Vault.md",
     "z - Templates/Tagnote Template.md",
+    "030 - Notes/New Resource.md",
     "000 - Introduction/003 - About the Mphil.md",
     "030 - Notes/Resource Title.md",
     "030 - Notes/Machine Learning",
-    "000 - Introduction/002 - How to Use This Vault.md",
     "030 - Notes/Math",
     "000 - Introduction/004 - Preliminary Reading + Preparation.md",
-    "z - Attachments/CleanShot 2024-05-21 at 21.14.49.png",
     "Untitled.md",
     "999 - Inbox/test.md",
     "999 - Inbox",
-    "z - Attachments/obsidian-assets-settings.png",
     "040 - Tags/basic income.md",
     "000 - Introduction/001 - Welcome to the MLMI Vault.md",
     "030 - Notes/Preliminary Reading/S.B McGrayne Bayes' rule/S.B. McGrayne Book.epub",
