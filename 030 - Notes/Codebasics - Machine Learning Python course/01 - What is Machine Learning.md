@@ -1,0 +1,1 @@
+There are certain tasks computers are better at than humans. For calculations or searches computers are way more efficient. But for tasks like driving or reasoning in general, humans have been superior for a long time. Machine learning is a set of techniques to make computers
