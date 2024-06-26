@@ -47,11 +47,9 @@
             "id": "e34c6d1ee505e1c5",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "jupyter-view",
               "state": {
-                "file": "030 - Notes/Codebasics - Machine Learning Python course/01 - What is Machine Learning.md",
-                "mode": "source",
-                "source": false
+                "file": "030 - Notes/Codebasics - Machine Learning Python course/Notebooks/01-LRSV.ipynb"
               }
             }
           }
@@ -106,7 +104,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "69431843e2c41654",
@@ -122,7 +120,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "030 - Notes/Codebasics - Machine Learning Python course/01 - What is Machine Learning.md",
+                "file": "030 - Notes/Codebasics - Machine Learning Python course/Notebooks/01-LRSV.ipynb",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +137,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "030 - Notes/Codebasics - Machine Learning Python course/01 - What is Machine Learning.md",
+                "file": "030 - Notes/Codebasics - Machine Learning Python course/Notebooks/01-LRSV.ipynb",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +160,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "030 - Notes/Codebasics - Machine Learning Python course/01 - What is Machine Learning.md"
+                "file": "030 - Notes/Codebasics - Machine Learning Python course/Notebooks/01-LRSV.ipynb"
               }
             }
           }
@@ -186,10 +184,12 @@
       "jupyter:Start Jupyter Server": false
     }
   },
-  "active": "1b9c0ca6e568a32b",
+  "active": "e34c6d1ee505e1c5",
   "lastOpenFiles": [
-    "030 - Notes/Codebasics - Machine Learning Python course/Untitled/Untitled.ipynb",
     "030 - Notes/Codebasics - Machine Learning Python course/01 - What is Machine Learning.md",
+    "030 - Notes/Codebasics - Machine Learning Python course/Notebooks/test.ipynb",
+    "030 - Notes/Codebasics - Machine Learning Python course/Notebooks/01-LRSV.ipynb",
+    "030 - Notes/Codebasics - Machine Learning Python course/Untitled/Untitled.ipynb",
     "030 - Notes/Codebasics - Machine Learning Python course/02 - Linear Regression Single Variable.ipynb.md",
     "030 - Notes/Codebasics - Machine Learning Python course/Untitled/Untitled.md",
     "030 - Notes/Codebasics - Machine Learning Python course/Notebooks",
@@ -211,8 +211,6 @@
     "030 - Notes/Preliminary Reading/S.B McGrayne Bayes' rule/S.B. McGrayne Book.epub",
     "030 - Notes/Preliminary Reading/S.B McGrayne Bayes' rule",
     "030 - Notes/Preliminary Reading/N. Silver - Signal and Noise/N. Silver Summary 32p.epub",
-    "030 - Notes/Preliminary Reading/N. Silver - Signal and Noise/N. Silver Book.epub",
-    "030 - Notes/Preliminary Reading/N. Silver - Signal and Noise",
     "Readme.md",
     "z - Templates/Research Resource Template.md",
     "040 - Tags/000 - Using Tagnotes.md",

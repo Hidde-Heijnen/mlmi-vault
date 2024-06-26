@@ -2,7 +2,7 @@
   "pythonExecutable": "path",
   "pythonExecutablePath": "/opt/anaconda3/envs/my-gloria/bin/python",
   "startJupyterAuto": true,
-  "jupyterEnvType": "notebook",
+  "jupyterEnvType": "lab",
   "deleteCheckpoints": false,
   "moveCheckpointsToTrash": true,
   "displayRibbonIcon": true,
