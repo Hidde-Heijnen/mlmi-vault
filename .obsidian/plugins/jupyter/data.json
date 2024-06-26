@@ -1,0 +1,12 @@
+{
+  "pythonExecutable": "path",
+  "pythonExecutablePath": "https://www.amazon.nl/-/en/Ergonomic-Metallic-Adjustable-Portable-Compatible/dp/B0BWRFL87V",
+  "startJupyterAuto": true,
+  "jupyterEnvType": "lab",
+  "deleteCheckpoints": false,
+  "moveCheckpointsToTrash": true,
+  "displayRibbonIcon": true,
+  "useStatusNotices": true,
+  "jupyterTimeoutMs": 30000,
+  "debugConsole": false
+}
