@@ -1,5 +1,7 @@
 [
   "templater-obsidian",
   "better-word-count",
-  "obsidian-git"
+  "obsidian-git",
+  "obsidian42-brat",
+  "jupyter"
 ]
