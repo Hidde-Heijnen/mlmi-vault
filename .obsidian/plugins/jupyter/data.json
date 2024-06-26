@@ -1,8 +1,8 @@
 {
   "pythonExecutable": "path",
-  "pythonExecutablePath": "https://www.amazon.nl/-/en/Ergonomic-Metallic-Adjustable-Portable-Compatible/dp/B0BWRFL87V",
+  "pythonExecutablePath": "/opt/anaconda3/envs/my-gloria/bin/python",
   "startJupyterAuto": true,
-  "jupyterEnvType": "lab",
+  "jupyterEnvType": "notebook",
   "deleteCheckpoints": false,
   "moveCheckpointsToTrash": true,
   "displayRibbonIcon": true,
