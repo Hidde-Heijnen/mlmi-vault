@@ -119,3 +119,7 @@ $\frac{d}{dx}(cf(x)) = c \frac{d}{dx}(f(x))$
 - $\frac{d}{dx}(5x^3) = 5 \cdot 3x^2 = 15x^2$
 
 ## Partial derivative
+
+Partial derivatives are used specifically for functions of multiple variables when you are interested in the rate of change of the function with respect to one of the variables, while keeping the other variables constant. You can think of it as a slice of the function. In general, when dealing with functions of multiple variables, the appropriate tool to use is the partial derivative.
+
+In multivariable calculus, partial derivatives are used to find local maxima, minima, and saddle points of functions of several variables using methods such as the gradient and Hessian matrix.
