@@ -54,9 +54,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "c4533cec14114e50",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.6.7"
+              }
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -186,7 +196,7 @@
       "jupyter:Start Jupyter Server": false
     }
   },
-  "active": "e34c6d1ee505e1c5",
+  "active": "c4533cec14114e50",
   "lastOpenFiles": [
     "030 - Notes/Codebasics - Machine Learning Python course/Notebooks/test.ipynb",
     "030 - Notes/Codebasics - Machine Learning Python course/Notebooks/01-LRSV.ipynb",
