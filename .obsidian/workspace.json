@@ -59,9 +59,11 @@
             "id": "c4533cec14114e50",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.6.7"
+                "file": "000 - Introduction/004 - Preliminary Reading + Preparation.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -132,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "030 - Notes/Math/Derivatives.md",
+                "file": "000 - Introduction/004 - Preliminary Reading + Preparation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -149,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "030 - Notes/Math/Derivatives.md",
+                "file": "000 - Introduction/004 - Preliminary Reading + Preparation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -172,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "030 - Notes/Math/Derivatives.md"
+                "file": "000 - Introduction/004 - Preliminary Reading + Preparation.md"
               }
             }
           }

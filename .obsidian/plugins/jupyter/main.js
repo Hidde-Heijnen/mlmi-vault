@@ -27,7 +27,7 @@ __export(jupyter_obsidian_exports, {
   default: () => JupyterNotebookPlugin
 });
 module.exports = __toCommonJS(jupyter_obsidian_exports);
-var import_obsidian5 = require("obsidian");
+var import_obsidian7 = require("obsidian");
 
 // src/jupyter-env.ts
 var import_child_process = require("child_process");
@@ -255,7 +255,17 @@ var EmbeddedJupyterView = class extends import_obsidian2.FileView {
           this.displayExitMessage();
           this.plugin.toggleJupyter();
         } else {
-          this.displayMessage("No Jupyter server", "Jupyter does not seem to be running. Please make sure to start the server manually using the plugin's ribbon icon or settings. You can also enable automatic start of the Jupyter server when a document is opened in the settings.");
+          this.displayMessage(
+            "No Jupyter server",
+            "Jupyter does not seem to be running. Please make sure to start the server manually using the plugin's ribbon icon or settings. You can also enable automatic start of the Jupyter server when a document is opened in the settings.",
+            {
+              text: "Start Jupyter",
+              onClick: () => {
+                this.plugin.env.start();
+              },
+              closeOnClick: false
+            }
+          );
           return;
         }
         break;
@@ -408,10 +418,16 @@ var DEFAULT_SETTINGS = {
   jupyterEnvType: "lab" /* LAB */,
   deleteCheckpoints: false,
   moveCheckpointsToTrash: true,
-  displayRibbonIcon: true,
+  checkpointsFolder: "",
+  updatePopup: true,
+  displayServerRibbonIcon: true,
   useStatusNotices: true,
+  displayFileRibbonIcon: true,
+  displayFolderContextMenuItem: true,
+  openCreatedFileMode: "current-tab" /* CURRENT_TAB */,
   jupyterTimeoutMs: 3e4,
-  debugConsole: false
+  debugConsole: false,
+  knownVersion: ""
 };
 var JupyterSettingsTab = class extends import_obsidian4.PluginSettingTab {
   constructor(app, plugin) {
@@ -466,13 +482,35 @@ var JupyterSettingsTab = class extends import_obsidian4.PluginSettingTab {
         await this.plugin.setMoveCheckpointsToTrash(value);
       }).bind(this));
     }).bind(this));
+    new import_obsidian4.Setting(this.containerEl).setName("Jupyter checkpoints folder").setDesc("The root folder for all Jupyter checkpoints. Leave empty for default. Requires restarting Jupyter to take effect. Has no effect if 'Delete Jupyter checkpoints' is not enabled.").addText(((text) => {
+      var _a;
+      text.setPlaceholder((_a = this.plugin.getDefaultCheckpointsRootFolder().getAbsolutePath()) != null ? _a : "No default path available").setValue(this.plugin.settings.checkpointsFolder).onChange((async (value) => {
+        await this.plugin.setCheckpointsFolder(value);
+      }).bind(this));
+    }).bind(this));
     new import_obsidian4.Setting(this.containerEl).setName("Plugin customization").setHeading();
-    new import_obsidian4.Setting(this.containerEl).setName("Display ribbon icon").setDesc("Define whether or not you want this Jupyter plugin to use a ribbon icon.").addToggle(((toggle) => toggle.setValue(this.plugin.settings.displayRibbonIcon).onChange((async (value) => {
-      await this.plugin.setRibbonIconSetting(value);
+    new import_obsidian4.Setting(this.containerEl).setName("Update popup").setDesc("When the plugin is updated, a popup is shown with what changes were made.").addToggle(((toggle) => {
+      toggle.setValue(this.plugin.settings.updatePopup).onChange(((value) => {
+        void this.plugin.setUpdatePopup(value);
+      }).bind(this));
+    }).bind(this));
+    new import_obsidian4.Setting(this.containerEl).setName("Ribbon icon for server status").setDesc("Whether to display a ribbon icon that indicates the server status (exited, starting, running), which can be used to start/stop the server.").addToggle(((toggle) => toggle.setValue(this.plugin.settings.displayServerRibbonIcon).onChange((async (value) => {
+      await this.plugin.setServerRibbonIconSetting(value);
     }).bind(this))).bind(this));
     new import_obsidian4.Setting(this.containerEl).setName("Display status notices").setDesc("If enabled, short messages will pop up when the Jupyter server is starting, running or exits.").addToggle(((toggle) => toggle.setValue(this.plugin.settings.useStatusNotices).onChange((async (value) => {
       await this.plugin.setStatusNoticesSetting(value);
     }).bind(this))).bind(this));
+    new import_obsidian4.Setting(this.containerEl).setName("Ribbon icon for new notebooks").setDesc("Whether to display a ribbon icon that creates a blank Jupyter notebook when clicked.").addToggle(((toggle) => toggle.setValue(this.plugin.settings.displayFileRibbonIcon).onChange((async (value) => {
+      await this.plugin.setFileRibbonIconSetting(value);
+    }).bind(this))).bind(this));
+    new import_obsidian4.Setting(this.containerEl).setName("Folder context menu for new notebooks").setDesc("If enabled, when you right-click on a folder, one of the actions will be to create a new Jupyter notebook in that folder.").addToggle(((toggle) => toggle.setValue(this.plugin.settings.displayFolderContextMenuItem).onChange((async (value) => {
+      await this.plugin.setFolderContextMenuSetting(value);
+    }).bind(this))).bind(this));
+    new import_obsidian4.Setting(this.containerEl).setName("Open created notebooks").setDesc("Whether to open a notebook directly when it is created, and how to open it.").addDropdown(((dropdown) => {
+      dropdown.addOption("dont-open" /* DONT */, "Do not open").addOption("current-tab" /* CURRENT_TAB */, "Open in the current tab (default)").addOption("new-tab" /* NEW_TAB */, "Open in a new tab").addOption("split" /* SPLIT */, "Open in a new split tab").addOption("detached-window" /* WINDOW */, "Open in a detached window").setValue(this.plugin.settings.openCreatedFileMode).onChange((async (value) => {
+        await this.plugin.setOpenCreatedFileMode(value);
+      }).bind(this));
+    }).bind(this));
     new import_obsidian4.Setting(this.containerEl).setName("Advanced").setHeading();
     new import_obsidian4.Setting(this.containerEl).setName("Jupyter starting timeout").setDesc("To avoid Jupyter being stuck in the starting phase, a timeout is set by default. You can set how many seconds to wait before killing the Jupyter server. Set to 0 to disable the timeout. Please note that a timeout too small might prevent Jupyter from ever starting.").addSlider(((slider) => {
       slider.setLimits(0, 60, 1).setValue(this.plugin.settings.jupyterTimeoutMs / 1e3).setDynamicTooltip().onChange((async (value) => {
@@ -487,15 +525,295 @@ var JupyterSettingsTab = class extends import_obsidian4.PluginSettingTab {
   }
 };
 
+// src/ui/jupyter-update-modal.ts
+var import_obsidian5 = require("obsidian");
+async function getReleaseNotes(repoOwner, repoName, fromRelease, toRelease) {
+  var _a;
+  const response = await fetch(`https://api.github.com/repos/${repoOwner}/${repoName}/releases`);
+  const releases = await response.json();
+  if (!response.ok && "message" in releases || !Array.isArray(releases)) {
+    throw new Error(
+      `Failed to fetch releases: ${(_a = releases.message) != null ? _a : "Unknown error"}`
+    );
+  }
+  const firstReleaseIndex = fromRelease === "" ? releases.length : releases.findIndex((release) => release.tag_name === fromRelease);
+  if (firstReleaseIndex === -1) {
+    throw new Error(`Could not find release with tag ${fromRelease}`);
+  }
+  const lastReleaseIndex = toRelease === "" ? 0 : releases.findIndex((release) => release.tag_name === toRelease);
+  if (lastReleaseIndex === -1) {
+    throw new Error(`Could not find release with tag ${toRelease}`);
+  }
+  const beta = fromRelease.endsWith("-beta");
+  return releases.slice(lastReleaseIndex, firstReleaseIndex).filter((release) => !release.draft && (beta || !release.prerelease));
+}
+function addExtraHashToHeadings(markdownText, numHashes = 1) {
+  const lines = markdownText.split("\n");
+  for (let i = 0; i < lines.length; i++) {
+    if (lines[i].startsWith("#")) {
+      lines[i] = "#".repeat(numHashes) + lines[i];
+    }
+  }
+  return lines.join("\n");
+}
+var UpdateModal = class extends import_obsidian5.Modal {
+  constructor(app, plugin, lastAnnouncedVersion, versionToAnnounce) {
+    super(app);
+    this.plugin = plugin;
+    this.lastAnnounced = lastAnnouncedVersion;
+    this.toAnnounce = versionToAnnounce;
+    void this.loadReleaseNotes();
+  }
+  onOpen() {
+    const { contentEl } = this;
+    contentEl.empty();
+    contentEl.createEl("h1", {
+      text: "Fetching release notes..."
+    });
+  }
+  onClose() {
+    const { contentEl } = this;
+    contentEl.empty();
+  }
+  async loadReleaseNotes() {
+    try {
+      this.releases = await getReleaseNotes(
+        "MaelImhof",
+        "obsidian-jupyter",
+        this.lastAnnounced,
+        this.toAnnounce
+      );
+      if (this.releases.length === 0) {
+        this.close();
+        return;
+      }
+      this.display();
+    } catch (err) {
+      this.releases = [];
+      this.display();
+    }
+  }
+  display() {
+    const { contentEl } = this;
+    contentEl.empty();
+    contentEl.createEl("h1", {
+      text: `Jupyter for Obsidian v${this.toAnnounce}`
+    });
+    contentEl.createEl("p", {
+      text: "Hi !"
+    });
+    contentEl.createEl("p", {
+      text: "Thank you for using Jupyter for Obsidian, hope you like it so far ! I'd love to have your feedback if you have some time."
+    });
+    new import_obsidian5.Setting(contentEl).addButton(((feedbackBtn) => {
+      feedbackBtn.setIcon("message-circle").setButtonText("Give feedback").onClick(() => {
+        window.open("https://jupyter.mael.im/#providing-feedback", "_blank");
+      });
+    }).bind(this)).addButton(((disableBtn) => {
+      disableBtn.setIcon("megaphone-off").setButtonText("Disable update popups").onClick((() => {
+        void this.plugin.setUpdatePopup(false);
+        new import_obsidian5.Notice("Jupyter for Obsidian won't display update popups anymore.");
+      }).bind(this));
+    }).bind(this));
+    const contentDiv = contentEl.createDiv();
+    if (!this.releases || this.releases.length === 0) {
+      void import_obsidian5.MarkdownRenderer.render(
+        this.app,
+        `> [!FAILURE]
+> Release notes could not be retrieved. You can still look at the last releases [on GitHub](https://github.com/MaelImhof/obsidian-jupyter/releases) directly.`,
+        contentDiv,
+        this.app.vault.getRoot().path,
+        new import_obsidian5.Component()
+      );
+    } else {
+      contentEl.createEl("h2", {
+        text: "What changed?"
+      });
+      const changeLogRegex = /## Change Log\s{1,5}([\s\S]*)$/;
+      const releaseNotes = this.releases.map((release) => {
+        const results = release.body.match(changeLogRegex);
+        let changelog = results === null ? "Could not load this changelog." : results[1];
+        return `### [Jupyter for Obsidian v${release.tag_name}](https://github.com/MaelImhof/obsidian-jupyter/releases/tag/${release.tag_name})
+
+${addExtraHashToHeadings(changelog)}`;
+      }).join("\n---\n");
+      void import_obsidian5.MarkdownRenderer.render(
+        this.app,
+        releaseNotes,
+        contentDiv,
+        this.app.vault.getRoot().path,
+        new import_obsidian5.Component()
+      );
+    }
+  }
+};
+
 // src/jupyter-obsidian.ts
-var JupyterNotebookPlugin = class extends import_obsidian5.Plugin {
+var import_fs = require("fs");
+
+// src/utils/jupyter-path.ts
+var import_obsidian6 = require("obsidian");
+function getVaultRootPath(vault) {
+  if (vault.adapter instanceof import_obsidian6.FileSystemAdapter) {
+    return vault.adapter.getBasePath();
+  } else {
+    throw new Error("Invalid environment : Jupyter for Obsidian needs a FileSystemAdapter instance to work with absolute paths.");
+  }
+}
+function inVault(path, vault, root = null) {
+  if (path instanceof JupyterAbstractPath) {
+    path = path.getAbsolutePath();
+  }
+  if (root === null) {
+    return path.startsWith(getVaultRootPath(vault));
+  } else {
+    return path.startsWith(root);
+  }
+}
+var JupyterAbstractPath = class {
+  /**
+   * Represent a file or a folder in the file system, with information relevant to the Jupyter for Obsidian plugin.
+   * 
+   * @param absolute The absolute path to the represented file or folder.
+   * @param relative The relative path to the represented file or folder if within the vault, null otherwise.
+   * @param isFolder Whether the represented entity is a folder.
+   * @param isInVault Whether the represented entity (file or folder) lies within the current Obsidian vault.
+   * 
+   * @throws If `isInVault` is set to `true` but no relative path is provided (`relative` is set to `null`), an error is thrown.
+   */
+  constructor(absolute, relative, isFolder, isInVault) {
+    absolute = (0, import_obsidian6.normalizePath)(absolute);
+    if (isFolder && !absolute.endsWith("/")) {
+      absolute += "/";
+    } else if (!isFolder && absolute.endsWith("/")) {
+      absolute = absolute.substring(0, absolute.length - 1);
+    }
+    this.absolutePath = absolute;
+    if (!isInVault) {
+      this.relativePath = null;
+    } else if (relative === null) {
+      throw new Error("Invalid argument in JupyterAbstractPath constructor : `relative` must not be `null` if `isInVault` is set to `true`");
+    } else {
+      if (isFolder && !relative.endsWith("/")) {
+        relative += "/";
+      } else if (!isFolder && relative.endsWith("/")) {
+        relative = relative.substring(0, absolute.length - 1);
+      }
+      this.relativePath = relative;
+    }
+    this.isDirectory = isFolder;
+    this.isInVault = isInVault;
+  }
+  /**
+   * The absolute path of the file/folder, for example "C:/some/path/".
+   * 
+   * This path is guaranteed to be normalized in the sense of Obsidian's normalizePath method.
+   * 
+   * If the instance is a folder, the absolute path is guaranteed to end with "/".
+   */
+  getAbsolutePath() {
+    return this.absolutePath;
+  }
+  /**
+   * The path of the file/folder relative to the current Obsidian vault, for example "Digital Garden/Home.md".
+   * 
+   * This path is guaranteed to be normalized in the sense of Obsidian's normalizePath method.
+   * 
+   * If the instance is a folder, the relative path is guaranteed to end with "/".
+   * 
+   * If the file or folder is not within the current Obsidian vault, this value is guaranteed to be null.
+   */
+  getRelativePath() {
+    if (!this.isInVault) {
+      return null;
+    }
+    return this.relativePath;
+  }
+  /**
+   * Whether the instance is a folder or not.
+   */
+  isFolder() {
+    return this.isDirectory;
+  }
+  /**
+   * Whether the instance represents a file or folder inside the current Obsidian vault or not.
+   */
+  inVault() {
+    return this.isInVault;
+  }
+  /**
+   * Returns a new path instance with the provided relative path appended to the original
+   * path contained by the current instance. Does not modify the current instance.
+   * 
+   * @param relativePath The path to add to the end of the current instance's path.
+   * @param isFolder     Whether the represented path of the new instance will be a folder
+   *                     (or not, in which case it is a file).
+   * 
+   * @throws If the current instance is not a folder.
+   */
+  append(relativePath, isFolder) {
+    if (!this.isFolder()) {
+      throw new Error("Cannot append a path to a file, the instance must represent a folder.");
+    }
+    if (relativePath.startsWith("/")) {
+      relativePath = relativePath.substring(1);
+    }
+    return new JupyterAbstractPath(
+      this.absolutePath + relativePath,
+      this.relativePath === null ? null : this.relativePath + relativePath,
+      isFolder,
+      this.inVault()
+    );
+  }
+  /**
+   * Utility function to ease the creation of a Jupyter abstract path.
+   * 
+   * Simply give the absolute path of the file/folder and indicate which of the two it is.
+   * 
+   * @param absolute The absolute path to the file/folder to represent.
+   * @param isFolder Whether it is a folder (or not, in which case it is a file).
+   * 
+   * @throws If the provided vault does not have a FileSystemAdapter instance attached to it.
+   */
+  static fromAbsolute(absolute, isFolder, vault) {
+    const vaultRoot = getVaultRootPath(vault);
+    const isInVault = inVault(absolute, vault, vaultRoot);
+    const relative = isInVault ? absolute.substring(vaultRoot.length) : null;
+    return new JupyterAbstractPath(absolute, relative, isFolder, isInVault);
+  }
+  /**
+   * Utility function to ease the creation of a Jupyter abstract path.
+   * 
+   * Simply give the relative path of the file/folder and indicate which of the two it is.
+   * 
+   * @param relative The path to the file/folder relative to the vault's root.
+   * @param isFolder Whether it is a folder (or not, in which case it is a file).
+   * 
+   * @throws If the provided vault does not have a FileSystemAdapter instance attached to it.
+   */
+  static fromRelative(relative, isFolder, vault) {
+    let vaultRoot = getVaultRootPath(vault);
+    if (!vaultRoot.endsWith("/")) {
+      vaultRoot = vaultRoot + "/";
+    }
+    if (relative.startsWith("/")) {
+      relative = relative.substring(1);
+    }
+    return new JupyterAbstractPath(vaultRoot + relative, relative, isFolder, true);
+  }
+};
+
+// src/jupyter-obsidian.ts
+var JupyterNotebookPlugin = class extends import_obsidian7.Plugin {
   constructor() {
     super(...arguments);
     /*=====================================================*/
     /* Plugin instance properties                          */
     /*=====================================================*/
     this.settings = DEFAULT_SETTINGS;
-    this.ribbonIcon = null;
+    this.serverRibbonIcon = null;
+    this.fileRibbonIcon = null;
+    this.onFileContextMenu = this.onFileContextMenuOpened.bind(this);
     this.env = new JupyterEnvironment(
       this.app.vault.adapter.getBasePath(),
       DEFAULT_SETTINGS.debugConsole,
@@ -517,7 +835,7 @@ var JupyterNotebookPlugin = class extends import_obsidian5.Plugin {
     this.env.setJupyterTimeoutMs(this.settings.jupyterTimeoutMs);
     this.env.setType(this.settings.jupyterEnvType);
     if (this.settings.deleteCheckpoints) {
-      this.env.setCustomConfigFolderPath(this.getCustomJupyterConfigFolderPath());
+      this.env.setCustomConfigFolderPath(this.getPluginFolder().getAbsolutePath());
     }
     this.env.on("change" /* CHANGE */, this.showStatusMessage.bind(this));
     this.env.on("change" /* CHANGE */, this.updateRibbon.bind(this));
@@ -527,15 +845,36 @@ var JupyterNotebookPlugin = class extends import_obsidian5.Plugin {
     if (this.startEnvOnceInitialized) {
       this.toggleJupyter();
     }
-    this.ribbonIcon = this.addRibbonIcon("monitor-play", "Start Jupyter Server", this.toggleJupyter.bind(this));
+    if (this.settings.displayServerRibbonIcon) {
+      this.serverRibbonIcon = this.addRibbonIcon("monitor-play", "Start Jupyter Server", this.toggleJupyter.bind(this));
+    }
+    if (this.settings.displayFileRibbonIcon) {
+      this.fileRibbonIcon = this.addRibbonIcon("jupyter-logo", "Create Jupyter Notebook", this.onFileRibbonIconClicked.bind(this));
+    }
+    if (this.settings.displayFolderContextMenuItem) {
+      this.app.workspace.on("file-menu", this.onFileContextMenu);
+    }
+    this.addCommand({
+      id: "jupyter-create-notebook",
+      name: "Create new Jupyter notebook",
+      callback: (async () => {
+        await this.createJupyterNotebook(JupyterAbstractPath.fromRelative("/", true, this.app.vault));
+      }).bind(this)
+    });
     this.registerView("jupyter-view", (leaf) => new EmbeddedJupyterView(leaf, this));
     this.registerExtensions(["ipynb"], "jupyter-view");
     this.addSettingTab(new JupyterSettingsTab(this.app, this));
+    (0, import_obsidian7.addIcon)("jupyter-logo", `<path fill="currentColor" d="m 51.4537,74.98344 c -15.406714,0 -29.180954,-5.68784 -36.479994,-13.79248 2.83328,7.29904 7.71248,13.79248 14.187674,18.24 6.493446,4.46576 14.187686,6.8856 22.29232,6.8856 8.10464,0 15.82016,-2.41984 22.29232,-6.8856 C 80.239467,74.98344 85.100427,68.49 87.933707,61.19096 80.634667,69.29864 66.86042,74.98344 51.4537,74.98344 Z m 0,-53.5192 c 15.40672,0 29.180967,5.68784 36.480007,13.79248 -2.83328,-7.29904 -7.69424,-13.79248 -14.187687,-18.24 -6.8856,-4.86096 -14.57984,-7.29904 -22.29232,-7.29904 -8.107674,0 -15.798874,2.44112 -22.29232,6.8856 C 22.689226,21.46424 17.806986,27.54424 14.973706,35.25672 22.272746,26.7356 35.654826,21.46424 51.4537,21.46424 Z M 79.829067,2.02344 c -7.566567,0 -7.566567,11.33312 0,11.33312 7.56656,0 7.56656,-11.33312 0,-11.33312 z M 22.689226,83.89672 c -4.04016,0 -7.299046,3.25888 -7.299046,7.29904 0,4.02192 3.258886,7.2808 7.299046,7.2808 4.021914,0 7.280794,-3.25888 7.280794,-7.2808 0,-4.04016 -3.258874,-7.29904 -7.280794,-7.29904 z m -6.08,-72.96 c -5.414243,0 -5.414243,8.10768 0,8.10768 5.399034,0 5.399034,-8.10768 0,-8.10768 z" id="path1" style="stroke-width:3.04" />`);
+    this.app.workspace.on("quit", async (_tasks) => {
+      await this.onunload();
+    });
+    this.announceUpdate();
   }
   async onunload() {
     await this.saveSettings();
     this.env.exit();
     await this.purgeJupyterCheckpoints();
+    this.app.workspace.off("file-menu", this.onFileContextMenu);
   }
   /*=====================================================*/
   /* UI Events (ribbon icon, server setting)             */
@@ -573,10 +912,40 @@ var JupyterNotebookPlugin = class extends import_obsidian5.Plugin {
     }
   }
   /*=====================================================*/
+  /* UI Events (ribbon icon, server setting)             */
+  /*=====================================================*/
+  /**
+   * Checks whether the plugin has been updated and displays a
+   * popup message if it has.
+   * 
+   * Strongly inspired from the QuickAdd implementation :
+   * https://github.com/chhoumann/quickadd/blob/08f269393c3cec5bf0c1d64a79d7999afd0a35a9/src/main.ts#L210
+   */
+  announceUpdate() {
+    const currentVersion = this.manifest.version;
+    const knownVersion = this.settings.knownVersion;
+    if (knownVersion === "") {
+      return;
+    }
+    if (knownVersion === currentVersion) {
+      return;
+    }
+    this.settings.knownVersion = currentVersion;
+    void this.saveSettings();
+    if (!this.settings.updatePopup)
+      return;
+    const updateModal = new UpdateModal(this.app, this, knownVersion, currentVersion);
+    updateModal.open();
+  }
+  /*=====================================================*/
   /* Settings (load, save, set values)                   */
   /*=====================================================*/
   async loadSettings() {
     this.settings = Object.assign(DEFAULT_SETTINGS, await this.loadData());
+    if (this.settings.checkpointsFolder !== "" && !this.settings.checkpointsFolder.endsWith("/")) {
+      this.settings.checkpointsFolder += "/";
+      await this.saveSettings();
+    }
   }
   async setPythonExecutable(value) {
     this.settings.pythonExecutable = value;
@@ -611,7 +980,7 @@ var JupyterNotebookPlugin = class extends import_obsidian5.Plugin {
     await this.saveSettings();
     if (value) {
       await this.generateJupyterConfig();
-      this.env.setCustomConfigFolderPath(this.getCustomJupyterConfigFolderPath());
+      this.env.setCustomConfigFolderPath(this.getPluginFolder().getAbsolutePath());
     } else {
       await this.deleteJupyterConfig();
       this.env.setCustomConfigFolderPath(null);
@@ -621,20 +990,58 @@ var JupyterNotebookPlugin = class extends import_obsidian5.Plugin {
     this.settings.moveCheckpointsToTrash = value;
     await this.saveSettings();
   }
-  async setRibbonIconSetting(value) {
+  async setCheckpointsFolder(value) {
+    if (value !== "" && !value.endsWith("/")) {
+      value += "/";
+    }
+    this.settings.checkpointsFolder = value;
+    await this.saveSettings();
+    if (this.settings.deleteCheckpoints) {
+      await this.generateJupyterConfig();
+    }
+  }
+  async setUpdatePopup(value) {
+    this.settings.updatePopup = value;
+    await this.saveSettings();
+  }
+  async setServerRibbonIconSetting(value) {
     var _a;
-    this.settings.displayRibbonIcon = value;
+    this.settings.displayServerRibbonIcon = value;
     await this.saveSettings();
     if (!value) {
-      (_a = this.ribbonIcon) == null ? void 0 : _a.remove();
-      this.ribbonIcon = null;
+      (_a = this.serverRibbonIcon) == null ? void 0 : _a.remove();
+      this.serverRibbonIcon = null;
     } else {
-      this.ribbonIcon = this.addRibbonIcon("monitor-play", "Start Jupyter Server", this.toggleJupyter.bind(this));
+      this.serverRibbonIcon = this.addRibbonIcon("monitor-play", "Start Jupyter Server", this.toggleJupyter.bind(this));
       this.updateRibbon(this.env);
     }
   }
   async setStatusNoticesSetting(value) {
     this.settings.useStatusNotices = value;
+    await this.saveSettings();
+  }
+  async setFileRibbonIconSetting(value) {
+    var _a;
+    this.settings.displayFileRibbonIcon = value;
+    await this.saveSettings();
+    if (!value) {
+      (_a = this.fileRibbonIcon) == null ? void 0 : _a.remove();
+      this.fileRibbonIcon = null;
+    } else {
+      this.fileRibbonIcon = this.addRibbonIcon("jupyter-logo", "Create Jupyter Notebook", this.onFileRibbonIconClicked.bind(this));
+    }
+  }
+  async setFolderContextMenuSetting(value) {
+    this.settings.displayFolderContextMenuItem = value;
+    await this.saveSettings();
+    if (!value) {
+      this.app.workspace.off("file-menu", this.onFileContextMenu);
+    } else {
+      this.app.workspace.on("file-menu", this.onFileContextMenu);
+    }
+  }
+  async setOpenCreatedFileMode(value) {
+    this.settings.openCreatedFileMode = value;
     await this.saveSettings();
   }
   async setJupyterTimeoutMs(value) {
@@ -659,13 +1066,13 @@ var JupyterNotebookPlugin = class extends import_obsidian5.Plugin {
     }
     switch (this.env.getStatus()) {
       case "starting" /* STARTING */:
-        new import_obsidian5.Notice("Jupyter Server is starting");
+        new import_obsidian7.Notice("Jupyter Server is starting");
         break;
       case "running" /* RUNNING */:
-        new import_obsidian5.Notice("Jupyter Server is now running");
+        new import_obsidian7.Notice("Jupyter Server is now running");
         break;
       case "exited" /* EXITED */:
-        new import_obsidian5.Notice("Jupyter Server has exited");
+        new import_obsidian7.Notice("Jupyter Server has exited");
         break;
     }
   }
@@ -753,21 +1160,21 @@ var JupyterNotebookPlugin = class extends import_obsidian5.Plugin {
     }
   }
   async updateRibbon(env) {
-    if (this.ribbonIcon === null || !this.settings.displayRibbonIcon) {
+    if (this.serverRibbonIcon === null || !this.settings.displayServerRibbonIcon) {
       return;
     }
     switch (env.getStatus()) {
       case "starting" /* STARTING */:
-        (0, import_obsidian5.setIcon)(this.ribbonIcon, "monitor-dot");
-        (0, import_obsidian5.setTooltip)(this.ribbonIcon, "Jupyter Server is starting");
+        (0, import_obsidian7.setIcon)(this.serverRibbonIcon, "monitor-dot");
+        (0, import_obsidian7.setTooltip)(this.serverRibbonIcon, "Jupyter Server is starting");
         break;
       case "running" /* RUNNING */:
-        (0, import_obsidian5.setIcon)(this.ribbonIcon, "monitor-stop");
-        (0, import_obsidian5.setTooltip)(this.ribbonIcon, "Stop Jupyter Server");
+        (0, import_obsidian7.setIcon)(this.serverRibbonIcon, "monitor-stop");
+        (0, import_obsidian7.setTooltip)(this.serverRibbonIcon, "Stop Jupyter Server");
         break;
       case "exited" /* EXITED */:
-        (0, import_obsidian5.setIcon)(this.ribbonIcon, "monitor-play");
-        (0, import_obsidian5.setTooltip)(this.ribbonIcon, "Start Jupyter Server");
+        (0, import_obsidian7.setIcon)(this.serverRibbonIcon, "monitor-play");
+        (0, import_obsidian7.setTooltip)(this.serverRibbonIcon, "Start Jupyter Server");
         break;
     }
   }
@@ -777,73 +1184,140 @@ var JupyterNotebookPlugin = class extends import_obsidian5.Plugin {
   /*=====================================================*/
   /* Jupyter checkpoints management                      */
   /*=====================================================*/
+  async onFileRibbonIconClicked() {
+    await this.createJupyterNotebook(JupyterAbstractPath.fromRelative("/", true, this.app.vault));
+  }
+  onFileContextMenuOpened(menu, file, _source, _leaf) {
+    if (file instanceof import_obsidian7.TFolder) {
+      menu.addItem((item) => {
+        item.setTitle("New Jupyter notebook").setIcon("jupyter-logo").setSection("action-primary").onClick(async (_event) => {
+          await this.createJupyterNotebook(JupyterAbstractPath.fromRelative(file.path, true, this.app.vault));
+        });
+      });
+    }
+  }
+  getDefaultNotebookFilename() {
+    const now = new Date();
+    const year = now.getFullYear();
+    const month = String(now.getMonth() + 1).padStart(2, "0");
+    const day = String(now.getDate()).padStart(2, "0");
+    const hours = String(now.getHours()).padStart(2, "0");
+    const minutes = String(now.getMinutes()).padStart(2, "0");
+    const seconds = String(now.getSeconds()).padStart(2, "0");
+    return `Jupyter Notebook ${year}-${month}-${day}-${hours}-${minutes}-${seconds}.ipynb`;
+  }
+  async createJupyterNotebook(folder) {
+    if (!folder.inVault()) {
+      throw new Error("Creating a new notebook can only be done within the vault.");
+    }
+    const file = folder.append(this.getDefaultNotebookFilename(), false);
+    if (await this.app.vault.adapter.exists(file.getRelativePath())) {
+      new import_obsidian7.Notice(`The file "${file.getRelativePath()}" already exists, creation was aborted to avoid overwriting it. Please try again.`);
+    }
+    await this.app.vault.adapter.write(
+      file.getRelativePath(),
+      `{"cells": [],"metadata": {"kernelspec": {"display_name": "","name": ""},"language_info": {"name": ""}},"nbformat": 4,"nbformat_minor": 5}`
+    );
+    if (this.settings.openCreatedFileMode !== "dont-open" /* DONT */) {
+      let newLeaf;
+      switch (this.settings.openCreatedFileMode) {
+        case "current-tab" /* CURRENT_TAB */:
+          newLeaf = false;
+          break;
+        case "new-tab" /* NEW_TAB */:
+          newLeaf = "tab";
+          break;
+        case "split" /* SPLIT */:
+          newLeaf = "split";
+          break;
+        case "detached-window" /* WINDOW */:
+          newLeaf = "window";
+          break;
+      }
+      const leaf = this.app.workspace.getLeaf(newLeaf);
+      leaf.openFile(this.app.vault.getFileByPath(file.getRelativePath()));
+    }
+  }
+  /*=====================================================*/
+  /* Jupyter checkpoints management                      */
+  /*=====================================================*/
   async purgeJupyterCheckpoints() {
-    const checkpointsRelativeFolder = (0, import_obsidian5.normalizePath)(this.getCheckpointsRelativeRootFolder());
+    let checkpointsFolder;
+    try {
+      checkpointsFolder = this.getCheckpointsRootFolder();
+    } catch (e) {
+      return;
+    }
+    if (!(0, import_fs.existsSync)(checkpointsFolder.getAbsolutePath())) {
+      return;
+    }
     if (!this.settings.deleteCheckpoints || this.settings.moveCheckpointsToTrash) {
-      this.app.vault.adapter.trashSystem(checkpointsRelativeFolder);
+      if (checkpointsFolder.inVault()) {
+        this.app.vault.adapter.trashSystem(checkpointsFolder.getRelativePath());
+      } else {
+        new import_obsidian7.Notice("[Jupyter for Obsidian] ERROR\n\nMoving the Jupyter checkpoints to the system trash is only possible when the checkpoints are stored inside of the vault.\n\nPlease consider changing either the checkpoints folder path setting to one that is inside the vault, or define the checkpoints to be deleted without going to the trash.\n\nYour checkpoints were not deleted nor moved to the trash.", 0);
+      }
     } else {
-      this.app.vault.adapter.rmdir(checkpointsRelativeFolder, true);
-    }
-  }
-  getCheckpointsRelativeRootFolder() {
-    return this.getCustomJupyterConfigFolderRelativePath() + ".ipynb_checkpoints/";
-  }
-  /**
-   * For the feature that gets rid of the Jupyter checkpoints, the
-   * plugin uses the Jupyter configuration to put all of the checkpoints
-   * in a separate folder. This function computes and returns the absolute
-   * (system) path to that folder, to pass it to Jupyter.
-   * 
-   * Ends with a trailing '/'.
-   */
-  getCheckpointsAbsoluteRootFolder() {
-    const absoluteFolderPath = this.getCustomJupyterConfigFolderPath();
-    if (absoluteFolderPath === null) {
-      return null;
-    }
-    return absoluteFolderPath + ".ipynb_checkpoints/";
-  }
-  /**
-   * The name of the Jupyter configuration file that the plugin uses
-   * to get rid of the checkpoints. No folders involved in this value.
-   * 
-   * Probably has the form `jupyter_someapp_config.py`.
-   */
-  getCustomJupyterConfigFilename() {
-    return "jupyter_lab_config.py";
-  }
-  /**
-   * Returns the path to the folder where the Jupyter configuration file
-   * is placed relative to the vault's root.
-   * 
-   * Ends with a trailing '/'.
-   */
-  getCustomJupyterConfigFolderRelativePath() {
-    if (this.manifest.dir) {
-      return this.manifest.dir + "/";
-    } else {
-      return this.app.vault.configDir + "/plugins/" + this.manifest.id + "/";
+      if (checkpointsFolder.inVault()) {
+        this.app.vault.adapter.rmdir(checkpointsFolder.getRelativePath(), true);
+      } else {
+        (0, import_fs.rmdirSync)(checkpointsFolder.getAbsolutePath(), { recursive: true });
+      }
     }
   }
   /**
-   * Returns the path to the Jupyter configuration file relative to the
-   * vault's root.
+   * Obsidian plugins are installed in the Obsidian's settings folder, in their
+   * own folder named after themselves.
+   * 
+   * This method provides the path to the folder that hosts Jupyter for Obsidian
+   * and its code, settings and configuration.
    */
-  getCustomJupyterConfigFileRelativePath() {
-    return this.getCustomJupyterConfigFolderRelativePath() + this.getCustomJupyterConfigFilename();
+  getPluginFolder() {
+    return JupyterAbstractPath.fromRelative(
+      this.app.vault.configDir + "/plugins/" + this.manifest.id + "/",
+      true,
+      this.app.vault
+    );
   }
   /**
-   * Returns the absolute path (not relative to the vault's root) to the
-   * folder where the Jupyter configuration file is placed.
-   * 
-   * Returns null if on mobile.
+   * Provides the default Jupyter checkpoints folder. If the user did not provide any
+   * custom value, the Jupyter checkpoints will be stored in the plugin's settings directory
+   * before being deleted.
    */
-  getCustomJupyterConfigFolderPath() {
-    if (this.app.vault.adapter instanceof import_obsidian5.FileSystemAdapter) {
-      const relativeFolderPath = this.getCustomJupyterConfigFolderRelativePath();
-      return this.app.vault.adapter.getFullPath(relativeFolderPath);
+  getDefaultCheckpointsRootFolder() {
+    const pluginFolder = this.getPluginFolder();
+    return pluginFolder.append(".ipynb_checkpoints/", true);
+  }
+  /**
+   * Provide the path to the custom Jupyter config file ('jupyter_lab_config.py'). This
+   * configuration is used to tell Jupyter where to put checkpoints if the user has enabled
+   * auto-deletion of checkpoints.
+   */
+  getJupyterConfigPath() {
+    const pluginFolder = this.getPluginFolder();
+    return pluginFolder.append("jupyter_lab_config.py", false);
+  }
+  /**
+   * For the feature that gets rid of the Jupyter checkpoints, the plugin uses the Jupyter
+   * configuration to put all of the checkpoints in a separate folder. This function computes
+   * and returns the absolute (system) path to that folder, to pass it to Jupyter.
+   * 
+   * It takes both the default value and the possible user setting value into account.
+   * 
+   * @throws If the file adapter cannot be used to retrieve absolute paths (most probably because on mobile).
+   */
+  getCheckpointsRootFolder() {
+    if (!(this.app.vault.adapter instanceof import_obsidian7.FileSystemAdapter)) {
+      throw new Error("Invalid environment : need a file system adapter to work with files outside of the vault (Jupyter for Obsidian).");
+    }
+    if (this.settings.checkpointsFolder !== "") {
+      return JupyterAbstractPath.fromAbsolute(
+        this.settings.checkpointsFolder + ".ipynb_checkpoints",
+        true,
+        this.app.vault
+      );
     } else {
-      return null;
+      return this.getDefaultCheckpointsRootFolder();
     }
   }
   /**
@@ -851,11 +1325,16 @@ var JupyterNotebookPlugin = class extends import_obsidian5.Plugin {
    * needs to be created (false).
    */
   async customJupyterConfigExists() {
-    const relativeConfigPath = this.getCustomJupyterConfigFileRelativePath();
-    if (relativeConfigPath === null) {
+    let configPath;
+    try {
+      configPath = this.getJupyterConfigPath();
+    } catch (e) {
       return false;
     }
-    return await this.app.vault.adapter.exists((0, import_obsidian5.normalizePath)(relativeConfigPath));
+    if (!configPath.inVault()) {
+      return false;
+    }
+    return await this.app.vault.adapter.exists((0, import_obsidian7.normalizePath)(configPath.getRelativePath()));
   }
   /**
    * Generates a Jupyter configuration file in the folder indicated by
@@ -863,21 +1342,38 @@ var JupyterNotebookPlugin = class extends import_obsidian5.Plugin {
    * in a single folder.
    */
   async generateJupyterConfig() {
-    const absoluteCheckpointsFolderPath = this.getCheckpointsAbsoluteRootFolder();
-    if (absoluteCheckpointsFolderPath === null) {
+    let checkpointsFolder;
+    let configPath;
+    try {
+      checkpointsFolder = this.getCheckpointsRootFolder();
+      configPath = this.getJupyterConfigPath();
+    } catch (e) {
       return false;
     }
-    const relativeConfigPath = this.getCustomJupyterConfigFileRelativePath();
-    const configContent = `c.FileContentsManager.checkpoints_kwargs = {'root_dir': r'${absoluteCheckpointsFolderPath}'}
+    if (!configPath.inVault()) {
+      return false;
+    }
+    const configContent = `c.FileContentsManager.checkpoints_kwargs = {'root_dir': r'${checkpointsFolder.getAbsolutePath()}'}
 print("[Jupyter for Obsidian] Custom configuration of Jupyter for Obsidian loaded successfully.")`;
-    await this.app.vault.adapter.write((0, import_obsidian5.normalizePath)(relativeConfigPath), configContent);
+    await this.app.vault.adapter.write((0, import_obsidian7.normalizePath)(configPath.getRelativePath()), configContent);
     return true;
   }
+  /**
+   * If the custom Jupyter configuration file used by the Jupyter for Obsidian
+   * plugin exists, it deletes it.
+   */
   async deleteJupyterConfig() {
-    const relativeConfigPath = this.getCustomJupyterConfigFileRelativePath();
-    if (relativeConfigPath === null) {
+    let configPath;
+    try {
+      configPath = this.getJupyterConfigPath();
+    } catch (e) {
       return;
     }
-    await this.app.vault.adapter.remove((0, import_obsidian5.normalizePath)(relativeConfigPath));
+    if (!configPath.inVault()) {
+      return;
+    }
+    await this.app.vault.adapter.remove((0, import_obsidian7.normalizePath)(configPath.getRelativePath()));
   }
 };
+// Annotate the CommonJS export names for ESM import in node:
+0 && (module.exports = {});
