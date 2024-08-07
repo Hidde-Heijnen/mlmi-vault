@@ -30,8 +30,5 @@ $\int \frac{1}{x} \, dx = \ln|x| + C$
 $\int \ln(x) \, dx = x \ln(x) - x + C$
 
 ## Integrals that are inverse trigonometric functions
-$\int \frac{1}{\sqrt{1 - x^2}} \, dx = \sin^{-1}(x) + C$
-
-$\int \frac{1}{1 + x^2} \, dx = \tan^{-1}(x) + C$
-
-$\int \frac{1}{|x|\sqrt{x^2 - 1}} \, dx = \sec^{-1}(x) + C$
+$$ \int \frac{1}{\sqrt{a^2 - x^2}} dx = \arcsin \left(\frac{x}{a}\right) + C $$
+$$ \int \frac{1}{a^2 + x^2} dx = \frac{1}{a} \arctan \left(\frac{x}{a}\right) + C $$
