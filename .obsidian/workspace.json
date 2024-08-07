@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "000 - Introduction/004 - Preliminary Reading + Preparation.md",
+                "file": "030 - Notes/Math/Integrals.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "000 - Introduction/004 - Preliminary Reading + Preparation.md",
+                "file": "030 - Notes/Math/Integrals.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "000 - Introduction/004 - Preliminary Reading + Preparation.md",
+                "file": "030 - Notes/Math/Integrals.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "000 - Introduction/004 - Preliminary Reading + Preparation.md"
+                "file": "030 - Notes/Math/Integrals.md"
               }
             }
           }
@@ -195,11 +195,15 @@
       "command-palette:Open command palette": false,
       "templater-obsidian:Templater": false,
       "obsidian42-brat:BRAT": false,
-      "jupyter:Start Jupyter Server": false
+      "jupyter:Start Jupyter Server": false,
+      "jupyter:Create Jupyter Notebook": false
     }
   },
   "active": "c4533cec14114e50",
   "lastOpenFiles": [
+    "030 - Notes/Math/Derivatives.md",
+    "030 - Notes/Math/Integrals.md",
+    "000 - Introduction/004 - Preliminary Reading + Preparation.md",
     "z - Attachments/uk.csv",
     "030 - Notes/Codebasics - Machine Learning Python course/Notebooks/11-test.ipynb",
     "030 - Notes/Codebasics - Machine Learning Python course/Notebooks/10-SVM.ipynb",
@@ -210,14 +214,11 @@
     "z - Attachments/07-hr_data.csv",
     "030 - Notes/Codebasics - Machine Learning Python course/Notebooks/07-logistic-regression.ipynb",
     "030 - Notes/Codebasics - Machine Learning Python course/Notebooks/test.ipynb",
-    "030 - Notes/Codebasics - Machine Learning Python course/Notebooks/01-LRSV.ipynb",
-    "030 - Notes/Math/Derivatives.md",
     "030 - Notes/Codebasics - Machine Learning Python course/01 - What is Machine Learning.md",
     "z - Attachments/linear regression sv.png",
     "z - Attachments/CleanShot 2024-05-21 at 21.14.49.png",
     "030 - Notes/Codebasics - Machine Learning Python course/02 - Linear Regression Single Variable.ipynb.md",
     "030 - Notes/Codebasics - Machine Learning Python course/Untitled/Untitled.md",
-    "000 - Introduction/004 - Preliminary Reading + Preparation.md",
     "z - Attachments/obsidian-assets-settings.png",
     "000 - Introduction/002 - How to Use This Vault.md",
     "z - Templates/Tagnote Template.md",
