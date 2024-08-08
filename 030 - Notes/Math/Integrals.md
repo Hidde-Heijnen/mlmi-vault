@@ -11,6 +11,10 @@ $\int \sin(x) \, dx = -\cos(x) + C$
 
 $\int \cos(x) \, dx = \sin(x) + C$
 
+$\int \tan(x) \, dx = -\ln|\cos(x)| + C$
+
+$\int \tan(x) \, dx = \ln|\sec(x)| + C$
+
 $\int \sec^2(x) \, dx = \tan(x) + C$
 
 $\int \csc^2(x) \, dx = -\cot(x) + C$
