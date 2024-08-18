@@ -5,8 +5,15 @@
   "jupyterEnvType": "lab",
   "deleteCheckpoints": false,
   "moveCheckpointsToTrash": true,
-  "displayRibbonIcon": true,
+  "checkpointsFolder": "",
+  "updatePopup": true,
+  "displayServerRibbonIcon": true,
   "useStatusNotices": true,
+  "displayFileRibbonIcon": true,
+  "displayFolderContextMenuItem": true,
+  "openCreatedFileMode": "current-tab",
   "jupyterTimeoutMs": 30000,
-  "debugConsole": false
+  "debugConsole": false,
+  "knownVersion": "",
+  "displayRibbonIcon": true
 }
