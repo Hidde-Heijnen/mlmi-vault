@@ -32,43 +32,19 @@
             }
           },
           {
-            "id": "be782a1f61ed5745",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "030 - Notes/Codebasics - Machine Learning Python course/02 - Linear Regression Single Variable.ipynb.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "e34c6d1ee505e1c5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "030 - Notes/Math/Derivatives.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c4533cec14114e50",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "030 - Notes/Math/Derivatives.md",
+                "file": "000 - Introduction/002 - How to Use This Vault.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -134,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "030 - Notes/Math/Derivatives.md",
+                "file": "000 - Introduction/002 - How to Use This Vault.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "030 - Notes/Math/Derivatives.md",
+                "file": "000 - Introduction/002 - How to Use This Vault.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "030 - Notes/Math/Derivatives.md"
+                "file": "000 - Introduction/002 - How to Use This Vault.md"
               }
             }
           }
@@ -199,11 +175,16 @@
       "jupyter:Create Jupyter Notebook": false
     }
   },
-  "active": "c4533cec14114e50",
+  "active": "e34c6d1ee505e1c5",
   "lastOpenFiles": [
-    "030 - Notes/Math/Integrals.md",
-    "030 - Notes/Math/Derivatives.md",
     "000 - Introduction/004 - Preliminary Reading + Preparation.md",
+    "030 - Notes/Codebasics - Machine Learning Python course/02 - Linear Regression Single Variable.ipynb",
+    "030 - Notes/Codebasics - Machine Learning Python course/01 - What is Machine Learning.md",
+    "030 - Notes/Codebasics - Machine Learning Python course/Notebooks/02-mvr.ipynb",
+    "030 - Notes/Codebasics - Machine Learning Python course/Notebooks/01-LRSV.ipynb",
+    "030 - Notes/Math/Derivatives.md",
+    "030 - Notes/Codebasics - Machine Learning Python course/02 - Linear Regression Single Variable.ipynb.md",
+    "030 - Notes/Math/Integrals.md",
     "z - Attachments/uk.csv",
     "030 - Notes/Codebasics - Machine Learning Python course/Notebooks/11-test.ipynb",
     "030 - Notes/Codebasics - Machine Learning Python course/Notebooks/10-SVM.ipynb",
@@ -211,13 +192,8 @@
     "030 - Notes/Codebasics - Machine Learning Python course/Notebooks/09-decision-tree.ipynb",
     "030 - Notes/Codebasics - Machine Learning Python course/Notebooks/09-",
     "030 - Notes/Codebasics - Machine Learning Python course/Notebooks/08-log-reg-muliclass.ipynb",
-    "z - Attachments/07-hr_data.csv",
-    "030 - Notes/Codebasics - Machine Learning Python course/Notebooks/07-logistic-regression.ipynb",
-    "030 - Notes/Codebasics - Machine Learning Python course/Notebooks/test.ipynb",
-    "030 - Notes/Codebasics - Machine Learning Python course/01 - What is Machine Learning.md",
     "z - Attachments/linear regression sv.png",
     "z - Attachments/CleanShot 2024-05-21 at 21.14.49.png",
-    "030 - Notes/Codebasics - Machine Learning Python course/02 - Linear Regression Single Variable.ipynb.md",
     "030 - Notes/Codebasics - Machine Learning Python course/Untitled/Untitled.md",
     "z - Attachments/obsidian-assets-settings.png",
     "000 - Introduction/002 - How to Use This Vault.md",
