@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "000 - Introduction/002 - How to Use This Vault.md",
+                "file": "030 - Notes/Math/Derivatives.md",
                 "mode": "source",
                 "source": false
               }
@@ -73,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "mse",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -90,7 +90,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -110,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "000 - Introduction/002 - How to Use This Vault.md",
+                "file": "030 - Notes/Math/Derivatives.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "000 - Introduction/002 - How to Use This Vault.md",
+                "file": "030 - Notes/Math/Derivatives.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "000 - Introduction/002 - How to Use This Vault.md"
+                "file": "030 - Notes/Math/Derivatives.md"
               }
             }
           }
@@ -175,8 +176,9 @@
       "jupyter:Create Jupyter Notebook": false
     }
   },
-  "active": "e34c6d1ee505e1c5",
+  "active": "189f6e180bee420d",
   "lastOpenFiles": [
+    "000 - Introduction/002 - How to Use This Vault.md",
     "000 - Introduction/004 - Preliminary Reading + Preparation.md",
     "030 - Notes/Codebasics - Machine Learning Python course/02 - Linear Regression Single Variable.ipynb",
     "030 - Notes/Codebasics - Machine Learning Python course/01 - What is Machine Learning.md",
@@ -196,7 +198,6 @@
     "z - Attachments/CleanShot 2024-05-21 at 21.14.49.png",
     "030 - Notes/Codebasics - Machine Learning Python course/Untitled/Untitled.md",
     "z - Attachments/obsidian-assets-settings.png",
-    "000 - Introduction/002 - How to Use This Vault.md",
     "z - Templates/Tagnote Template.md",
     "030 - Notes/New Resource.md",
     "000 - Introduction/003 - About the Mphil.md",
