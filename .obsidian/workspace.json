@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "030 - Notes/Math/Trig identities.md",
+                "file": "030 - Notes/Math/Derivatives.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "030 - Notes/Math/Trig identities.md",
+                "file": "030 - Notes/Math/Derivatives.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "030 - Notes/Math/Trig identities.md",
+                "file": "030 - Notes/Math/Derivatives.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "030 - Notes/Math/Trig identities.md"
+                "file": "030 - Notes/Math/Derivatives.md"
               }
             }
           }
@@ -177,8 +177,8 @@
   },
   "active": "e34c6d1ee505e1c5",
   "lastOpenFiles": [
-    "040 - Tags/basic income.md",
     "030 - Notes/Math/Trig identities.md",
+    "040 - Tags/basic income.md",
     "000 - Introduction/002 - How to Use This Vault.md",
     "000 - Introduction/004 - Preliminary Reading + Preparation.md",
     "030 - Notes/Codebasics - Machine Learning Python course/02 - Linear Regression Single Variable.ipynb",
