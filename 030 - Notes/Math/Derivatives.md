@@ -88,6 +88,19 @@ $\frac{d}{dx}(\cos^{-1}(x)) = -\frac{1}{\sqrt{1-x^2}}$
 
 $\frac{d}{dx}(\tan^{-1}(x)) = \frac{1}{1+x^2}$
 
+$$
+\frac{d}{dx} \left( \csc x \right) = -\csc x \cot x
+$$
+
+$$
+\frac{d}{dx} \left( \sec x \right) = \sec x \tan x
+$$
+
+$$
+\frac{d}{dx} \left( \cot x \right) = -\csc^2 x
+$$
+
+
 #### Examples
 
 - $\frac{d}{dx}(\sin^{-1}(x)) = \frac{1}{\sqrt{1-x^2}}$

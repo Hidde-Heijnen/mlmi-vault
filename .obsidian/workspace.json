@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "000 - Introduction/003 - About the Mphil.md",
+                "file": "030 - Notes/Math/Derivatives.md",
                 "mode": "source",
                 "source": false
               }
@@ -44,7 +44,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "030 - Notes/Math/Trig identities.md",
+                "file": "030 - Notes/Math/Derivatives.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "030 - Notes/Math/Trig identities.md",
+                "file": "030 - Notes/Math/Derivatives.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "030 - Notes/Math/Trig identities.md"
+                "file": "030 - Notes/Math/Derivatives.md"
               }
             }
           }
@@ -175,11 +175,12 @@
       "jupyter:Create Jupyter Notebook": false
     }
   },
-  "active": "e34c6d1ee505e1c5",
+  "active": "fad0c1a584946018",
   "lastOpenFiles": [
-    "030 - Notes/Math/Derivatives.md",
     "030 - Notes/Math/Trig identities.md",
+    "000 - Introduction/003 - About the Mphil.md",
     "040 - Tags/basic income.md",
+    "030 - Notes/Math/Derivatives.md",
     "000 - Introduction/002 - How to Use This Vault.md",
     "000 - Introduction/004 - Preliminary Reading + Preparation.md",
     "030 - Notes/Codebasics - Machine Learning Python course/02 - Linear Regression Single Variable.ipynb",
@@ -201,7 +202,6 @@
     "z - Attachments/obsidian-assets-settings.png",
     "z - Templates/Tagnote Template.md",
     "030 - Notes/New Resource.md",
-    "000 - Introduction/003 - About the Mphil.md",
     "030 - Notes/Resource Title.md",
     "Untitled.md",
     "999 - Inbox/test.md",
