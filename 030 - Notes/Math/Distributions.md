@@ -16,7 +16,7 @@ The binomial distribution models the number of successes in $n$ independent Bern
   - $\binom{n}{k}$ is the binomial coefficient.
   - $n$ is the number of trials.
   - $p$ is the probability of success on a given trial.
-  - $k$ is the number of successes.
+  - $k$ is the **exact** number of successes.
 
 - **Mean**:
 $$ \mu = n \cdot p $$
