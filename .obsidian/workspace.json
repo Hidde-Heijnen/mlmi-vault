@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "030 - Notes/Math/Derivatives.md",
+                "file": "030 - Notes/Math/Trig identities.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "030 - Notes/Math/Derivatives.md",
+                "file": "030 - Notes/Math/Trig identities.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "030 - Notes/Math/Derivatives.md",
+                "file": "030 - Notes/Math/Trig identities.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "030 - Notes/Math/Derivatives.md"
+                "file": "030 - Notes/Math/Trig identities.md"
               }
             }
           }
@@ -164,8 +164,8 @@
   },
   "active": "fad0c1a584946018",
   "lastOpenFiles": [
-    "030 - Notes/Math/Distributions.md",
     "030 - Notes/Math/Derivatives.md",
+    "030 - Notes/Math/Distributions.md",
     "030 - Notes/Math/Trig identities.md",
     "040 - Tags/basic income.md",
     "000 - Introduction/003 - About the Mphil.md",
