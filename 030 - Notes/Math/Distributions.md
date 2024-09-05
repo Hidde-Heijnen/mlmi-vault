@@ -6,6 +6,8 @@
 #### **Permutation**: $P(n, k)$ or $nPk$
 - The permutation represents the number of ways to arrange $k$ objects from $n$ total objects, where order matters. It's calculated as:
 $$ P(n, k) = \frac{n!}{(n-k)!} $$
+#### Finding the value of an observation, standard deviation or mean given a z-score
+$$x = \overline{x} + z \cdot \sigma$$
 ---
 ## 1. **Binomial Distribution**
 The binomial distribution models the number of successes in $n$ independent Bernoulli trials with the probability of success $p$.
