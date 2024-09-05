@@ -133,6 +133,10 @@ $\frac{d}{dx}(cf(x)) = c \frac{d}{dx}(f(x))$
 
 - $\frac{d}{dx}(5x^3) = 5 \cdot 3x^2 = 15x^2$
 
+### Inverse Function rule
+$$\frac{dy}{dx} = \left(\frac{dx}{dy}\right)^{-1}$$
+
+
 ## Partial derivative
 **Just remember to treat all other variables as if they are constants.**
 

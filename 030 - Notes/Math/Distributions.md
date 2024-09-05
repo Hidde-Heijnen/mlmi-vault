@@ -8,7 +8,7 @@
 $$ P(n, k) = \frac{n!}{(n-k)!} $$
 ---
 ## 1. **Binomial Distribution**
-The binomial distribution models the number of successes in $n$ independent Bernoulli trials with the probability of success $p\).
+The binomial distribution models the number of successes in $n$ independent Bernoulli trials with the probability of success $p$.
 - **Notation**: $X \sim \text{Binomial}(n, p)$
 - **PMF** (Probability Mass Function):
   $$ P(X = k) = \binom{n}{k} p^k (1 - p)^{n - k}, \quad k = 0, 1, \dots, n $$
