@@ -19,11 +19,12 @@ The binomial distribution models the number of successes in $n$ independent Bern
   - $n$ is the number of trials.
   - $p$ is the probability of success on a given trial.
   - $k$ is the **exact** number of successes.
-
+- **Standard deviation**
+$$ SD[X] = \sqrt{n \cdot p \cdot (1 - p)} $$
 - **Mean**:
-$$ \mu = n \cdot p $$
+$$ E[X] = \mu = n \cdot p $$
 - **Variance**:
-  $$ \sigma^2 = n \cdot p \cdot (1 - p) $$
+  $$ Var[X] =  \sigma^2 = n \cdot p \cdot (1 - p) $$
 ---
 ## 2. **Poisson Distribution**
 The Poisson distribution models the number of events in a fixed interval, with events occurring independently and at a constant rate.
