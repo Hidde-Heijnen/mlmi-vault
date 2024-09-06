@@ -36,6 +36,30 @@ $$x = \overline{x} + z \cdot \sigma$$
 	- $\bar{X}$ is the mean of the data points,
 	- $n$ is the number of data points.
 
+### Linear correlation coefficient
+- The **linear correlation coefficient** (denoted as $\rho$ for population or $r$ for samples) measures the strength and direction of a linear relationship between two variables.
+- It is defined as:
+
+  $$
+  \rho(X, Y) = \frac{\text{Cov}(X, Y)}{\sigma_X \sigma_Y}
+  $$
+
+  Where:
+  - $\text{Cov}(X, Y)$ is the covariance between $X$ and $Y$,
+  - $\sigma_X$ and $\sigma_Y$ are the standard deviations of $X$ and $Y$.
+
+- **Properties**:
+  - $\rho$ ranges from **-1** to **1**.
+  - $\rho = 1$ indicates a perfect positive linear relationship.
+  - $\rho = -1$ indicates a perfect negative linear relationship.
+  - $\rho = 0$ suggests no linear relationship.
+
+- **Strength of correlation**:
+  - $|\rho| > 0.7$ suggests a **strong correlation**.
+  - $0.3 < |\rho| \leq 0.7$ suggests a **moderate correlation**.
+  - $|\rho| \leq 0.3$ suggests a **weak correlation**.
+
+
 
 ---
 ## 1. **Binomial Distribution**
