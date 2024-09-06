@@ -43,10 +43,15 @@ $$x = \overline{x} + z \cdot \sigma$$
   $$
   \rho(X, Y) = \frac{\text{Cov}(X, Y)}{\sigma_X \sigma_Y}
   $$
+or 
+  $$
+  \rho = \frac{\text{S}_{xy}}{\sqrt{\text{S}_{xx} \cdot \text{S}_{yy}}}
+  $$
 
   Where:
   - $\text{Cov}(X, Y)$ is the covariance between $X$ and $Y$,
   - $\sigma_X$ and $\sigma_Y$ are the standard deviations of $X$ and $Y$.
+  - S is basically the Covariance without the 1/n in front of it. 
 
 - **Properties**:
   - $\rho$ ranges from **-1** to **1**.
