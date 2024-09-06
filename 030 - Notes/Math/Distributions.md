@@ -10,7 +10,7 @@ $$ P(n, k) = \frac{n!}{(n-k)!} $$
 $$x = \overline{x} + z \cdot \sigma$$
 ### Covariance
 - measures the degree to which two variables change together.
-- For the sets $x$ It is defined as:
+- For the sets $x = \{x_1, x_2,..., x_n\}$ and $y = \{y_1, y_2,..., y_n\}$ It is defined as:
 
   $$
   \text{Cov}(X, Y) = \frac{1}{n-1} \sum_{i=1}^{n} (X_i - \bar{X})(Y_i - \bar{Y})
@@ -27,6 +27,15 @@ $$x = \overline{x} + z \cdot \sigma$$
 - A positive covariance indicates that as one variable increases, the other tends to increase as well.
 - A negative covariance indicates that as one variable increases, the other tends to decrease.
 - A covariance of zero suggests no linear relationship between the variables.
+- Variance is just Cov(x,x).
+	- Variance measures the spread of a single data set x around its mean value. On the other hand, covariance measures of the relationship between two data sets x and y
+	- The formula for *sample* **variance** is: $s^2 = \text{Var}(X) = \frac{1}{n-1} \sum_{i=1}^{n} (X_i - \bar{X})^2$	
+	- The formula for *population* **variance** is: $\sigma^2 = \text{Var}(X) = \frac{1}{n} \sum_{i=1}^{n} (X_i - \bar{X})^2$	
+	Where:
+	- $X_i$ are the individual data points,
+	- $\bar{X}$ is the mean of the data points,
+	- $n$ is the number of data points.
+
 
 ---
 ## 1. **Binomial Distribution**
