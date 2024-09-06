@@ -8,6 +8,26 @@
 $$ P(n, k) = \frac{n!}{(n-k)!} $$
 #### Finding the value of an observation, standard deviation or mean given a z-score
 $$x = \overline{x} + z \cdot \sigma$$
+### Covariance
+- measures the degree to which two variables change together.
+- For the sets $x$ It is defined as:
+
+  $$
+  \text{Cov}(X, Y) = \frac{1}{n-1} \sum_{i=1}^{n} (X_i - \bar{X})(Y_i - \bar{Y})
+  $$
+  Or if drawn from a population (not sample data):
+    $$
+  \text{Cov}(X, Y) = \frac{1}{n} \sum_{i=1}^{n} (X_i - \bar{X})(Y_i - \bar{Y})
+  $$
+ where:
+  - $X_i$ and $Y_i$ are individual sample points,
+  - $\bar{X}$ and $\bar{Y}$ are the sample means of $X$ and $Y$,
+  - $n$ is the number of data points.
+
+- A positive covariance indicates that as one variable increases, the other tends to increase as well.
+- A negative covariance indicates that as one variable increases, the other tends to decrease.
+- A covariance of zero suggests no linear relationship between the variables.
+
 ---
 ## 1. **Binomial Distribution**
 The binomial distribution models the number of successes in $n$ independent Bernoulli trials with the probability of success $p$.
