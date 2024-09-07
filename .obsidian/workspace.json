@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "030 - Notes/Math/Vectors.md",
+                "file": "030 - Notes/Math/Trigonomitry.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "030 - Notes/Math/Vectors.md",
+                "file": "030 - Notes/Math/Trigonomitry.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "030 - Notes/Math/Vectors.md",
+                "file": "030 - Notes/Math/Trigonomitry.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "030 - Notes/Math/Vectors.md"
+                "file": "030 - Notes/Math/Trigonomitry.md"
               }
             }
           }
@@ -164,10 +164,12 @@
   },
   "active": "fad0c1a584946018",
   "lastOpenFiles": [
-    "030 - Notes/Math/Distributions.md",
+    "030 - Notes/Math/Matrixes.md",
+    "030 - Notes/Math/Trigonomitry.md",
     "030 - Notes/Math/Trig identities.md",
-    "030 - Notes/Math/Integrals.md",
     "030 - Notes/Math/Vectors.md",
+    "030 - Notes/Math/Distributions.md",
+    "030 - Notes/Math/Integrals.md",
     "030 - Notes/Math/Derivatives.md",
     "040 - Tags/basic income.md",
     "000 - Introduction/003 - About the Mphil.md",
@@ -200,8 +202,6 @@
     "040 - Tags/000 - Using Tagnotes.md",
     "020 - Assignments/Assignment Title.md",
     "010 - Classes/Family Counselling 201/June 10 Class Notes.md",
-    "010 - Classes/Family Counselling 201/000 - Syllabus.md",
-    "010 - Classes/Psych 101/June 12 Class Notes.md",
-    "010 - Classes/Psych 101/000 - Syllabus.md"
+    "010 - Classes/Family Counselling 201/000 - Syllabus.md"
   ]
 }
