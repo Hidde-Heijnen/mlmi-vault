@@ -31,6 +31,18 @@ $\int a^x \, dx = \frac{a^x}{\ln(a)} + C$
 ## Integrals that are logarithmic functions
 $\int \frac{1}{x} \, dx = \ln|x| + C$
 
+Simplifying a $ln$ using the arbitrary constant. For any constant $C$ we can always write $C = ln K$ where $K$ is some other constant. Then, using the laws of logarithms, we can write
+$$
+\int \frac{1}{x} \, dx = \ln{|x|} + C
+$$
+$$
+= \ln{|x|} + \ln{K}
+$$
+$$
+= \ln{(K|x|)}
+$$
+
+
 $\int \ln(x) \, dx = x \ln(x) - x + C$
 
 ## Integrals that are inverse trigonometric functions
