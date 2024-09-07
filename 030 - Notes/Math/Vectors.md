@@ -29,6 +29,7 @@
   - **Magnitude**: $|\mathbf{a} \times \mathbf{b}| = |\mathbf{a}| |\mathbf{b}| \sin(\theta)$.
   - **Direction**: Follows the **right-hand rule**.
 
+- When two vectors a and b are parallel (or collinear), them the angle between them is 0, and consequently their cross prod
 ### Magnitude of a Vector:
 - The **magnitude** (or length) of a vector $\mathbf{v}$ is:
 
