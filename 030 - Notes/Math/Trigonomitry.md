@@ -3,6 +3,7 @@
 
 ### Unit Circle:
 - The **unit circle** is a circle with a radius of 1, centered at the origin of a coordinate plane. It helps define trigonometric functions based on angles.
+![[Pasted image 20240907172755.png]]
 
   **Placeholder for Unit Circle Image** (the image would show points on the unit circle corresponding to common angles: $0^\circ$, $90^\circ$, $180^\circ$, $270^\circ$, etc.)
 
