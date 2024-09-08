@@ -36,10 +36,12 @@ $$
 
   - For any matrix $A$, $A \cdot I = A$ and $I \cdot A = A$.
 ### Determinant:
-- The **determinant** of a square matrix $A$ (denoted $\det(A)$ or $|A|$) is a scalar value that provides important properties of the matrix (e.g., invertibility). For a 2x2 matrix:
+- The **determinant** of a square matrix $A$ (denoted $\det(A)$ or $|A|$) is a scalar value that provides important properties of the matrix (e.g., invertibility). 
+#### For a 2x2 matrix:
   $$
   \det(A) = \begin{vmatrix} a & b \\ c & d \end{vmatrix} = ad - bc
   $$
+#### 3x3 matrix: 
 ### Inverse Matrix:
 - The **inverse** of a square matrix $A$ (denoted $A^{-1}$) is a matrix such that:  $$
   A \cdot A^{-1} = A^{-1} \cdot A = I
