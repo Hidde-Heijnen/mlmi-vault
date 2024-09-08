@@ -45,6 +45,14 @@ $$
   A \cdot A^{-1} = A^{-1} \cdot A = I
   $$
   - A matrix is invertible if and only if $\det(A) \neq 0$.
+  - A matrix that has an inverse is called invertible. Otherwise, the matrix doesn't have an inverse and is called non-invertible. A square matrix that is non-invertible is called singular.
+#### Inverse of 2x2 matrix
+$$
+  A = \begin{bmatrix} a & b \\ c & d \end{bmatrix}
+  $$
+  $$
+	  A^{-1} = \frac{1}{det(A)} \begin{bmatrix} d & -b \\ -c & d \end{bmatrix}
+  $$
 ### Matrix Rank:
 - The **rank** of a matrix is the maximum number of linearly independent rows or columns in the matrix. It determines the dimensionality of the matrix's row or column space.
 
