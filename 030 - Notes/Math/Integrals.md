@@ -48,3 +48,13 @@ $\int \ln(x) \, dx = x \ln(x) - x + C$
 ## Integrals that are inverse trigonometric functions
 $$ \int \frac{1}{\sqrt{a^2 - x^2}} dx = \arcsin \left(\frac{x}{a}\right) + C $$
 $$ \int \frac{1}{a^2 + x^2} dx = \frac{1}{a} \arctan \left(\frac{x}{a}\right) + C $$
+## U substitution  
+
+### (ax+b)
+By using the substitution \( u = ax + b \), it's straightforward to show that
+
+$$
+\int (ax + b)^n \, dx = \frac{1}{a(n+1)} (ax + b)^{n+1} + C, \quad n \neq -1.
+$$
+
+
