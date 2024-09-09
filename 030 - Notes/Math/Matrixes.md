@@ -23,6 +23,24 @@ $$
 
   - The number of columns in $A$ must equal the number of rows in $B$.
   - Matrix multiplication is **not commutative**: $A \cdot B \neq B \cdot A$.
+#### Matrix-Vector Multiplication
+##### Dot Product Method
+To multiply a matrix $A$ by a vector $\mathbf{x}$, calculate the dot product of each row in $A$ with $\mathbf{x}$.
+Given:
+$$
+A = \begin{bmatrix} a & b \\ c & d \end{bmatrix}, \quad \mathbf{x} = \begin{bmatrix} e \\ f \end{bmatrix}
+$$
+Multiply each row:
+$$
+A\mathbf{x} = \begin{bmatrix} 9 \\ 10 \end{bmatrix}
+$$
+
+##### Alternative: Linear Combination
+Another method is to express the multiplication as a linear combination of the matrix columns scaled by the vector entries. For $A = \begin{bmatrix} a & c \\ b & d \end{bmatrix}$ and $\mathbf{x} = \begin{bmatrix} 3 \\ 2 \end{bmatrix}$:
+
+$$
+A\mathbf{x} = 3 \begin{bmatrix} a \\ b \end{bmatrix} + 2 \begin{bmatrix} c \\ d \end{bmatrix} = \begin{bmatrix} 3a + 2c \\ 3b + 2d \end{bmatrix}
+$$
 ### Transpose of a Matrix:
 - The **transpose** of a matrix $A$ (denoted as $A^T$) is obtained by swapping its rows with its columns:
   $$
