@@ -71,39 +71,32 @@
   $$
   \cos(\alpha \pm \beta) = \cos(\alpha) \cos(\beta) \mp \sin(\alpha) \sin(\beta)
   $$
-- **Tangent**:
-  $$
+- **Tangent**:  $$
   \tan(\alpha \pm \beta) = \frac{\tan(\alpha) \pm \tan(\beta)}{1 \mp \tan(\alpha) \tan(\beta)}
   $$
 ### Double Angle Formulas:
 - **Sine**:
-  $$
+$$
   \sin(2\theta) = 2\sin(\theta)\cos(\theta)
   $$
 - **Cosine**:
-  $$
+$$
   \cos(2\theta) = \cos^2(\theta) - \sin^2(\theta) = 2\cos^2(\theta) - 1 = 1 - 2\sin^2(\theta)
   $$
 - **Tangent**:
-  $$
+$$
   \tan(2\theta) = \frac{2\tan(\theta)}{1 - \tan^2(\theta)}
   $$
 ### Half-Angle Formulas:
-- **Sine**:
-
-  $$
+- **Sine**:  $$
   \sin\left(\frac{\theta}{2}\right) = \pm \sqrt{\frac{1 - \cos(\theta)}{2}}
   $$
-
 - **Cosine**:
-
-  $$
+$$
   \cos\left(\frac{\theta}{2}\right) = \pm \sqrt{\frac{1 + \cos(\theta)}{2}}
   $$
-
 - **Tangent**:
-
-  $$
+$$
   \tan\left(\frac{\theta}{2}\right) = \frac{\sin(\theta)}{1 + \cos(\theta)} = \frac{1 - \cos(\theta)}{\sin(\theta)}
 $$
 ### Inverse Trigonometric Functions:
