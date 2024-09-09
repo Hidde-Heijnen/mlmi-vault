@@ -42,6 +42,24 @@ $$
   \det(A) = \begin{vmatrix} a & b \\ c & d \end{vmatrix} = ad - bc
   $$
 #### 3x3 matrix: 
+That is, if $A = \begin{bmatrix} a & b & c \\ d & e & f \\ g & h & i \end{bmatrix}$, then
+
+$$\begin{vmatrix}
+a & b & c \\
+d & e & f \\
+g & h & i
+\end{vmatrix} = a\begin{vmatrix}
+e & f \\
+h & i
+\end{vmatrix} - b\begin{vmatrix}
+d & f \\
+g & i
+\end{vmatrix} + c\begin{vmatrix}
+d & e \\
+g & h
+\end{vmatrix}$$
+
+$$ = a(ei - fh) - b(di - fg) + c(dh - eg).$$
 ### Inverse Matrix:
 - The **inverse** of a square matrix $A$ (denoted $A^{-1}$) is a matrix such that:  $$
   A \cdot A^{-1} = A^{-1} \cdot A = I
