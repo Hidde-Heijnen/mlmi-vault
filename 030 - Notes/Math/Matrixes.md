@@ -32,14 +32,13 @@ A = \begin{bmatrix} a & b \\ c & d \end{bmatrix}, \quad \mathbf{x} = \begin{bmat
 $$
 Multiply each row:
 $$
-A\mathbf{x} = \begin{bmatrix} 9 \\ 10 \end{bmatrix}
+A\mathbf{x} = \begin{bmatrix} a \cdot e + b \cdot f \\ c \cdot e + d \cdot f \end{bmatrix}
 $$
 
 ##### Alternative: Linear Combination
-Another method is to express the multiplication as a linear combination of the matrix columns scaled by the vector entries. For $A = \begin{bmatrix} a & c \\ b & d \end{bmatrix}$ and $\mathbf{x} = \begin{bmatrix} 3 \\ 2 \end{bmatrix}$:
-
+Another method is to express the multiplication as a linear combination of the matrix columns scaled by the vector entries. For $A = \begin{bmatrix} a & c \\ b & d \end{bmatrix}$ and $\mathbf{x} = \begin{bmatrix} e \\ f \end{bmatrix}$:
 $$
-A\mathbf{x} = 3 \begin{bmatrix} a \\ b \end{bmatrix} + 2 \begin{bmatrix} c \\ d \end{bmatrix} = \begin{bmatrix} 3a + 2c \\ 3b + 2d \end{bmatrix}
+A\mathbf{x} = e \begin{bmatrix} a \\ b \end{bmatrix} + f \begin{bmatrix} c \\ d \end{bmatrix} = \begin{bmatrix} ea + fc \\ eb + fd \end{bmatrix}
 $$
 ### Transpose of a Matrix:
 - The **transpose** of a matrix $A$ (denoted as $A^T$) is obtained by swapping its rows with its columns:
