@@ -94,6 +94,8 @@ $$
   A = \begin{bmatrix} a & b \\ c & d \end{bmatrix}
   $$
 $$A^{-1} = \frac{1}{det(A)} \begin{bmatrix} d & -b \\ -c & d \end{bmatrix}$$
+#### Inverse of a 3x3 Matrix using cofactor Method
+
 ### Matrix Rank:
 - The **rank** of a matrix is the maximum number of linearly independent rows or columns in the matrix. It determines the dimensionality of the matrix's row or column space.
 
