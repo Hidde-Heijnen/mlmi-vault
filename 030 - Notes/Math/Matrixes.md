@@ -96,6 +96,52 @@ $$
 $$A^{-1} = \frac{1}{det(A)} \begin{bmatrix} d & -b \\ -c & d \end{bmatrix}$$
 #### Inverse of a 3x3 Matrix using cofactor Method
 
+To find the inverse of a $3 \times 3$ matrix $A$, follow these steps:
+1. **Find the matrix of minors**: Calculate the minor of each element in the matrix.
+2. **Find the cofactor matrix**: Multiply each minor by $(-1)^{i+j}$ to form the cofactor matrix.
+3. **Find the adjugate**: Transpose the cofactor matrix to get the adjugate matrix.
+4. **Calculate the determinant**: Compute the determinant of matrix $A$, denoted as $\det(A)$.
+5. **Inverse formula**: The inverse is given by:
+$$A^{-1} = \frac{1}{\det(A)} \cdot \text{adj}(A)$$where $\text{adj}(A)$ is the adjugate matrix.
+### Example:
+Given $A = \begin{bmatrix} 1 & 2 & 3 \\ 0 & 1 & 4 \\ 5 & 6 & 0 \end{bmatrix}$:
+1. **Matrix of minors**:
+$$
+\begin{bmatrix} 
+\det\begin{bmatrix} 1 & 4 \\ 6 & 0 \end{bmatrix} & \det\begin{bmatrix} 0 & 4 \\ 5 & 0 \end{bmatrix} & \det\begin{bmatrix} 0 & 1 \\ 5 & 6 \end{bmatrix} \\
+\det\begin{bmatrix} 2 & 3 \\ 6 & 0 \end{bmatrix} & \det\begin{bmatrix} 1 & 3 \\ 5 & 0 \end{bmatrix} & \det\begin{bmatrix} 1 & 2 \\ 5 & 6 \end{bmatrix} \\
+\det\begin{bmatrix} 2 & 3 \\ 1 & 4 \end{bmatrix} & \det\begin{bmatrix} 1 & 3 \\ 0 & 4 \end{bmatrix} & \det\begin{bmatrix} 1 & 2 \\ 0 & 1 \end{bmatrix} 
+\end{bmatrix} = \begin{bmatrix} 
+-24 & 20 & -5 \\
+18 & -15 & -4 \\
+-9 & 3 & 1 
+\end{bmatrix}
+$$
+2. **Cofactor matrix**:
+$$
+\begin{bmatrix} 
+-24 & -20 & -5 \\
+-18 & -15 & 4 \\
+-9 & -3 & 1 
+\end{bmatrix}
+$$
+3. **Adjugate matrix** (transpose of cofactor matrix):
+$$
+\text{adj}(A) = \begin{bmatrix} 
+-24 & -18 & -9 \\
+-20 & -15 & -3 \\
+-5 & 4 & 1 
+\end{bmatrix}
+$$
+4. **Determinant**: $\det(A) = 1(1 \cdot 0 - 4 \cdot 6) - 2(0 \cdot 0 - 4 \cdot 5) + 3(0 \cdot 6 - 1 \cdot 5) = -39$
+5. **Inverse**:
+$$
+A^{-1} = \frac{1}{-39} \cdot \begin{bmatrix} 
+-24 & -18 & -9 \\
+-20 & -15 & -3 \\
+-5 & 4 & 1 
+\end{bmatrix}
+$$
 ### Matrix Rank:
 - The **rank** of a matrix is the maximum number of linearly independent rows or columns in the matrix. It determines the dimensionality of the matrix's row or column space.
 
