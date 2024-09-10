@@ -122,9 +122,10 @@ $$
 \begin{bmatrix} 
 -24 & -20 & -5 \\
 -18 & -15 & 4 \\
--9 & -3 & 1 
+d-9 & -3 & 1 
 \end{bmatrix}
 $$
+
 3. **Adjugate matrix** (transpose of cofactor matrix):
 $$
 \text{adj}(A) = \begin{bmatrix} 
