@@ -67,10 +67,8 @@ $$ = a(ei - fh) - b(di - fg) + c(dh - eg).$$
 The **determinant** of an $N \times N$ matrix is a scalar value that provides important properties of the matrix, such as invertibility.
 ##### Calculating Determinants using Cofactors
 To calculate the determinant, expand along any row or column using cofactors:
-$$
-\det(A) = \sum (-1)^{i+j} \cdot a_{ij} \cdot \det(M_{ij})
-$$
-where $M_{ij}$ is the minor of $a_{ij}$.
+$$\det(A) = \sum (-1)^{i+j} \cdot a_{ij} \cdot \det(M_{ij})$$
+Or  $$\det(A) = \sum a_{1j} \cdot C_{1j}$$where $M_{ij}$ is the minor of $a_{ij}$.
 ### Minor of NxN Matrix
 The **minor** $M_{ij}$ is the determinant of the submatrix formed by removing the $i$-th row and $j$-th column from matrix $A$.
 
