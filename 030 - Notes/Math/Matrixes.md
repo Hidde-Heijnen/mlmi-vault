@@ -77,6 +77,11 @@ g & h
 \end{vmatrix}$$
 
 $$ = a(ei - fh) - b(di - fg) + c(dh - eg).$$
+#### Determinant of NxN matrix
+
+### Minor of NxN matrix
+
+### Cofactor of a NxN matrix
 ### Inverse Matrix:
 - The **inverse** of a square matrix $A$ (denoted $A^{-1}$) is a matrix such that:  $$
   A \cdot A^{-1} = A^{-1} \cdot A = I
