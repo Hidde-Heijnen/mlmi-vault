@@ -147,6 +147,9 @@ A^{-1} = \frac{1}{-39} \cdot \begin{bmatrix}
 -5 & 4 & 1 
 \end{bmatrix}
 $$
+
+### Laplace expension
+A cofactor expension (like we do to get the determinant), but you can use any row. 
 ### Matrix Rank:
 - The **rank** of a matrix is the maximum number of linearly independent rows or columns in the matrix. It determines the dimensionality of the matrix's row or column space.
 
