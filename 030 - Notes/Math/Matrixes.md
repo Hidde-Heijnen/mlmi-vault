@@ -44,6 +44,8 @@ $$  I = \begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix}$$
   - For any matrix $A$, $A \cdot I = A$ and $I \cdot A = A$.
 
 If you multiply a matrix by the xth collumn of the identity matrix alone, you only get the xth collumn of the original matrix. Same for rows. 
+
+If you mix the collumns of an identity matrix you call it a **permutation matrix** you can easily find the inverse of a permutation matrix by doing a transpose. 
 ### Determinant:
 - The **determinant** of a square matrix $A$ (denoted $\det(A)$ or $|A|$) is a scalar value that provides important properties of the matrix (e.g., invertibility). 
 #### For a 2x2 matrix:
