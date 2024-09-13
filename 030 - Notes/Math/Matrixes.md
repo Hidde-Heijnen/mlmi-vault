@@ -88,6 +88,10 @@ To calculate the determinant, expand along any row or column using cofactors:
 $$\det(A) = \sum (-1)^{i+j} \cdot a_{ij} \cdot \det(M_{ij})$$
 Or  $$\det(A) = \sum a_{1j} \cdot C_{1j}$$where $M_{ij}$ is the minor of $a_{ij}$.
 - Adding a multiple of one row to another row preserves the determinant. 
+- switching two rows  or collumns changes the sign of the determinant
+- multiplying a row by a number, scales the determinant by that number
+- multiplying a $n \times n$ by a scalar multiplies the determinant by that number to the power of $n$
+	- $det(k\cdot A) = k^n \cdot det(A)$
 ### Minor of NxN Matrix
 The **minor** $M_{ij}$ is the determinant of the submatrix formed by removing the $i$-th row and $j$-th column from matrix $A$.
 
