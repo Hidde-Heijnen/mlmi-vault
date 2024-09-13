@@ -10,7 +10,7 @@ $$ \cosh(x) = \frac{e^x + e^{-x}}{2}$$
 - range $y\geq 1$
 - it is an even function
 ### **Hyperbolic Tangent** ($\tanh$):
-$$ \tanh(x) = \frac{\sinh(x)}{\cosh(x)} = \frac{e^{2x} - 1}{e^{2x} + 1} = \frac{e^x - e^{-x}}{e^x + e^{-x}} = \frac{1 - e^{-2x}}{e^x + e^{-x}} $$
+$$ \tanh(x) = \frac{\sinh(x)}{\cosh(x)} = \frac{e^{2x} - 1}{e^{2x} + 1} = \frac{e^x - e^{-x}}{e^x + e^{-x}} = \frac{1 - e^{-2x}}{1 + e^{-2x}} $$
 - Its domain is $x \in (-\infty, \infty)$
 - Its range is $y \in (-1, 1)$
 - It has horizontal asymptotes $y = \pm1$
@@ -25,6 +25,14 @@ $$ \text{csch}(x) = \frac{1}{\sinh(x)} $$
 - **Identity**: $$ \cosh^2(x) - \sinh^2(x) = 1 $$  
 - **Derivative of $\sinh(x)$**:   $$ \frac{d}{dx} \sinh(x) = \cosh(x) $$- **Derivative of $\cosh(x)$**:   $$ \frac{d}{dx} \cosh(x) = \sinh(x) $$
 - **Inverse Hyperbolic Functions**: These functions have inverses similar to trigonometric functions, such as $\text{arsinh}(x)$, $\text{arcosh}(x)$, etc.
+
+### Identities
+$$
+cos \theta = cosh(i\theta)
+$$
+$$
+sin \theta = -i\cdot\sinh(i\theta)
+$$
 #### Applications
 Hyperbolic functions are used in:
 - Solving certain types of differential equations.

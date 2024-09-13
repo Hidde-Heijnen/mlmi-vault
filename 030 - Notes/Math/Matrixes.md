@@ -249,6 +249,23 @@ is $$T = \begin{bmatrix} a & b \\ c & d \end{bmatrix}.$$
 For $T: \mathbb{R}^2 \to \mathbb{R}^2$, if $T(\mathbf{e}_1) = \begin{bmatrix} 2 \\ 1 \end{bmatrix}$ and $T(\mathbf{e}_2) = \begin{bmatrix} -1 \\ 3 \end{bmatrix}$, the standard matrix is:
 $$A = \begin{bmatrix} 2 & -1 \\ 1 & 3 \end{bmatrix}$$
 Thus, $T(\mathbf{x}) = A \mathbf{x}$.
+
+### Affine Transformations
+
+An **affine transformation** is a function of the form:
+
+$$ \mathbf{x} = A\mathbf{u} + \mathbf{b} $$
+
+Where:
+- $\mathbf{u}$ is a vector in the input space.
+- $\mathbf{x}$ is a vector in the output space.
+- $A$ is a matrix representing a linear transformation.
+- $\mathbf{b}$ is a vector representing translation.
+
+Affine transformations include translation, scaling, rotation, and shearing, and they preserve points, straight lines, and planes. A linear transformation is a special case of an affine transformation when $\mathbf{b} = 0$. For an affine transformation, $A$ is the matrix representation of the corresponding linear transformation.
+
+Affine transformations can be expressed as a matrix multiplication plus a translation, while non-affine transformations contain terms like quadratic terms (e.g., $uv$), which make them nonlinear.
+
 ### Applications of Matrices:
 - **Linear transformations**: Matrices represent transformations like rotations, scaling, and shearing in geometry.
 - **Systems of linear equations**: Matrices are used to represent and solve multiple equations simultaneously.
