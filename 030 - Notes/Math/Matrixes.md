@@ -218,6 +218,23 @@ $$ ### Eigenvalues and Eigenvectors:
 
   - It is used to solve linear systems and invert matrices efficiently.
 
+### Linear Transformations and Standard Matrix
+A **linear transformation** $T: \mathbb{R}^n \to \mathbb{R}^m$ is a function that satisfies:
+1. **Additivity**: $T(\mathbf{u} + \mathbf{v}) = T(\mathbf{u}) + T(\mathbf{v})$
+2. **Homogeneity**: $T(c \mathbf{u}) = c T(\mathbf{u})$
+#### Standard Matrix of a Linear Transformation
+If $T: \mathbb{R}^n \to \mathbb{R}^m$ is a linear transformation, the **standard matrix** $A$ associated with $T$ is the matrix such that:
+$$T(\mathbf{x}) = A \mathbf{x}$$
+where $A = \begin{bmatrix} T(\mathbf{e}_1) & T(\mathbf{e}_2) & \cdots & T(\mathbf{e}_n) \end{bmatrix}$ and $\mathbf{e}_i$ are the standard basis vectors in $\mathbb{R}^n$.
+
+In general, the standard matrix of the linear transformation $T$ in R2 (but works the same for higher dimensions):
+$$\textbf{T}: \begin{bmatrix} x \\ y \end{bmatrix} \longrightarrow \begin{bmatrix} ax + by \\ cx + dy \end{bmatrix}$$
+is $$T = \begin{bmatrix} a & b \\ c & d \end{bmatrix}.$$
+
+#### Example
+For $T: \mathbb{R}^2 \to \mathbb{R}^2$, if $T(\mathbf{e}_1) = \begin{bmatrix} 2 \\ 1 \end{bmatrix}$ and $T(\mathbf{e}_2) = \begin{bmatrix} -1 \\ 3 \end{bmatrix}$, the standard matrix is:
+$$A = \begin{bmatrix} 2 & -1 \\ 1 & 3 \end{bmatrix}$$
+Thus, $T(\mathbf{x}) = A \mathbf{x}$.
 ### Applications of Matrices:
 - **Linear transformations**: Matrices represent transformations like rotations, scaling, and shearing in geometry.
 - **Systems of linear equations**: Matrices are used to represent and solve multiple equations simultaneously.
