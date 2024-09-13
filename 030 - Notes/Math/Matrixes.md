@@ -87,6 +87,7 @@ The **determinant** of an $N \times N$ matrix is a scalar value that provides im
 To calculate the determinant, expand along any row or column using cofactors:
 $$\det(A) = \sum (-1)^{i+j} \cdot a_{ij} \cdot \det(M_{ij})$$
 Or  $$\det(A) = \sum a_{1j} \cdot C_{1j}$$where $M_{ij}$ is the minor of $a_{ij}$.
+- Adding a multiple of one row to another row preserves the determinant. 
 ### Minor of NxN Matrix
 The **minor** $M_{ij}$ is the determinant of the submatrix formed by removing the $i$-th row and $j$-th column from matrix $A$.
 
@@ -262,10 +263,11 @@ Where:
 - $A$ is a matrix representing a linear transformation.
 - $\mathbf{b}$ is a vector representing translation.
 
-Affine transformations include translation, scaling, rotation, and shearing, and they preserve points, straight lines, and planes. A linear transformation is a special case of an affine transformation when $\mathbf{b} = 0$. For an affine transformation, $A$ is the matrix representation of the corresponding linear transformation.
+Affine transformations include translation, scaling, rotation, and shearing, and they preserve points, straight lines, and planes. 
+- A linear transformation is a special case of an affine transformation when $\mathbf{b} = 0$. 
+- For an affine transformation, $A$ is the matrix representation of the corresponding linear transformation.
 
 Affine transformations can be expressed as a matrix multiplication plus a translation, while non-affine transformations contain terms like quadratic terms (e.g., $uv$), which make them nonlinear.
-
 ### Applications of Matrices:
 - **Linear transformations**: Matrices represent transformations like rotations, scaling, and shearing in geometry.
 - **Systems of linear equations**: Matrices are used to represent and solve multiple equations simultaneously.
