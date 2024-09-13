@@ -67,6 +67,21 @@ d & e \\
 g & h
 \end{vmatrix}$$
 $$ = a(ei - fh) - b(di - fg) + c(dh - eg).$$
+#### Special Matrices and Determinants
+
+For certain matrices, such as triangular or diagonal matrices, we can compute determinants quickly using a few key properties:
+
+1. **Identity Matrix**:  
+   The determinant of an $n \times n$ identity matrix is 1.  
+   $$ \det(I) = 1 $$
+
+2. **Triangular or Diagonal Matrices**:  
+   The determinant of a triangular or diagonal matrix is the product of the entries on the main diagonal.  
+   For matrix $A$:  
+$$ \det(A) = 4 \cdot 2 \cdot (-3) \cdot (-1) = 24 $$
+   For matrix $B$:  $$ \det(B) = 3 \cdot 2 \cdot 4 \cdot 1 \cdot (-2) = -48 $$
+3. **Transpose Property**:  
+   The determinant of a matrix and its transpose are the same:   $$ \det(A^T) = \det(A) $$
 #### Determinant of NxN Matrix
 The **determinant** of an $N \times N$ matrix is a scalar value that provides important properties of the matrix, such as invertibility.
 ##### Calculating Determinants using Cofactors
