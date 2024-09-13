@@ -73,9 +73,7 @@ $$ = a(ei - fh) - b(di - fg) + c(dh - eg).$$
 For certain matrices, such as triangular or diagonal matrices, we can compute determinants quickly using a few key properties:
 
 1. **Identity Matrix**:  
-   The determinant of an $n \times n$ identity matrix is 1.  
-   $$ \det(I) = 1 $$
-
+   The determinant of an $n \times n$ identity matrix is 1.  $$ \det(I) = 1 $$
 2. **Triangular or Diagonal Matrices**:  
    The determinant of a triangular or diagonal matrix is the product of the entries on the main diagonal.  
    For matrix $A$:  
