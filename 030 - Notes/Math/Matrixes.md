@@ -19,8 +19,7 @@ $$C_{ij} = \sum_{k=1}^{n} a_{ik} \cdot b_{kj}$$
   - The number of columns in $A$ must equal the number of rows in $B$.
   - Matrix multiplication is **not commutative**: $A \cdot B \neq B \cdot A$.
   - Matrix multiplication is **distributive**: $(A+B)C = AC+BC$ , $C(A+B) = CA + CB$
-  - If $A$, $B$  and $C$  are three matrices that are conformable for multiplication, then they follow the associative law:
-
+  - If $A$, $B$  and $C$  are three matrices that are conformable for multiplication, then they follow the associative law: $(AB)C = A(BC)$
 
 #### Matrix-Vector Multiplication
 ##### Dot Product Method
