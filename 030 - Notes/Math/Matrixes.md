@@ -18,6 +18,7 @@
 $$C_{ij} = \sum_{k=1}^{n} a_{ik} \cdot b_{kj}$$
   - The number of columns in $A$ must equal the number of rows in $B$.
   - Matrix multiplication is **not commutative**: $A \cdot B \neq B \cdot A$.
+  - Matrix multiplication is **distributive**: $(A+B)C = AC+BC$ , $C(A+B) = CA + CB$
 #### Matrix-Vector Multiplication
 ##### Dot Product Method
 To multiply a matrix $A$ by a vector $\mathbf{x}$, calculate the dot product of each row in $A$ with $\mathbf{x}$.
