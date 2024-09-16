@@ -180,9 +180,21 @@ A cofactor expension (like we do to get the determinant), but you can use any ro
 
 ### Symmetric Matrix:
 - A matrix $A$ is **symmetric** if $A = A^T$, meaning the matrix is equal to its transpose:
-  $$
-  A = \begin{bmatrix} a & b \\ b & c \end{bmatrix}
-  $$
+- Must be square matrix
+  $$A = \begin{bmatrix} a & b \\ b & c \end{bmatrix}$$$$A = \begin{bmatrix}
+a & b & c \\
+b & d & e \\
+c & e & f
+\end{bmatrix}$$
+- Suppose $A$ is a symmetric matrix, then:
+	- $-A$ is symmetric
+	- $A^m$ is symmetric for any positive integer $m$
+	- $A^{-1}$ is symmetric for nonsingular $A$
+- $A + A^T$ is symmetric for **any** square matrix A
+- $A^TA$ and $AA^T$ are symmetric for any matrix $A$ (doesn't have to be square) 
+- If $A$ and $B$ are NxN symmetric matrices we have the following properties
+	- $A + B$ is symmetric
+	- The product $A \cdot B$ is **not** always symmetric
 ### Diagonal Matrix:
 - A **diagonal matrix** is a square matrix in which all off-diagonal elements are zero:
   $$
