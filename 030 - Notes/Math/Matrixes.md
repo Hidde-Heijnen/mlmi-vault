@@ -21,8 +21,9 @@ $$C_{ij} = \sum_{k=1}^{n} a_{ik} \cdot b_{kj}$$
   - Matrix multiplication is **distributive**: $(A+B)C = AC+BC$ , $C(A+B) = CA + CB$
   - If $A$, $B$  and $C$  are three matrices that are conformable for multiplication, then they follow the associative law: $(AB)C = A(BC)$
 #### Powers of matrixes
-$A^n$ is matrix $A$ mul
-
+$A^n$ is matrix $A$ multiplied with itself $n$ times. 
+- $A$ needs to be a square matrix to be conformable with itself. 
+- $A^0 = I$, the identity matrix of the same dimensions as $A$
 #### Matrix-Vector Multiplication
 ##### Dot Product Method
 To multiply a matrix $A$ by a vector $\mathbf{x}$, calculate the dot product of each row in $A$ with $\mathbf{x}$.
