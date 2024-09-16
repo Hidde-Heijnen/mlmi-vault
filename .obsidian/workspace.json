@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "030 - Notes/Math/Matrixes.md",
+                "file": "030 - Notes/Math/Linear transformations.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "030 - Notes/Math/Matrixes.md",
+                "file": "030 - Notes/Math/Linear transformations.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "030 - Notes/Math/Matrixes.md",
+                "file": "030 - Notes/Math/Linear transformations.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "030 - Notes/Math/Matrixes.md"
+                "file": "030 - Notes/Math/Linear transformations.md"
               }
             }
           }
@@ -165,16 +165,17 @@
   },
   "active": "e34c6d1ee505e1c5",
   "lastOpenFiles": [
+    "030 - Notes/Math/Coordinate systems.md",
+    "030 - Notes/Math/Linear transformations.md",
+    "030 - Notes/Math/Derivatives.md",
+    "030 - Notes/Math/Distributions.md",
+    "030 - Notes/Math/Eulers formula.md",
+    "030 - Notes/Math/hyperbolic functions.md",
+    "030 - Notes/Math/Matrixes.md",
     "030 - Notes/Math/Trigonomitry.md",
     "030 - Notes/Math/Trig identities.md",
-    "030 - Notes/Math/Matrixes.md",
-    "030 - Notes/Math/hyperbolic functions.md",
-    "030 - Notes/Math/Eulers formula.md",
-    "030 - Notes/Math/Distributions.md",
     "030 - Notes/Math/Vectors.md",
-    "030 - Notes/Math/Coordinate systems.md",
     "030 - Notes/Math/Integrals.md",
-    "030 - Notes/Math/Derivatives.md",
     "030 - Notes/Math/Logarithms.md",
     "z - Attachments/Pasted image 20240907172755.png",
     "040 - Tags/basic income.md",
@@ -203,7 +204,6 @@
     "Untitled.md",
     "999 - Inbox/test.md",
     "000 - Introduction/001 - Welcome to the MLMI Vault.md",
-    "Readme.md",
-    "z - Templates/Research Resource Template.md"
+    "Readme.md"
   ]
 }
