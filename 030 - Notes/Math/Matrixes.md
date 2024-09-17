@@ -117,7 +117,7 @@ $$
 - The **inverse** of a square matrix $A$ (denoted $A^{-1}$) is a matrix such that:  $$
   A \cdot A^{-1} = A^{-1} \cdot A = I $$
   - A matrix is invertible if and only if $\det(A) \neq 0$.
-  - A matrix that has an inverse is called invertible. Otherwise, the matrix doesn't have an inverse and is called non-invertible. A square matrix that is non-invertible is called singular.
+  - A matrix that has an inverse is called invertible/regular/nonsingular. Otherwise, the matrix doesn't have an inverse and is called non-invertible. A square matrix that is non-invertible is called singular.
 #### Inverse of 2x2 matrix
 $$
   A = \begin{bmatrix} a & b \\ c & d \end{bmatrix}
