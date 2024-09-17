@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "030 - Notes/Math/Matrixes.md",
+                "file": "010 - Classes/MLMI1/Probabilistic modeling and Inference youtube playlist.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "030 - Notes/Math/Matrixes.md",
+                "file": "010 - Classes/MLMI1/Probabilistic modeling and Inference youtube playlist.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "030 - Notes/Math/Matrixes.md",
+                "file": "010 - Classes/MLMI1/Probabilistic modeling and Inference youtube playlist.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "030 - Notes/Math/Matrixes.md"
+                "file": "010 - Classes/MLMI1/Probabilistic modeling and Inference youtube playlist.md"
               }
             }
           }
@@ -163,8 +163,10 @@
       "jupyter:Create Jupyter Notebook": false
     }
   },
-  "active": "1b9c0ca6e568a32b",
+  "active": "e34c6d1ee505e1c5",
   "lastOpenFiles": [
+    "030 - Notes/Math/Matrixes.md",
+    "010 - Classes/MLMI1/Probabilistic modeling and Inference youtube playlist.md",
     "010 - Classes/MLMI1",
     "030 - Notes/Math/Linear transformations.md",
     "030 - Notes/Math/Coordinate systems.md",
@@ -172,7 +174,6 @@
     "030 - Notes/Math/Distributions.md",
     "030 - Notes/Math/Eulers formula.md",
     "030 - Notes/Math/hyperbolic functions.md",
-    "030 - Notes/Math/Matrixes.md",
     "030 - Notes/Math/Trigonomitry.md",
     "030 - Notes/Math/Trig identities.md",
     "030 - Notes/Math/Vectors.md",
@@ -194,7 +195,6 @@
     "z - Attachments/09-titanic.csv",
     "030 - Notes/Codebasics - Machine Learning Python course/Notebooks/09-decision-tree.ipynb",
     "030 - Notes/Codebasics - Machine Learning Python course/Notebooks/09-",
-    "030 - Notes/Codebasics - Machine Learning Python course/Notebooks/08-log-reg-muliclass.ipynb",
     "z - Attachments/linear regression sv.png",
     "z - Attachments/CleanShot 2024-05-21 at 21.14.49.png",
     "030 - Notes/Codebasics - Machine Learning Python course/Untitled/Untitled.md",
