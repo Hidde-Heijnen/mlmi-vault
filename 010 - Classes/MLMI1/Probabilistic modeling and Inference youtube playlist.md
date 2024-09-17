@@ -1,3 +1,9 @@
+---
+aliases:
+  - MLMI playlist summary
+link: https://www.youtube.com/playlist?list=PLyXv258Xt2PRhkou67NwiQD9OmiNMzdfa
+---
+
 **Inference problem**: A problem where you have to **estimate unknown variables** from **known variables** 
 - Known variables are sometimes called **observed variables**
 - unknown variables are sometimes called **unobserved (or latent/hidden) variables**
@@ -11,4 +17,8 @@
 		**Product rule**: $p(y,z) = p(z)p(y|z) = p(y)p(z|y)$
 		Using these two rules is the only way to perform consistent inferences. If we don't use these rules things like order will start to matter and our answer will be different. Cox(1946)
 		**Bayes' rule**: $p(y|z) = \frac{p(y)p(z|y)}{p(z)}$ is derived from the product rule 
+			$p(y)$ is the prior distribution, and it is what we knew before we see any data
+			$p(z|y)$ is what the data tells us (likelihood of parameters)
+			$p(y|z)$ is the plausibility after observing data (posterior)
+			$p(z)$ is more of a normalizing constant
 1.  
