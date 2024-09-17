@@ -15,10 +15,12 @@ link: https://www.youtube.com/playlist?list=PLyXv258Xt2PRhkou67NwiQD9OmiNMzdfa
 			If you have a joint probability of y and z, and you want to compute just the probability of y, you have to sum out all of the z variables (for continious functions you need to integrate, for discrete values: $p(y) = \sum_{z} p(y,z)$)
 			We call the $p(y)$ the **marginal probability** of y and $p(y,z)$ the **joint probability of y and z**
 		**Product rule**: $p(y,z) = p(z)p(y|z) = p(y)p(z|y)$
-		Using these two rules is the only way to perform consistent inferences. If we don't use these rules things like order will start to matter and our answer will be different. Cox(1946)
+		Using these two rules is the only way to perform consistent inferences. If we don't use these rules things like order will start to matter and our answer will be different. We should take into account all evidence (can't leave out some data), and if you can reason in more than one way, then each must lead to the same answer. equivalent states of knowledge imply same plausibility assignment. 
+		Cox(1946)
 		**Bayes' rule**: $p(y|z) = \frac{p(y)p(z|y)}{p(z)}$ is derived from the product rule 
 			$p(y)$ is the prior distribution, and it is what we knew before we see any data
 			$p(z|y)$ is what the data tells us (likelihood of parameters)
 			$p(y|z)$ is the plausibility after observing data (posterior)
 			$p(z)$ is more of a normalizing constant
+		
 1.  
