@@ -35,13 +35,14 @@ var import_events = require("events");
 var import_obsidian = require("obsidian");
 var import_path = require("path");
 var JupyterEnvironment = class {
-  constructor(path, printDebug, pythonExecutable, jupyterTimeoutMs, type, customConfigFolderPath) {
+  constructor(path, printDebug, pythonExecutable, jupyterTimeoutMs, type, customConfigFolderPath, useSimpleMode) {
     this.path = path;
     this.printDebug = printDebug;
     this.pythonExecutable = pythonExecutable;
     this.jupyterTimeoutMs = jupyterTimeoutMs;
     this.type = type;
     this.customConfigFolderPath = customConfigFolderPath;
+    this.useSimpleMode = useSimpleMode;
     this.jupyterProcess = null;
     this.jupyterLog = [];
     this.jupyterPort = null;
@@ -147,6 +148,12 @@ var JupyterEnvironment = class {
   getCustomConfigFolderPath() {
     return this.customConfigFolderPath;
   }
+  setUseSimpleMode(value) {
+    this.useSimpleMode = value;
+  }
+  getUseSimpleMode() {
+    return this.useSimpleMode;
+  }
   getJupyterTimeoutMs() {
     return this.jupyterTimeoutMs;
   }
@@ -172,13 +179,13 @@ var JupyterEnvironment = class {
     return this.jupyterLog[this.jupyterLog.length - 1];
   }
   /**
-   * @param file The path of the file relative to the Jupyter environment's working directy.
+   * @param file The path of the file relative to the Jupyter environment's working directory.
    */
   getFileUrl(file) {
     if (!this.isRunning()) {
       return null;
     }
-    return `http://localhost:${this.jupyterPort}/${this.runningType === "notebook" /* NOTEBOOK */ ? "notebooks" : "lab/tree"}/${file}?token=${this.jupyterToken}`;
+    return "http://localhost:" + this.jupyterPort + "/" + (this.runningType === "notebook" /* NOTEBOOK */ ? "notebooks" : this.useSimpleMode ? "doc/tree" : "lab/tree") + "/" + file + "?token=" + this.jupyterToken;
   }
   exit() {
     if (this.getStatus() !== "exited" /* EXITED */ && this.jupyterProcess !== null) {
@@ -416,6 +423,7 @@ var DEFAULT_SETTINGS = {
   pythonExecutablePath: "",
   startJupyterAuto: true,
   jupyterEnvType: "lab" /* LAB */,
+  useSimpleMode: true,
   deleteCheckpoints: false,
   moveCheckpointsToTrash: true,
   checkpointsFolder: "",
@@ -467,6 +475,11 @@ var JupyterSettingsTab = class extends import_obsidian4.PluginSettingTab {
         if (this.plugin.env.getStatus() !== "exited" /* EXITED */) {
           new JupyterRestartModal(this.plugin, "Jupyter environment type").open();
         }
+      }).bind(this));
+    }).bind(this));
+    new import_obsidian4.Setting(this.containerEl).setName("Simple interface").setDesc("Whether to use Jupyter's Simple Interface mode when opening a notebook.").addToggle(((toggle) => {
+      toggle.setValue(this.plugin.settings.useSimpleMode).onChange((async (value) => {
+        await this.plugin.setUseSimpleMode(value);
       }).bind(this));
     }).bind(this));
     new import_obsidian4.Setting(this.containerEl).setName("Delete Jupyter checkpoints").setDesc("To keep your Obsidian vault clean. Does not work retroactively. Restarting Jupyter is required for the setting to take effect.").addToggle(((toggle) => {
@@ -820,7 +833,8 @@ var JupyterNotebookPlugin = class extends import_obsidian7.Plugin {
       DEFAULT_SETTINGS.pythonExecutable === "python" /* PYTHON */ ? "python" : DEFAULT_SETTINGS.pythonExecutablePath,
       DEFAULT_SETTINGS.jupyterTimeoutMs,
       DEFAULT_SETTINGS.jupyterEnvType,
-      null
+      null,
+      DEFAULT_SETTINGS.useSimpleMode
     );
     this.envProperlyInitialized = false;
     this.startEnvOnceInitialized = false;
@@ -845,6 +859,7 @@ var JupyterNotebookPlugin = class extends import_obsidian7.Plugin {
     if (this.startEnvOnceInitialized) {
       this.toggleJupyter();
     }
+    (0, import_obsidian7.addIcon)("jupyter-logo", `<path fill="currentColor" d="m 51.4537,74.98344 c -15.406714,0 -29.180954,-5.68784 -36.479994,-13.79248 2.83328,7.29904 7.71248,13.79248 14.187674,18.24 6.493446,4.46576 14.187686,6.8856 22.29232,6.8856 8.10464,0 15.82016,-2.41984 22.29232,-6.8856 C 80.239467,74.98344 85.100427,68.49 87.933707,61.19096 80.634667,69.29864 66.86042,74.98344 51.4537,74.98344 Z m 0,-53.5192 c 15.40672,0 29.180967,5.68784 36.480007,13.79248 -2.83328,-7.29904 -7.69424,-13.79248 -14.187687,-18.24 -6.8856,-4.86096 -14.57984,-7.29904 -22.29232,-7.29904 -8.107674,0 -15.798874,2.44112 -22.29232,6.8856 C 22.689226,21.46424 17.806986,27.54424 14.973706,35.25672 22.272746,26.7356 35.654826,21.46424 51.4537,21.46424 Z M 79.829067,2.02344 c -7.566567,0 -7.566567,11.33312 0,11.33312 7.56656,0 7.56656,-11.33312 0,-11.33312 z M 22.689226,83.89672 c -4.04016,0 -7.299046,3.25888 -7.299046,7.29904 0,4.02192 3.258886,7.2808 7.299046,7.2808 4.021914,0 7.280794,-3.25888 7.280794,-7.2808 0,-4.04016 -3.258874,-7.29904 -7.280794,-7.29904 z m -6.08,-72.96 c -5.414243,0 -5.414243,8.10768 0,8.10768 5.399034,0 5.399034,-8.10768 0,-8.10768 z" id="path1" style="stroke-width:3.04" />`);
     if (this.settings.displayServerRibbonIcon) {
       this.serverRibbonIcon = this.addRibbonIcon("monitor-play", "Start Jupyter Server", this.toggleJupyter.bind(this));
     }
@@ -864,7 +879,6 @@ var JupyterNotebookPlugin = class extends import_obsidian7.Plugin {
     this.registerView("jupyter-view", (leaf) => new EmbeddedJupyterView(leaf, this));
     this.registerExtensions(["ipynb"], "jupyter-view");
     this.addSettingTab(new JupyterSettingsTab(this.app, this));
-    (0, import_obsidian7.addIcon)("jupyter-logo", `<path fill="currentColor" d="m 51.4537,74.98344 c -15.406714,0 -29.180954,-5.68784 -36.479994,-13.79248 2.83328,7.29904 7.71248,13.79248 14.187674,18.24 6.493446,4.46576 14.187686,6.8856 22.29232,6.8856 8.10464,0 15.82016,-2.41984 22.29232,-6.8856 C 80.239467,74.98344 85.100427,68.49 87.933707,61.19096 80.634667,69.29864 66.86042,74.98344 51.4537,74.98344 Z m 0,-53.5192 c 15.40672,0 29.180967,5.68784 36.480007,13.79248 -2.83328,-7.29904 -7.69424,-13.79248 -14.187687,-18.24 -6.8856,-4.86096 -14.57984,-7.29904 -22.29232,-7.29904 -8.107674,0 -15.798874,2.44112 -22.29232,6.8856 C 22.689226,21.46424 17.806986,27.54424 14.973706,35.25672 22.272746,26.7356 35.654826,21.46424 51.4537,21.46424 Z M 79.829067,2.02344 c -7.566567,0 -7.566567,11.33312 0,11.33312 7.56656,0 7.56656,-11.33312 0,-11.33312 z M 22.689226,83.89672 c -4.04016,0 -7.299046,3.25888 -7.299046,7.29904 0,4.02192 3.258886,7.2808 7.299046,7.2808 4.021914,0 7.280794,-3.25888 7.280794,-7.2808 0,-4.04016 -3.258874,-7.29904 -7.280794,-7.29904 z m -6.08,-72.96 c -5.414243,0 -5.414243,8.10768 0,8.10768 5.399034,0 5.399034,-8.10768 0,-8.10768 z" id="path1" style="stroke-width:3.04" />`);
     this.app.workspace.on("quit", async (_tasks) => {
       await this.onunload();
     });
@@ -974,6 +988,11 @@ var JupyterNotebookPlugin = class extends import_obsidian7.Plugin {
     this.settings.jupyterEnvType = value;
     await this.saveSettings();
     this.env.setType(value);
+  }
+  async setUseSimpleMode(value) {
+    this.settings.useSimpleMode = value;
+    await this.saveSettings();
+    this.env.setUseSimpleMode(value);
   }
   async setDeleteCheckpoints(value) {
     this.settings.deleteCheckpoints = value;
