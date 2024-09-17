@@ -163,8 +163,9 @@
       "jupyter:Create Jupyter Notebook": false
     }
   },
-  "active": "e34c6d1ee505e1c5",
+  "active": "1b9c0ca6e568a32b",
   "lastOpenFiles": [
+    "010 - Classes/MLMI1",
     "030 - Notes/Math/Linear transformations.md",
     "030 - Notes/Math/Coordinate systems.md",
     "030 - Notes/Math/Derivatives.md",
@@ -203,7 +204,6 @@
     "030 - Notes/Resource Title.md",
     "Untitled.md",
     "999 - Inbox/test.md",
-    "000 - Introduction/001 - Welcome to the MLMI Vault.md",
-    "Readme.md"
+    "000 - Introduction/001 - Welcome to the MLMI Vault.md"
   ]
 }
