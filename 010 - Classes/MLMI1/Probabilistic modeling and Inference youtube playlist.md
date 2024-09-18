@@ -112,12 +112,12 @@ $$\mathcal{D} = \{ \mathbf{x}_1, \dots, \mathbf{x}_N \} \rightarrow \mathbf{s} =
 ### K means algorithm
 Input: $D = \{x_1, \dots, x_N\}, \ x_n \in \mathbb{R}^D$
 
-Initialise: $m_k \in \mathbb{R}^D$ for $k = 1 \dots K$                                                       (m is cluster centers, randomly)
+Initialise: $m_k \in \mathbb{R}^D$ for $k = 1 \dots K$                                                       (m is cluster centres, randomly)
 Repeat:
 	For $n = 1 \dots N$:                         Assignment step:
-	  $s_n = \arg \min_k \|x_n - m_k\|$        (for each point measure which the closest cluster center is)
-	 For $k = 1 \dots K$:
-	  $m_k = \text{mean}(x_n : s_n = k)$            (update cluster centers with the mean )
-Until convergence ($s_n$ fixed)
+	  $s_n = \arg \min_k \|x_n - m_k\|$        (for each point measure which the closest cluster centre is)
+	 For $k = 1 \dots K$:                         (Update step)
+	  $m_k = \text{mean}(x_n : s_n = k)$        (update cluster centres with the mean of allocated datapoints)
+Until convergence ($s_n$ fixed).         The sn's don't change anymore
 
-. 
+- If no points assigned to cluster, do not change the centre. 
