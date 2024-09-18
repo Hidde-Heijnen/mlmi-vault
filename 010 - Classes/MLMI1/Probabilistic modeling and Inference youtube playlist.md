@@ -44,3 +44,24 @@ $$\lambda^{ML} = \arg \max_{\lambda} p(\{x_n\}_{n=1}^N | \lambda)$$
 	- Maximum likelihood estimate focusses on optimizing on the data, and doesn't involve the prior. So doesn't involve any prior knowledge we have about or hidden variables or that it is a uniform distribution. 
 
 ### Bayesian Decision Theory
+- **Posterior probabilities**:
+  - The posterior probabilities of possible actions are computed given some observation or condition. For example:$$p(a = 1 | b = 1) = \frac{1}{2}, \quad p(a = 0 | b = 1) = \frac{1}{2}$$
+- **Rewards**:
+  - The rewards associated with different actions and outcomes (states) are represented as a matrix:$$\begin{bmatrix}
+  R(a = 0, t = 0) & R(a = 0, t = 1) \\
+  R(a = 1, t = 0) & R(a = 1, t = 1)
+  \end{bmatrix}
+  =
+  \begin{bmatrix}
+  10 & 7 \\
+  3 & 5
+  \end{bmatrix}$$
+- **Conditional Reward**:
+  - The conditional reward $R(t)$ is calculated by summing over all possible actions $a$, weighted by the posterior probabilities of those actions:$$R(t) = \sum_{a} R(a, t) p(a | b = 1)$$
+  - This shows how we can separate **inference** (determining the posterior probability) and **decision making** (choosing an action to maximize expected reward).
+
+- **Example**: 
+  - **Conditional reward for not treating** ($t = 0$):
+$$R(t = 0) = R(a = 0, t = 0) p(a = 0 | b = 1) + R(a = 1, t = 0) p(a = 1 | b = 1) = 6 \frac{1}{2}$$
+  - **Conditional reward for treating** ($t = 1$):
+$$R(t = 1) = R(a = 0, t = 1) p(a = 0 | b = 1) + R(a = 1, t = 1) p(a = 1 | b = 1) = 6$$
