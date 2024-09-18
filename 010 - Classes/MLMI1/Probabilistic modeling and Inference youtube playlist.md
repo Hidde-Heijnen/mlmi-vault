@@ -41,4 +41,6 @@ $$\lambda^{MAP} = \arg \max_{\lambda} p(\lambda | \{x_n\}_{n=1}^N) = \arg \max_{
 - or **maximum likelihood** estimate is recovered when using a wide uniform prior distribution
 $$\lambda^{ML} = \arg \max_{\lambda} p(\{x_n\}_{n=1}^N | \lambda)$$
 	- If you use wide uniform prior distribution MAP will actually correlate to the maximum likelihood distribution
-	- Maximum likelihood estimate focusses on optimizing on the data, and doesn't involve the prior. So doesn't involve any prior knowled
+	- Maximum likelihood estimate focusses on optimizing on the data, and doesn't involve the prior. So doesn't involve any prior knowledge we have about or hidden variables or that it is a uniform distribution. 
+
+### Bayesian Decision Theory
