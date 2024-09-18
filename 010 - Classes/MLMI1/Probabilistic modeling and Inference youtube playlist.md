@@ -103,4 +103,7 @@ $$\text{Model: } f(x_1, x_2, \dots) \quad \text{No labels or outputs provided.}$
 ## Clustering
 Two points belonging to the same cluster are generally more similar to each-other than two points in different clusters. 
 - The model takes a set of datapoints and a number of clusters that it has to find, and it will assign the data to that numbers of clusters. 
-- Notation
+- **Notation:** 
+$$\mathcal{D} = \{ \mathbf{x}_1, \dots, \mathbf{x}_N \} \rightarrow \mathbf{s} = \{ s_1, \dots, s_N \}$$
+	where $D = \text{dim}(\mathbf{x}_n)$ and $s_n \in \{ 1, \dots, K \}$
+
