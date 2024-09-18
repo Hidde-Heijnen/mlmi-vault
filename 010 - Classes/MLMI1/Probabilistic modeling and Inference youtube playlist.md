@@ -22,5 +22,6 @@ link: https://www.youtube.com/playlist?list=PLyXv258Xt2PRhkou67NwiQD9OmiNMzdfa
 			$p(z|y)$ is what the data tells us (likelihood of parameters)
 			$p(y|z)$ is the plausibility after observing data (posterior)
 			$p(z)$ is more of a normalizing constant
-		
-1.  
+
+## Summarising the posterior distribution
+1. MAP (Maximum a posteriori): $\lambda_{MAP} = \arg \max p(\lambda | \{x_n\}_{n=1}^N)$ + Error-bars (for example the full width of the distribution at the half maximum point)
