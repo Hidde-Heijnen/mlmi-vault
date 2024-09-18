@@ -83,7 +83,10 @@ The machine experiences a series of sensory inputs: $x_1, x_2, x_3, x_4, \dots$
 - **Supervised Learning**:
   - The machine is also given the desired outputs $y_1, y_2, \dots$
   - Its goal is to learn to **produce the correct output given a new input**.$$\text{Input: } x_1, x_2, \dots \quad \text{Output: } y_1, y_2, \dots$$
-  - Regression
+  - Regression: computer vision, weather, demand forecasting etc
+  - Classification: exactly the same as a regression problem, but the outputs are now discrete valued instead of real valued. 
+	  - Object recognition, speech recognition, face recognition, grouping etc. 
+	  - x classes, with decision boundaries. 
 - **Unsupervised Learning**:
   - The goal of the machine is to **build a model of** $x$ that can be used for reasoning, decision making, predicting things, communicating, etc.
   - Clustering (like spam filtering)
