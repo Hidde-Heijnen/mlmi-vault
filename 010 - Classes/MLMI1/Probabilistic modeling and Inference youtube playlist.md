@@ -3,6 +3,11 @@ aliases:
   - MLMI playlist summary
 link: https://www.youtube.com/playlist?list=PLyXv258Xt2PRhkou67NwiQD9OmiNMzdfa
 ---
+## Books
+- Machine Learning: a Probabilistic Perspective - Kevin Patrick Murphy
+- Pattern Recognition and Machine Learning - Christopher Bishop
+- Bayesian Reasoning and Machine Learning - David Barber
+- Information Theory, Inference and Learning Algorithms - David JC MacKay
 
 **Inference problem**: A problem where you have to **estimate unknown variables** from **known variables** 
 - Known variables are sometimes called **observed variables**
@@ -89,10 +94,10 @@ The machine experiences a series of sensory inputs: $x_1, x_2, x_3, x_4, \dots$
 	  - x classes, with decision boundaries. 
 - **Unsupervised Learning**:
   - The goal of the machine is to **build a model of** $x$ that can be used for reasoning, decision making, predicting things, communicating, etc.
-  - Clustering (like spam filtering)
 $$\text{Model: } f(x_1, x_2, \dots) \quad \text{No labels or outputs provided.}$$
+  - Clustering (like spam filtering, network community detection, image segmentation): seeing what similar features similar data has. 
+  - Dimensionality Reduction: Summarize more complex things by the position on the manifold. Or as a preprocessing/feature learning: reducing computational complexity imporoving statistical efficiency. 
 - **Reinforcement Learning**:
   - The machine can also produce actions $a_1, a_2, \dots$, which affect the state of the world, and receives rewards (or punishments) $r_1, r_2, \dots$
   - Its goal is to **learn to act in a way that maximizes rewards in the long term**.$$\text{Actions: } a_1, a_2, \dots \quad \text{Rewards: } r_1, r_2, \dots$$
-
-
+## Clustering
