@@ -103,7 +103,21 @@ $$\text{Model: } f(x_1, x_2, \dots) \quad \text{No labels or outputs provided.}$
 ## Clustering
 Two points belonging to the same cluster are generally more similar to each-other than two points in different clusters. 
 - The model takes a set of datapoints and a number of clusters that it has to find, and it will assign the data to that numbers of clusters. 
+-  Unsupervised learning problem (no labels or rewards)
 - **Notation:** 
 $$\mathcal{D} = \{ \mathbf{x}_1, \dots, \mathbf{x}_N \} \rightarrow \mathbf{s} = \{ s_1, \dots, s_N \}$$
 	where $D = \text{dim}(\mathbf{x}_n)$ and $s_n \in \{ 1, \dots, K \}$
+		D is dataset, and for each datapoint x, return a scalar s to which cluster it belongs. 
+
+### K means algorithm
+Input: $D = \{x_1, \dots, x_N\}, \ x_n \in \mathbb{R}^D$
+
+Initialise: $m_k \in \mathbb{R}^D$ for $k = 1 \dots K$
+Repeat:
+	For $n = 1 \dots N$:
+	  $s_n = \arg \min_k \|x_n - m_k\|$
+	 For $k = 1 \dots K$:
+	  $m_k = \text{mean}(x_n : s_n = k)$
+Until convergence ($s_n$ fixed)
+
 
