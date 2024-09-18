@@ -42,8 +42,11 @@ $$
 A\mathbf{x} = e \begin{bmatrix} a \\ b \end{bmatrix} + f \begin{bmatrix} c \\ d \end{bmatrix} = \begin{bmatrix} ea + fc \\ eb + fd \end{bmatrix}
 $$
 ### Transpose of a Matrix:
-- The **transpose** of a matrix $A$ (denoted as $A^T$) is obtained by swapping its rows with its columns:
-  $$A^T = \begin{bmatrix} a_{11} & a_{21} \\ a_{12} & a_{22} \end{bmatrix}$$
+- The **transpose** of a matrix $A$ (denoted as $A^T$) is obtained by swapping its rows with its columns:$$A^T = \begin{bmatrix} a_{11} & a_{21} \\ a_{12} & a_{22} \end{bmatrix}$$
+- The main/principal/primary/leading/major diagonal is the collection of entrie
+$$(A^{\top})^{\top} = A$$
+$$(AB)^{\top} = B^{\top}A^{\top}$$
+$$(A + B)^{\top} = A^{\top} + B^{\top}$$
 ### Identity Matrix:
 - The **identity matrix** $I$ is a square matrix with 1's on the diagonal and 0's elsewhere:
 $$  I = \begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix}$$
@@ -118,6 +121,9 @@ $$
   A \cdot A^{-1} = A^{-1} \cdot A = I $$
   - A matrix is invertible if and only if $\det(A) \neq 0$.
   - A matrix that has an inverse is called invertible/regular/nonsingular. Otherwise, the matrix doesn't have an inverse and is called non-invertible. A square matrix that is non-invertible is called singular.
+$$AA^{-1} = I = A^{-1}A$$
+$$(AB)^{-1} = B^{-1}A^{-1}$$
+$$(A + B)^{-1} \neq A^{-1} + B^{-1}$$
 #### Inverse of 2x2 matrix
 $$
   A = \begin{bmatrix} a & b \\ c & d \end{bmatrix}
