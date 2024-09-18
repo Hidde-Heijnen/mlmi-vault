@@ -3,6 +3,7 @@
   "pythonExecutablePath": "/opt/anaconda3/envs/my-gloria/bin/python",
   "startJupyterAuto": true,
   "jupyterEnvType": "lab",
+  "useSimpleMode": true,
   "deleteCheckpoints": false,
   "moveCheckpointsToTrash": true,
   "checkpointsFolder": "",
