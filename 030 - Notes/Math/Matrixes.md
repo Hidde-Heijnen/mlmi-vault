@@ -43,7 +43,12 @@ A\mathbf{x} = e \begin{bmatrix} a \\ b \end{bmatrix} + f \begin{bmatrix} c \\ d 
 $$
 ### Transpose of a Matrix:
 - The **transpose** of a matrix $A$ (denoted as $A^T$) is obtained by swapping its rows with its columns:$$A^T = \begin{bmatrix} a_{11} & a_{21} \\ a_{12} & a_{22} \end{bmatrix}$$
-- The main/principal/primary/leading/major diagonal is the collection of entrie
+- The main/principal/primary/leading/major diagonal is the collection of entries where a=j
+- A matrix is **symmetric** if it is the same as his transpose
+	- can only be square matrices. 
+	- the inverse of both itself and the transpose is the same
+	- sum of symmetric matrices is always symmetric. 
+	- product is always defined, but not alwasys symmetric. 
 $$(A^{\top})^{\top} = A$$
 $$(AB)^{\top} = B^{\top}A^{\top}$$
 $$(A + B)^{\top} = A^{\top} + B^{\top}$$
