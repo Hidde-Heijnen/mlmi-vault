@@ -101,3 +101,6 @@ $$\text{Model: } f(x_1, x_2, \dots) \quad \text{No labels or outputs provided.}$
   - The machine can also produce actions $a_1, a_2, \dots$, which affect the state of the world, and receives rewards (or punishments) $r_1, r_2, \dots$
   - Its goal is to **learn to act in a way that maximizes rewards in the long term**.$$\text{Actions: } a_1, a_2, \dots \quad \text{Rewards: } r_1, r_2, \dots$$
 ## Clustering
+Two points belonging to the same cluster are generally more similar to each-other than two points in different clusters. 
+- The model takes a set of datapoints and a number of clusters that it has to find, and it will assign the data to that numbers of clusters. 
+- Notation
