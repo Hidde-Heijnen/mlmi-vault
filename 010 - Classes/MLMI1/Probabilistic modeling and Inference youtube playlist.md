@@ -65,3 +65,14 @@ $$\lambda^{ML} = \arg \max_{\lambda} p(\{x_n\}_{n=1}^N | \lambda)$$
 $$R(t = 0) = R(a = 0, t = 0) p(a = 0 | b = 1) + R(a = 1, t = 0) p(a = 1 | b = 1) = 6 \frac{1}{2}$$
   - **Conditional reward for treating** ($t = 1$):
 $$R(t = 1) = R(a = 0, t = 1) p(a = 0 | b = 1) + R(a = 1, t = 1) p(a = 1 | b = 1) = 6$$
+### Dutch Book Theorem
+- The theorem assumes that you are willing to accept bets with odds proportional to the strength of your beliefs.
+  - Example: if your belief $b(x) = 0.9$, you will accept a bet where:
+    - If $x$ is true, you win $\geq 1$ dollar.
+    - If $x$ is false, you lose $9$ dollars.
+
+- **Implication**:
+  - If your beliefs do not satisfy the rules of probability theory (such as the sum and product rules), there exists a set of simultaneous bets (called a "Dutch Book") that you will accept. This guarantees that you will lose money, regardless of the outcome.
+
+- **Protection**:
+  - The only way to avoid a Dutch Book scenario is to ensure that your beliefs are **coherent**; in other words, they must satisfy the rules of probability theory.
