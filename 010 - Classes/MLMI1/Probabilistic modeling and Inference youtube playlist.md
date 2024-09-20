@@ -169,6 +169,7 @@ The mixture of Gaussians (MoG) is a probabilistic model that assumes data is gen
    Infer cluster membership for each data point based on the estimated parameters:$$ p(s_n = k | x_n, \theta_{\text{ML}}) $$
    - This will give probabilities how likely it is to come from a curtain cluster.  
 ##### Different Ways of Maximising the Likelihood
+In machine learning, we often want to find the parameters $\theta$ that make the observed data most likely under our model. Maximising the log-likelihood is the standard way to do this. 
 $$\log p(\{x_n\}_{n=1}^N | \theta) = \log \prod_{n=1}^N p(x_n|\theta) = \sum_{n=1}^N \log p(x_n|\theta) = \sum_{n=1}^N \log \sum_{k=1}^K p(x_n, s_n = k|\theta)$$
 $$= \sum_{n=1}^N \log \sum_{k=1}^K p(s_n = k|\theta) p(x_n | s_n = k, \theta) = \sum_{n=1}^N \log \sum_{k=1}^K \pi_k \mathcal{N}(x_n; \mu_k, \sigma_k^2)$$
 We start with the log-likelihood of the observed data $\{x_n\}_{n=1}^N$ given the parameters $\theta$:
