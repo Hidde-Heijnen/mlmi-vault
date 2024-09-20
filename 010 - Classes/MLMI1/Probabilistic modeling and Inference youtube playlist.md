@@ -121,3 +121,5 @@ Repeat:
 Until convergence ($s_n$ fixed).         The sn's don't change anymore
 
 - If no points assigned to cluster, do not change the centre. 
+- Is K-means guaranteed to converge for any dataset D? Or could one or more cluster centres diverge or oscillate?
+	- 
