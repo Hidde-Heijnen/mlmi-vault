@@ -131,3 +131,4 @@ Let $s_{n,k} = 1$ if data point $n$ is assigned to cluster $k$ and $0$ otherwise
 **K-means sequentially**:
 - Minimises $C$ with respect to $\{s_{n,k}\}$, holding $\{m_k\}$ fixed.
 - Minimises $C$ with respect to $\{m_k\}$, holding $\{s_{n,k}\}$ fixed.
+$C$ is a Lyupanov function =
