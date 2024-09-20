@@ -122,4 +122,4 @@ Until convergence ($s_n$ fixed).         The sn's don't change anymore
 
 - If no points assigned to cluster, do not change the centre. 
 - Is K-means guaranteed to converge for any dataset D? Or could one or more cluster centres diverge or oscillate?
-	- 
+	- each step of the algorithm is reducing the energy, and the energy cannot go below zero, at some point we have to reach a local minimum. 
