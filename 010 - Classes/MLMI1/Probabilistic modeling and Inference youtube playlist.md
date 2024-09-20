@@ -162,9 +162,49 @@ The mixture of Gaussians (MoG) is a probabilistic model that assumes data is gen
 2. **Sample data value given cluster membership**:
    - $p(x_n | s_n = k, \theta) = \mathcal{N}(x_n; \mu_k, \Sigma_k)$
    - Data points are drawn from a Gaussian distribution (with parameters $\mu_k$ and $\Sigma_k$) specific to the cluster $k$.
-### Clustering procedure:
+##### Clustering procedure:
 1. **Parameter estimation**:
    Learn parameters $\theta$ (cluster weights $\pi_k$, means $\mu_k$, and covariances $\Sigma_k$) using maximum likelihood:$$ \theta_{\text{ML}} = \arg \max_\theta \log p(\{x_n\}_{n=1}^N | \theta) $$
 2. **Cluster inference**:
    Infer cluster membership for each data point based on the estimated parameters:$$ p(s_n = k | x_n, \theta_{\text{ML}}) $$
    - This will give probabilities how likely it is to come from a curtain cluster.  
+##### Different Ways of Maximising the Likelihood
+We start with the log-likelihood of the observed data $\{x_n\}_{n=1}^N$ given the parameters $\theta$:
+$$\log p(\{x_n\}_{n=1}^N | \theta)$$
+**Step 1:** Assume that the data points are independent, allowing us to express the joint probability as a product over all data points:
+$$= \log \prod_{n=1}^N p(x_n | \theta)$$
+*Explanation:* Independence simplifies the joint probability of the data into a product of individual probabilities.
+
+**Step 2:** Apply the logarithm property $\log a b = \log a + \log b$ to convert the product into a sum:
+$$= \sum_{n=1}^N \log p(x_n | \theta)$$
+*Explanation:* This transformation makes the expression more tractable for optimisation, as sums are easier to handle than products.
+
+**Step 3:** Recognise that each $p(x_n | \theta)$ can be represented as a sum over latent variables (e.g., mixture components):
+$$= \sum_{n=1}^N \log \sum_{k=1}^K p(x_n, s_n = k | \theta)$$
+*Explanation:* We introduce latent variables $s_n$ indicating the component membership of each data point in a mixture model.
+
+**Step 4:** Use the definition of joint probability to express $p(x_n, s_n = k | \theta)$ as the product of the marginal and conditional probabilities:
+$$= \sum_{n=1}^N \log \sum_{k=1}^K p(s_n = k | \theta) \, p(x_n | s_n = k, \theta)$$
+*Explanation:* This separates the probability into the prior probability of belonging to component $k$ and the likelihood of observing $x_n$ given component $k$.
+
+**Step 5:** Substitute the specific forms for $p(s_n = k | \theta)$ and $p(x_n | s_n = k, \theta)$:
+$$= \sum_{n=1}^N \log \sum_{k=1}^K \pi_k \, \mathcal{N}(x_n; \mu_k, \sigma_k^2)$$
+*Explanation:* Here, $\pi_k$ represents the mixing coefficients (priors for each component), and $\mathcal{N}(x_n; \mu_k, \sigma_k^2)$ is the Gaussian distribution for component $k$.
+
+**Methods for Maximising the Likelihood:**
+
+- **Method 1:** Direct gradient-based optimisation of the log-likelihood.
+  - *Pros:* Generally faster convergence.
+  - *Cons:* May be complex to implement due to the presence of sums inside logarithms.
+
+- **Method 2:** Expectation-Maximization (EM) algorithm.
+  - *Pros:* Simpler implementation for models with latent variables; widely used and extends to various generalizations.
+  - *Cons:* Can be slower and may converge to local maxima.
+
+**Notes:**
+- **Direct Optimization** involves computing gradients of the log-likelihood with respect to $\theta$ and using optimization algorithms (e.g., gradient ascent).
+- The **EM Algorithm** iteratively performs:
+  1. **Expectation (E-step):** Compute the expected value of the latent variables given current parameters.
+  2. **Maximization (M-step):** Update parameters to maximize the expected log-likelihood found in the E-step.
+
+By understanding these steps, we can choose the appropriate method for maximizing the likelihood based on the problem's complexity and requirements.
