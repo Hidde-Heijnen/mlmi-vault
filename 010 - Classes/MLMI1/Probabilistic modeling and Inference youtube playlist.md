@@ -131,4 +131,9 @@ Let $s_{n,k} = 1$ if data point $n$ is assigned to cluster $k$ and $0$ otherwise
 **K-means sequentially**:
 - Minimises $C$ with respect to $\{s_{n,k}\}$, holding $\{m_k\}$ fixed.
 - Minimises $C$ with respect to $\{m_k\}$, holding $\{s_{n,k}\}$ fixed.
-$C$ is a Lyupanov function =
+$C$ is a Lyupanov function => K-means converges, but finding the global optimum is an NP-hard problem. 
+#### K-means problems
+![[CleanShot 2024-09-20 at 12.19.48.png]]
+-  initialisation doesn't fix this. 
+- you could weight the horizontal direction more than the vertical one, but this won't scale to other datasets. 
+- Maybe soft assignments are better if we are less sure to which cluster they belong.  
