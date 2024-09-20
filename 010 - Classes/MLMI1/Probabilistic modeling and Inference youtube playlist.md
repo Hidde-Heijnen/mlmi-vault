@@ -123,11 +123,11 @@ Until convergence ($s_n$ fixed).         The sn's don't change anymore
 - If no points assigned to cluster, do not change the centre. 
 - Is K-means guaranteed to converge for any dataset D? Or could one or more cluster centres diverge or oscillate?
 	- each step of the algorithm is reducing the energy, and the energy cannot go below zero, at some point we have to reach a local minimum. 
-#### K-means as Optimization
+#### K-means as Optimisation
 Let $s_{n,k} = 1$ if data point $n$ is assigned to cluster $k$ and $0$ otherwise.
 **Note**: $\sum_{k=1}^{K} s_{n,k} = 1$
-**Cost**:$$C(\{s_{n,k}\}, \{m_k\}) = \sum_{n=1}^{N} \sum_{k=1}^{K} s_{n,k} \| x_n - m_k \|^2$$K-means tries to minimize the cost function $C$ with respect to $\{s_{n,k}\}$ and $\{m_k\}$, subject to $\sum_k s_{n,k} = 1$ and $s_{n,k} \in \{0,1\}$.
+**Cost**:$$C(\{s_{n,k}\}, \{m_k\}) = \sum_{n=1}^{N} \sum_{k=1}^{K} s_{n,k} \| x_n - m_k \|^2$$K-means tries to minimise the cost function $C$ with respect to $\{s_{n,k}\}$ and $\{m_k\}$, subject to $\sum_k s_{n,k} = 1$ and $s_{n,k} \in \{0,1\}$.
 
 **K-means sequentially**:
-- Minimizes $C$ with respect to $\{s_{n,k}\}$, holding $\{m_k\}$ fixed.
-- Minimizes $C$ with respect to $\{m_k\}$, holding $\{s_{n,k}\}$ fixed.
+- Minimises $C$ with respect to $\{s_{n,k}\}$, holding $\{m_k\}$ fixed.
+- Minimises $C$ with respect to $\{m_k\}$, holding $\{s_{n,k}\}$ fixed.
