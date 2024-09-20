@@ -143,4 +143,20 @@ $C$ is a Lyupanov function => K-means converges, but finding the global optimum 
 	- k++ means algorithm: spreads out initial centres.  
 
 ### Probabilistic approach to clustering
+Mixture of Gaussians: Generative Model
+#### Parameters
+- **$\theta$ (parameters)**: $\theta = \{ \pi_k, \mu_k, \Sigma_k \}_{k=1}^{K}$
+  - $\pi_k$: Mixing coefficients (e.g., $\pi_1 = \frac{1}{2}$, $\pi_2 = \frac{1}{4}$, $\pi_3 = \frac{1}{4}$)
+  - $\mu_k$: Mean vectors for each Gaussian component.
+  - $\Sigma_k$: Covariance matrices for each Gaussian component.
+#### Process for each data point $x_n$, for $n = 1, 2, \dots, N$ (i.i.d.):
+1. **Sample cluster membership**:
+   - $p(s_n = k | \theta) = \pi_k$
+   - The prior probability for $x_n$ to belong to cluster $k$ follows a *Categorical distribution*, with $\sum_{k=1}^{K} \pi_k = 1$.
 
+2. **Sample data value given cluster membership**:
+   - $p(x_n | s_n = k, \theta) = \mathcal{N}(x_n; \mu_k, \Sigma_k)$
+   - Data points are drawn from a Gaussian distribution (with parameters $\mu_k$ and $\Sigma_k$) specific to the cluster $k$.
+#### Visual Explanation
+- The diagram illustrates three Gaussian components, each with different means ($\mu_k$) and covariances ($\Sigma_k$), represented as different ellipses.
+  - Each Gaussian has a different weight ($\pi_k$), which influences the likelihood of selecting that component.
