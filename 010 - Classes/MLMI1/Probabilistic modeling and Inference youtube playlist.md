@@ -162,3 +162,5 @@ The mixture of Gaussians (MoG) is a probabilistic model that assumes data is gen
 2. **Sample data value given cluster membership**:
    - $p(x_n | s_n = k, \theta) = \mathcal{N}(x_n; \mu_k, \Sigma_k)$
    - Data points are drawn from a Gaussian distribution (with parameters $\mu_k$ and $\Sigma_k$) specific to the cluster $k$.
+
+
