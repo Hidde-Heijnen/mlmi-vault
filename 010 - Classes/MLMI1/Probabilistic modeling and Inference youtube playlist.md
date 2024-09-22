@@ -186,7 +186,7 @@ $$= \sum_{n=1}^N \log p(x_n | \theta)$$
 $$= \sum_{n=1}^N \log \sum_{k=1}^K p(x_n, s_n = k | \theta)$$
 *Explanation:* We introduce latent variables $s_n$ indicating the component membership of each data point in a mixture model.
 
-**Step 4:** Use the definition of joint probability to express $p(x_n, s_n = k | \theta)$ as the product of the marginal and conditional probabilities:
+**Step 4:** Use the definition of joint probability (product rule ) to express $p(x_n, s_n = k | \theta)$ as the product of the marginal and conditional probabilities:
 $$= \sum_{n=1}^N \log \sum_{k=1}^K p(s_n = k | \theta) \, p(x_n | s_n = k, \theta)$$
 *Explanation:* This separates the probability into the prior probability of belonging to component $k$ and the likelihood of observing $x_n$ given component $k$.
 
