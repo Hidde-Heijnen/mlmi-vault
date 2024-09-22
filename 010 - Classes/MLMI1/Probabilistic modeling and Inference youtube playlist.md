@@ -182,7 +182,7 @@ $$= \log \prod_{n=1}^N p(x_n | \theta)$$
 $$= \sum_{n=1}^N \log p(x_n | \theta)$$
 *Explanation:* This transformation makes the expression more tractable for optimisation, as sums are easier to handle than products.
 
-**Step 3:** Recognise that each $p(x_n | \theta)$ can be represented as a sum over latent variables (e.g., mixture components):
+**Step 3:** Recognise that each $p(x_n | \theta)$ can be represented as a sum over latent variables (e.g., mixture components), using the sum rule. We're summing out all the possible clusters the datapoint xn could've come from:
 $$= \sum_{n=1}^N \log \sum_{k=1}^K p(x_n, s_n = k | \theta)$$
 *Explanation:* We introduce latent variables $s_n$ indicating the component membership of each data point in a mixture model.
 
