@@ -211,3 +211,5 @@ $$= \sum_{n=1}^N \log \sum_{k=1}^K \pi_k \, \mathcal{N}(x_n; \mu_k, \sigma_k^2)$
   2. **Maximization (M-step):** Update parameters to maximize the expected log-likelihood found in the E-step.
 
 By understanding these steps, we can choose the appropriate method for maximizing the likelihood based on the problem's complexity and requirements.
+
+(Given the data we’ve observed, which parameter value is most probable?)
