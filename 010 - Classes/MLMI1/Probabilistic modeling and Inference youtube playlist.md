@@ -191,8 +191,8 @@ $$= \sum_{n=1}^N \log \sum_{k=1}^K p(s_n = k | \theta) \, p(x_n | s_n = k, \thet
 *Explanation:* This separates the probability into the prior probability of belonging to component $k$ and the likelihood of observing $x_n$ given component $k$.
 
 **Step 5:** Substitute the specific forms for $p(s_n = k | \theta)$ and $p(x_n | s_n = k, \theta)$:
-$$= \sum_{n=1}^N \log \sum_{k=1}^K \pi_k \, \mathcal{N}(x_n; \mu_k, \sigma_k^2)$$
-*Explanation:* Here, $\pi_k$ represents the mixing coefficients (priors for each component), and $\mathcal{N}(x_n; \mu_k, \sigma_k^2)$ is the Gaussian distribution for component $k$.
+$$= \sum_{n=1}^N \log \sum_{k=1}^K \pi_k \, \mathcal{N}(x_n; \mu_k, \Sigma_k)$$
+*Explanation:* Here, $\pi_k$ represents the mixing coefficients (priors for each component), and $\mathcal{N}(x_n; \mu_k, \sigma_k^2)$ is the Gaussian distribution for component $k$. These were already defined above, so we're just substituting them in. 
 
 **Methods for Maximising the Likelihood:**
 
