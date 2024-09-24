@@ -143,6 +143,7 @@ $C$ is a Lyupanov function => K-means converges, but finding the global optimum 
 	- k++ means algorithm: spreads out initial centres.  
 
 ### Probabilistic approach to clustering
+(Given the data we’ve observed, which parameter value is most probable?)
 #### Mixture of Gaussians: Generative Model
 The mixture of Gaussians (MoG) is a probabilistic model that assumes data is generated from a mixture of $K$ Gaussian distributions, each with its own mean and covariance.
 
@@ -192,7 +193,7 @@ $$= \sum_{n=1}^N \log \sum_{k=1}^K p(s_n = k | \theta) \, p(x_n | s_n = k, \thet
 
 **Step 5:** Substitute the specific forms for $p(s_n = k | \theta)$ and $p(x_n | s_n = k, \theta)$:
 $$= \sum_{n=1}^N \log \sum_{k=1}^K \pi_k \, \mathcal{N}(x_n; \mu_k, \Sigma_k)$$
-*Explanation:* Here, $\pi_k$ represents the mixing coefficients (priors for each component), and $\mathcal{N}(x_n; \mu_k, \sigma_k^2)$ is the Gaussian distribution for component $k$. These were already defined above, so we're just substituting them in. 
+*Explanation:* Here, $\pi_k$ represents the mixing coefficients (priors for each component/how likely it is to come from each cluster before seeing the data), and $\mathcal{N}(x_n; \mu_k, \sigma_k^2)$ is the Gaussian distribution for component $k$. These were already defined above, so we're just substituting them in. 
 
 **Methods for Maximising the Likelihood:**
 
@@ -200,16 +201,17 @@ $$= \sum_{n=1}^N \log \sum_{k=1}^K \pi_k \, \mathcal{N}(x_n; \mu_k, \Sigma_k)$$
   - *Pros:* Generally faster convergence.
   - *Cons:* May be complex to implement due to the presence of sums inside logarithms.
 
-- **Method 2:** Expectation-Maximization (EM) algorithm.
-  - *Pros:* Simpler implementation for models with latent variables; widely used and extends to various generalizations.
+- **Method 2:** Expectation-Maximisation (EM) algorithm.
+  - *Pros:* Simpler implementation for models with latent variables; widely used and extends to various important generalisations.
   - *Cons:* Can be slower and may converge to local maxima.
 
 **Notes:**
-- **Direct Optimization** involves computing gradients of the log-likelihood with respect to $\theta$ and using optimization algorithms (e.g., gradient ascent).
+- **Direct Optimisation** involves computing gradients of the log-likelihood with respect to $\theta$ and using optimisation algorithms (e.g., gradient ascent).
 - The **EM Algorithm** iteratively performs:
   1. **Expectation (E-step):** Compute the expected value of the latent variables given current parameters.
-  2. **Maximization (M-step):** Update parameters to maximize the expected log-likelihood found in the E-step.
+  2. **Maximisation (M-step):** Update parameters to maximise the expected log-likelihood found in the E-step.
 
-By understanding these steps, we can choose the appropriate method for maximizing the likelihood based on the problem's complexity and requirements.
+By understanding these steps, we can choose the appropriate method for maximising the likelihood based on the problem's complexity and requirements.
 
-(Given the data we’ve observed, which parameter value is most probable?)
+### Kullback-Leibler divergence
+
