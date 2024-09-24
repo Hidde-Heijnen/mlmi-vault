@@ -214,4 +214,18 @@ $$= \sum_{n=1}^N \log \sum_{k=1}^K \pi_k \, \mathcal{N}(x_n; \mu_k, \Sigma_k)$$
 By understanding these steps, we can choose the appropriate method for maximising the likelihood based on the problem's complexity and requirements.
 
 ### Kullback-Leibler divergence
+**Kullback-Leibler (KL) Divergence** is a measure of how one probability distribution, $Q$, differs from a reference distribution, $P$. It quantifies the inefficiency or "surprise" when using $Q$ to approximate $P$. It is basically a distance measure between two distributions. 
+
+- **P**: True distribution (what you expect)
+- **Q**: Approximate distribution (your guess)
+### Key Points:
+- **KL divergence** measures the extra information needed when $Q$ is used instead of $P$.
+- If $P = Q$, KL divergence is zero (no extra information needed).
+- Greater differences between $P$ and $Q$ lead to a higher KL divergence, implying more inefficiency in $Q$.
+- **In machine learning**, KL divergence is used in tasks like classification and variational inference to measure the closeness of model predictions (Q) to true data (P).
+
+Mathematically, KL divergence is given by:
+
+$$D_{\text{KL}}(P||Q) = \sum_{x} P(x) \log \frac{P(x)}{Q(x)}$$
+
 
