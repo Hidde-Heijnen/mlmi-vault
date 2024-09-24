@@ -218,14 +218,34 @@ By understanding these steps, we can choose the appropriate method for maximisin
 
 - **P**: True distribution (what you expect)
 - **Q**: Approximate distribution (your guess)
-### Key Points:
-- **KL divergence** measures the extra information needed when $Q$ is used instead of $P$.
-- If $P = Q$, KL divergence is zero (no extra information needed).
-- Greater differences between $P$ and $Q$ lead to a higher KL divergence, implying more inefficiency in $Q$.
+
 - **In machine learning**, KL divergence is used in tasks like classification and variational inference to measure the closeness of model predictions (Q) to true data (P).
 
 Mathematically, KL divergence is given by:
 
 $$D_{\text{KL}}(P||Q) = \sum_{x} P(x) \log \frac{P(x)}{Q(x)}$$
+### Kullback-Leibler (KL) Divergence
+
+The Kullback-Leibler divergence measures the difference between two probability distributions, $P_1(z)$ and $P_2(z)$. It is calculated using:
+
+$$KL(p_1(z) || p_2(z)) = \sum_{z \in \mathcal{Z}} p_1(z) \log \frac{p_1(z)}{p_2(z)}$$
+
+- **$z \in \mathcal{Z}$**: This denotes that the sum is taken over all possible values that $z$ can take.
+- **$p_1(z)$**: The probability from the true distribution, $P_1$.
+- **$p_2(z)$**: The probability from the approximate distribution, $P_2$.
+#### Key Points:
+- **KL divergence** measures the extra information needed when $Q$ is used instead of $P$.
+- If $P = Q$, KL divergence is zero (no extra information needed).
+- Greater differences between $P$ and $Q$ lead to a higher KL divergence, implying more inefficiency in $Q$.
+#### Example: Bernoulli Distribution
+In this example, we use a Bernoulli distribution with possible outcomes $z = 0$ and $z = 1$. 
+##### Probabilities for $P_1$ and $P_2$:
+- $P_1(z=0) = 1 - \pi$, $P_1(z=1) = \pi$
+- $P_2(z=0) = 1 - \rho$, $P_2(z=1) = \rho$
+
+##### KL Divergence of $P_1$ from $P_2$:
+$$KL(P_1 || P_2) = (1 - \pi) \log \frac{1 - \pi}{1 - \rho} + \pi \log \frac{\pi}{\rho}$$
+##### KL Divergence of $P_2$ from $P_1$:
+$$KL(P_2 || P_1) = (1 - \rho) \log \frac{1 - \rho}{1 - \pi} + \rho \log \frac{\rho}{\pi}$$
 
 
