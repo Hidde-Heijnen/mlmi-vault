@@ -226,7 +226,7 @@ $$KL(p_1(z) || p_2(z)) = \sum_{z \in \mathcal{Z}} p_1(z) \log \frac{p_1(z)}{p_2(
 - If $P = Q$, KL divergence is zero.
 - Greater differences between $P$ and $Q$ lead to a higher KL divergence, implying more inefficiency in $Q$.
 #### Example: Bernoulli Distribution
-In this example, we use a Bernoulli distribution with possible outcomes $z = 0$ and $z = 1$. 
+In this example, we use a Bernoulli distribution with possible outcomes $z = {0,1}$. 
 ##### Probabilities for $P_1$ and $P_2$:
 - $P_1(z=0) = 1 - \pi$, $P_1(z=1) = \pi$
 - $P_2(z=0) = 1 - \rho$, $P_2(z=1) = \rho$
