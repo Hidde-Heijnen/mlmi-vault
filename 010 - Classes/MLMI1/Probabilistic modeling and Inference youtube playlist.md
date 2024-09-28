@@ -247,3 +247,5 @@ $$KL(P_2 || P_1) = (1 - \rho) \log \frac{1 - \rho}{1 - \pi} + \rho \log \frac{\r
 
 For generality, we simplify notation: let $\mathbf{x} = \{x_n\}_{n=1}^N$ and $\mathbf{s} = \{s_n\}_{n=1}^N$, so:
 $$ \log p(\{x_n\}_{n=1}^N | \theta) = \log p(\mathbf{x} | \theta) = \log \sum_{\mathbf{s}} p(\mathbf{x}, \mathbf{s} | \theta) $$
+![[CleanShot 2024-09-28 at 14.45.18@2x.png]]
+- We can w
