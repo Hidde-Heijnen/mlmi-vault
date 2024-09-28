@@ -242,11 +242,16 @@ $$KL(P_1 || P_2) = (1 - \pi) \log \frac{1 - \pi}{1 - \rho} + \pi \log \frac{\pi}
 ##### KL Divergence of $P_2$ from $P_1$:
 $$KL(P_2 || P_1) = (1 - \rho) \log \frac{1 - \rho}{1 - \pi} + \rho \log \frac{\rho}{\pi}$$
 ### EM algorithm
-- [Very good youtube video for general understanding](https://www.youtube.com/watch?v=REypj2sy_5U)
+- [Very good youtube video for general understanding](https://youtube.com/playlist?list=PLBv09BD7ez_7beI0_fuE96lSbsr_8K8YD&si=oQLMWXZhpFtj2dqD)
 - EM is used for maximum-likelihood parameter learning in **many latent variable models**.
 - Leads to extensions like **approximate variational inference**.
+- Basic process
+	- Start with $k$ randomly placed Gaussians $(\mu_a, \Sigma_a), (\mu_b, \Sigma_b), \dots, (\mu_k, \Sigma_k)$
+	  - For each point: $P(c \mid x_i)$ = does it look like it came from component $c$?
+	  - Adjust $(\mu_a, \Sigma_a), (\mu_b, \Sigma_b), \dots, (\mu_k, \Sigma_k)$ to fit points assigned to each component
+
 
 For generality, we simplify notation: let $\mathbf{x} = \{x_n\}_{n=1}^N$ and $\mathbf{s} = \{s_n\}_{n=1}^N$, so:
 $$ \log p(\{x_n\}_{n=1}^N | \theta) = \log p(\mathbf{x} | \theta) = \log \sum_{\mathbf{s}} p(\mathbf{x}, \mathbf{s} | \theta) $$
 ![[CleanShot 2024-09-28 at 14.45.18@2x.png]]
-- We can w
+- We can rewrite (1) to (2) and we use this free-energy instead of just log-likelihood
