@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "010 - Classes/MLMI1/Probabilistic modeling and Inference youtube playlist.md",
+                "file": "030 - Notes/Math/Derivatives.md",
                 "mode": "source",
                 "source": false
               }
@@ -82,8 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 345.5,
-    "collapsed": true
+    "width": 345.5
   },
   "right": {
     "id": "69431843e2c41654",
@@ -99,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "010 - Classes/MLMI1/Probabilistic modeling and Inference youtube playlist.md",
+                "file": "030 - Notes/Math/Derivatives.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "010 - Classes/MLMI1/Probabilistic modeling and Inference youtube playlist.md",
+                "file": "030 - Notes/Math/Derivatives.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "010 - Classes/MLMI1/Probabilistic modeling and Inference youtube playlist.md"
+                "file": "030 - Notes/Math/Derivatives.md"
               }
             }
           }
@@ -167,13 +166,13 @@
   "active": "e34c6d1ee505e1c5",
   "lastOpenFiles": [
     "030 - Notes/Math/Trig identities.md",
+    "030 - Notes/Math/Derivatives.md",
     "010 - Classes/MLMI1/Probabilistic modeling and Inference youtube playlist.md",
     "z - Attachments/CleanShot 2024-09-20 at 12.19.48.png",
     "030 - Notes/Math/Matrixes.md",
     "010 - Classes/MLMI1",
     "030 - Notes/Math/Linear transformations.md",
     "030 - Notes/Math/Coordinate systems.md",
-    "030 - Notes/Math/Derivatives.md",
     "030 - Notes/Math/Distributions.md",
     "030 - Notes/Math/Eulers formula.md",
     "030 - Notes/Math/hyperbolic functions.md",
