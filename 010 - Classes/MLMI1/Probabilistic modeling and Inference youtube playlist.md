@@ -225,6 +225,12 @@ $$KL(p_1(z) || p_2(z)) = \sum_{z \in \mathcal{Z}} p_1(z) \log \frac{p_1(z)}{p_2(
 - **KL divergence** measures the extra information needed when $Q$ is used instead of $P$.
 - If $P = Q$, KL divergence is zero.
 - Greater differences between $P$ and $Q$ lead to a higher KL divergence, implying more inefficiency in $Q$.
+- **Gibb's inequality**: $KL(p_1(z) || p_2(z)) \geq 0$, with equality when $p_1(z) = p_2(z)$.
+	- Proof via **Jensen's inequality** or **differentiation** (refer to MacKay, pg. 35).
+- It is called a divergence and not the distance for a reason, because of the asymmetry
+	- $KL(p || q) \neq KL(q || p)$
+	- ![[CleanShot 2024-09-28 at 14.30.44@2x.png]]
+
 #### Example: Bernoulli Distribution
 In this example, we use a Bernoulli distribution with possible outcomes $z = {0,1}$. 
 ##### Probabilities for $P_1$ and $P_2$:
@@ -235,5 +241,4 @@ In this example, we use a Bernoulli distribution with possible outcomes $z = {0,
 $$KL(P_1 || P_2) = (1 - \pi) \log \frac{1 - \pi}{1 - \rho} + \pi \log \frac{\pi}{\rho}$$
 ##### KL Divergence of $P_2$ from $P_1$:
 $$KL(P_2 || P_1) = (1 - \rho) \log \frac{1 - \rho}{1 - \pi} + \rho \log \frac{\rho}{\pi}$$
-
-
+### EM algorithm

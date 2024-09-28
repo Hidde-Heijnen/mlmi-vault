@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "030 - Notes/Math/Trig identities.md",
+                "file": "010 - Classes/MLMI1/Probabilistic modeling and Inference youtube playlist.md",
                 "mode": "source",
                 "source": false
               }
@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -163,11 +162,12 @@
       "jupyter:Create Jupyter Notebook": false
     }
   },
-  "active": "e34c6d1ee505e1c5",
+  "active": "fad0c1a584946018",
   "lastOpenFiles": [
-    "030 - Notes/Math/Derivatives.md",
+    "z - Attachments/CleanShot 2024-09-28 at 14.30.44@2x.png",
     "030 - Notes/Math/Trig identities.md",
     "010 - Classes/MLMI1/Probabilistic modeling and Inference youtube playlist.md",
+    "030 - Notes/Math/Derivatives.md",
     "z - Attachments/CleanShot 2024-09-20 at 12.19.48.png",
     "030 - Notes/Math/Matrixes.md",
     "010 - Classes/MLMI1",
