@@ -242,3 +242,8 @@ $$KL(P_1 || P_2) = (1 - \pi) \log \frac{1 - \pi}{1 - \rho} + \pi \log \frac{\pi}
 ##### KL Divergence of $P_2$ from $P_1$:
 $$KL(P_2 || P_1) = (1 - \rho) \log \frac{1 - \rho}{1 - \pi} + \rho \log \frac{\rho}{\pi}$$
 ### EM algorithm
+- EM is used for maximum-likelihood parameter learning in **many latent variable models**.
+- Leads to extensions like **approximate variational inference**.
+
+For generality, we simplify notation: let $\mathbf{x} = \{x_n\}_{n=1}^N$ and $\mathbf{s} = \{s_n\}_{n=1}^N$, so:
+$$ \log p(\{x_n\}_{n=1}^N | \theta) = \log p(\mathbf{x} | \theta) = \log \sum_{\mathbf{s}} p(\mathbf{x}, \mathbf{s} | \theta) $$
