@@ -28,6 +28,7 @@ link: https://www.youtube.com/playlist?list=PLyXv258Xt2PRhkou67NwiQD9OmiNMzdfa
 			$p(y|z)$ is the plausibility after observing data (posterior)
 			$p(z)$ is more of a normalising constant
 
+
 ### Summarising the posterior distribution
 1. MAP (Maximum a posteriori): $\lambda_{MAP} = \arg \max p(\lambda | \{x_n\}_{n=1}^N)$ + Error-bars (for example the full width of the distribution at the half maximum point FWHM)
 2. Gaussian approximation: Make a gaussian with a particular mean and variance to match the posterior 
