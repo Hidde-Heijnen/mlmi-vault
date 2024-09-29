@@ -256,3 +256,6 @@ For generality, we simplify notation: let $\mathbf{x} = \{x_n\}_{n=1}^N$ and $\m
 $$ \log p(\{x_n\}_{n=1}^N | \theta) = \log p(\mathbf{x} | \theta) = \log \sum_{\mathbf{s}} p(\mathbf{x}, \mathbf{s} | \theta) $$
 ![[CleanShot 2024-09-28 at 14.45.18@2x.png]]
 - We can rewrite (1) to (2) and we use this free-energy instead of just log-likelihood
+![[CleanShot 2024-09-29 at 10.04.00@2x.png]]
+- We lock theta and optimise for q (will go to the log likelihood because that's the lower bound)
+- Then we lock q and optimise our parameters, trhis will maximise the free energy. 
