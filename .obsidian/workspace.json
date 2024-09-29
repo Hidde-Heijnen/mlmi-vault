@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "030 - Notes/Math/Probability.md",
+                "file": "010 - Classes/MLMI1/Probabilistic modeling and Inference youtube playlist.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "030 - Notes/Math/Probability.md",
+                "file": "010 - Classes/MLMI1/Probabilistic modeling and Inference youtube playlist.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "030 - Notes/Math/Probability.md"
+                "file": "010 - Classes/MLMI1/Probabilistic modeling and Inference youtube playlist.md"
               }
             }
           }
@@ -163,10 +162,10 @@
       "jupyter:Create Jupyter Notebook": false
     }
   },
-  "active": "fadd28feb2c628f0",
+  "active": "fad0c1a584946018",
   "lastOpenFiles": [
-    "010 - Classes/MLMI1/Probabilistic modeling and Inference youtube playlist.md",
     "030 - Notes/Math/Probability.md",
+    "010 - Classes/MLMI1/Probabilistic modeling and Inference youtube playlist.md",
     "z - Attachments/CleanShot 2024-09-29 at 10.04.00@2x.png",
     "030 - Notes/Math/Distributions.md",
     "030 - Notes/Math/Vectors.md",

@@ -2,7 +2,7 @@
 - Sum Rule (Marginalization): $$P(A) = \sum_{B} P(A \cap B) = \sum_{B} P(A, B)$$
 - Product Rule: $$P(A \cap B) = P(A|B)P(B) = P(A,B)$$
 - Bayes' Theorem: $$P(A|B) = \frac{P(B|A)P(A)}{P(B)}$$
-- Conditional Probability: $$P(A|B) = \frac{P(A \cap B)}{P(B)}$$
+- Conditional Probability: $$P(A|B) = \frac{P(A \cap B)}{P(B)} = \frac{P(A, B)}{P(B)}$$
 - Law of Total Probability: $$P(A) = \sum_{i} P(A|B_i)P(B_i)$$
 - Law of Total Expectation: $$\mathbb{E}[X] = \mathbb{E}[\mathbb{E}[X|Y]]$$
 - **Law of Large Numbers**:
