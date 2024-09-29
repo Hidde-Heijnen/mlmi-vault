@@ -251,16 +251,19 @@ $$KL(P_2 || P_1) = (1 - \rho) \log \frac{1 - \rho}{1 - \pi} + \rho \log \frac{\r
 	  - For each point: $P(c \mid x_i)$ = does it look like it came from component $c$?
 	  - Adjust $(\mu_a, \Sigma_a), (\mu_b, \Sigma_b), \dots, (\mu_k, \Sigma_k)$ to fit points assigned to each component
 
-
 For generality, we simplify notation: let $\mathbf{x} = \{x_n\}_{n=1}^N$ and $\mathbf{s} = \{s_n\}_{n=1}^N$, so:
 $$ \log p(\{x_n\}_{n=1}^N | \theta) = \log p(\mathbf{x} | \theta) = \log \sum_{\mathbf{s}} p(\mathbf{x}, \mathbf{s} | \theta) $$
 ![[CleanShot 2024-09-28 at 14.45.18@2x.png]]
 - We can rewrite (1) to (2) and we use this free-energy instead of just log-likelihood
 ![[CleanShot 2024-09-29 at 10.04.00@2x.png]]
-- Initialise with random parameters $\theta_0$ and $q_0$
-- **Optimisation step:** We lock theta and optimise for q (will go to the log likelihood because that's the lower bound)
-	$$ q_{n+1} = \arg \max_q \mathcal{F}(q(s), \theta_n) = p(s|x,\theta_n)
+#### Steps
+
+- **Initialisation**: Start with random parameters $\theta_0$ and $q_0$. Iterate next steps $1...T$ Times
+1. **E-step (Optimisation)**: For fixed $\theta_{n}$, maximise the lower bound $\mathcal{F}(q(s), \theta_n)$ with respect to $q(s)$, equivalent to maximising the log likelihood (because the log likelihood is not dependent on $q(s)$ and we minimise the KL divergence):$$ q_{n+1} = \arg \max_q \mathcal{F}(q(s), \theta_n) = p(s|x, \theta_n) $$
+2. **M-step (Maximisation)**: For fixed $q_{n+1}(s)$, maximise $\mathcal{F}(q_{n+1}(s), \theta)$ with respect to $\theta$, thereby maximising the free energy:
+   $$ \theta_{n+1} = \arg \max_\theta \mathcal{F}(q_{n+1}(s), \theta) $$
+   The objective function in M step becomes (we will show how we derive that from the original function):
 $$
-- **Maximisation step**: Then we lock q and optimise our parameters, this will maximise the free energy.  
-	$$ \theta_{n+1} = \arg \max_\theta \mathcal{F}(q_{n+1}(s), \theta)
+F(q(s), \theta) = \sum_s q(s) \log \left( p(x|s, \theta) p(s|\theta) \right) - \sum_s q(s) \log q(s)
 $$
+#### How 
