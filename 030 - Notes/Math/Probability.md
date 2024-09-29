@@ -1,6 +1,6 @@
 **1. Probability Basics**
-- Sum Rule (Marginalization): $$P(A) = \sum_{B} P(A \cap B)$$
-- Product Rule: $$P(A \cap B) = P(A|B)P(B)$$
+- Sum Rule (Marginalization): $$P(A) = \sum_{B} P(A \cap B) = \sum_{B} P(A, B)$$
+- Product Rule: $$P(A \cap B) = P(A|B)P(B) = P(A,B)$$
 - Bayes' Theorem: $$P(A|B) = \frac{P(B|A)P(A)}{P(B)}$$
 - Conditional Probability: $$P(A|B) = \frac{P(A \cap B)}{P(B)}$$
 - Law of Total Probability: $$P(A) = \sum_{i} P(A|B_i)P(B_i)$$

@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "010 - Classes/MLMI1/Probabilistic modeling and Inference youtube playlist.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "fadd28feb2c628f0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "030 - Notes/Math/Probability.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -150,7 +163,7 @@
       "jupyter:Create Jupyter Notebook": false
     }
   },
-  "active": "fad0c1a584946018",
+  "active": "fadd28feb2c628f0",
   "lastOpenFiles": [
     "010 - Classes/MLMI1/Probabilistic modeling and Inference youtube playlist.md",
     "030 - Notes/Math/Probability.md",
