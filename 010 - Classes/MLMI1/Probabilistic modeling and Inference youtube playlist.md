@@ -258,9 +258,9 @@ $$ \log p(\{x_n\}_{n=1}^N | \theta) = \log p(\mathbf{x} | \theta) = \log \sum_{\
 - We can rewrite (1) to (2) and we use this free-energy instead of just log-likelihood
 ![[CleanShot 2024-09-29 at 10.04.00@2x.png]]
 - Initialise with random parameters $\theta_0$ and $q_0$
-- We lock theta and optimise for q (will go to the log likelihood because that's the lower bound)
-	- $$ q_{n+1} = \arg \max_q \mathcal{F}(q(s), \theta_n) = p(s|x,\theta_n)
+- **Optimisation step:** We lock theta and optimise for q (will go to the log likelihood because that's the lower bound)
+	$$ q_{n+1} = \arg \max_q \mathcal{F}(q(s), \theta_n) = p(s|x,\theta_n)
 $$
-- Then we lock q and optimise our parameters, this will maximise the free energy.  
-	- $$ \theta_{n+1} = \arg \max_\theta \mathcal{F}(q(s), \theta_n)
+- **Maximisation step**: Then we lock q and optimise our parameters, this will maximise the free energy.  
+	$$ \theta_{n+1} = \arg \max_\theta \mathcal{F}(q_{n+1}(s), \theta)
 $$
