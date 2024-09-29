@@ -268,6 +268,15 @@ F(q(s), \theta) = \sum_s q(s) \log \left( p(x|s, \theta) p(s|\theta) \right) - \
 $$
 #### Different math form
 - The formula below is easier to calculate for the M-step, and we show how it follows from the first formula we learned about. 
+	- This is better because in the M step we fix $q$ and optimise the parameters, and the part after the minus sign is not dependent on the parameters at all (This second step is called the **entropy of $q(s)$**). 
+		- the second term is the entropy of $q(s)$, independent of $\theta$, so the M step is
+
+$$
+\theta_t = \arg max_{\theta} \sum_s q_t(s) \log \left( p(x|s, \theta)p(s|\theta) \right).
+$$
+
+	- Furthermore $p(s|\theta) = \pi_k$ is given by our model, the a priori probability of coming of each of our clusters.  
+	- Additionally $p(\mathbf{x}|s,\theta)$ is just the gaussian distribution $\mathcal{N}(x_i,\mu_k, \Sigma_k)$, we can basically just plug in the model inside the first log. 
 $$\mathcal{F}(q(s),\theta) = \sum_s q(s) \log (p(\mathbf{x}|s,\theta)p(s|\theta)) - \sum_s q(s) \log q(s),$$
 (Applied the product rule inside the logarithm: 
 $$= \sum_s q(s) \log p(\mathbf{x},s|\theta) - \sum_s q(s) \log q(s)$$
