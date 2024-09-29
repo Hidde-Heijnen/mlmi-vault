@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "mse",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -150,17 +150,18 @@
       "jupyter:Create Jupyter Notebook": false
     }
   },
-  "active": "1b9c0ca6e568a32b",
+  "active": "fad0c1a584946018",
   "lastOpenFiles": [
+    "030 - Notes/Math/Distributions.md",
+    "030 - Notes/Math/Vectors.md",
+    "030 - Notes/Math/Matrixes.md",
+    "010 - Classes/MLMI1/Probabilistic modeling and Inference youtube playlist.md",
     "030 - Notes/Codebasics - Machine Learning Python course/Notebooks/02-mvr.ipynb",
     "030 - Notes/Math/Linear transformations.md",
     "030 - Notes/Math/Integrals.md",
     "030 - Notes/Math/hyperbolic functions.md",
     "030 - Notes/Math/Eulers formula.md",
-    "030 - Notes/Math/Distributions.md",
     "030 - Notes/Math/Derivatives.md",
-    "010 - Classes/MLMI1/Probabilistic modeling and Inference youtube playlist.md",
-    "030 - Notes/Math/Matrixes.md",
     "z - Attachments/CleanShot 2024-09-28 at 14.45.18@2x.png",
     "z - Attachments/CleanShot 2024-09-28 at 14.30.44@2x.png",
     "030 - Notes/Math/Trig identities.md",
@@ -168,7 +169,6 @@
     "010 - Classes/MLMI1",
     "030 - Notes/Math/Coordinate systems.md",
     "030 - Notes/Math/Trigonomitry.md",
-    "030 - Notes/Math/Vectors.md",
     "030 - Notes/Math/Logarithms.md",
     "z - Attachments/Pasted image 20240907172755.png",
     "040 - Tags/basic income.md",
