@@ -268,7 +268,7 @@ F(q(s), \theta) = \sum_s q(s) \log \left( p(x|s, \theta) p(s|\theta) \right) - \
 $$
 #### Different math form
 - The formula below is easier to calculate for the M-step, and we show how it follows from the first formula we learned about. 
-	- This is better because in the M step we fix $q$ and optimise the parameters, and the part after the minus sign is not dependent on the parameters at all (This second step is called the **entropy of $q(s)$**). 
+	- This is better because in the M step we fix $q$ and optimise the parameters, and the part after the minus sign is not dependent on the parameters at all (This second step is called the **entropy of $q(s)$**).  
 		- the second term is the entropy of $q(s)$, independent of $\theta$, so the M step is
 
 $$
