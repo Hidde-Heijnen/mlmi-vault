@@ -267,3 +267,15 @@ $$
 F(q(s), \theta) = \sum_s q(s) \log \left( p(x|s, \theta) p(s|\theta) \right) - \sum_s q(s) \log q(s)
 $$
 #### How 
+$$\mathcal{F}(q(s),\theta) = \sum_s q(s) \log (p(\mathbf{x}|s,\theta)p(s|\theta)) - \sum_s q(s) \log q(s),$$
+(Applied the product rule inside the logarithm: $\log(ab) = \log(a) + \log(b)$)
+$$= \sum_s q(s) \log p(\mathbf{x},s|\theta) - \sum_s q(s) \log q(s)$$
+(Applied the product rule again: $p(\mathbf{x},s|\theta) = p(\mathbf{x}|\theta)p(s|\mathbf{x},\theta)$ by the definition of conditional probability)
+$$= \sum_s q(s) \log [p(\mathbf{x}|\theta)p(s|\mathbf{x},\theta)] - \sum_s q(s) \log q(s)$$
+(Factored out $\log p(\mathbf{x}|\theta)$ from the first sum as it doesn't depend on $s$, and rearranged terms)
+$$= \left(\sum_s q(s)\right) \log p(\mathbf{x}|\theta) + \sum_s q(s) \log\left[\frac{p(s|\mathbf{x},\theta)}{q(s)}\right]$$
+($\sum_s q(s) = 1$ because $q(s)$ is a probability distribution over $s$, so it must sum to 1. The ratio is inverted to match KL divergence form)
+$$\mathcal{F}(q(s),\theta) = \log p(\mathbf{x}|\theta) - KL\left(q(s) \parallel p(s|\mathbf{x},\theta_{t-1})\right)$$
+The final step recognizes the KL divergence formula: $KL(P\parallel Q) = \sum_x P(x) \log\frac{P(x)}{Q(x)}$. Here, $\theta_{t-1}$ suggests an iterative process where the previous step's parameters are used.
+
+
