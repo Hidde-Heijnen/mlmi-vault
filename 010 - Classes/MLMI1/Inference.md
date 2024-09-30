@@ -26,6 +26,11 @@ Two key ideas for probabilistic inference:
 1. The solution is a probability distribution over all possible settings of unknown variables, given observed data.
 2. Use the sum and product rules to compute the solution.
 
+- **Forward model:** Moves from unknown variables to the observed variables
+	- We do this by first sampling a value for the unknown parameter from the prior distribution, then generating data from the likelihood based on that parameter.
+- **Inverse modelling (inference)**: moves from the observed variables to the unknown
+
+
 **Sum rule**: $p(y) = \int p(y, z) \, dz$  or $P(y) = \sum_{z} P(y,z)$
 **Product rule**: $p(y, z) = p(z)p(y|z) = p(y)p(z|y)$
 **Bayes' rule**: $p(y|z) = \frac{p(y)p(z|y)}{p(z)}$  
@@ -35,14 +40,26 @@ Two key ideas for probabilistic inference:
 	Sometimes written as $p(y|z) \propto p(y)p(z|y)$ when $p(z)$ normalises. undefined for $p(z)=0$
 
 
-
-
 ### Radioactive decay example
+Our decay is supposed to be modelled like: $p( x_n | \lambda ) = \frac{1}{Z(\lambda)} \exp\left(- x_n/\lambda \right)$
+	 - $Z(\lambda)$ is a normalisation coefficient
+	 - $\lambda$ decay constant
+	 - $x_n$ distance
+
 We cannot be sure of $\lambda$, so we would rather have a distribution based on our data $p(\lambda|\{ x_n \}_{n=1}^N)$
 $$p(\lambda | \{ x_n \}_{n=1}^N) = \frac{ 1}{p(\{ x_n \}_{n=1}^N )} p(\lambda) p(\{ x_n \}_{n=1}^N | \lambda ) \propto p(\lambda) \prod_{n=1}^N p( x_n | \lambda )$$
 	- $p(\{ x_n \}_{n=1}^N | \lambda )$ is our model of the observed data
 	- $p(\lambda)$ is our prior (so a realistic estimate beforehand)
 
-- **Forward model**: Pick a random value for $p(\lambda)$ 
-- **Inverse modelling (inference)**: 
+Now let's substitute in the expression for the model $p( x_n | \lambda ) = \frac{1}{Z(\lambda)} \exp\left(- x_n/\lambda \right)$ into Bayes' rule
+$$
+p(\lambda | \{ x_n \}_{n=1}^N) \propto p(\lambda) \prod_{n=1}^N \left( \frac{1}{Z(\lambda)} \exp\left(- x_n/\lambda \right)\right) = p(\lambda)  \frac{1}{Z(\lambda)^N} \exp\left(-\frac{1}{\lambda} \sum_{n = 1}^{N} x_n \right)
+$$
+Notice then that we do not need to store all of the individual datapoints $\{ x_n \}_{n=1}^N$ to evaluate the posterior. Rather, we only require the mean $\hat{\mu} = \frac{1}{N}\sum_{n=1}^N x_n$ and $N$. These are called **sufficient statistics**.
+
+**Understanding the likelihood**
+
+The posterior is a distribution over $\lambda$. This means that in order to understand its behaviour we need to understand how $p( x_n | \lambda )$ behaves as a function of $\lambda$. Let's make a familiar plot of the density of $x$ given $\lambda$ that is $p( x | \lambda )$ as a function of $x$ for three different settings of the decay constant.
+
+
 
