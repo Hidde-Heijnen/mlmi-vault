@@ -34,7 +34,15 @@ Two key ideas for probabilistic inference:
 	- **Likelihood** $p(z|y)$: what the data told us.
 	Sometimes written as $p(y|z) \propto p(y)p(z|y)$ when $p(z)$ normalises. undefined for $p(z)=0$
 
-### Radioactive decay example
-$$$$
 
+
+
+### Radioactive decay example
+We cannot be sure of $\lambda$, so we would rather have a distribution based on our data $p(\lambda|\{ x_n \}_{n=1}^N)$
+$$p(\lambda | \{ x_n \}_{n=1}^N) = \frac{ 1}{p(\{ x_n \}_{n=1}^N )} p(\lambda) p(\{ x_n \}_{n=1}^N | \lambda ) \propto p(\lambda) \prod_{n=1}^N p( x_n | \lambda )$$
+	- $p(\{ x_n \}_{n=1}^N | \lambda )$ is our model of the observed data
+	- $p(\lambda)$ is our prior (so a realistic estimate beforehand)
+
+- **Forward model**: Pick a random value for $p(\lambda)$ 
+- **Inverse modelling (inference)**: 
 
