@@ -48,14 +48,14 @@ Our decay is supposed to be modelled like: $p( x_n | \lambda ) = \frac{1}{Z(\lam
 
 We cannot be sure of $\lambda$, so we would rather have a distribution based on our data $p(\lambda|\{ x_n \}_{n=1}^N)$
 $$p(\lambda | \{ x_n \}_{n=1}^N) = \frac{ 1}{p(\{ x_n \}_{n=1}^N )} p(\lambda) p(\{ x_n \}_{n=1}^N | \lambda ) \propto p(\lambda) \prod_{n=1}^N p( x_n | \lambda )$$
-	- $p(\{ x_n \}_{n=1}^N | \lambda )$ is our model of the observed data
+	- $p(\{ x_n \}_{n=1}^N | \lambda )$ is our model of the observed data (likelihood)
 	- $p(\lambda)$ is our prior (so a realistic estimate beforehand)
 
 Now let's substitute in the expression for the model $p( x_n | \lambda ) = \frac{1}{Z(\lambda)} \exp\left(- x_n/\lambda \right)$ into Bayes' rule
 $$
 p(\lambda | \{ x_n \}_{n=1}^N) \propto p(\lambda) \prod_{n=1}^N \left( \frac{1}{Z(\lambda)} \exp\left(- x_n/\lambda \right)\right) = p(\lambda)  \frac{1}{Z(\lambda)^N} \exp\left(-\frac{1}{\lambda} \sum_{n = 1}^{N} x_n \right)
 $$
-Notice then that we do not need to store all of the individual datapoints $\{ x_n \}_{n=1}^N$ to evaluate the posterior. Rather, we only require the mean $\hat{\mu} = \frac{1}{N}\sum_{n=1}^N x_n$ and $N$. These are called **sufficient statistics**.
+	Notice then that we do not need to store all of the individual datapoints $\{ x_n \}_{n=1}^N$ to evaluate the posterior. Rather, we only require the mean $\hat{\mu} = \frac{1}{N}\sum_{n=1}^N x_n$ and $N$. These are called **sufficient statistics**.
 
 **Understanding the likelihood**
 
