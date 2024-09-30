@@ -115,8 +115,9 @@ $$ \sigma^2 $$
 ## 4. **Exponential Distribution**
 The exponential distribution models the time between events in a Poisson process.
 - **Notation**: $X \sim \text{Exponential}(\lambda)$
-- **PDF**:
-  $$ f(x) = \lambda e^{-\lambda x}, \quad x \geq 0 $$
+- **PDF**:$$ f(x) = \lambda e^{-\lambda x}, \quad x \geq 0 $$
+or 
+$$f(x) = \exp(x) $$
   where:
   - $\lambda$ is the rate parameter.
 
