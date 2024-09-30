@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "010 - Classes/MLMI1/Inference.md",
+                "file": "010 - Classes/MLMI1/Probabilistic modeling and Inference youtube playlist.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "010 - Classes/MLMI1/Inference.md",
+                "file": "010 - Classes/MLMI1/Probabilistic modeling and Inference youtube playlist.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "010 - Classes/MLMI1/Inference.md",
+                "file": "010 - Classes/MLMI1/Probabilistic modeling and Inference youtube playlist.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "010 - Classes/MLMI1/Inference.md"
+                "file": "010 - Classes/MLMI1/Probabilistic modeling and Inference youtube playlist.md"
               }
             }
           }
@@ -152,8 +152,8 @@
   },
   "active": "fadd28feb2c628f0",
   "lastOpenFiles": [
-    "030 - Notes/Math/Distributions.md",
     "010 - Classes/MLMI1/Inference.md",
+    "030 - Notes/Math/Distributions.md",
     "010 - Classes/MLMI1/Probabilistic modeling and Inference youtube playlist.md",
     "030 - Notes/Math/Probability.md",
     "z - Attachments/CleanShot 2024-09-29 at 10.04.00@2x.png",

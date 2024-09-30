@@ -40,7 +40,7 @@ $$p(\{x_n\}_{n=1}^N, \lambda) = p(\lambda) p(\{x_n\}_{n=1}^N | \lambda)$$
 2. use Bayes' rule (product rule) to form the **posterior distribution**
 $$p(\lambda | \{x_n\}_{n=1}^N) = \frac{1}{p(\{x_n\}_{n=1}^N)} p(\lambda) p(\{x_n\}_{n=1}^N | \lambda)$$
 	- Has a normalising constant, a prior and the likelihood of the parameters. 
-	- $x_n$ is the fixed varaible (the data), and $\lambda$ is the variable
+	- $x_n$ is the fixed variable (the data), and $\lambda$ is the variable
 	- Sometimes called inverse problem
 3. summarise the posterior e.g. via the **maximum a posteriori** (MAP) estimate
 $$\lambda^{MAP} = \arg \max_{\lambda} p(\lambda | \{x_n\}_{n=1}^N) = \arg \max_{\lambda} p(\lambda) p(\{x_n\}_{n=1}^N | \lambda) $$
