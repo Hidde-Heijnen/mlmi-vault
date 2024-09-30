@@ -33,6 +33,8 @@ Two key ideas for probabilistic inference:
 	- **Prior distribution** $p(y)$: what we knew before seeing the data.
 	- **Likelihood** $p(z|y)$: what the data told us.
 	Sometimes written as $p(y|z) \propto p(y)p(z|y)$ when $p(z)$ normalises. undefined for $p(z)=0$
-	
+
+### Radioactive decay example
+$$$$
 
 
