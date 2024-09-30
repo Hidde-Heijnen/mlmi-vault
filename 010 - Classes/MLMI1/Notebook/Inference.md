@@ -92,4 +92,17 @@ MAP Predictive Distribution
 - Relies on the single parameter value that maximises the posterior distribution.
 - Ignores parameter uncertainty, resulting in a narrower (more confident) predictive distribution.
 
+#### Summary
+It is worth taking a moment to consider the steps taken above:
+
+1. Assumed a form for the probabilistic relationship between the underlying parameter and each data point $p(x_n|\lambda)$.
+2. Encoded prior information we have about $\lambda$ before seeing data into a **uniform prior distribution $p(\lambda)$**.
+3. Applied Bayes' rule to find the posterior $p(\lambda|\{x_n\}_{n=1}^N)$ which told us how plausible each value of $\lambda$ is after observing the data set.
+4. Calculated the predictive distribution of new decay events given the observed data $p(x^\star | \{x_{n}\}_{n=1}^N)$.
+
+The approach is much more explicit and principled than the two heuristic methods proposed to begin with. Such approaches which retain probability distributions over parameters are called **Bayesian**. Popular alternative **point estimates** of parameters include
+
+1. **maximum likelihood estimation** $\lambda_{\text{ML}} = \underset{\lambda}{\mathrm{arg\max}} \;\; p(\{ x_n \}_{n=1}^N | \lambda )$ i.e. the setting of the parameters that makes the observed data most probable
+2. **maximum a posteriori estimation** $\lambda_{\text{MAP}} = \underset{\lambda}{\mathrm{arg\max}} \;\; p(\lambda) p(\{ x_n \}_{n=1}^N | \lambda )$ i.e. the setting of the parameters that is most probable under the posterior
+
 
