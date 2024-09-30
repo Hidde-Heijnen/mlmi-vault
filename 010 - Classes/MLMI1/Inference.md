@@ -89,7 +89,7 @@ Posterior Predictive Distribution
 - Accounts for both data variability and parameter uncertainty, leading to a broader (less confident) predictive distribution.
 
 MAP Predictive Distribution
-- Relies on the single parameter value that maximizes the posterior distribution.
+- Relies on the single parameter value that maximises the posterior distribution.
 - Ignores parameter uncertainty, resulting in a narrower (more confident) predictive distribution.
 
 
