@@ -26,7 +26,7 @@ Two key ideas for probabilistic inference:
 1. The solution is a probability distribution over all possible settings of unknown variables, given observed data.
 2. Use the sum and product rules to compute the solution.
 
-**Sum rule**: $P(y) = \int p(y, z) \, dz$  or $p(y) = \sum_{z} P(y,z)$
+**Sum rule**: $p(y) = \int p(y, z) \, dz$  or $P(y) = \sum_{z} P(y,z)$
 **Product rule**: $p(y, z) = p(z)p(y|z) = p(y)p(z|y)$
 **Bayes' rule**: $p(y|z) = \frac{p(y)p(z|y)}{p(z)}$  
 	- **Posterior distribution** $p(y|z)$: what we know after seeing the data.
