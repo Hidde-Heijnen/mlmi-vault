@@ -21,16 +21,17 @@ The machine experiences a series of sensory inputs: $x_1, x_2, x_3, x_4, \dots$
 
 ## Probabilistic approach
 ### Probabilistic Inference
+Two key ideas for probabilistic inference:
+1. The solution is a probability distribution over all possible settings of unknown variables, given observed data.
+2. Use the sum and product rules to compute the solution.
 
-1. Solution: probability distribution over unknowns given data.
-2. Use sum and product rules.
-
-**Sum rule**: $p(y) = \int p(y, z) \, dz$
+**Sum rule**: $p(y) = \int p(y, z) \, dz$  
 **Product rule**: $p(y, z) = p(z)p(y|z) = p(y)p(z|y)$
+**Bayes' rule**: $p(y|z) = \frac{p(y)p(z|y)}{p(z)}$  
+	- **Posterior distribution** $p(y|z)$: what we know after seeing the data.
+	- **Prior distribution** $p(y)$: what we knew before seeing the data.
+	- **Likelihood** $p(z|y)$: what the data told us.
+	Sometimes written as $p(y|z) \propto p(y)p(z|y)$ when $p(z)$ normalises. undefined for $p(z)=0$
+	
 
-**Bayes' rule**: $p(y|z) = \frac{p(y)p(z|y)}{p(z)} \propto p(y)p(z|y)$
-
-- **Posterior**: $$p(y|z)$$ after data.
-- **Prior**: $$p(y)$$ before data.
-- **Likelihood**: $$p(z|y)$$ data informs.
 
