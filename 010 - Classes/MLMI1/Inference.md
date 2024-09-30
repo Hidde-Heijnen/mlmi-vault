@@ -82,6 +82,14 @@ p(x^\star \lvert \{x_n\}_{n=1}^N) &= \int p(x^\star,\lambda \lvert \{x_n\}_{n=1}
 
 The predictive distribution has an intuitive form: it takes the prediction we would make if we knew $\lambda$, $p(x^\star \lvert  \lambda)$, weights it by the probability under the posterior $p(\lambda | \{x_n\}_{n=1}^N)$, and sums this quatity over all settings of $\lambda$. For this reason the probabilistic predictive distribution above is sometimes called the **posterior predictive**.
 
-Here's the posterior predictive distribution in our case:
+### Posterior predictive distribution vs MAP predictive distribution
+
+Posterior Predictive Distribution
+- Integrates Over Parameter Uncertainty: Considers all possible parameter values weighted by their posterior probabilities.
+- Accounts for both data variability and parameter uncertainty, leading to a broader (less confident) predictive distribution.
+
+MAP Predictive Distribution
+- Relies on the single parameter value that maximizes the posterior distribution.
+- Ignores parameter uncertainty, resulting in a narrower (more confident) predictive distribution.
 
 
