@@ -66,5 +66,27 @@ The posterior is a distribution over $\lambda$. This means that in order to unde
 2. Gaussian approximation: Make a gaussian with a particular mean and variance to match the posterior 
 3. Samples from posterior distribution: Samples can be interpreted as typical values of the hidden variables, and there are more samples from the peak than tails. And the samples can be used to calculate for example the mean and uncertainties in that value (like variance). 
 
+#### How should we predict where the next decay event will occur?*
+
+Prediction is a fundamental part of science and engineering. The probabilistic approach says:
+
+1. that the answer to this question is the probability of the location next decay event $x^\star$ given the observed data $\{x_n\}_{n=1}^N$, that is $p(x^\star \lvert \{x_n\}_{n=1}^N)$. This is known as the predictive distribution.
+
+
+2. that the predictive distribution can be computed using the rules of probability
+
+\begin{align}
+p(x^\star \lvert \{x_n\}_{n=1}^N) &= \int p(x^\star,\lambda \lvert \{x_n\}_{n=1}^N) \text{d} \lambda \;\;\; \text{(sum rule)}\\
+%
+& = \int p(x^\star \lvert  \lambda, \{x_n\}_{n=1}^N) p(\lambda | \{x_n\}_{n=1}^N) \text{d} \lambda \;\;\; \text{(product rule)}\\ 
+%
+& = \int p(x^\star \lvert  \lambda) p(\lambda | \{x_n\}_{n=1}^N) \text{d} \lambda \;\;\; \text{(modelling assumptions)}\\ 
+\end{align}
+
+The last line follows from that fact that if we know $\lambda$ then, under the model we are assuming, the data set $\{x_n\}_{n=1}^N$ provides no additional information about $x^\star $.
+
+The predictive distribution has an intuitive form: it takes the prediction we would make if we knew $\lambda$, $p(x^\star \lvert  \lambda)$, weights it by the probability under the posterior $p(\lambda | \{x_n\}_{n=1}^N)$, and sums this quatity over all settings of $\lambda$. For this reason the probabilistic predictive distribution above is sometimes called the **posterior predictive**.
+
+Here's the posterior predictive distribution in our case:
 
 
