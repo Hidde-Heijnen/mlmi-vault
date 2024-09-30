@@ -143,3 +143,4 @@ $$
 
 6. **Final Expression:** The posterior distribution $p(d|y)$ is a Gaussian distribution with the derived mean and variance.
 #### Q2
+
