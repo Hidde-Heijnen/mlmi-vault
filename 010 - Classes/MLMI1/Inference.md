@@ -20,12 +20,13 @@ The machine experiences a series of sensory inputs: $x_1, x_2, x_3, x_4, \dots$
 	- Its goal is to **learn to act in a way that maximises rewards in the long term**.$$\text{Actions: } a_1, a_2, \dots \quad \text{Rewards: } r_1, r_2, \dots$$
 
 ## Probabilistic approach
+ $p(\cdot)$ will be used to denote the probability density functions (discrete values) and $P(\cdot)$ will be used to denote probability mass functions (continuous random variables, distributions etc).
 ### Probabilistic Inference
 Two key ideas for probabilistic inference:
 1. The solution is a probability distribution over all possible settings of unknown variables, given observed data.
 2. Use the sum and product rules to compute the solution.
 
-**Sum rule**: $p(y) = \int p(y, z) \, dz$  
+**Sum rule**: $P(y) = \int p(y, z) \, dz$  or $p(y) = \sum_{z} P(y,z)$
 **Product rule**: $p(y, z) = p(z)p(y|z) = p(y)p(z|y)$
 **Bayes' rule**: $p(y|z) = \frac{p(y)p(z|y)}{p(z)}$  
 	- **Posterior distribution** $p(y|z)$: what we know after seeing the data.
