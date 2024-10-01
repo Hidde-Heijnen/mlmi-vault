@@ -191,42 +191,23 @@ As $\sigma_y^2 \rightarrow 0$:$$\mu_{d|y} = \frac{y}{1 + \sigma_y^2} \rightarrow
 
 - **As $\sigma_y^2 \rightarrow 0$:**
   - The measurement is highly precise.
-  - The posterior distribution centers tightly around $y$.
+  - The posterior distribution centres tightly around $y$.
   - **Posterior Mean:** $\mu_{d|y} \rightarrow y$.
   - **Posterior Variance:** $\sigma_{d|y}^2 \rightarrow 0$.
 
-**Visual Representation:**
+## 2. Bayesian inference for a biased coin
 
-- **High Noise ($\sigma_y^2 \rightarrow \infty$):** Wide, flat posterior identical to the prior.
-- **Low Noise ($\sigma_y^2 \rightarrow 0$):** Sharp peak at $d = y$, indicating high confidence in $y$.
+### Question
+A sequence of coin tosses are observed from a biased coin $$\begin{align} x_{1:N}= \{ 0,1,1,0,1,1,1,1,0\} \end{align} $$
+where $x_n=1$ indicates flip $n$ was a head and $x_n=0$ indicates that it was tails. An experimenter would like to estimate the coin's probability of landing heads, $\rho$, from these data. 
 
----
+The experimenter assumes that the coin flips are drawn independently from a Bernoulli distribution $p(x_n|\rho) = \rho^{x_n} (1-\rho)^{1-x_n}$ and uses a prior distribution of the form   $$\begin{align}
+p(\rho|n_0,N_0) = \frac{1}{Z(n_0,N_0)}\rho^{n_0} (1-\rho)^{N_0-n_0}. \nonumber
+\end{align}$$
+Here $n_0$ and $N_0$ are parameters set by the experimenter to encapsulate their prior beliefs.  $Z(n_0,N_0)$ returns the normalising constant of the distribution as a function of the parameters, $n_0$ and $N_0$.
 
-### **Mathematical Insight**
-
-- The **posterior variance** depends on the prior variance and measurement noise.
-  - **Formula:** $\sigma_{d|y}^2 = \frac{\sigma_y^2}{1 + \sigma_y^2}$.
-  - As $\sigma_y^2$ increases, $\sigma_{d|y}^2$ approaches the prior variance.
-  - As $\sigma_y^2$ decreases, $\sigma_{d|y}^2$ approaches zero.
-
-- The **posterior mean** balances the prior mean and measurement.
-  - **Formula:** $\mu_{d|y} = \frac{y}{1 + \sigma_y^2}$.
-  - High noise reduces $y$'s influence on the posterior mean.
-  - Low noise makes $y$ the dominant factor in the posterior mean.
-
----
-
-### **Practical Implications**
-
-- **Reliability of Measurements:**
-  - High measurement noise necessitates reliance on prior information.
-  - Low measurement noise allows significant updates from the measurement.
-
-- **Sensor Design:**
-  - Understanding measurement noise is crucial for sensor design.
-  - Reducing measurement noise enhances the quality of posterior estimates.
-
-- **Bayesian Updating:**
-  - The Bayesian framework adjusts the influence of new data based on its uncertainty.
-  - Reliable data has a greater impact on the posterior distribution.
-
+  a) Compute the posterior distribution over the bias $p(\rho | x_{1:N},n_0,N_0 )$. 
+  b) Compute the __maximum a posteriori__ (MAP) estimate for the bias. 
+  c) Provide an intuitive interpretation for the parameters of the prior distribution, $n_0$ and $N_0$. For what setting of $n_0$ and $N_0$ does the MAP estimate become equal to the maximum-likelihood estimate? 
+### Answers
+#### a
