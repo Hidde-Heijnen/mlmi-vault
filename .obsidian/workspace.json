@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "010 - Classes/MLMI1/Notebook/Exercises/Radioactive.md",
+                "file": "030 - Notes/Math/Conjugate priors.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "$",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,12 +65,11 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 267.50390243530273
+    "width": 200
   },
   "right": {
     "id": "69431843e2c41654",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "010 - Classes/MLMI1/Notebook/Exercises/Radioactive.md",
+                "file": "030 - Notes/Math/Conjugate priors.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "010 - Classes/MLMI1/Notebook/Exercises/Radioactive.md",
+                "file": "030 - Notes/Math/Conjugate priors.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "010 - Classes/MLMI1/Notebook/Exercises/Radioactive.md"
+                "file": "030 - Notes/Math/Conjugate priors.md"
               }
             }
           }
@@ -151,10 +150,11 @@
       "jupyter:Create Jupyter Notebook": false
     }
   },
-  "active": "189f6e180bee420d",
+  "active": "fadd28feb2c628f0",
   "lastOpenFiles": [
-    "010 - Classes/MLMI1/Notebook/Inference.md",
     "010 - Classes/MLMI1/Notebook/Exercises/Radioactive.md",
+    "030 - Notes/Math/Conjugate priors.md",
+    "010 - Classes/MLMI1/Notebook/Inference.md",
     "010 - Classes/MLMI1/Notebook/Exercises",
     "010 - Classes/MLMI1/Notebook",
     "010 - Classes/MLMI1/Probabilistic modeling and Inference youtube playlist.md",
@@ -195,7 +195,6 @@
     "030 - Notes/Codebasics - Machine Learning Python course/Untitled/Untitled.md",
     "z - Attachments/obsidian-assets-settings.png",
     "z - Templates/Tagnote Template.md",
-    "030 - Notes/New Resource.md",
-    "030 - Notes/Resource Title.md"
+    "030 - Notes/New Resource.md"
   ]
 }
