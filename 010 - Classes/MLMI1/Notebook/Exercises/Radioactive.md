@@ -152,7 +152,7 @@ From the previous derivation, we have:
 
 ---
 
-### **Measurement Noise Becomes Very Large ($\sigma_y^2 \rightarrow \infty$)**
+##### **Measurement Noise Becomes Very Large ($\sigma_y^2 \rightarrow \infty$)**
 
 **Step 1: Evaluate the Posterior Variance**
 As $\sigma_y^2 \rightarrow \infty$: $$\sigma_{d|y}^2 = \frac{\sigma_y^2}{1 + \sigma_y^2}$$Divide numerator and denominator by $\sigma_y^2$:$$\sigma_{d|y}^2 = \frac{1}{\frac{1}{\sigma_y^2} + 1} \rightarrow \frac{1}{0 + 1} = 1$$
@@ -167,7 +167,7 @@ As $\sigma_y^2 \rightarrow \infty$:$$\mu_{d|y} = \frac{y}{1 + \sigma_y^2} \right
 - The posterior distribution $p(d|y)$ **reverts to the prior distribution** $p(d)$.
 - This occurs because the measurement provides **no new information** beyond prior beliefs.
 ---
-### **Extra: Measurement Noise Becomes Very Small ($\sigma_y^2 \rightarrow 0$)**
+##### **Extra: Measurement Noise Becomes Very Small ($\sigma_y^2 \rightarrow 0$)**
 **Step 1: Evaluate the Posterior Variance**
 As $\sigma_y^2 \rightarrow 0$:$$\sigma_{d|y}^2 = \frac{\sigma_y^2}{1 + \sigma_y^2} \rightarrow \frac{0}{1 + 0} = 0$$
 **Interpretation:**
@@ -182,7 +182,7 @@ As $\sigma_y^2 \rightarrow 0$:$$\mu_{d|y} = \frac{y}{1 + \sigma_y^2} \rightarrow
 - The posterior distribution $p(d|y)$ becomes **concentrated at $d = y$**.
 - This indicates that the measurement **overrides our prior beliefs** due to its high precision.
 ---
-### **Summary and Interpretation**
+##### **Summary and Interpretation**
 - **As $\sigma_y^2 \rightarrow \infty$:**
   - Measurement noise dominates, making $y$ unreliable.
   - The posterior distribution mirrors the prior.
@@ -194,7 +194,6 @@ As $\sigma_y^2 \rightarrow 0$:$$\mu_{d|y} = \frac{y}{1 + \sigma_y^2} \rightarrow
   - The posterior distribution centres tightly around $y$.
   - **Posterior Mean:** $\mu_{d|y} \rightarrow y$.
   - **Posterior Variance:** $\sigma_{d|y}^2 \rightarrow 0$.
-
 ## 2. Bayesian inference for a biased coin
 
 ### Question
