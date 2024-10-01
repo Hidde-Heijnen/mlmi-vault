@@ -152,72 +152,37 @@ From the previous derivation, we have:
 
 ---
 
-### **Case 1: Measurement Noise Becomes Very Large ($\sigma_y^2 \rightarrow \infty$)**
+### **Measurement Noise Becomes Very Large ($\sigma_y^2 \rightarrow \infty$)**
 
 **Step 1: Evaluate the Posterior Variance**
-
-As $\sigma_y^2 \rightarrow \infty$:
-
-$$\sigma_{d|y}^2 = \frac{\sigma_y^2}{1 + \sigma_y^2}$$
-
-Divide numerator and denominator by $\sigma_y^2$:
-
-$$\sigma_{d|y}^2 = \frac{1}{\frac{1}{\sigma_y^2} + 1} \rightarrow \frac{1}{0 + 1} = 1$$
-
-**Interpretation:**
-
-- The posterior variance $\sigma_{d|y}^2$ approaches **1**, which is the variance of the prior distribution $p(d)$.
+As $\sigma_y^2 \rightarrow \infty$: $$\sigma_{d|y}^2 = \frac{\sigma_y^2}{1 + \sigma_y^2}$$Divide numerator and denominator by $\sigma_y^2$:$$\sigma_{d|y}^2 = \frac{1}{\frac{1}{\sigma_y^2} + 1} \rightarrow \frac{1}{0 + 1} = 1$$
+	The posterior variance $\sigma_{d|y}^2$ approaches **1**, which is the variance of the prior distribution $p(d)$.
 
 **Step 2: Evaluate the Posterior Mean**
-
-As $\sigma_y^2 \rightarrow \infty$:
-
-$$\mu_{d|y} = \frac{y}{1 + \sigma_y^2} \rightarrow \frac{y}{\infty} = 0$$
-
-**Interpretation:**
-
+As $\sigma_y^2 \rightarrow \infty$:$$\mu_{d|y} = \frac{y}{1 + \sigma_y^2} \rightarrow \frac{y}{\infty} = 0$$**Interpretation:**
 - The posterior mean $\mu_{d|y}$ approaches **0**, the mean of the prior distribution $p(d)$.
 
 **Conclusion:**
-
 - **When the measurement noise is very large**, the measurement $y$ becomes extremely unreliable.
 - The posterior distribution $p(d|y)$ **reverts to the prior distribution** $p(d)$.
 - This occurs because the measurement provides **no new information** beyond prior beliefs.
-
 ---
-
-### **Case 2: Measurement Noise Becomes Very Small ($\sigma_y^2 \rightarrow 0$)**
-
+### **Extra: Measurement Noise Becomes Very Small ($\sigma_y^2 \rightarrow 0$)**
 **Step 1: Evaluate the Posterior Variance**
-
-As $\sigma_y^2 \rightarrow 0$:
-
-$$\sigma_{d|y}^2 = \frac{\sigma_y^2}{1 + \sigma_y^2} \rightarrow \frac{0}{1 + 0} = 0$$
-
+As $\sigma_y^2 \rightarrow 0$:$$\sigma_{d|y}^2 = \frac{\sigma_y^2}{1 + \sigma_y^2} \rightarrow \frac{0}{1 + 0} = 0$$
 **Interpretation:**
-
 - The posterior variance $\sigma_{d|y}^2$ approaches **0**, indicating our uncertainty about $d$ vanishes.
 
 **Step 2: Evaluate the Posterior Mean**
-
-As $\sigma_y^2 \rightarrow 0$:
-
-$$\mu_{d|y} = \frac{y}{1 + \sigma_y^2} \rightarrow \frac{y}{1 + 0} = y$$
-
-**Interpretation:**
-
+As $\sigma_y^2 \rightarrow 0$:$$\mu_{d|y} = \frac{y}{1 + \sigma_y^2} \rightarrow \frac{y}{1 + 0} = y$$**Interpretation:**
 - The posterior mean $\mu_{d|y}$ approaches **$y$**, the value of the measurement.
 
 **Conclusion:**
-
 - **When the measurement noise is very small**, the measurement $y$ is highly reliable.
 - The posterior distribution $p(d|y)$ becomes **concentrated at $d = y$**.
 - This indicates that the measurement **overrides our prior beliefs** due to its high precision.
-
 ---
-
 ### **Summary and Interpretation**
-
 - **As $\sigma_y^2 \rightarrow \infty$:**
   - Measurement noise dominates, making $y$ unreliable.
   - The posterior distribution mirrors the prior.
