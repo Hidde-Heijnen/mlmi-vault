@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "030 - Notes/Math/Conjugate priors.md",
+                "file": "030 - Notes/Math/Integrals.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 216.50390243530273
   },
   "right": {
     "id": "69431843e2c41654",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "030 - Notes/Math/Conjugate priors.md",
+                "file": "030 - Notes/Math/Integrals.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "030 - Notes/Math/Conjugate priors.md",
+                "file": "030 - Notes/Math/Integrals.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "030 - Notes/Math/Conjugate priors.md"
+                "file": "030 - Notes/Math/Integrals.md"
               }
             }
           }
@@ -152,8 +152,8 @@
   },
   "active": "fadd28feb2c628f0",
   "lastOpenFiles": [
-    "010 - Classes/MLMI1/Notebook/Exercises/Radioactive.md",
     "030 - Notes/Math/Conjugate priors.md",
+    "010 - Classes/MLMI1/Notebook/Exercises/Radioactive.md",
     "010 - Classes/MLMI1/Notebook/Inference.md",
     "010 - Classes/MLMI1/Notebook/Exercises",
     "010 - Classes/MLMI1/Notebook",
