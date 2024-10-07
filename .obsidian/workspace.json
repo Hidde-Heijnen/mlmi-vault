@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "010 - Classes/MLMI1/Notebook/Inference.md",
+                "file": "010 - Classes/MLMI1/Notebook/Exercises/Radioactive.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "010 - Classes/MLMI1/Notebook/Inference.md",
+                "file": "010 - Classes/MLMI1/Notebook/Exercises/Radioactive.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "010 - Classes/MLMI1/Notebook/Inference.md",
+                "file": "010 - Classes/MLMI1/Notebook/Exercises/Radioactive.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "010 - Classes/MLMI1/Notebook/Inference.md"
+                "file": "010 - Classes/MLMI1/Notebook/Exercises/Radioactive.md"
               }
             }
           }
@@ -152,11 +152,11 @@
   },
   "active": "fadd28feb2c628f0",
   "lastOpenFiles": [
+    "010 - Classes/MLMI1/Notebook/Inference.md",
     "030 - Notes/Math/Linear transformations.md",
     "030 - Notes/Math/Integrals.md",
     "030 - Notes/Math/hyperbolic functions.md",
     "030 - Notes/Math/Eulers formula.md",
-    "010 - Classes/MLMI1/Notebook/Inference.md",
     "010 - Classes/MLMI1/Inference intro.md",
     "010 - Classes/MLMI1/Probabilistic modeling and Inference youtube playlist.md",
     "030 - Notes/Math/Distributions.md",
