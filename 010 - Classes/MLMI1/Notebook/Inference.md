@@ -1,5 +1,5 @@
 ## Introduction
-Inference is estimating unobserved variables from observed data. The purpose of inference is to make a decision, and in these cases how certain you are is even more critical. We will introduce probabilistic modelling and probabilistic inference for making these inferences.
+Inference is estimating unobserved variables from observed data. The purpose of inference is to make a decision, and in these cases how certain you are is even more critical, that's why we will introduce probabilistic modelling and probabilistic inference for making these inferences.
 
 #### Flavours of ML
 The machine experiences a series of sensory inputs: $x_1, x_2, x_3, x_4, \dots$
