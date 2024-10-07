@@ -82,6 +82,12 @@ p(x^\star \lvert \{x_n\}_{n=1}^N) &= \int p(x^\star,\lambda \lvert \{x_n\}_{n=1}
 
 The predictive distribution has an intuitive form: it takes the prediction we would make if we knew $\lambda$, $p(x^\star \lvert  \lambda)$, weights it by the probability under the posterior $p(\lambda | \{x_n\}_{n=1}^N)$, and sums this quantity over all settings of $\lambda$. For this reason the probabilistic predictive distribution above is sometimes called the **posterior predictive**.
 
+The term  $p(x^\star | \lambda)$  represents the probability distribution of the new data point  $x^\star$  given a specific value of the parameter  $\lambda$ . If we somehow knew the exact value of  $\lambda$, this would be our prediction for  $x^\star$.
+
+In reality, we don’t know the exact value of  $\lambda$; instead, we have a distribution over possible values of  $\lambda$  based on the observed data  $\{x_n\}{n=1}^N$ . This distribution is the posterior  $p(\lambda | \{x_n\}_{n=1}^N)$.
+
+By integrating over all possible  $\lambda$ , we avoid the pitfall of placing undue confidence in a single estimated parameter value, which might be misleading if the estimate is uncertain. Instead of making a potentially overconfident prediction based on a single estimate of  $\lambda$  (like a maximum likelihood estimate), we acknowledge that multiple values of  $\lambda$  are plausible and that each would lead to a different prediction for  $x^\star$. But some are a bit more plausible based on our previous data than others. 
+
 ### Posterior predictive distribution vs MAP predictive distribution
 
 Posterior Predictive Distribution
