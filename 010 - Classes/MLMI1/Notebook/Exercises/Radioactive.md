@@ -74,6 +74,13 @@ $$
 **Step 5: Rewrite in Standard Gaussian Form**
 We can express the exponent in the standard quadratic form to identify the mean and variance of the posterior distribution.
 
+$$
+e^{-\frac{1}{2} \left[ d^2 \left(\frac{1}{\sigma_{y}^2} + 1\right) - \frac{2dy}{\sigma_{y}^2} + \frac{y^2}{\sigma_{y}^2}\right]}$$ $$
+\arrright e^{-\frac{1}{2} \sigma_{dy}^2 \left( d - \mu_{dy} \right)^2}
+= e^{-\frac{1}{2} \left( \frac{d^2}{\sigma_{dy}^2} - 2 d \frac{\mu_{dy}}{\sigma_{dy}^2} + \frac{\mu_{dy}^2}{\sigma_{dy}^2} \right)}
+$$
+
+
 Let:
 - $A = \left( \frac{1}{\sigma_y^2} + 1 \right)$
 - $B = \frac{y}{\sigma_y^2}$
