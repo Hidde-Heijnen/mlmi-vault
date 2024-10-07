@@ -76,8 +76,8 @@ We can express the exponent in the standard quadratic form to identify the mean 
 
 $$
 e^{-\frac{1}{2} \left[ d^2 \left(\frac{1}{\sigma_{y}^2} + 1\right) - \frac{2dy}{\sigma_{y}^2} + \frac{y^2}{\sigma_{y}^2}\right]}$$ $$
-\arrright e^{-\frac{1}{2} \sigma_{dy}^2 \left( d - \mu_{dy} \right)^2}
-= e^{-\frac{1}{2} \left( \frac{d^2}{\sigma_{dy}^2} - 2 d \frac{\mu_{dy}}{\sigma_{dy}^2} + \frac{\mu_{dy}^2}{\sigma_{dy}^2} \right)}
+\Rightarrow e^{-\frac{1}{2\sigma_{d|y}^2} \left( d - \mu_{d|y} \right)^2}
+= e^{-\frac{1}{2} \left( \frac{d^2}{\sigma_{d|y}^2} - 2 d \frac{\mu_{d|y}}{\sigma_{d|y}^2} + \frac{\mu_{d|y}^2}{\sigma_{d|y}^2} \right)}
 $$
 
 
