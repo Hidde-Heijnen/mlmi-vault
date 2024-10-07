@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "010 - Classes/MLMI1/Probabilistic modeling and Inference youtube playlist.md",
+                "file": "010 - Classes/MLMI1/Notebook/Inference.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "010 - Classes/MLMI1/Probabilistic modeling and Inference youtube playlist.md",
+                "file": "010 - Classes/MLMI1/Notebook/Inference.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "010 - Classes/MLMI1/Probabilistic modeling and Inference youtube playlist.md",
+                "file": "010 - Classes/MLMI1/Notebook/Inference.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "010 - Classes/MLMI1/Probabilistic modeling and Inference youtube playlist.md"
+                "file": "010 - Classes/MLMI1/Notebook/Inference.md"
               }
             }
           }
@@ -152,15 +152,16 @@
   },
   "active": "fadd28feb2c628f0",
   "lastOpenFiles": [
+    "010 - Classes/MLMI1/Inference intro.md",
+    "010 - Classes/MLMI1/Notebook/Inference.md",
+    "010 - Classes/MLMI1/Probabilistic modeling and Inference youtube playlist.md",
     "030 - Notes/Math/Distributions.md",
     "030 - Notes/Math/Probability.md",
-    "010 - Classes/MLMI1/Probabilistic modeling and Inference youtube playlist.md",
     "010 - Classes/MLMI1/Notebook/Exercises/Radioactive.md",
     "030 - Notes/Math/Conjugate priors.md",
     "030 - Notes/Math/Derivatives.md",
     "030 - Notes/Math/Logarithms.md",
     "030 - Notes/Math/Integrals.md",
-    "010 - Classes/MLMI1/Notebook/Inference.md",
     "010 - Classes/MLMI1/Notebook/Exercises",
     "010 - Classes/MLMI1/Notebook",
     "z - Attachments/CleanShot 2024-09-29 at 10.04.00@2x.png",
@@ -194,7 +195,6 @@
     "z - Attachments/CleanShot 2024-05-21 at 21.14.49.png",
     "030 - Notes/Codebasics - Machine Learning Python course/Untitled/Untitled.md",
     "z - Attachments/obsidian-assets-settings.png",
-    "z - Templates/Tagnote Template.md",
-    "030 - Notes/New Resource.md"
+    "z - Templates/Tagnote Template.md"
   ]
 }
