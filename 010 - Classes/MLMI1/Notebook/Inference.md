@@ -78,7 +78,7 @@ p(x^\star \lvert \{x_n\}_{n=1}^N) &= \int p(x^\star,\lambda \lvert \{x_n\}_{n=1}
 %
 & = \int p(x^\star \lvert  \lambda) p(\lambda | \{x_n\}_{n=1}^N) \text{d} \lambda \;\;\; \text{(modelling assumptions)}\\ 
 \end{align}$$
-	The last line follows from that fact that if we know $\lambda$ then, under the model we are assuming, the data set $\{x_n\}_{n=1}^N$ provides no additional information about $x^\star $.
+	The last line follows from that fact that if we know $\lambda$ then, under the model we are assuming, the data set $\{x_n\}_{n=1}^N$ provides no additional information about $x^\star$.
 
 The predictive distribution has an intuitive form: it takes the prediction we would make if we knew $\lambda$, $p(x^\star \lvert  \lambda)$, weights it by the probability under the posterior $p(\lambda | \{x_n\}_{n=1}^N)$, and sums this quantity over all settings of $\lambda$. For this reason the probabilistic predictive distribution above is sometimes called the **posterior predictive**.
 
