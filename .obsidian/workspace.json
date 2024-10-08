@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "030 - Notes/Math/Logarithms.md",
+                "file": "030 - Notes/Math/Derivatives.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "030 - Notes/Math/Logarithms.md",
+                "file": "030 - Notes/Math/Derivatives.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "030 - Notes/Math/Logarithms.md",
+                "file": "030 - Notes/Math/Derivatives.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "030 - Notes/Math/Logarithms.md"
+                "file": "030 - Notes/Math/Derivatives.md"
               }
             }
           }
@@ -164,6 +164,7 @@
   },
   "active": "fadd28feb2c628f0",
   "lastOpenFiles": [
+    "030 - Notes/Math/Logarithms.md",
     "010 - Classes/MLMI1/Notebook/Exercises/Radioactive.md",
     "030 - Notes/Math/Conjugate priors.md",
     "010 - Classes/MLMI1/Notebook/Inference.md",
@@ -176,7 +177,6 @@
     "030 - Notes/Math/Distributions.md",
     "030 - Notes/Math/Probability.md",
     "030 - Notes/Math/Derivatives.md",
-    "030 - Notes/Math/Logarithms.md",
     "010 - Classes/MLMI1/Notebook/Exercises",
     "010 - Classes/MLMI1/Notebook",
     "z - Attachments/CleanShot 2024-09-29 at 10.04.00@2x.png",
