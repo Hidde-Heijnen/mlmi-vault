@@ -193,3 +193,13 @@ Where:
 $$ n' = n_0 + n, \quad N' = N_0 + N $$
 
 This is a Beta distribution (because of the normalising constant in front of it, and the arbitrary values it's fine that it is not in the $\alpha - 1$ form) and is conjugate to the likelihood, meaning the posterior has the same form.
+
+#### b)
+We want to find $\rho_{MAP} = argmax$
+
+#### C
+**maximum likelihood estimation** $\rho_{\text{ML}} = \underset{\rho}{\mathrm{arg\max}} \;\; p(\{ x_n \}_{n=1}^N | \rho )$
+**maximum a posteriori estimation** $\rho_{\text{MAP}} = \underset{\rho}{\mathrm{arg\max}} \;\; p(\rho) p(\{ x_n \}_{n=1}^N | \rho )$
+They are the same when our prior is one
+
+in this case our prior is 
