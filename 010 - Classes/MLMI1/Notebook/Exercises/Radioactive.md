@@ -243,3 +243,59 @@ This is only equal to one when $n_0 = N_0 = 0$
   * Imagine that the contestant chooses door 1 first; then the gameshow host opens door 4, revealing nothing behind the door, as promised. Should the contestant (a) stick with door 1, or (b) switch to door 2 or 3, or (c) does it make no difference?
 
   * Use Bayes' rule to solve the problem.
+
+### Answer
+Without loss of generality, let door 1 be the one selected by the contestant.
+
+Let $S$ be the position of the prize, where $S \in \{1, 2, 3, 4\}$.
+
+A priori, we assume:
+$$p(S = k) = \frac{1}{4}$$
+
+The data we receive after choosing door 1 is either $D = 2$, $D = 3$, or $D = 4$, i.e., doors 2, 3, or 4 are opened.
+
+Assume that when the host has a choice about which door to open, he selects uniformly between those doors not associated with the prize.
+
+$$
+p(D = 2 \mid S = 1) = \frac{1}{3}, \quad p(D = 3 \mid S = 1) = \frac{1}{3}, \quad p(D = 4 \mid S = 1) = \frac{1}{3}
+$$
+$$
+p(D = 2 \mid S = 2) = 0, \quad p(D = 3 \mid S = 2) = \frac{1}{2}, \quad p(D = 4 \mid S = 2) = \frac{1}{2}
+$$
+$$
+p(D = 2 \mid S = 3) = \frac{1}{2}, \quad p(D = 3 \mid S = 3) = 0, \quad p(D = 4 \mid S = 3) = \frac{1}{2}
+$$
+$$
+p(D = 2 \mid S = 4) = \frac{1}{2}, \quad p(D = 3 \mid S = 4) = \frac{1}{2}, \quad p(D = 4 \mid S = 4) = 0
+$$
+Now apply Bayes' Theorem:
+
+$$
+p(S = k \mid D = 4) = \frac{p(D = 4 \mid S = k) \, p(S = k)}{p(D = 4)}
+$$
+
+- For $p(S = 1 \mid D = 4)$:
+$$
+p(S = 1 \mid D = 4) = \frac{\frac{1}{3} \cdot \frac{1}{4}}{p(D = 4)} = \frac{1}{4} \quad \text{(same as prior)}
+$$
+
+- For $p(S = 2 \mid D = 4)$:
+$$
+p(S = 2 \mid D = 4) = \frac{\frac{1}{2} \cdot \frac{1}{4}}{p(D = 4)} = \frac{3}{8} \quad \text{(greater than prior)}
+$$
+
+- For $p(S = 3 \mid D = 4)$:
+$$
+p(S = 3 \mid D = 4) = \frac{\frac{1}{2} \cdot \frac{1}{4}}{p(D = 4)} = \frac{3}{8} \quad \text{(greater than prior)}
+$$
+
+- For $p(S = 4 \mid D = 4)$:
+$$
+p(S = 4 \mid D = 4) = 0
+$$
+
+Thus, switching to doors 2 or 3 will increase our chances of winning from $\frac{1}{4}$ to $\frac{3}{8}$, i.e. by 1.5 times.
+
+To gain intuition for the fact that the host's door choice provides information, consider a scenario with 100 doors, where the host opens 98 of them.
+
+This is a version of the Monty Hall problem (see pg. 57 of David MacKay's *Information Theory & Inference* book).
