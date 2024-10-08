@@ -67,18 +67,20 @@ $$
 $$
 -\frac{y^2}{2\sigma_y^2}
 $$
+	 This is because we could just move it into a different exponent and put it in the normalising constant we ignored. 
+	 
 Now, write the exponent with the grouped terms:
 $$
 p(d|y) \propto e^{-\left( \frac{d^2}{2}\left( \frac{1}{\sigma_y^2} + 1 \right) - \frac{yd}{\sigma_y^2} \right)}
 $$
-**Step 5: Rewrite in Standard Gaussian Form**
+**Step 5: Rewrite Gaussian Form**
 We can express the exponent in the standard quadratic form to identify the mean and variance of the posterior distribution.
-
-$$
-e^{-\frac{1}{2} \left[ d^2 \left(\frac{1}{\sigma_{y}^2} + 1\right) - \frac{2dy}{\sigma_{y}^2} + \frac{y^2}{\sigma_{y}^2}\right]}$$ $$
-\Rightarrow e^{-\frac{1}{2\sigma_{d|y}^2} \left( d - \mu_{d|y} \right)^2}
+ $$
+\mathcal{N}(d;\mu_{d|y},\sigma_y^2) = e^{-\frac{1}{2\sigma_{d|y}^2} \left( d - \mu_{d|y} \right)^2}
 = e^{-\frac{1}{2} \left( \frac{d^2}{\sigma_{d|y}^2} - 2 d \frac{\mu_{d|y}}{\sigma_{d|y}^2} + \frac{\mu_{d|y}^2}{\sigma_{d|y}^2} \right)}
 $$
+$$
+e^{-\frac{1}{2} \left[ d^2 \left(\frac{1}{\sigma_{y}^2} + 1\right) - \frac{2dy}{\sigma_{y}^2} + \frac{y^2}{\sigma_{y}^2}\right]}$$
 **Final Posterior Distribution:**
 $$
 p(d|y) = N\left( d; \mu_{d|y}, \sigma_{d|y}^2 \right)
