@@ -192,4 +192,4 @@ $$ p(\rho \mid x_{1:N}, n_0, N_0) = \frac{1}{Z(n', N')} \rho^{n'} (1-\rho)^{N' -
 Where:
 $$ n' = n_0 + n, \quad N' = N_0 + N $$
 
-This is a Beta distribution and is conjugate to the likelihood, meaning the posterior has the same form.
+This is a Beta distribution (because of the normalising constant in front of it, and the arbitrary values it's fine that it is not in the $\alpha - 1$ form) and is conjugate to the likelihood, meaning the posterior has the same form.
