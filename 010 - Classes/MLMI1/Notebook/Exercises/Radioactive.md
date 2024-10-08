@@ -74,13 +74,21 @@ $$
 p(d|y) \propto e^{-\left( \frac{d^2}{2}\left( \frac{1}{\sigma_y^2} + 1 \right) - \frac{yd}{\sigma_y^2} \right)}
 $$
 **Step 5: Rewrite Gaussian Form**
-We can express the exponent in the standard quadratic form to identify the mean and variance of the posterior distribution.
- $$
-\mathcal{N}(d;\mu_{d|y},\sigma_y^2) = e^{-\frac{1}{2\sigma_{d|y}^2} \left( d - \mu_{d|y} \right)^2}
-= e^{-\frac{1}{2} \left( \frac{d^2}{\sigma_{d|y}^2} - 2 d \frac{\mu_{d|y}}{\sigma_{d|y}^2} + \frac{\mu_{d|y}^2}{\sigma_{d|y}^2} \right)}
+We can express the exponent in the standard quadratic form to identify the mean and variance of the posterior distribution.$$\mathcal{N}(d;\mu_{d|y},\sigma_{d|y}^2) = e^{-\frac{1}{2\sigma_{d|y}^2} \left( d - \mu_{d|y} \right)^2}
+= e^{-\frac{1}{2} \left( \frac{d^2}{\sigma_{d|y}^2} - 2 d \frac{\mu_{d|y}}{\sigma_{d|y}^2} + \frac{\mu_{d|y}^2}{\sigma_{d|y}^2} \right)}$$
+We can ignore the constant here as well:
+$$e^{-\frac{1}{2} \left( \frac{d^2}{\sigma_{d|y}^2} - 2 d \frac{\mu_{d|y}}{\sigma_{d|y}^2} \right)}$$
+Now let's compare with our formula from above, we can see that we can match the coefficients to each other. 
 $$
-$$
-e^{-\frac{1}{2} \left[ d^2 \left(\frac{1}{\sigma_{y}^2} + 1\right) - \frac{2dy}{\sigma_{y}^2} + \frac{y^2}{\sigma_{y}^2}\right]}$$
+e^{-\frac{1}{2} \left[ d^2 \left(\frac{1}{\sigma_{y}^2} + 1\right) - \frac{2dy}{\sigma_{y}^2}\right]}$$
+We want to solve for:
+$$ e^{-\frac{1}{2} \left( \frac{d^2}{\sigma_{d|y}^2} - 2 d \frac{\mu_{d|y}}{\sigma_{d|y}^2} \right)} =
+e^{-\frac{1}{2} \left[ d^2 \left(\frac{1}{\sigma_{y}^2} + 1\right) - \frac{2dy}{\sigma_{y}^2}\right]}$$
+The take $ln$ of both sides and multiply both sides by $-2$ to get
+$$d^2\frac{1}{\sigma_{d|y}^2} - d \frac{2 \mu_{d|y}}{\sigma_{d|y}^2} =
+d^2 \left(\frac{1}{\sigma_{y}^2} + 1\right) - d\frac{2y}{\sigma_{y}^2}$$
+**Match $d^2$ coefficient**
+$$\frac{1}{\sigma_{d|y}^2} = \frac{1}{\sigma_{y}^2} + 1 = \frac{1+\sigma_{y}^2}{\sigma_{y}^2}$$
 **Final Posterior Distribution:**
 $$
 p(d|y) = N\left( d; \mu_{d|y}, \sigma_{d|y}^2 \right)
@@ -89,20 +97,6 @@ where
 $$
 \mu_{d|y} = \frac{y}{1 + \sigma_y^2}, \quad \sigma_{d|y}^2 = \frac{\sigma_y^2}{1 + \sigma_y^2}
 $$
-
----
-
-**Summary of Steps and Key Points:**
-
-1. **Multiplying the Prior and Likelihood:** The unnormalised posterior is obtained by multiplying the prior $p(d)$ and the likelihood $p(y|d, \sigma_y^2)$.
-
-2. **Combining Exponents:** The exponents of the prior and likelihood are combined into a single quadratic expression in $d$.
-
-3. **Completing the Square:** By completing the square, we rewrite the quadratic expression to match the standard form of a Gaussian distribution, which allows us to identify the posterior mean $\mu_{d|y}$ and variance $\sigma_{d|y}^2$.
-
-4. **Ignoring Constants:** Constants that do not depend on $d$ (like $y^2$ terms) are absorbed into the normalisation constant and do not affect the shape of the posterior distribution.
-
-6. **Final Expression:** The posterior distribution $p(d|y)$ is a Gaussian distribution with the derived mean and variance.
 #### Q2
 **Given:**
 
