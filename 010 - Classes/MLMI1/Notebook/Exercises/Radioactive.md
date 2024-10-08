@@ -177,17 +177,16 @@ Here $n_0$ and $N_0$ are parameters set by the experimenter to encapsulate their
 ### Answers
 #### a)
 
-Given:
-
+Apply bayes rule, and we can separate the data into a product, because they're independent
 $$ p(\rho \mid x_{1:N}, n_0, N_0) \propto p(\rho \mid n_0, N_0) \prod_{n=1}^{N} p(x_{n} \mid \rho) $$
-
+Apply definitions:
+$$ = \frac{1}{Z(n_0, N_0)} \rho^{n_0} (1-\rho)^{N_0 - n_0} \prod_{n=1}^{N} \rho^{x_n} (1-\rho)^{1 - x_n} $$
 We can express this as:
-
 $$ = \frac{1}{Z(n_0, N_0)} \rho^{n_0} (1-\rho)^{N_0 - n_0} \rho^{\sum_n x_n} (1-\rho)^{N - \sum_n x_n} $$
 
 Simplifying:
 
-$$ = \frac{1}{Z} \rho^{n_0 + \sum_n x_n} (1-\rho)^{N_0 + N - n_0 - \sum_n x_n} $$
+$$ = \frac{1}{Z(n_0, N_0)} \rho^{n_0 + n } (1-\rho)^{N_0 + N - n_0 - n} $$
 
 Where:
 
