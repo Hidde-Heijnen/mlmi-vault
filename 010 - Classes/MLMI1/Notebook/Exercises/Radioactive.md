@@ -207,8 +207,16 @@ $$= log(1) - log(Z(n', N')) + n'\log( \rho) +(N' - n')\log(1-\rho)$$
 $$= - log(Z(n', N')) + n'\log( \rho) +(N' - n')\log(1-\rho)$$
 Now we take the derivative
 $$
-\frac{d}{d\rho} \log p(\rho | \textbf{x}, n_0, N_0) = \frac{n'}{\rho_{MAP}} - \frac{N'-n'}{1-\rho}
+\frac{d}{d\rho} \log p(\rho | \textbf{x}, n_0, N_0) = \frac{n'}{\rho_{MAP}} - \frac{N'-n'}{1-\rho_{MAP}} = 0
 $$
+$$
+n'(1-\rho_{MAP}) - (N'-n')\rho_{MAP} = 0
+$$
+$$\frac{1-\rho_{MAP}}{\rho_{MAP}} = \frac{N'-n'}{n'}$$
+$$\frac{1}{\rho_{MAP}} - 1 = \frac{N'}{n'}-1$$
+$$\frac{1}{\rho_{MAP}} = \frac{N'}{n'}$$
+$$\rho_{MAP} = \frac{n'}{N'}$$
+
 
 
 #### C
@@ -222,3 +230,16 @@ They are the same when our prior is one
 in this case our prior is:
 $$\frac{1}{Z(n_0, N_0)} \rho^{n_0} (1-\rho)^{N_0 - n_0}$$
 This is only equal to one when $n_0 = N_0 = 0$
+
+## 3. Inferential game show
+
+### Question
+  On a game show, a contestant is told the rules as follows:
+
+  There are four doors, labelled 1, 2, 3 and 4. A single prize has been hidden behind one of them. You get to select one door. Initially your chosen door will not be opened. Instead, the gameshow host will open one of the other three doors, and __he will do so in such a way as not to reveal the prize__. For example, if you first choose door 1, he will then open one of doors 2, 3 and 4, and it is guaranteed that he will choose which one to open so that the prize will not be revealed.
+
+  At this point, you will be given a fresh choice of door: you can either stick with your first choice, or you can switch to one of the other closed doors. All the doors will then be opened and you will receive whatever is behind your final choice of door.
+
+  * Imagine that the contestant chooses door 1 first; then the gameshow host opens door 4, revealing nothing behind the door, as promised. Should the contestant (a) stick with door 1, or (b) switch to door 2 or 3, or (c) does it make no difference?
+
+  * Use Bayes' rule to solve the problem.
