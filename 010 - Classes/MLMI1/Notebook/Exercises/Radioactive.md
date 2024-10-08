@@ -177,3 +177,28 @@ Here $n_0$ and $N_0$ are parameters set by the experimenter to encapsulate their
 ### Answers
 #### a)
 
+Given:
+
+$$ p(\rho \mid x_{1:N}, n_0, N_0) \propto p(\rho \mid n_0, N_0) \prod_{n=1}^{N} p(x_{n} \mid \rho) $$
+
+We can express this as:
+
+$$ = \frac{1}{Z(n_0, N_0)} \rho^{n_0} (1-\rho)^{N_0 - n_0} \rho^{\sum_n x_n} (1-\rho)^{N - \sum_n x_n} $$
+
+Simplifying:
+
+$$ = \frac{1}{Z} \rho^{n_0 + \sum_n x_n} (1-\rho)^{N_0 + N - n_0 - \sum_n x_n} $$
+
+Where:
+
+$$ n = \sum_n x_n \quad \text{(i.e., the number of 1's in the dataset)} $$
+
+Thus:
+
+$$ p(\rho \mid x_{1:N}, n_0, N_0) = \frac{1}{Z(n', N')} \rho^{n'} (1-\rho)^{N' - n'} $$
+
+Where:
+
+$$ n' = n_0 + n, \quad N' = N_0 + N $$
+
+This is a Beta distribution and is conjugate to the likelihood, meaning the posterior has the same form.
