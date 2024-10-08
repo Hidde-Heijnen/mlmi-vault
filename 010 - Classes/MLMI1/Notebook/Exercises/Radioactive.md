@@ -201,7 +201,15 @@ To make it easier we will take the log (this doesn't change the maximum)
 We have $p(\rho | \{ x_n \}_{n=1}^N)$ from above
 
 $$\log p(\rho | \textbf{x}, n_0, N_0) = log(\frac{1}{Z(n', N')} \rho^{n'} (1-\rho)^{N' - n'})$$
+$$= log(\frac{1}{Z(n', N')}) + log( \rho^{n'}) +log((1-\rho)^{N' - n'})$$
+$$= log(\frac{1}{Z(n', N')}) + n'\log( \rho) +(N' - n')\log(1-\rho)$$
+$$= log(1) - log(Z(n', N')) + n'\log( \rho) +(N' - n')\log(1-\rho)$$
+$$= - log(Z(n', N')) + n'\log( \rho) +(N' - n')\log(1-\rho)$$
+Now we take the derivative
 $$
+\frac{d}{d\rho} \log p(\rho | \textbf{x}, n_0, N_0) = \frac{n'}{\rho_{MAP}} - \frac{N'-n'}{1-\rho}
+$$
+
 
 #### C
 - $N_0$ = # of pseudo data points seen before real data
