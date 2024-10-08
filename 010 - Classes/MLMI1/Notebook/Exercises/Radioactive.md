@@ -85,10 +85,20 @@ We want to solve for:
 $$ e^{-\frac{1}{2} \left( \frac{d^2}{\sigma_{d|y}^2} - 2 d \frac{\mu_{d|y}}{\sigma_{d|y}^2} \right)} =
 e^{-\frac{1}{2} \left[ d^2 \left(\frac{1}{\sigma_{y}^2} + 1\right) - \frac{2dy}{\sigma_{y}^2}\right]}$$
 The take $ln$ of both sides and multiply both sides by $-2$ to get
-$$d^2\frac{1}{\sigma_{d|y}^2} - d \frac{2 \mu_{d|y}}{\sigma_{d|y}^2} =
-d^2 \left(\frac{1}{\sigma_{y}^2} + 1\right) - d\frac{2y}{\sigma_{y}^2}$$
+$$d^2\frac{1}{\sigma_{d|y}^2} - 2d \frac{\mu_{d|y}}{\sigma_{d|y}^2} =
+d^2 \left(\frac{1}{\sigma_{y}^2} + 1\right) - 2d\frac{y}{\sigma_{y}^2}$$
 **Match $d^2$ coefficient**
 $$\frac{1}{\sigma_{d|y}^2} = \frac{1}{\sigma_{y}^2} + 1 = \frac{1+\sigma_{y}^2}{\sigma_{y}^2}$$
+Flip both sides
+$$\sigma_{d|y}^2 = \frac{\sigma_{y}^2}{1+\sigma_{y}^2}$$
+**Match the other coefficient $2d$, fill in $\sigma_{d|y}^2$, and solve for $\mu_{d|y}$**
+$$ \frac{\mu_{d|y}}{\sigma_{d|y}^2} = \frac{\mu_{d|y}}{(\frac{\sigma_{y}^2}{1+\sigma_{y}^2})} = \frac{y}{\sigma_{y}^2}$$
+$$ = \frac{\mu_{d|y}(1+\sigma_{y}^2)}{\sigma_{y}^2} = \frac{y}{\sigma_{y}^2}$$
+$$ = \mu_{d|y}(1+\sigma_{y}^2) = y$$
+$$ \mu_{d|y} = \frac{y}{1+\sigma_{y}^2}$$
+
+
+
 **Final Posterior Distribution:**
 $$
 p(d|y) = N\left( d; \mu_{d|y}, \sigma_{d|y}^2 \right)
