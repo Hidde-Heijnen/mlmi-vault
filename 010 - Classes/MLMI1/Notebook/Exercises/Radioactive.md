@@ -195,11 +195,22 @@ $$ n' = n_0 + n, \quad N' = N_0 + N $$
 This is a Beta distribution (because of the normalising constant in front of it, and the arbitrary values it's fine that it is not in the $\alpha - 1$ form) and is conjugate to the likelihood, meaning the posterior has the same form.
 
 #### b)
-We want to find $\rho_{MAP} = argmax$
+We want to find $\rho_{\text{MAP}} = \underset{\rho}{\mathrm{arg\max}} \;\; p(\rho) p(\{ x_n \}_{n=1}^N | \rho )= \underset{\rho}{\mathrm{arg\max}} \;\; p(\rho | \{ x_n \}_{n=1}^N)$
+To make it easier we will take the log (this doesn't change the maximum)
+
+We have $p(\rho | \{ x_n \}_{n=1}^N)$ from above
+
+$$\log p(\rho | \textbf{x}, n_0, N_0) = log(\frac{1}{Z(n', N')} \rho^{n'} (1-\rho)^{N' - n'})$$
+$$
 
 #### C
+- $N_0$ = # of pseudo data points seen before real data
+- $n_0$ = # of 1's in pseudo data
+
 **maximum likelihood estimation** $\rho_{\text{ML}} = \underset{\rho}{\mathrm{arg\max}} \;\; p(\{ x_n \}_{n=1}^N | \rho )$
 **maximum a posteriori estimation** $\rho_{\text{MAP}} = \underset{\rho}{\mathrm{arg\max}} \;\; p(\rho) p(\{ x_n \}_{n=1}^N | \rho )$
 They are the same when our prior is one
 
-in this case our prior is 
+in this case our prior is:
+$$\frac{1}{Z(n_0, N_0)} \rho^{n_0} (1-\rho)^{N_0 - n_0}$$
+This is only equal to one when $n_0 = N_0 = 0$
