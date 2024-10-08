@@ -21,15 +21,16 @@ A noisy depth sensor measures the distance to an object an unknown distance $d$ 
    $$
    p(y|d, \sigma_y^2) = N(y; d, \sigma_y^2) = \frac{1}{\sqrt{2\pi\sigma_y^2}} e^{-\frac{(y - d)^2}{2\sigma_y^2}}
    $$
-   The likelihood describes the probability of observing $y$ given $d$, assuming a normal distribution centered at $d$ with variance $\sigma_y^2$.
+   The likelihood describes the probability of observing $y$ given $d$, assuming a normal distribution centred at $d$ with variance $\sigma_y^2$.
 
 ---
 
 **To find the posterior distribution $p(d|y)$:**
 
-**Step 1: Write the Unnormalized Posterior**
+Since we our likelihood is a normal distribution, and our prior is as well, we know that our posterior will also be a normal distribution. This is because this is a [[Conjugate priors|Conjugate prior combination]]
 
-Using Bayes' theorem (up to a proportionality constant since we can absorb constants into normalization):
+**Step 1: Write the Unnormalised Posterior**
+Using Bayes' theorem (up to a proportionality constant since we can absorb constants into normalisation):
 $$
 p(d|y) \propto p(y|d, \sigma_y^2) \times p(d)
 $$
@@ -174,4 +175,5 @@ Here $n_0$ and $N_0$ are parameters set by the experimenter to encapsulate their
   b) Compute the __maximum a posteriori__ (MAP) estimate for the bias. 
   c) Provide an intuitive interpretation for the parameters of the prior distribution, $n_0$ and $N_0$. For what setting of $n_0$ and $N_0$ does the MAP estimate become equal to the maximum-likelihood estimate? 
 ### Answers
-#### a
+#### a)
+
