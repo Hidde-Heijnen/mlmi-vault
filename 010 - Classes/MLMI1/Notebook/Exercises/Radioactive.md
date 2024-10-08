@@ -79,54 +79,6 @@ e^{-\frac{1}{2} \left[ d^2 \left(\frac{1}{\sigma_{y}^2} + 1\right) - \frac{2dy}{
 \Rightarrow e^{-\frac{1}{2\sigma_{d|y}^2} \left( d - \mu_{d|y} \right)^2}
 = e^{-\frac{1}{2} \left( \frac{d^2}{\sigma_{d|y}^2} - 2 d \frac{\mu_{d|y}}{\sigma_{d|y}^2} + \frac{\mu_{d|y}^2}{\sigma_{d|y}^2} \right)}
 $$
-
-
-Let:
-- $A = \left( \frac{1}{\sigma_y^2} + 1 \right)$
-- $B = \frac{y}{\sigma_y^2}$
-The exponent becomes:
-$$
-p(d|y) \propto e^{-\left( \frac{A}{2}d^2 - Bd \right)}
-$$
-To rewrite this quadratic expression in terms of $(d - \mu_{d|y})^2$, we complete the square.
-
-**Completing the Square:**
-1. **Express the quadratic in $d$:**
-$$
-\frac{A}{2}d^2 - Bd = \frac{A}{2}\left( d^2 - \frac{2B}{A}d \right)
-$$
-2. **Complete the square inside the parentheses:**
-$$
-d^2 - \frac{2B}{A}d = \left( d - \frac{B}{A} \right)^2 - \left( \frac{B}{A} \right)^2
-$$
-3. **Substitute back:**
-$$
-\frac{A}{2}\left( \left( d - \frac{B}{A} \right)^2 - \left( \frac{B}{A} \right)^2 \right) = \frac{A}{2}\left( d - \frac{B}{A} \right)^2 - \frac{B^2}{2A}
-$$
-4. **Exclude constants from the exponent (since they do not affect the proportionality):**
-$$
-p(d|y) \propto e^{-\frac{A}{2}\left( d - \frac{B}{A} \right)^2}
-$$
-**Step 6: Identify Posterior Mean and Variance**
-From the expression:
-$$
-p(d|y) \propto e^{-\frac{1}{2\sigma_{d|y}^2}\left( d - \mu_{d|y} \right)^2}
-$$
-We can equate:
-1. **Variance:**
-$$
-\frac{1}{\sigma_{d|y}^2} = A = \frac{1}{\sigma_y^2} + 1
-$$
-$$
-\Rightarrow \sigma_{d|y}^2 = \frac{1}{\frac{1}{\sigma_y^2} + 1} = \frac{\sigma_y^2}{1 + \sigma_y^2}
-$$
-2. **Mean:**
-$$
-\frac{\mu_{d|y}}{\sigma_{d|y}^2} = B = \frac{y}{\sigma_y^2}
-$$
-$$
-\Rightarrow \mu_{d|y} = \sigma_{d|y}^2 \times \frac{y}{\sigma_y^2} = \left( \frac{\sigma_y^2}{1 + \sigma_y^2} \right) \left( \frac{y}{\sigma_y^2} \right) = \frac{y}{1 + \sigma_y^2}
-$$
 **Final Posterior Distribution:**
 $$
 p(d|y) = N\left( d; \mu_{d|y}, \sigma_{d|y}^2 \right)
