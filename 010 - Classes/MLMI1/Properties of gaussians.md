@@ -24,7 +24,7 @@ $$
 
 **Explanation of Variables:**
 - $X$: An $n$-dimensional random vector.
-- $x$: A specific value in $\mathbb{R}^n$ where the pdf is evaluated.
+- $\textbf{x}$: A specific value in $\mathbb{R}^n$ where the pdf is evaluated.
 - $M$: The mean vector, an $n$-dimensional column vector representing the expected value of $X$.
 - $\Sigma$: The covariance matrix, an $n \times n$ symmetric positive-definite matrix capturing the variances and covariances between the elements of $X$.
 - $\det(\Sigma)$: The determinant of $\Sigma$, ensuring the pdf integrates to 1.

@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "030 - Notes/Math/Distributions.md",
+                "file": "010 - Classes/MLMI1/Notebook/Exercises/Medical.md",
                 "mode": "source",
                 "source": false
               }
@@ -37,14 +37,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "030 - Notes/Math/Conjugate priors.md",
+                "file": "010 - Classes/MLMI1/Properties of gaussians.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -90,8 +90,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -111,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "030 - Notes/Math/Distributions.md",
+                "file": "010 - Classes/MLMI1/Properties of gaussians.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "030 - Notes/Math/Distributions.md",
+                "file": "010 - Classes/MLMI1/Properties of gaussians.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "030 - Notes/Math/Distributions.md"
+                "file": "010 - Classes/MLMI1/Properties of gaussians.md"
               }
             }
           }
@@ -176,19 +175,20 @@
       "jupyter:Create Jupyter Notebook": false
     }
   },
-  "active": "1361e652fcd19b14",
+  "active": "be01365890b5f917",
   "lastOpenFiles": [
+    "030 - Notes/Math/Conjugate priors.md",
+    "010 - Classes/MLMI1/Notebook/Exercises/Medical.md",
+    "010 - Classes/test.md",
+    "010 - Classes/MLMI1/Course info.md",
+    "010 - Classes/MLMI1/Probabilistic modeling and Inference youtube playlist.md",
+    "010 - Classes/MLMI1/Properties of gaussians.md",
+    "010 - Classes/MLMI1/Summary of Probabilistic Inference.md",
+    "030 - Notes/Math/Distributions.md",
     "030 - Notes/Math/Linear transformations.md",
     "030 - Notes/Math/Matrixes.md",
     "030 - Notes/Math/Vectors.md",
-    "010 - Classes/MLMI1/Summary of Probabilistic Inference.md",
-    "030 - Notes/Math/Conjugate priors.md",
-    "010 - Classes/test.md",
-    "010 - Classes/MLMI1/Properties of gaussians.md",
     "z - Attachments/CleanShot 2024-10-10 at 11.39.33.png",
-    "010 - Classes/MLMI1/Probabilistic modeling and Inference youtube playlist.md",
-    "010 - Classes/MLMI1/Course info.md",
-    "010 - Classes/MLMI1/Notebook/Exercises/Medical.md",
     "010 - Classes/MLMI1/Notebook/Exercises/Radioactive.md",
     "030 - Notes/Math/Derivatives.md",
     "030 - Notes/Math/Logarithms.md",
@@ -197,7 +197,6 @@
     "030 - Notes/Math/hyperbolic functions.md",
     "030 - Notes/Math/Eulers formula.md",
     "010 - Classes/MLMI1/Inference intro.md",
-    "030 - Notes/Math/Distributions.md",
     "030 - Notes/Math/Probability.md",
     "010 - Classes/MLMI1/Notebook/Exercises",
     "010 - Classes/MLMI1/Notebook",
