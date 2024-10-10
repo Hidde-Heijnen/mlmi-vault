@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "010 - Classes/MLMI1/Probabilistic modeling and Inference youtube playlist.md",
+                "file": "010 - Classes/MLMI1/Summary of Probabilistic Inference.md",
                 "mode": "source",
                 "source": false
               }
@@ -43,8 +43,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -175,11 +174,11 @@
       "jupyter:Create Jupyter Notebook": false
     }
   },
-  "active": "1361e652fcd19b14",
+  "active": "fadd28feb2c628f0",
   "lastOpenFiles": [
-    "010 - Classes/MLMI1/Properties of gaussians.md",
-    "010 - Classes/MLMI1/Summary of Probabilistic Inference.md",
     "010 - Classes/MLMI1/Probabilistic modeling and Inference youtube playlist.md",
+    "010 - Classes/MLMI1/Summary of Probabilistic Inference.md",
+    "010 - Classes/MLMI1/Properties of gaussians.md",
     "010 - Classes/MLMI1/Course info.md",
     "010 - Classes/MLMI1/Notebook/Exercises/Medical.md",
     "010 - Classes/MLMI1/Notebook/Exercises/Radioactive.md",
