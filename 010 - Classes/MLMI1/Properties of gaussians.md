@@ -6,7 +6,6 @@
 - Knowledge of multivariate calculus (integration over multiple variables).
 
 ---
-
 ### Definition
 A random vector $X \in \mathbb{R}^n$ is said to follow a multivariate normal (Gaussian) distribution with mean vector $M \in \mathbb{R}^n$ and covariance matrix $\Sigma \in \mathbb{R}^{n \times n}$, denoted as:
 
@@ -17,6 +16,10 @@ $$
 The probability density function (pdf) is given by:
 $$
 p(x) = \frac{1}{\sqrt{ (2\pi)^n \det(\Sigma) }} \, e^{ -\frac{1}{2} (x - M)^\top \Sigma^{-1} (x - M) }
+$$
+or
+$$
+p(x) = \frac{1}{\sqrt{\det(2\pi\Sigma) }} \, e^{ -\frac{1}{2} (x - M)^\top \Sigma^{-1} (x - M) }
 $$
 
 **Explanation of Variables:**
@@ -58,12 +61,15 @@ $$p(X_1 \mid X_2) = \mathcal{N}(X_1; M_{1|2}, \Sigma_{1|2})$$
 **Where:**
 - **Conditional Mean:**$$M_{1|2} = M_1 + \Sigma_{12} \Sigma_{22}^{-1} (X_2 - M_2)$$
 - **Conditional Covariance:**$$\Sigma_{1|2} = \Sigma_{11} - \Sigma_{12} \Sigma_{22}^{-1} \Sigma_{21}$$
+	- No need to to learn this identity, will be given if needed
 *Explanation:* The conditional distribution remains Gaussian, with updated mean and covariance that account for the observed values of $X_2$.
 ---
 ### Alternative Representation
 This form is useful for computing expectations of linear transformations of Gaussian variables quickly.
+
 1. **Linear Transformation of Standard Normal Vector:**$$X = M + L \epsilon, \quad \epsilon \sim \mathcal{N}(0, I_n)$$
-   - $L$: A matrix such that $\Sigma = L L^\top$ (e.g., Cholesky decomposition).
+   - $L$: A matrix such that $\Sigma = L L^\top$ (e.g., Cholesky decomposition). 
+	   - Or $\Sigma^{1/2}$
    - $I_n$: The $n \times n$ identity matrix.
 2. **Equivalent Probability Density Function:**$$p(X) = \mathcal{N}(X; M, \Sigma)$$
 **Sketch Proof:**
@@ -81,43 +87,30 @@ $$
 **Where:**
 - **Combined Precision Matrix:**$$\Sigma^{-1} = \Sigma_1^{-1} + \Sigma_2^{-1}$$
 - **Combined Mean:**$$M = \Sigma \left( \Sigma_1^{-1} M_1 + \Sigma_2^{-1} M_2 \right)$$
-- **Normaliation Constant ($c$):** A constant ensuring the equality holds, often omitted when focusing on proportionality.
+- **Normalisation Constant ($c$):** A constant ensuring the equality holds, often omitted when focusing on proportionality.
 
 *Explanation:* The inverse covariance matrices (precisions) add, and the mean is a precision-weighted average of $M_1$ and $M_2$.
 
 **Derivation (Sketch):**
-
 - **Completing the Square:** By combining exponents and rearranging terms, the product exponentiates to a quadratic form representing a Gaussian.
-- **Normalization:** The constant $c$ accounts for differences in normalization factors due to the determinants.
+- **Normalisation:** The constant $c$ accounts for differences in normalisation factors due to the determinants.
 
 ---
 
 **Additional Context:**
-
 - **Affine Transformations:**
-
-  If $Y = A X + b$, then:
-
-  $$
-  Y \sim \mathcal{N}(A M + b, A \Sigma A^\top)
-  $$
-
+  If $Y = A X + b$, then:$$Y \sim \mathcal{N}(A M + b, A \Sigma A^\top)$$
 - **Independence and Uncorrelatedness:**
-
   In a multivariate Gaussian, uncorrelated components (zero covariance) are independent.
 
 - **Maximum Entropy:**
-
   The Gaussian distribution maximizes entropy among all distributions with a specified mean and covariance.
 
 - **Applications:**
-
   - **Statistics:** Regression, hypothesis testing, principal component analysis.
   - **Machine Learning:** Gaussian processes, Bayesian inference.
   - **Signal Processing:** Kalman filters, state-space models.
-
 ---
-
 **Key Takeaways:**
 
 - The multivariate Gaussian distribution is central in probability and statistics due to its mathematical tractability and natural occurrence in the central limit theorem.
