@@ -24,13 +24,9 @@ $$p(\theta \mid D, m) = \frac{p(D \mid \theta, m) \, p(\theta \mid m)}{p(D \mid 
 ### Prediction:
 To make predictions about new data $x^*$:$$p(x^* | D, m) = \int p(x^* | \theta, D, m) p(\theta | D, m) d\theta$$
   Often:$$p(x^* | D, m) = \int p(x^* | \theta, m) p(\theta | D, m) d\theta$$
-	  - The term $D$ is removed from the conditional probability $p(x^* \mid \theta, D, m)$ to $p(x^* \mid \theta, m)$ under the assumption of **conditional independence**. Specifically, once we know the model parameters $\theta$ and the model $m$, the new data point $x^*$ is assumed to be independent of the observed data $D$. This is a common assumption in many probabilistic models, particularly when data points are independent and identically distributed (i.i.d.) given the parameters.
-	  - By removing $D$ from the conditioning of $p(x^* \mid \theta, D, m)$, we acknowledge that all the information from $D$ relevant for predicting $x^*$ is captured in the posterior distribution $p(\theta \mid D, m)$ of the parameters $\theta$. Therefore, the observed data $D$ influences $x^*$ only through its effect on $\theta$.
+	  - The term $D$ is removed from $p(x^* \mid \theta, D, m)$ to $p(x^* \mid \theta, m)$ under **conditional independence**. Given the model parameters $\theta$ and the model $m$, $x^*$ is independent of the observed data $D$. This assumes data points are i.i.d. given $\theta$. The information from $D$ relevant to predicting $x^*$ is captured in the posterior $p(\theta \mid D, m)$, meaning $D$ influences $x^*$ only through $\theta$.
 
-
-  
 - Calculates the **predictive distribution** by averaging over all possible parameters weighted by their posterior probabilities.
-- Assumes $x^*$ is conditionally independent of $D$ given $\theta$.
 
 ### Model Comparison:
 To compare different models based on observed data:
