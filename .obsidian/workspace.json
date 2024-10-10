@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "010 - Classes/MLMI1/Notebook/Exercises/Radioactive.md",
+                "file": "010 - Classes/MLMI1/Notebook/Exercises/Medical.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "010 - Classes/MLMI1/Notebook/Exercises/Radioactive.md",
+                "file": "010 - Classes/MLMI1/Notebook/Exercises/Medical.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "010 - Classes/MLMI1/Notebook/Exercises/Radioactive.md",
+                "file": "010 - Classes/MLMI1/Notebook/Exercises/Medical.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "010 - Classes/MLMI1/Notebook/Exercises/Radioactive.md"
+                "file": "010 - Classes/MLMI1/Notebook/Exercises/Medical.md"
               }
             }
           }
@@ -177,6 +177,8 @@
   },
   "active": "be01365890b5f917",
   "lastOpenFiles": [
+    "010 - Classes/MLMI1/Notebook/Exercises/Radioactive.md",
+    "010 - Classes/MLMI1/Notebook/Inference.md",
     "010 - Classes/MLMI1/Probabilistic modeling and Inference youtube playlist.md",
     "010 - Classes/MLMI1/Properties of gaussians.md",
     "030 - Notes/Math/Conjugate priors.md",
@@ -189,10 +191,8 @@
     "030 - Notes/Math/Matrixes.md",
     "030 - Notes/Math/Vectors.md",
     "z - Attachments/CleanShot 2024-10-10 at 11.39.33.png",
-    "010 - Classes/MLMI1/Notebook/Exercises/Radioactive.md",
     "030 - Notes/Math/Derivatives.md",
     "030 - Notes/Math/Logarithms.md",
-    "010 - Classes/MLMI1/Notebook/Inference.md",
     "030 - Notes/Math/Integrals.md",
     "030 - Notes/Math/hyperbolic functions.md",
     "030 - Notes/Math/Eulers formula.md",
