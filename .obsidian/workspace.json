@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "010 - Classes/test.md",
+                "file": "030 - Notes/Math/Conjugate priors.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "010 - Classes/MLMI1/Summary of Probabilistic Inference.md",
+                "file": "030 - Notes/Math/Distributions.md",
                 "mode": "source",
                 "source": false
               }
@@ -43,7 +43,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -72,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "variance",
+                "query": "varia",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -89,7 +90,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -109,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "010 - Classes/test.md",
+                "file": "030 - Notes/Math/Distributions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "010 - Classes/test.md",
+                "file": "030 - Notes/Math/Distributions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "010 - Classes/test.md"
+                "file": "030 - Notes/Math/Distributions.md"
               }
             }
           }
@@ -174,21 +176,23 @@
       "jupyter:Create Jupyter Notebook": false
     }
   },
-  "active": "fadd28feb2c628f0",
+  "active": "1361e652fcd19b14",
   "lastOpenFiles": [
-    "010 - Classes/MLMI1/Properties of gaussians.md",
-    "010 - Classes/test.md",
-    "z - Attachments/CleanShot 2024-10-10 at 11.39.33.png",
+    "030 - Notes/Math/Linear transformations.md",
+    "030 - Notes/Math/Matrixes.md",
+    "030 - Notes/Math/Vectors.md",
     "010 - Classes/MLMI1/Summary of Probabilistic Inference.md",
+    "030 - Notes/Math/Conjugate priors.md",
+    "010 - Classes/test.md",
+    "010 - Classes/MLMI1/Properties of gaussians.md",
+    "z - Attachments/CleanShot 2024-10-10 at 11.39.33.png",
     "010 - Classes/MLMI1/Probabilistic modeling and Inference youtube playlist.md",
     "010 - Classes/MLMI1/Course info.md",
     "010 - Classes/MLMI1/Notebook/Exercises/Medical.md",
     "010 - Classes/MLMI1/Notebook/Exercises/Radioactive.md",
     "030 - Notes/Math/Derivatives.md",
     "030 - Notes/Math/Logarithms.md",
-    "030 - Notes/Math/Conjugate priors.md",
     "010 - Classes/MLMI1/Notebook/Inference.md",
-    "030 - Notes/Math/Linear transformations.md",
     "030 - Notes/Math/Integrals.md",
     "030 - Notes/Math/hyperbolic functions.md",
     "030 - Notes/Math/Eulers formula.md",
@@ -198,8 +202,6 @@
     "010 - Classes/MLMI1/Notebook/Exercises",
     "010 - Classes/MLMI1/Notebook",
     "z - Attachments/CleanShot 2024-09-29 at 10.04.00@2x.png",
-    "030 - Notes/Math/Vectors.md",
-    "030 - Notes/Math/Matrixes.md",
     "030 - Notes/Codebasics - Machine Learning Python course/Notebooks/02-mvr.ipynb",
     "z - Attachments/CleanShot 2024-09-28 at 14.45.18@2x.png",
     "z - Attachments/CleanShot 2024-09-28 at 14.30.44@2x.png",

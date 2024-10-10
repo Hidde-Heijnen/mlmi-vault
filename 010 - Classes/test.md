@@ -15,9 +15,7 @@ $$
 **Breaking it down:**
 
 1. **Normalization Constant:**
-
    - **$\frac{1}{\sqrt{(2\pi)^n \det(\Sigma)}}$**
-
      - **$(2\pi)^n$**: Arises from integrating over $n$ dimensions to ensure the total probability sums to 1.
      - **$\det(\Sigma)$**: The determinant of the covariance matrix $\Sigma$ adjusts the scaling, accounting for the spread and orientation of the distribution in space.
      - **Purpose**: Ensures the pdf is properly normalized so that the total probability over all space is 1.
