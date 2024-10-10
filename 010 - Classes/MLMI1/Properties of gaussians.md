@@ -69,7 +69,7 @@ This form is useful for computing expectations of linear transformations of Gaus
 
 1. **Linear Transformation of Standard Normal Vector:**$$X = M + L \epsilon, \quad \epsilon \sim \mathcal{N}(0, I_n)$$
    - $L$: A matrix such that $\Sigma = L L^\top$ (e.g., Cholesky decomposition). 
-	   - Or $\Sigma^{1/2}$
+	   - Or $\Sigma^{1/2}$: square root of the covariance matrix $\Sigma$ (i.e., a matrix that when multiplied by itself gives $\Sigma$.
    - $I_n$: The $n \times n$ identity matrix.
 2. **Equivalent Probability Density Function:**$$p(X) = \mathcal{N}(X; M, \Sigma)$$
 **Sketch Proof:**
