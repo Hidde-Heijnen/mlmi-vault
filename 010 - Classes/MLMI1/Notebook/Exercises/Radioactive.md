@@ -27,13 +27,15 @@ A noisy depth sensor measures the distance to an object an unknown distance $d$ 
 
 **To find the posterior distribution $p(d|y)$:**
 
-Since we our likelihood is a normal distribution, and our prior is as well, we know that our posterior will also be a normal distribution. This is because this is a [[Conjugate priors|Conjugate prior combination]]
+Since we our likelihood is a normal distribution, and our prior is as well, we know that our posterior will also be a normal distribution. This is because this is a [[Conjugate priors|Conjugate prior combination]] 
+	This is why we can ignore the normalisation constants, since we know that if we figure out the mean and the variance, we can then just create the normalisation constant from there. This saves us from doing hard integrals. 
 
 **Step 1: Write the Unnormalised Posterior**
 Using Bayes' theorem (up to a proportionality constant since we can absorb constants into normalisation):
 $$
 p(d|y) \propto p(y|d, \sigma_y^2) \times p(d)
 $$
+	 We call $p(y|d)$ the likelihood of $d$, since y is fixed and we see it as a function of $d$
 
 Substitute the expressions for $p(y|d, \sigma_y^2)$ and $p(d)$:
 $$
@@ -110,7 +112,6 @@ $$
 $$
 #### Q2
 **Given:**
-
 From the previous derivation, we have:
 
 - **Posterior Mean:** $\mu_{d|y} = \frac{y}{1 + \sigma_y^2}$
@@ -175,6 +176,7 @@ Here $n_0$ and $N_0$ are parameters set by the experimenter to encapsulate their
   b) Compute the __maximum a posteriori__ (MAP) estimate for the bias. 
   c) Provide an intuitive interpretation for the parameters of the prior distribution, $n_0$ and $N_0$. For what setting of $n_0$ and $N_0$ does the MAP estimate become equal to the maximum-likelihood estimate? 
 ### Answers
+This question shows us that we can incrementally update our beliefs, since we don't necessarily have to see the new throws separately from our prior data. Our posterior takes the same form as the prior again, since it is a conjugate prior + likelihood combination again.  
 #### a)
 
 Apply bayes rule, and we can separate the data into a product, because they're independent

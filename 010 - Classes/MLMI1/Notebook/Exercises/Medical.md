@@ -15,12 +15,17 @@ $$\hat{x}^* = \arg\max_{\hat{x}} \int R(\hat{x}, x) \, p(x|y) \, dx.$$
 Alternatively, with a loss function $L(\hat{x}, x) = -R(\hat{x}, x)$, the goal becomes minimising the expected loss:
 $$\hat{x}^* = \arg\min_{\hat{x}} \int L(\hat{x}, x) \, p(x|y) \, dx.$$
 #### 2. Optimal Point Estimate for $R(\hat{x}, x) = -(\hat{x} - x)^2$
-The reward function is the negative squared error, leading to the following expected reward:$$\text{Expected Reward}(\hat{x}) = -\int (\hat{x} - x)^2 \, p(x|y) \, dx.$$Find optimum:
+The reward function is the negative squared error, leading to the following expected reward:$$\text{Expected Reward}(\hat{x}) = -\int (\hat{x} - x)^2 \, p(x|y) \, dx.$$Find optimum (take out the $-1$ of the integral):
 $$
 -\frac{d}{d\hat{x}} \int (x - \hat{x})^2 p(x|y) dx = 0
 $$
-
-This simplifies to:
+We can move the differentiation inside of the integral, since the bounds of the integral don't depend on the thing we're differentiating over ($\hat{x}$)
+$$
+- \int \frac{d}{d\hat{x}} (x - \hat{x})^2 p(x|y) dx = 0
+$$
+$$
+- \int - 2 (x - \hat{x})^2 p(x|y) dx = 0
+$$
 
 $$
 2 \int (x - \hat{x}_*) p(x|y) dx = 0
