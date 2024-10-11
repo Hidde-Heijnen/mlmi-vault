@@ -60,3 +60,21 @@ In practice I never have the ground truth probabilities, so we will train a mode
 left of table is ground truth probabilities. 
 Depending on my loss function I will make different predictions. Sentence level or word level. 
 
+Training
+train paremeters $\theta$ 
+
+DL says forget about doing manually, look at the data
+Look at the data, and choose good programs that will work well on the data that we see. Getting a good program, is equavalent to choosing params that minimise the loss. 
+
+E(p(w,x)[Lf]
+
+p(w,x) => ground truth probabilities
+But we may have samples drawn form p(w,x) = p(w|x)p(x)
+
+Training dataset: limited amount of data to approximate loss
+manually obtain label y (can still be a probability)
+
+Empircal loss (optimised using gradient and back propagation)
+
+We minimise the empirical loss instead of the actual loss. But don't overfit, so heldout data performance/generalisation is important. 
+
