@@ -44,7 +44,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -175,16 +175,16 @@
       "jupyter:Create Jupyter Notebook": false
     }
   },
-  "active": "be01365890b5f917",
+  "active": "1361e652fcd19b14",
   "lastOpenFiles": [
+    "030 - Notes/Math/Conjugate priors.md",
+    "010 - Classes/MLMI1/Notebook/Exercises/Medical.md",
     "010 - Classes/MLMI1/Notebook/Exercises/Radioactive.md",
     "010 - Classes/DL/Lecture 1.md",
     "010 - Classes/NLP/lecture notes 1.md",
     "010 - Classes/DL",
     "z - Attachments/CleanShot 2024-10-11 at 10.41.24@2x.png",
     "z - Attachments/CleanShot 2024-10-11 at 10.35.04@2x.png",
-    "010 - Classes/MLMI1/Notebook/Exercises/Medical.md",
-    "030 - Notes/Math/Conjugate priors.md",
     "010 - Classes/NLP",
     "010 - Classes/Untitled.md",
     "010 - Classes/MLMI1/Notebook/Inference.md",

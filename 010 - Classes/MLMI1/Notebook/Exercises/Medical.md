@@ -7,7 +7,7 @@ A data-scientist has computed a complex posterior distribution over a variable o
   * Compute the optimal point estimate $\hat{x}$ in the case when the reward function is the negative absolute error between the point estimate and the true value, $R(\hat{x},x) = -|\hat{x}-x|$. Comment on your result.
 ### Answer
 #### 1. Determine the Optimal Point Estimate $\hat{x}$
-Bayesian Decision Theory helps determine the optimal point estimate $\hat{x}$ for a variable $x$ given observed data $y$ and a reward function $R(\hat{x}, x)$. The goal is to maximise the expected reward, calculated as:
+Bayesian Decision Theory helps determine the optimal point estimate $\hat{x}$ for a variable $x$ given observed data $y$ and a reward function $R(\hat{x}, x)$. We have a reward function that compares the real value $x$ with the value we want to find $\hat{x}$. But we don't know the real value of $x$, so we find an estimate based on our evidence $y$, and sum over all these possible $x$ The goal is to maximise the expected reward, calculated as:
 $$\text{Expected Reward}(\hat{x}) = \int R(\hat{x}, x) \, p(x|y) \, dx.$$
 The optimal point estimate $\hat{x}^*$ maximises the expected reward:
 
@@ -15,23 +15,29 @@ $$\hat{x}^* = \arg\max_{\hat{x}} \int R(\hat{x}, x) \, p(x|y) \, dx.$$
 Alternatively, with a loss function $L(\hat{x}, x) = -R(\hat{x}, x)$, the goal becomes minimising the expected loss:
 $$\hat{x}^* = \arg\min_{\hat{x}} \int L(\hat{x}, x) \, p(x|y) \, dx.$$
 #### 2. Optimal Point Estimate for $R(\hat{x}, x) = -(\hat{x} - x)^2$
+The reward function is the negative squared error, leading to the following expected reward:$$\text{Expected Reward}(\hat{x}) = -\int (\hat{x} - x)^2 \, p(x|y) \, dx.$$Find optimum:
+$$
+-\frac{d}{d\hat{x}} \int (x - \hat{x})^2 p(x|y) dx = 0
+$$
 
-The reward function is the negative squared error, leading to the following expected reward:
+This simplifies to:
 
-$$\text{Expected Reward}(\hat{x}) = -\int (\hat{x} - x)^2 \, p(x|y) \, dx.$$
+$$
+2 \int (x - \hat{x}_*) p(x|y) dx = 0
+$$
 
-This is equivalent to minimising the expected squared error loss:
+Therefore:
 
-$$\text{Expected Loss}(\hat{x}) = \int (\hat{x} - x)^2 \, p(x|y) \, dx.$$
+$$
+\int x p(x|y) dx = \hat{x}_*
+$$
+
+Thus, the posterior mean minimises the expected squared error.
 
 Taking the derivative and solving for $\hat{x}$ gives:
-
 $$\hat{x} = \int x \, p(x|y) \, dx = \mathbb{E}[x|y].$$
-
 **Result**: The optimal estimate is the **posterior mean**:
-
 $$\hat{x}^* = \mathbb{E}[x|y].$$
-
 #### 3. Optimal Point Estimate for $R(\hat{x}, x) = -|\hat{x} - x|$
 
 The reward function is the negative absolute error, giving the expected reward:
