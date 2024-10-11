@@ -45,18 +45,82 @@ $$\hat{x}^* = \mathbb{E}[x|y].$$
 > [!question]- Why is this the posterior mean?
 >  - Posterior Distribution  $p(x|y)$: This is a probability density function that describes the probability of $x$ given the observed data $y$. It is a function of $x$.
 >  - Integrating $x \, p(x|y)$: When you multiply $x$ by its probability density $p(x|y)$ and integrate over all possible $x$, you are calculating the expected value (or mean) of $x$ under the posterior distribution.
-#### 3. Optimal Point Estimate for $R(\hat{x}, x) = -|\hat{x} - x|$
---- 
-The reward function is the negative absolute error, giving the expected reward:
-$$\text{Expected Reward}(\hat{x}) = -\int |\hat{x} - x| \, p(x|y) \, dx.$$
-This is equivalent to minimising the expected absolute error loss. The optimal $\hat{x}$ is the **posterior median**, satisfying (this is a property of the absolute loss function):
-$$P(x \leq \hat{x}|y) = 0.5.$$
-**Result**: The optimal estimate is the **posterior median**:
-$$\hat{x}^* = \text{Median}[x|y].$$
+#### Optimal Point Estimate for $R(\hat{x}, x) = -|\hat{x} - x|$
+The reward function is the negative absolute error, so the expected reward is:
+$$
+\text{Expected Reward}(\hat{x}) = -\int |\hat{x} - x| \, p(x|y) \, dx.
+$$
+We aim to **maximise** the expected reward with respect to $\hat{x}$.
+
+Find $\hat{x}^*$ such that:
+$$
+- \frac{d}{d\hat{x}} \int |\hat{x} - x| \, p(x|y) \, dx = 0.
+$$
+We can interchange the differentiation and integration:
+$$
+- \int \frac{d}{d\hat{x}} |\hat{x} - x| \, p(x|y) \, dx = 0.
+$$
+
+$$
+- \int \frac{d}{d\hat{x}} |\hat{x} - x| \, p(x|y) \, dx = 0.
+$$
+---
+#### Step 4: Substitute Back into the Integral
+
+Now substitute this back into the integral:
+
+$$
+- \int \text{sign}(\hat{x} - x) \, p(x|y) \, dx = 0.
+$$
+
+---
+
+#### Step 5: Split the Integral
+
+The sign function divides the integral:
+
+$$
+- \left( \int_{-\infty}^{\hat{x}} p(x|y) \, dx - \int_{\hat{x}}^{\infty} p(x|y) \, dx \right) = 0.
+$$
+
+---
+
+#### Step 6: Use the Cumulative Distribution Function
+
+Let $F(\hat{x}|y)$ denote the CDF of $x$ given $y$. Then:
+
+$$
+F(\hat{x}|y) = \int_{-\infty}^{\hat{x}} p(x|y) \, dx, \quad 1 - F(\hat{x}|y) = \int_{\hat{x}}^{\infty} p(x|y) \, dx.
+$$
+
+Substitute into the equation:
+
+$$
+- \left( 2F(\hat{x}|y) - 1 \right) = 0.
+$$
+
+---
+
+#### Step 7: Solve for $\hat{x}^*$
+Setting the equation to zero:
+$$
+F(\hat{x}^*|y) = \frac{1}{2}.
+$$
+Thus, $\hat{x}^*$ is the **posterior median**.
+> [!info]- Why is this the posterior median?
+> - **Definition**: The median divides the distribution into two equal halves.
+> - **CDF Interpretation**: $F(\hat{x}|y) = P(x \leq \hat{x}|y)$.
+> - **Equating to 0.5**: Ensures a 50% chance that $x \leq \hat{x}$ and $x > \hat{x}$, defining the median.
+> - **Minimising Absolute Error**: The median minimises the expected absolute deviation under the posterior.
+
+---
+
+**Summary**: The optimal point estimate for the negative absolute error reward function is the **posterior median**.
+
 ##### Full solution
 
 ### Summary:
 
 - **Negative Squared Error Reward**: Optimal estimate is the **posterior mean** $\mathbb{E}[x|y]$.
 - **Negative Absolute Error Reward**: Optimal estimate is the **posterior median** $\text{Median}[x|y]$.
-- This exercise shows the benefit of bayesian methods, in the way that you don't have to change your inferences when your reward functions do. 
+- This exercise shows the benefit of bayesian methods, in the way that you don't have to change your 
