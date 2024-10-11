@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "030 - Notes/Math/Conjugate priors.md",
+                "file": "010 - Classes/MLMI1/Notebook/Exercises/Medical.md",
                 "mode": "source",
                 "source": false
               }
@@ -37,14 +37,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "010 - Classes/MLMI1/Notebook/Exercises/Medical.md",
+                "file": "030 - Notes/Math/Moments of a Probability Distribution.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -175,12 +174,13 @@
       "jupyter:Create Jupyter Notebook": false
     }
   },
-  "active": "be01365890b5f917",
+  "active": "fadd28feb2c628f0",
   "lastOpenFiles": [
+    "030 - Notes/Math/Conjugate priors.md",
+    "030 - Notes/Math/Moments of a Probability Distribution.md",
+    "010 - Classes/MLMI1/Notebook/Exercises/Medical.md",
     "010 - Classes/MLMI1/Properties of gaussians.md",
     "010 - Classes/MLMI1/Summary of Probabilistic Inference.md",
-    "010 - Classes/MLMI1/Notebook/Exercises/Medical.md",
-    "030 - Notes/Math/Conjugate priors.md",
     "030 - Notes/Math/Integral Manipulation.md",
     "010 - Classes/MLMI1/Notebook/Exercises/Radioactive.md",
     "030 - Notes/Math/Integrals.md",
@@ -215,7 +215,6 @@
     "030 - Notes/Math/Trig identities.md",
     "z - Attachments/CleanShot 2024-09-20 at 12.19.48.png",
     "010 - Classes/MLMI1",
-    "030 - Notes/Math/Coordinate systems.md",
     "z - Attachments/Pasted image 20240907172755.png",
     "030 - Notes/Codebasics - Machine Learning Python course/02 - Linear Regression Single Variable.ipynb",
     "030 - Notes/Codebasics - Machine Learning Python course/Notebooks/01-LRSV.ipynb",
