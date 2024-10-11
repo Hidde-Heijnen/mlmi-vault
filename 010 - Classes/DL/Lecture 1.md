@@ -78,3 +78,13 @@ Empircal loss (optimised using gradient and back propagation)
 
 We minimise the empirical loss instead of the actual loss. But don't overfit, so heldout data performance/generalisation is important. 
 
+
+classification (choose one of k options)
+regression
+clustering
+dimensionality reduction
+
+Mainly classification in this course, but these methods can be applied to others
+
+Dimensionality reduction
+learn structure in high dimensional data. 
