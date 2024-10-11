@@ -40,22 +40,19 @@ $$\int p(x|y) \, dx = 1.$$
 **Simplify the equation**:   $$\int x p(x|y) \, dx - \hat{x}_* = 0.$$**Solve for $\hat{x}_*$**:$$\hat{x}_* = \int x p(x|y) \, dx.$$
 Thus, the posterior mean minimises the expected squared error.
 
-Taking the derivative and solving for $\hat{x}$ gives:
-$$\hat{x} = \int x \, p(x|y) \, dx = \mathbb{E}[x|y].$$
 **Result**: The optimal estimate is the **posterior mean**:
 $$\hat{x}^* = \mathbb{E}[x|y].$$
+> [!question]- Why is this the posterior mean?
+>  - Posterior Distribution  $p(x|y)$: This is a probability density function that describes the probability of $x$ given the observed data $y$. It is a function of $x$.
+>  - Integrating $x \, p(x|y)$: When you multiply $x$ by its probability density $p(x|y)$ and integrate over all possible $x$, you are calculating the expected value (or mean) of $x$ under the posterior distribution.
 #### 3. Optimal Point Estimate for $R(\hat{x}, x) = -|\hat{x} - x|$
-
+--- 
 The reward function is the negative absolute error, giving the expected reward:
-
 $$\text{Expected Reward}(\hat{x}) = -\int |\hat{x} - x| \, p(x|y) \, dx.$$
-
-This is equivalent to minimizing the expected absolute error loss. The optimal $\hat{x}$ is the **posterior median**, satisfying:
-
+This is equivalent to minimising the expected absolute error loss. The optimal $\hat{x}$ is the **posterior median**, satisfying:
 $$P(x \leq \hat{x}|y) = 0.5.$$
 
 **Result**: The optimal estimate is the **posterior median**:
-
 $$\hat{x}^* = \text{Median}[x|y].$$
 
 ### Summary:

@@ -12,9 +12,11 @@ A noisy depth sensor measures the distance to an object an unknown distance $d$ 
 #### Q1
 **Given:**
 
-1. **Prior Distribution:**$$
+1. **Prior Distribution:**
+   $$
    p(d) = N(d; 0, 1) = \frac{1}{\sqrt{2\pi}} e^{-\frac{1}{2}d^2}
    $$
+   
    The prior for $d$ is a standard normal distribution with mean $0$ and variance $1$.
 
 2. **Likelihood Function:**
