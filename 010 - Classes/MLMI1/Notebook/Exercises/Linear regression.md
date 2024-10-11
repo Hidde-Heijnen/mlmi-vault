@@ -63,7 +63,7 @@ $$ a_{\text{ML}} = \frac{\sum_n x_n y_n}{\sum_n x_n^2} $$
   
   The data-scientist also has access to a second set of outputs ($\{z_n\}_{n=1}^N$) that are well described by the model $z_n = x_n + \epsilon'_n$.
 
-  The noise variables $\epsilon_n$ and $\epsilon'_n$  are known to be iid zero mean correlated Gaussian variables
+  The noise variables $\epsilon_n$ and $\epsilon'_n$  are known to be zero mean correlated Gaussian variables
 $$
   \begin{align}
 p\left( \left[ \begin{array}{c} \epsilon_n\\ \epsilon'_n \end{array} \right ] \right) = \mathcal{N}\left( \left[ \begin{array}{c} \epsilon_n\\ \epsilon'_n \end{array} \right ]; \mathbf{0}, \Sigma \right)  \;\; \text{where} \;\; \; \Sigma^{-1} = \left[ \begin{array}{cc} 1 & 0.5 \\ 0.5 & 1 \end{array} \right ].  \nonumber
@@ -107,9 +107,9 @@ $$
 b)
 $$ \frac{d \mathcal{L}(a)}{da} = \sum_n \left( y_n - a x_n \right) x_n + \frac{1}{2} \sum_n \left( z_n - x_n \right) x_n = 0 $$
 
-$$ = \sum_n y_n x_n + \frac{1}{2} \sum_n z_n x_n - \frac{1}{2} \sum_n x_n^2 - a \sum_n x_n^2 $$
+$$ = \sum_n y_n x_n + \frac{1}{2} \sum_n \left( z_n - x_n \right) x_n - a \sum_n x_n^2 $$
 
 Thus,
-$$ a = \frac{\left( \sum_n y_n x_n + \frac{1}{2} \sum_n z_n x_n \right)}{\sum_n x_n^2} \quad (\text{maximum likelihood estimate}) $$
+$$ a = \frac{\left( \sum_n y_n x_n + \frac{1}{2} \sum_n \left( z_n - x_n \right) x_n \right)}{\sum_n x_n^2} \quad (\text{maximum likelihood estimate}) $$
 #### C
 The additional outputs change the maximum likelihood estimate of $a$. This means that they must provide useful information about $a$. They do this because the noise in $z_n$ is correlated with the noise in $y_n$, and so observing $z_n$ reveals information about the noise $\epsilon_n$ and allows more accurate identification of $a$.
