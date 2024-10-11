@@ -29,3 +29,24 @@ aka implications. Language goes beyond communication. We can infer things from p
 
 ## Topics in this course
 What does it mean to know a language?
+Sentence structure
+
+Morphology: -  the structure of words
+
+#### What does it mean to *know* a language?
+- **Example Sentence**: *Some yinkish dripners blorked quastofically into the nindin with the pidibs.*
+- Key points derived from the example:
+  - A **BLORK** event occurred in the **PAST**.
+  - The **AGENT** of **BLORK** is **dripners**.
+  - The **dripners** are **YINKISH**.
+  - **SOME** but **NOT ALL** dripners **blorked**.
+  - **WITH THE PIDIBS** might discuss **NINDIN** or **BLORK**.
+
+#### Structuring a Sentence
+- **Lexical Semantics**: Meaning of individual words (e.g., *yinkish* = ADJ, *dripners* = NOUN, *blorked* = VERB).
+- **Compositional Semantics**: Meaning derived from sentence structure (combining syntax and word meanings).
+- **Syntax**: Sentence structure, e.g., word order (subject, object, verb).
+- **Morphology**: Word structure (e.g., *quastofically* is derived from *quastofy* + *-cal* + *-ly*; *pidibs* = *pidib* + *-s*).
+- **Vectorization**: Words, phrases, sentences, and paragraphs are vectorized for processing.
+
+![[CleanShot 2024-10-11 at 10.35.04@2x.png]]
