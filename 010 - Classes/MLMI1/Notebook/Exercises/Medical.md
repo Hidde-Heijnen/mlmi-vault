@@ -46,6 +46,7 @@ $$\hat{x}^* = \mathbb{E}[x|y].$$
 >  - Posterior Distribution  $p(x|y)$: This is a probability density function that describes the probability of $x$ given the observed data $y$. It is a function of $x$.
 >  - Integrating $x \, p(x|y)$: When you multiply $x$ by its probability density $p(x|y)$ and integrate over all possible $x$, you are calculating the expected value (or mean) of $x$ under the posterior distribution.
 #### Optimal Point Estimate for $R(\hat{x}, x) = -|\hat{x} - x|$
+--- 
 The reward function is the negative absolute error, so the expected reward is:
 $$
 \text{Expected Reward}(\hat{x}) = -\int |\hat{x} - x| \, p(x|y) \, dx.
@@ -62,68 +63,20 @@ $$
 $$
 Use the definition that $|x|=\sqrt{x^2}$ for real numbers
 $$
-- \int \frac{d}{d\hat{x}} |\hat{x} - x| \, p(x|y) \, dx = 0.
+- \int \frac{d}{d\hat{x}} \sqrt{(\hat{x} - x)^2} \, p(x|y) \, dx = 0.
 $$
-### **Computing the Derivative to Obtain the Sign Function**
-
-We are interested in computing the derivative of $|\hat{x} - x|$ with respect to $\hat{x}$, to show that it leads to the sign function.
-
-#### **Step 1: Express the Absolute Value as a Square Root**
-
-First, write the absolute value as a square root:
-
+Compute the derivative with respect to $\hat{x}$ with chain rule:
 $$
-|\hat{x} - x| = \sqrt{(\hat{x} - x)^2}.
+\frac{d}{d\hat{x}} \sqrt{ (\hat{x} - x)^2 } = \frac{1}{2} \left( (\hat{x} - x)^2 \right)^{-1/2} \cdot 2 (\hat{x} - x).
 $$
-
-#### **Step 2: Differentiate Using the Chain Rule**
-
-Compute the derivative with respect to $\hat{x}$:
-
+So:
 $$
-\frac{d}{d\hat{x}} |\hat{x} - x| = \frac{d}{d\hat{x}} \sqrt{(\hat{x} - x)^2}.
+\frac{d}{d\hat{x}} \sqrt{ (\hat{x} - x)^2 } = \frac{ \hat{x} - x }{ \sqrt{ (\hat{x} - x)^2 } }.
 $$
-
-Apply the chain rule:
-
-1. **Differentiate the outer function** $\sqrt{u}$ with respect to $u = (\hat{x} - x)^2$:
-
-   $$
-   \frac{d}{du} \sqrt{u} = \frac{1}{2} u^{-1/2}.
-   $$
-
-2. **Differentiate the inner function** $u = (\hat{x} - x)^2$ with respect to $\hat{x}$:
-
-   $$
-   \frac{d}{d\hat{x}} u = 2 (\hat{x} - x).
-   $$
-
-Combine these using the chain rule:
-
-$$
-\frac{d}{d\hat{x}} |\hat{x} - x| = \frac{1}{2} \left( (\hat{x} - x)^2 \right)^{-1/2} \cdot 2 (\hat{x} - x).
-$$
-
-Simplify:
-
-$$
-\frac{d}{d\hat{x}} |\hat{x} - x| = \frac{ (\hat{x} - x) }{ \sqrt{ (\hat{x} - x)^2 } }.
-$$
-
-Since $\sqrt{ (\hat{x} - x)^2 } = |\hat{x} - x|$:
-
-$$
-\frac{d}{d\hat{x}} |\hat{x} - x| = \frac{ \hat{x} - x }{ | \hat{x} - x | }.
-$$
-
-#### **Step 3: Recognize the Sign Function**
-
 The expression $\frac{ \hat{x} - x }{ | \hat{x} - x | }$ is the **sign function** of $\hat{x} - x$:
 
 ---
-
 **Definition of the Sign Function:**
-
 $$
 \text{sign}(z) = \frac{z}{|z|} =
 \begin{cases}
@@ -132,30 +85,17 @@ $$
 -1, & \text{if } z < 0.
 \end{cases}
 $$
-
----
-
 Therefore:
-
 $$
 \frac{d}{d\hat{x}} |\hat{x} - x| = \text{sign}(\hat{x} - x).
 $$
-
 ---
-
-### **Applying This in the Integral**
-
-We start with the equation:
-
-$$
-- \int \frac{d}{d\hat{x}} |\hat{x} - x| \, p(x|y) \, dx = 0.
-$$
-
 Substitute the derivative we just found:
-
 $$
 - \int \text{sign}(\hat{x} - x) \, p(x|y) \, dx = 0.
 $$
+
+The minus doesn't add anything, if we've switched the order of the loss function (so $|x-\hat{x}|$ it would've dissapeared. 
 
 ---
 

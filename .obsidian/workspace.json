@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "010 - Classes/MLMI1/Notebook/Exercises/Medical.md",
+                "file": "030 - Notes/Math/Derivatives.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "030 - Notes/Math/Integral Manipulation.md",
+                "file": "010 - Classes/MLMI1/Notebook/Exercises/Medical.md",
                 "mode": "source",
                 "source": false
               }
@@ -43,7 +43,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -174,14 +175,15 @@
       "jupyter:Create Jupyter Notebook": false
     }
   },
-  "active": "fadd28feb2c628f0",
+  "active": "1361e652fcd19b14",
   "lastOpenFiles": [
-    "030 - Notes/Math/Conjugate priors.md",
+    "030 - Notes/Math/Integral Manipulation.md",
+    "030 - Notes/Math/Derivatives.md",
     "030 - Notes/Math/Moments of a Probability Distribution.md",
     "010 - Classes/MLMI1/Notebook/Exercises/Medical.md",
+    "030 - Notes/Math/Conjugate priors.md",
     "010 - Classes/MLMI1/Properties of gaussians.md",
     "010 - Classes/MLMI1/Summary of Probabilistic Inference.md",
-    "030 - Notes/Math/Integral Manipulation.md",
     "010 - Classes/MLMI1/Notebook/Exercises/Radioactive.md",
     "030 - Notes/Math/Integrals.md",
     "010 - Classes/DL/Lecture 1.md",
@@ -200,7 +202,6 @@
     "030 - Notes/Math/Matrixes.md",
     "030 - Notes/Math/Vectors.md",
     "z - Attachments/CleanShot 2024-10-10 at 11.39.33.png",
-    "030 - Notes/Math/Derivatives.md",
     "030 - Notes/Math/Logarithms.md",
     "030 - Notes/Math/hyperbolic functions.md",
     "030 - Notes/Math/Eulers formula.md",
