@@ -49,15 +49,14 @@ $$\hat{x}^* = \mathbb{E}[x|y].$$
 --- 
 The reward function is the negative absolute error, giving the expected reward:
 $$\text{Expected Reward}(\hat{x}) = -\int |\hat{x} - x| \, p(x|y) \, dx.$$
-This is equivalent to minimising the expected absolute error loss. The optimal $\hat{x}$ is the **posterior median**, satisfying:
+This is equivalent to minimising the expected absolute error loss. The optimal $\hat{x}$ is the **posterior median**, satisfying (this is a property of the absolute loss function):
 $$P(x \leq \hat{x}|y) = 0.5.$$
-
 **Result**: The optimal estimate is the **posterior median**:
 $$\hat{x}^* = \text{Median}[x|y].$$
+##### Full solution
 
 ### Summary:
 
 - **Negative Squared Error Reward**: Optimal estimate is the **posterior mean** $\mathbb{E}[x|y]$.
 - **Negative Absolute Error Reward**: Optimal estimate is the **posterior median** $\text{Median}[x|y]$.
-
-Bayesian Decision Theory systematically incorporates the uncertainty and reward preferences, leading to different optimal estimates depending on the reward or loss function.
+- This exercise shows the benefit of bayesian methods, in the way that you don't have to change your inferences when your reward functions do. 
