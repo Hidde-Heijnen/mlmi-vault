@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "030 - Notes/Math/Integrals.md",
+                "file": "030 - Notes/Math/Integral Manipulation.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "030 - Notes/Math/Integrals.md",
+                "file": "030 - Notes/Math/Integral Manipulation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "030 - Notes/Math/Integrals.md",
+                "file": "030 - Notes/Math/Integral Manipulation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "030 - Notes/Math/Integrals.md"
+                "file": "030 - Notes/Math/Integral Manipulation.md"
               }
             }
           }
@@ -177,6 +177,8 @@
   },
   "active": "1361e652fcd19b14",
   "lastOpenFiles": [
+    "030 - Notes/Math/Integrals.md",
+    "030 - Notes/Math/Integral Manipulation.md",
     "010 - Classes/MLMI1/Notebook/Exercises/Medical.md",
     "010 - Classes/MLMI1/Notebook/Exercises/Radioactive.md",
     "030 - Notes/Math/Conjugate priors.md",
@@ -200,7 +202,6 @@
     "z - Attachments/CleanShot 2024-10-10 at 11.39.33.png",
     "030 - Notes/Math/Derivatives.md",
     "030 - Notes/Math/Logarithms.md",
-    "030 - Notes/Math/Integrals.md",
     "030 - Notes/Math/hyperbolic functions.md",
     "030 - Notes/Math/Eulers formula.md",
     "010 - Classes/MLMI1/Inference intro.md",
@@ -215,7 +216,6 @@
     "z - Attachments/CleanShot 2024-09-20 at 12.19.48.png",
     "010 - Classes/MLMI1",
     "030 - Notes/Math/Coordinate systems.md",
-    "030 - Notes/Math/Trigonomitry.md",
     "z - Attachments/Pasted image 20240907172755.png",
     "030 - Notes/Codebasics - Machine Learning Python course/02 - Linear Regression Single Variable.ipynb",
     "030 - Notes/Codebasics - Machine Learning Python course/Notebooks/01-LRSV.ipynb",
