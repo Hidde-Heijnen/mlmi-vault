@@ -37,14 +37,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "010 - Classes/MLMI1/Notebook/Exercises/Radioactive.md",
+                "file": "010 - Classes/NLP/lecture notes 1.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "010 - Classes/MLMI1/Notebook/Exercises/Radioactive.md",
+                "file": "010 - Classes/MLMI1/Notebook/Exercises/Medical.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "010 - Classes/MLMI1/Notebook/Exercises/Radioactive.md",
+                "file": "010 - Classes/MLMI1/Notebook/Exercises/Medical.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "010 - Classes/MLMI1/Notebook/Exercises/Radioactive.md"
+                "file": "010 - Classes/MLMI1/Notebook/Exercises/Medical.md"
               }
             }
           }
@@ -175,11 +175,14 @@
       "jupyter:Create Jupyter Notebook": false
     }
   },
-  "active": "be01365890b5f917",
+  "active": "1361e652fcd19b14",
   "lastOpenFiles": [
-    "010 - Classes/MLMI1/Notebook/Exercises/Medical.md",
     "030 - Notes/Math/Conjugate priors.md",
+    "010 - Classes/NLP/lecture notes 1.md",
     "010 - Classes/MLMI1/Notebook/Exercises/Radioactive.md",
+    "010 - Classes/NLP",
+    "010 - Classes/Untitled.md",
+    "010 - Classes/MLMI1/Notebook/Exercises/Medical.md",
     "010 - Classes/MLMI1/Notebook/Inference.md",
     "010 - Classes/MLMI1/Probabilistic modeling and Inference youtube playlist.md",
     "010 - Classes/MLMI1/Properties of gaussians.md",
@@ -211,14 +214,11 @@
     "030 - Notes/Math/Trigonomitry.md",
     "z - Attachments/Pasted image 20240907172755.png",
     "040 - Tags/basic income.md",
-    "000 - Introduction/003 - About the Mphil.md",
-    "000 - Introduction/002 - How to Use This Vault.md",
     "030 - Notes/Codebasics - Machine Learning Python course/02 - Linear Regression Single Variable.ipynb",
     "030 - Notes/Codebasics - Machine Learning Python course/Notebooks/01-LRSV.ipynb",
     "z - Attachments/uk.csv",
     "030 - Notes/Codebasics - Machine Learning Python course/Notebooks/11-test.ipynb",
     "030 - Notes/Codebasics - Machine Learning Python course/Notebooks/10-SVM.ipynb",
-    "z - Attachments/09-titanic.csv",
     "z - Attachments/linear regression sv.png",
     "z - Attachments/CleanShot 2024-05-21 at 21.14.49.png",
     "z - Attachments/obsidian-assets-settings.png"
