@@ -26,17 +26,15 @@ $$
 $$
 - \int -2 (x - \hat{x}) p(x|y) dx = 0
 $$
-
 $$
 2 \int (x - \hat{x}_*) p(x|y) dx = 0
 $$
-
-Therefore:
-
-$$
-\int x p(x|y) dx = \hat{x}_*
-$$
-
+**Divide both sides by 2**:$$\int (x - \hat{x}_*) p(x|y) \, dx = 0.$$
+**Expand the integral**:$$\int x p(x|y) \, dx - \int \hat{x}_* p(x|y) \, dx = 0.$$
+**Take $\hat{x}_*$ outside the integral** (since it's a constant with respect to $x$):$$\int x p(x|y) \, dx - \hat{x}_* \int p(x|y) \, dx = 0.$$
+**Recognise that the integral of the probability density function over its entire domain is 1**:
+$$\int p(x|y) \, dx = 1.$$
+**Simplify the equation**:   $$\int x p(x|y) \, dx - \hat{x}_* = 0.$$**Solve for $\hat{x}_*$**:$$\hat{x}_* = \int x p(x|y) \, dx.$$
 Thus, the posterior mean minimises the expected squared error.
 
 Taking the derivative and solving for $\hat{x}$ gives:
