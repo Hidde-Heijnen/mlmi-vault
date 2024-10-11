@@ -50,7 +50,7 @@ $$ \log p\left( \left\{ y_n \right\}_{n=1}^N \mid a, \left\{ x_n \right\}_{n=1}^
 
 $$ = -\frac{N}{2} \log 2\pi - \frac{1}{2} \sum_n \left( y_n - a x_n \right)^2 = \mathcal{L}(a) $$
 #### B
-$$ \frac{\partial \mathcal{L}(a)}{da} \Bigg|_{a_{ML}} = \sum_n x_n \left( y_n - a_{ML} x_n \right) = 0 $$
+$$ \frac{\partial \mathcal{L}(a)}{\partial a} \Bigg|_{a_{ML}} = \sum_n x_n \left( y_n - a_{ML} x_n \right) = 0 $$
 
 Thus,
 $$ a_{\text{ML}} = \frac{\sum_n x_n y_n}{\sum_n x_n^2} $$
