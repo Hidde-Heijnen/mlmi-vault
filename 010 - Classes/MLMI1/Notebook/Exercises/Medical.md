@@ -7,6 +7,9 @@ A data-scientist has computed a complex posterior distribution over a variable o
   * Compute the optimal point estimate $\hat{x}$ in the case when the reward function is the negative absolute error between the point estimate and the true value, $R(\hat{x},x) = -|\hat{x}-x|$. Comment on your result.
 ### Answer
 #### 1. Determine the Optimal Point Estimate $\hat{x}$
+> [!info]
+> Here we use $\int$ as a definite integral with the $-\infty$ lower and $\infty$ bounds
+
 Bayesian Decision Theory helps determine the optimal point estimate $\hat{x}$ for a variable $x$ given observed data $y$ and a reward function $R(\hat{x}, x)$. We have a reward function that compares the real value $x$ with the value we want to find $\hat{x}$. But we don't know the real value of $x$, so we find an estimate based on our evidence $y$, and sum over all these possible $x$ The goal is to maximise the expected reward, calculated as:
 $$\text{Expected Reward}(\hat{x}) = \int R(\hat{x}, x) \, p(x|y) \, dx.$$
 The optimal point estimate $\hat{x}^*$ maximises the expected reward:
