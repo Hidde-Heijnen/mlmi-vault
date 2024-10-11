@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "010 - Classes/NLP/lecture notes 1.md",
+                "file": "010 - Classes/DL/Lecture 1.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "010 - Classes/NLP/lecture notes 1.md",
+                "file": "010 - Classes/DL/Lecture 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "010 - Classes/NLP/lecture notes 1.md",
+                "file": "010 - Classes/DL/Lecture 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "010 - Classes/NLP/lecture notes 1.md"
+                "file": "010 - Classes/DL/Lecture 1.md"
               }
             }
           }
@@ -175,14 +175,15 @@
       "jupyter:Create Jupyter Notebook": false
     }
   },
-  "active": "1b9c0ca6e568a32b",
+  "active": "be01365890b5f917",
   "lastOpenFiles": [
-    "010 - Classes/Untitled",
+    "010 - Classes/NLP/lecture notes 1.md",
+    "010 - Classes/DL/Lecture 1.md",
+    "010 - Classes/DL",
     "z - Attachments/CleanShot 2024-10-11 at 10.41.24@2x.png",
     "z - Attachments/CleanShot 2024-10-11 at 10.35.04@2x.png",
     "010 - Classes/MLMI1/Notebook/Exercises/Medical.md",
     "030 - Notes/Math/Conjugate priors.md",
-    "010 - Classes/NLP/lecture notes 1.md",
     "010 - Classes/MLMI1/Notebook/Exercises/Radioactive.md",
     "010 - Classes/NLP",
     "010 - Classes/Untitled.md",
@@ -220,7 +221,6 @@
     "030 - Notes/Codebasics - Machine Learning Python course/Notebooks/01-LRSV.ipynb",
     "z - Attachments/uk.csv",
     "030 - Notes/Codebasics - Machine Learning Python course/Notebooks/11-test.ipynb",
-    "030 - Notes/Codebasics - Machine Learning Python course/Notebooks/10-SVM.ipynb",
     "z - Attachments/linear regression sv.png",
     "z - Attachments/CleanShot 2024-05-21 at 21.14.49.png"
   ]
