@@ -60,14 +60,98 @@ We can interchange the differentiation and integration:
 $$
 - \int \frac{d}{d\hat{x}} |\hat{x} - x| \, p(x|y) \, dx = 0.
 $$
-Use the definition that $|x|=\sqrt{x^2}$
+Use the definition that $|x|=\sqrt{x^2}$ for real numbers
 $$
 - \int \frac{d}{d\hat{x}} |\hat{x} - x| \, p(x|y) \, dx = 0.
 $$
----
-#### Step 4: Substitute Back into the Integral
+### **Computing the Derivative to Obtain the Sign Function**
 
-Now substitute this back into the integral:
+We are interested in computing the derivative of $|\hat{x} - x|$ with respect to $\hat{x}$, to show that it leads to the sign function.
+
+#### **Step 1: Express the Absolute Value as a Square Root**
+
+First, write the absolute value as a square root:
+
+$$
+|\hat{x} - x| = \sqrt{(\hat{x} - x)^2}.
+$$
+
+#### **Step 2: Differentiate Using the Chain Rule**
+
+Compute the derivative with respect to $\hat{x}$:
+
+$$
+\frac{d}{d\hat{x}} |\hat{x} - x| = \frac{d}{d\hat{x}} \sqrt{(\hat{x} - x)^2}.
+$$
+
+Apply the chain rule:
+
+1. **Differentiate the outer function** $\sqrt{u}$ with respect to $u = (\hat{x} - x)^2$:
+
+   $$
+   \frac{d}{du} \sqrt{u} = \frac{1}{2} u^{-1/2}.
+   $$
+
+2. **Differentiate the inner function** $u = (\hat{x} - x)^2$ with respect to $\hat{x}$:
+
+   $$
+   \frac{d}{d\hat{x}} u = 2 (\hat{x} - x).
+   $$
+
+Combine these using the chain rule:
+
+$$
+\frac{d}{d\hat{x}} |\hat{x} - x| = \frac{1}{2} \left( (\hat{x} - x)^2 \right)^{-1/2} \cdot 2 (\hat{x} - x).
+$$
+
+Simplify:
+
+$$
+\frac{d}{d\hat{x}} |\hat{x} - x| = \frac{ (\hat{x} - x) }{ \sqrt{ (\hat{x} - x)^2 } }.
+$$
+
+Since $\sqrt{ (\hat{x} - x)^2 } = |\hat{x} - x|$:
+
+$$
+\frac{d}{d\hat{x}} |\hat{x} - x| = \frac{ \hat{x} - x }{ | \hat{x} - x | }.
+$$
+
+#### **Step 3: Recognize the Sign Function**
+
+The expression $\frac{ \hat{x} - x }{ | \hat{x} - x | }$ is the **sign function** of $\hat{x} - x$:
+
+---
+
+**Definition of the Sign Function:**
+
+$$
+\text{sign}(z) = \frac{z}{|z|} =
+\begin{cases}
+1, & \text{if } z > 0, \\
+0, & \text{if } z = 0, \\
+-1, & \text{if } z < 0.
+\end{cases}
+$$
+
+---
+
+Therefore:
+
+$$
+\frac{d}{d\hat{x}} |\hat{x} - x| = \text{sign}(\hat{x} - x).
+$$
+
+---
+
+### **Applying This in the Integral**
+
+We start with the equation:
+
+$$
+- \int \frac{d}{d\hat{x}} |\hat{x} - x| \, p(x|y) \, dx = 0.
+$$
+
+Substitute the derivative we just found:
 
 $$
 - \int \text{sign}(\hat{x} - x) \, p(x|y) \, dx = 0.
@@ -75,6 +159,90 @@ $$
 
 ---
 
+### **Solving for $\hat{x}^*$ Using the Sign Function**
+
+#### **Step 1: Split the Integral Based on the Sign Function**
+
+The sign function divides the domain into three regions:
+
+- **When $x < \hat{x}$:** $\text{sign}(\hat{x} - x) = 1$.
+- **When $x = \hat{x}$:** $\text{sign}(\hat{x} - x) = 0$.
+- **When $x > \hat{x}$:** $\text{sign}(\hat{x} - x) = -1$.
+
+Split the integral accordingly:
+
+$$
+- \left( \int_{-\infty}^{\hat{x}} [1] \, p(x|y) \, dx + \int_{\hat{x}}^{\infty} [-1] \, p(x|y) \, dx \right) = 0.
+$$
+
+Simplify:
+
+$$
+- \left( \int_{-\infty}^{\hat{x}} p(x|y) \, dx - \int_{\hat{x}}^{\infty} p(x|y) \, dx \right) = 0.
+$$
+
+#### **Step 2: Express Integrals in Terms of the Cumulative Distribution Function (CDF)**
+
+Let $F(\hat{x}|y)$ be the cumulative distribution function of $x$ given $y$:
+
+$$
+F(\hat{x}|y) = \int_{-\infty}^{\hat{x}} p(x|y) \, dx.
+$$
+
+Since the total probability is 1:
+
+$$
+\int_{-\infty}^{\infty} p(x|y) \, dx = 1.
+$$
+
+Therefore:
+
+$$
+\int_{\hat{x}}^{\infty} p(x|y) \, dx = 1 - F(\hat{x}|y).
+$$
+
+#### **Step 3: Substitute Back into the Equation**
+
+Substitute the expressions back:
+
+$$
+- \left( F(\hat{x}|y) - [1 - F(\hat{x}|y)] \right) = 0.
+$$
+
+Simplify:
+
+$$
+- \left( 2 F(\hat{x}|y) - 1 \right) = 0.
+$$
+
+#### **Step 4: Solve for $F(\hat{x}|y)$**
+
+Set the equation to zero:
+
+$$
+- \left( 2 F(\hat{x}|y) - 1 \right) = 0.
+$$
+
+Multiply both sides by $-1$:
+
+$$
+2 F(\hat{x}|y) - 1 = 0.
+$$
+
+Solve for $F(\hat{x}|y)$:
+
+$$
+F(\hat{x}|y) = \frac{1}{2}.
+$$
+##### **Conclusion**
+The optimal estimate $\hat{x}^*$ is the value where the cumulative distribution function of $x$ given $y$ equals $0.5$. This means $\hat{x}^*$ is the **median** of the posterior distribution.
+
+**Result**: The optimal estimate is the **posterior median**:
+$$
+\hat{x}^* = \text{Median}[x|y].
+$$
+
+**Let me know if there's anything else you'd like to clarify or discuss further.**
 #### Step 5: Split the Integral
 
 The sign function divides the integral:
