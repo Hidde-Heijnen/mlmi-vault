@@ -24,7 +24,7 @@ $$
 - \int \frac{d}{d\hat{x}} (x - \hat{x})^2 p(x|y) dx = 0
 $$
 $$
-- \int - 2 (x - \hat{x})^2 p(x|y) dx = 0
+- \int -2 (x - \hat{x}) p(x|y) dx = 0
 $$
 
 $$

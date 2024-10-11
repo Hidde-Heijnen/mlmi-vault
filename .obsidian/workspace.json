@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "010 - Classes/MLMI1/Notebook/Exercises/Medical.md",
+                "file": "030 - Notes/Math/Integrals.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "010 - Classes/MLMI1/Notebook/Exercises/Medical.md",
+                "file": "030 - Notes/Math/Integrals.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "010 - Classes/MLMI1/Notebook/Exercises/Medical.md",
+                "file": "030 - Notes/Math/Integrals.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "010 - Classes/MLMI1/Notebook/Exercises/Medical.md"
+                "file": "030 - Notes/Math/Integrals.md"
               }
             }
           }
@@ -177,8 +177,8 @@
   },
   "active": "1361e652fcd19b14",
   "lastOpenFiles": [
-    "010 - Classes/MLMI1/Notebook/Exercises/Radioactive.md",
     "010 - Classes/MLMI1/Notebook/Exercises/Medical.md",
+    "010 - Classes/MLMI1/Notebook/Exercises/Radioactive.md",
     "030 - Notes/Math/Conjugate priors.md",
     "010 - Classes/DL/Lecture 1.md",
     "010 - Classes/NLP/lecture notes 1.md",
