@@ -42,5 +42,21 @@ So our output $\omega$ will become a probability distribution instead of a singl
 
 Loss function is a way to measure how good or bad the predictions of ML method are compared to the actual values in the data
 - squared error
-- 0-1
+- 0-1 loss (counts amount of errors for classification)
+- cross entropy or log-loss for probability vector $p$ and one hot encoding vector $\textbf{\omega}$ 
+- minimising loss is equivalent to maximising likelihood
+- We will use log-loss quite a lot
+
+Bayesian decision theory
+How do you choose optimally for prediction?
+new input x* , we need to choose and omega hat
+output will be uncurtain
+- Bayes decision rule
+- Chooses the value that minimises the loss. I don't know the true value, so we use the ground truth probability for omega. 
+E p(omegastar| xstar)^[likelihood(w, wstar)]
+
+In practice I never have the ground truth probabilities, so we will train a model to estimate them (using log losses)
+
+left of table is ground truth probabilities. 
+Depending on my loss function I will make different predictions. Sentence level or word level. 
 
