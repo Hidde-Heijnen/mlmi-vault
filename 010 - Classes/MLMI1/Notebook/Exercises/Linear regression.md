@@ -6,32 +6,32 @@ A machine learner observes two separate regression datasets comprising scalar in
   * Suggest a suitable regression model, $p(y_n|x_n)$ for the dataset A. Indicate sensible settings for the parameters in your proposed model where possible. Explain your modelling choices.  
   * Suggest a suitable regression model, $p(y_n|x_n)$ for the dataset B. Indicate sensible settings for the parameters in your proposed model where possible. Explain your modelling choices. 
 ### Answer
+> [!info] Goal
+> This question teaches you how to build models that make sense, many people just say it's linear and don't account for the noise
 #### A
-Linear trend with a rough gradient of approximately 5 and an intercept at $(0, 3)$. The noise appears Gaussian, but the standard deviation increases with $x$.
+Linear trend with a rough gradient of approximately 5 (draw a line for the mean, at $x=100$, $y=500$) and an intercept at $(0, 0)$. The noise appears Gaussian, but the standard deviation increases with $x$.
 
 Thus, the suggested model is:
 $$y_n(x) = 5x + \sigma(x)\epsilon_n$$
 Where:
 - $\epsilon_n \sim \mathcal{N}(0,1)$,
-- $\sigma(x) = 1 \times x$ (standard deviation grows linearly with $x$).
+- $\sigma(x) = |x|$ (standard deviation grows linearly with $x$).
 #### B
 Sinusoidal trend with a true period of roughly 25 time steps, and heavy-tailed noise (outliers).
 
 The model is given by:
-
 $$y_n(x) = 2 + \sin\left(\frac{2\pi}{25}x\right) + \epsilon_n$$
-
 Where:
-- The amplitude of the sinusoid is approximately 1.
+- The amplitude of the sinusoid is approximately 1 (from 1 to 3).
 - The mean is 2.
 - $\epsilon_n \sim \text{Student-t}$, with:
   - mean 0,
   - variance approximately 1 (hard to specify),
   - degree of freedom parameter $\approx 2.1$ (accounts for heavy-tailed behaviour).
-
-*Again, it's a good one to dismiss.*
-
-
+> [!info]- Sparse distributions 
+> - **Heavy-Tailed Distributions**: Distributions like the Laplace have heavier tails compared to light-tailed distributions such as the Gaussian (normal) distribution.
+> - **Data Characteristics**: Data often clusters tightly around the trend line but includes occasional large outliers due to the heavy tails.
+> - **Kurtosis (Fourth Moment)**: The fourth moment, known as kurtosis (E[x⁴]), is sensitive to extreme values and helps identify the presence of heavy tails in a distribution.
 ## 2. **Maximum-likelihood learning for a simple regression model**
 ---
 ### Question
