@@ -45,8 +45,19 @@ Morphology: -  the structure of words
 #### Structuring a Sentence
 - **Lexical Semantics**: Meaning of individual words (e.g., *yinkish* = ADJ, *dripners* = NOUN, *blorked* = VERB).
 - **Compositional Semantics**: Meaning derived from sentence structure (combining syntax and word meanings).
-- **Syntax**: Sentence structure, e.g., word order (subject, object, verb).
+- **Syntax**: Sentence structure, e.g., word order (subject, object, verb). The way words are used to form sentences. 
 - **Morphology**: Word structure (e.g., *quastofically* is derived from *quastofy* + *-cal* + *-ly*; *pidibs* = *pidib* + *-s*).
-- **Vectorization**: Words, phrases, sentences, and paragraphs are vectorized for processing.
+- **Vectorisation**: Words, phrases, sentences, and paragraphs are vectorised for processing.
+
+Word combinations can contain crucial information. Some combinations are more important than others. 
+
+Transform words to vectors so we can use them for example in neural models. 
 
 ![[CleanShot 2024-10-11 at 10.35.04@2x.png]]
+
+### Form transformation
+![[CleanShot 2024-10-11 at 10.41.24@2x.png]]
+
+Map to and from natural language expressions to mathematical models. 
+
+I-NP: inside noun phrase
