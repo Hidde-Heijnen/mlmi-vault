@@ -61,3 +61,24 @@ Transform words to vectors so we can use them for example in neural models.
 Map to and from natural language expressions to mathematical models. 
 
 I-NP: inside noun phrase
+We go from words to token labels
+
+named entities
+Per: person
+Org: organisation
+Loc: Location
+B-Loc:
+
+Syntactic dependencies: assymetrical dependencies on other words modelled using a list of numbers. 
+
+Go from one side to another. 
+
+Technology is changing very fast. For each lecture some recommended chapters: 
+After class reading: https://web.stanford.edu/~jurafsky/slp3/
+
+today reading just for motivation:
+
+https://www.bbc.com/future/article/20220804-kusunda-the-language-isolate-with-no-word-for-no
+
+https://plato.stanford.edu/entries/computational-linguistics/
+
