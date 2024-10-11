@@ -95,14 +95,9 @@ $$
 - \int \text{sign}(\hat{x} - x) \, p(x|y) \, dx = 0.
 $$
 
-The minus doesn't add anything, if we've switched the order of the loss function (so $|x-\hat{x}|$ it would've dissapeared. 
+The minus doesn't add anything, if we've switched the order of the loss function (so $|x-\hat{x}|$ it would've disappeared. 
 
 ---
-
-### **Solving for $\hat{x}^*$ Using the Sign Function**
-
-#### **Step 1: Split the Integral Based on the Sign Function**
-
 The sign function divides the domain into three regions:
 
 - **When $x < \hat{x}$:** $\text{sign}(\hat{x} - x) = 1$.
@@ -110,66 +105,14 @@ The sign function divides the domain into three regions:
 - **When $x > \hat{x}$:** $\text{sign}(\hat{x} - x) = -1$.
 
 Split the integral accordingly:
-
 $$
 - \left( \int_{-\infty}^{\hat{x}} [1] \, p(x|y) \, dx + \int_{\hat{x}}^{\infty} [-1] \, p(x|y) \, dx \right) = 0.
 $$
-
 Simplify:
-
 $$
 - \left( \int_{-\infty}^{\hat{x}} p(x|y) \, dx - \int_{\hat{x}}^{\infty} p(x|y) \, dx \right) = 0.
 $$
-
-#### **Step 2: Express Integrals in Terms of the Cumulative Distribution Function (CDF)**
-
-Let $F(\hat{x}|y)$ be the cumulative distribution function of $x$ given $y$:
-
-$$
-F(\hat{x}|y) = \int_{-\infty}^{\hat{x}} p(x|y) \, dx.
-$$
-
-Since the total probability is 1:
-
-$$
-\int_{-\infty}^{\infty} p(x|y) \, dx = 1.
-$$
-
-Therefore:
-
-$$
-\int_{\hat{x}}^{\infty} p(x|y) \, dx = 1 - F(\hat{x}|y).
-$$
-
-#### **Step 3: Substitute Back into the Equation**
-
-Substitute the expressions back:
-
-$$
-- \left( F(\hat{x}|y) - [1 - F(\hat{x}|y)] \right) = 0.
-$$
-
-Simplify:
-
-$$
-- \left( 2 F(\hat{x}|y) - 1 \right) = 0.
-$$
-
-#### **Step 4: Solve for $F(\hat{x}|y)$**
-
-Set the equation to zero:
-
-$$
-- \left( 2 F(\hat{x}|y) - 1 \right) = 0.
-$$
-
-Multiply both sides by $-1$:
-
-$$
-2 F(\hat{x}|y) - 1 = 0.
-$$
-
-Solve for $F(\hat{x}|y)$:
+We get 0 when we put $\hat{x}$ exactly in the middle of the area of the distribution, aka the median. 
 
 $$
 F(\hat{x}|y) = \frac{1}{2}.
@@ -182,51 +125,12 @@ $$
 \hat{x}^* = \text{Median}[x|y].
 $$
 
-**Let me know if there's anything else you'd like to clarify or discuss further.**
-#### Step 5: Split the Integral
 
-The sign function divides the integral:
-
-$$
-- \left( \int_{-\infty}^{\hat{x}} p(x|y) \, dx - \int_{\hat{x}}^{\infty} p(x|y) \, dx \right) = 0.
-$$
-
----
-
-#### Step 6: Use the Cumulative Distribution Function
-
-Let $F(\hat{x}|y)$ denote the CDF of $x$ given $y$. Then:
-
-$$
-F(\hat{x}|y) = \int_{-\infty}^{\hat{x}} p(x|y) \, dx, \quad 1 - F(\hat{x}|y) = \int_{\hat{x}}^{\infty} p(x|y) \, dx.
-$$
-
-Substitute into the equation:
-
-$$
-- \left( 2F(\hat{x}|y) - 1 \right) = 0.
-$$
-
----
-
-#### Step 7: Solve for $\hat{x}^*$
-Setting the equation to zero:
-$$
-F(\hat{x}^*|y) = \frac{1}{2}.
-$$
-Thus, $\hat{x}^*$ is the **posterior median**.
 > [!info]- Why is this the posterior median?
 > - **Definition**: The median divides the distribution into two equal halves.
 > - **CDF Interpretation**: $F(\hat{x}|y) = P(x \leq \hat{x}|y)$.
 > - **Equating to 0.5**: Ensures a 50% chance that $x \leq \hat{x}$ and $x > \hat{x}$, defining the median.
 > - **Minimising Absolute Error**: The median minimises the expected absolute deviation under the posterior.
-
----
-
-**Summary**: The optimal point estimate for the negative absolute error reward function is the **posterior median**.
-
-##### Full solution
-
 ### Summary:
 
 - **Negative Squared Error Reward**: Optimal estimate is the **posterior mean** $\mathbb{E}[x|y]$.
