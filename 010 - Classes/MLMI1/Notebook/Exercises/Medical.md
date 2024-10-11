@@ -60,7 +60,7 @@ We can interchange the differentiation and integration:
 $$
 - \int \frac{d}{d\hat{x}} |\hat{x} - x| \, p(x|y) \, dx = 0.
 $$
-
+Use the definition that $|x|=\sqrt{x^2}$
 $$
 - \int \frac{d}{d\hat{x}} |\hat{x} - x| \, p(x|y) \, dx = 0.
 $$
