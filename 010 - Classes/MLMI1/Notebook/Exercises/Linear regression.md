@@ -36,9 +36,8 @@ Where:
 ---
 ### Question
   Consider a regression problem where the data comprise $N$ scalar inputs and outputs, $\mathcal{D} = \{ (x_1, y_1), ..., (x_N,y_N)\}$, and the goal is to predict $y$ from $x$. 
-    
+  
   Assume a very simple linear model, $y_n = a x_n + \epsilon_n$, where the noise $\epsilon_n$ is iid Gaussian with zero mean and variance 1.
-
   * Provide an expression for the log-likelihood of the parameter $a$. 
   * Compute the maximum likelihood estimate for $a$. 
 
