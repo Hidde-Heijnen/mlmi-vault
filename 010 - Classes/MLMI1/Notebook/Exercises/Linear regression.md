@@ -43,6 +43,18 @@ Where:
   * Compute the maximum likelihood estimate for $a$. 
 
 ### Answer
+#### A
+$$ p\left( \left\{ y_n \right\}_{n=1}^N \mid a, \left\{ x_n \right\}_{n=1}^N \right) = \prod_{n=1}^N p\left( y_n \mid a, x_n \right) $$
+
+Thus,
+$$ \log p\left( \left\{ y_n \right\}_{n=1}^N \mid a, \left\{ x_n \right\}_{n=1}^N \right) = \sum_n \left[ -\frac{1}{2} \log 2\pi - \frac{1}{2} \left( y_n - a x_n \right)^2 \right] $$
+
+$$ = -\frac{N}{2} \log 2\pi - \frac{1}{2} \sum_n \left( y_n - a x_n \right)^2 = \mathcal{L}(a) $$
+#### B
+$$ \frac{d \mathcal{L}(a)}{da} \Bigg|_{a = a_{\text{ML}}} = \sum_n x_n \left( y_n - a_{\text{ML}} x_n \right) = 0 $$
+
+Thus,
+$$ a_{\text{ML}} = \frac{\sum_n x_n y_n}{\sum_n x_n^2} $$
 
 ## 3. **Maximum-likelihood learning for multi-output regression** 
 ---
@@ -69,3 +81,36 @@ $$
 \end{align}
 $$
 ### Answer
+#### A
+$$
+\mathcal{L}(a) = \log p\left( \left\{ y_n, z_n \right\}_{n=1}^N \mid \left\{ x_n \right\}_{n=1}^N, a \right) = \sum_{n=1}^N \log p\left( y_n, z_n \mid x_n, a \right)
+$$
+
+where
+
+$$
+p\left( y_n, z_n \mid a, x_n \right) = \mathcal{N} \left( \begin{bmatrix} y_n \\ z_n \end{bmatrix}; \begin{bmatrix} a x_n \\ x_n \end{bmatrix}, \Sigma = \begin{bmatrix} 1 & \tfrac{1}{2} \\ \tfrac{1}{2} & 1 \end{bmatrix} \right)
+$$
+
+Thus,
+
+$$
+\mathcal{L}(a) = \sum_{n=1}^N -\tfrac{1}{2} \left( \begin{bmatrix} y_n \\ z_n \end{bmatrix} - \begin{bmatrix} a x_n \\ x_n \end{bmatrix} \right)^{\!\top} \Sigma^{-1} \left( \begin{bmatrix} y_n \\ z_n \end{bmatrix} - \begin{bmatrix} a x_n \\ x_n \end{bmatrix} \right) - \tfrac{N}{2} \log \left( \det(2\pi \Sigma) \right)
+$$
+
+Computing $\Sigma^{-1}$ and simplifying, we get:
+
+$$
+\mathcal{L}(a) = -\tfrac{2}{3} \sum_{n=1}^N \left[ \left( y_n - a x_n \right)^2 - \left( y_n - a x_n \right)\left( z_n - x_n \right) + \left( z_n - x_n \right)^2 \right] - \tfrac{N}{2} \log \left( \det(2\pi \Sigma) \right)
+$$
+
+#### B
+b)
+$$ \frac{d \mathcal{L}(a)}{da} = \sum_n \left( y_n - a x_n \right) x_n + \frac{1}{2} \sum_n \left( z_n - x_n \right) x_n = 0 $$
+
+$$ = \sum_n y_n x_n + \frac{1}{2} \sum_n z_n x_n - \frac{1}{2} \sum_n x_n^2 - a \sum_n x_n^2 $$
+
+Thus,
+$$ a = \frac{\left( \sum_n y_n x_n + \frac{1}{2} \sum_n z_n x_n \right)}{\sum_n x_n^2} \quad (\text{maximum likelihood estimate}) $$
+#### C
+The additional outputs change the maximum likelihood estimate of $a$. This means that they must provide useful information about $a$. They do this because the noise in $z_n$ is correlated with the noise in $y_n$, and so observing $z_n$ reveals information about the noise $\epsilon_n$ and allows more accurate identification of $a$.
