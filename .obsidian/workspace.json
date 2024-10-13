@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "030 - Notes/Math/Derivatives.md",
+                "file": "010 - Classes/4F13 - Probabilistic ML/Intro.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "030 - Notes/Math/Derivatives.md",
+                "file": "010 - Classes/4F13 - Probabilistic ML/Intro.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "030 - Notes/Math/Derivatives.md",
+                "file": "010 - Classes/4F13 - Probabilistic ML/Intro.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "030 - Notes/Math/Derivatives.md"
+                "file": "010 - Classes/4F13 - Probabilistic ML/Intro.md"
               }
             }
           }
@@ -176,6 +176,11 @@
   },
   "active": "fadd28feb2c628f0",
   "lastOpenFiles": [
+    "010 - Classes/4F13 - Probabilistic ML/cribsheet.pdf",
+    "010 - Classes/4F13 - Probabilistic ML/Intro.md",
+    "010 - Classes/4F13 - Probabilistic ML/matrix_cookbook.pdf",
+    "030 - Notes/Math/Derivatives.md",
+    "010 - Classes/4F13 - Probabilistic ML",
     "030 - Notes/Math/Moments of a Probability Distribution.md",
     "010 - Classes/MLMI1/Notebook/Exercises/9.md",
     "010 - Classes/MLMI1/Notebook/Exercises/Medical.md",
@@ -186,7 +191,6 @@
     "010 - Classes/MLMI1/Summary of Probabilistic Inference.md",
     "010 - Classes/MLMI1/Properties of gaussians.md",
     "010 - Classes/MLMI1/Notebook/Exercises/Linear regression.md",
-    "030 - Notes/Math/Derivatives.md",
     "z - Attachments/CleanShot 2024-10-11 at 17.39.38.png",
     "030 - Notes/Math/Integral Manipulation.md",
     "030 - Notes/Math/Conjugate priors.md",
@@ -206,8 +210,6 @@
     "030 - Notes/Math/Vectors.md",
     "z - Attachments/CleanShot 2024-10-10 at 11.39.33.png",
     "030 - Notes/Math/Logarithms.md",
-    "030 - Notes/Math/hyperbolic functions.md",
-    "030 - Notes/Math/Eulers formula.md",
     "010 - Classes/MLMI1/Notebook/Exercises",
     "010 - Classes/MLMI1/Notebook",
     "z - Attachments/CleanShot 2024-09-29 at 10.04.00@2x.png",
@@ -218,9 +220,6 @@
     "010 - Classes/MLMI1",
     "z - Attachments/Pasted image 20240907172755.png",
     "030 - Notes/Codebasics - Machine Learning Python course/02 - Linear Regression Single Variable.ipynb",
-    "030 - Notes/Codebasics - Machine Learning Python course/Notebooks/01-LRSV.ipynb",
-    "z - Attachments/uk.csv",
-    "030 - Notes/Codebasics - Machine Learning Python course/Notebooks/11-test.ipynb",
     "z - Attachments/linear regression sv.png"
   ]
 }
