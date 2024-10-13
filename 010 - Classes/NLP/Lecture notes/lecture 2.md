@@ -136,3 +136,7 @@ A finite state machine is:
 - The automaton changes states by following transitions.
 - The double circle indicates that this state is an **accepting state**. The automaton accepts the string if it ends in an accepting state.
 ### Byte-Pair Encoding
+BPE was initially developed as an algorithm to compress texts, and then used by OpenAI for tokenisation when pre-training the GPT model.
+- Start from a small base vocabulary, e.g. 256 ASCII code.
+- Add new tokens to the vocabulary until the desired vocabulary size is reached by learning merges, which are rules to merge two elements of the existing vocabulary together into a new one.
+- At each step, the BPE algorithm search for the most frequent pair, namely two consecutive tokens, of existing tokens.
