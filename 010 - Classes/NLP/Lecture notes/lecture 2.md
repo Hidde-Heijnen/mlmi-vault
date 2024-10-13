@@ -51,5 +51,9 @@ Sometimes there can be ambiguity
 		- glance, glare, glimmer, gloom, gloss, glow
 - slide and slip have similar meanings, but sl- is not a morpheme
 
+**Compounds**: contain more than one root
+	- post-truth, railway, sunset
+
+**Multiword expression:** combinations of two or more words that exhibit
 
 
