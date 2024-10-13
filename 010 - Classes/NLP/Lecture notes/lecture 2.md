@@ -54,6 +54,21 @@ Sometimes there can be ambiguity
 **Compounds**: contain more than one root
 	- post-truth, railway, sunset
 
-**Multiword expression:** combinations of two or more words that exhibit
+## Multiword expressions
 
+combinations of two or more words that exhibit:
+- **Syntactic idiosyncrasy**: The way the words are combined may not follow typical grammatical rules
+- **Semantic idiosyncrasy:** meaning of the phrase as a whole being different from the sum of its parts
+Fe: Computer Science, Climate change
+### Types of multiword expressions
+
+**Fixed vs Flexible:**
+- **Fixed:** order is fixed (by and large)
+- **Flexible:** order is flexible: "put on": put on the clothes, put the clothes on
+
+**Compositionality**: How much of the multiword expression can be understood from the meaning of it's individual roots
+- **Compositional**: 
+- **Semi-compositional**: partly derived from the roots, but may require some interpretation
+- **Non-compositional**: cannot be deduced from it's roots. 
+	- Kick the bucket => to die. A learner needs to see this combination of words as a complete new thing
 
