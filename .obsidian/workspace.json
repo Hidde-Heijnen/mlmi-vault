@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L2.2 - Bayesian inference and prediction with finite regression models.md",
+                "file": "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L2.1 - Probability fundamentals.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L2.2 - Bayesian inference and prediction with finite regression models.md",
+                "file": "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L2.1 - Probability fundamentals.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L2.2 - Bayesian inference and prediction with finite regression models.md",
+                "file": "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L2.1 - Probability fundamentals.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L2.2 - Bayesian inference and prediction with finite regression models.md"
+                "file": "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L2.1 - Probability fundamentals.md"
               }
             }
           }
@@ -164,12 +164,12 @@
   },
   "active": "1361e652fcd19b14",
   "lastOpenFiles": [
-    "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L2.1 - Probability fundamentals.md",
     "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L1.3 - Likelihood and the concept of noise.md",
+    "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L2.2 - Bayesian inference and prediction with finite regression models.md",
+    "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L2.1 - Probability fundamentals.md",
     "030 - Notes/Math/Moments of a Probability Distribution.md",
     "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L1.2 - Linear in the parameters regression.md",
     "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L2.3 - Marginal Likelihood.md",
-    "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L2.2 - Bayesian inference and prediction with finite regression models.md",
     "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L1.1 - Modelling.md",
     "z - Attachments/CleanShot 2024-10-13 at 16.31.13.png",
     "010 - Classes/4F13 - Probabilistic ML/Course Info.md",
