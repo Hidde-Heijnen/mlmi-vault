@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "010 - Classes/MLMI1/Probabilistic modeling and Inference youtube playlist.md",
+                "file": "030 - Notes/Math/Distributions.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "010 - Classes/MLMI1/Probabilistic modeling and Inference youtube playlist.md",
+                "file": "030 - Notes/Math/Distributions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "010 - Classes/MLMI1/Probabilistic modeling and Inference youtube playlist.md",
+                "file": "030 - Notes/Math/Distributions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "010 - Classes/MLMI1/Probabilistic modeling and Inference youtube playlist.md"
+                "file": "030 - Notes/Math/Distributions.md"
               }
             }
           }
@@ -177,6 +177,8 @@
   },
   "active": "1361e652fcd19b14",
   "lastOpenFiles": [
+    "030 - Notes/Math/Probability.md",
+    "010 - Classes/MLMI1/Probabilistic modeling and Inference youtube playlist.md",
     "010 - Classes/MLMI1/Summary of Probabilistic Inference.md",
     "010 - Classes/MLMI1/Properties of gaussians.md",
     "010 - Classes/MLMI1/Notebook/Exercises/Linear regression.md",
@@ -196,7 +198,6 @@
     "010 - Classes/NLP",
     "010 - Classes/Untitled.md",
     "010 - Classes/MLMI1/Notebook/Inference.md",
-    "010 - Classes/MLMI1/Probabilistic modeling and Inference youtube playlist.md",
     "010 - Classes/test.md",
     "010 - Classes/MLMI1/Course info.md",
     "030 - Notes/Math/Distributions.md",
