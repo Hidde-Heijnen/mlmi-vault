@@ -71,9 +71,7 @@ The organisation of the handouts is changing. This year the material will be str
 
 
 ## Coursework
-DON'T FORGET YOUR COVER SHEET! PLEASE TICK POSTGRADUATE BOX!
-- Upload ONE file only as a pdf. 
-- MPHIL MLMI STUDENTS - make sure that the file name includes your candidate number but not your name or student ID as you are being marked anonymously.  Please use the MPhil coversheet.
+
 ### Coursework 1
 [Coursework 1](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/cw/coursework1.pdf) is about regression using Gaussian processes. You will need the following files: [cw1a.mat](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/cw/cw1a.mat) and [cw1e.mat](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/cw/cw1e.mat).  
 **Due:** Friday 8th November, 2024 at 12:00 noon (online).
@@ -87,5 +85,15 @@ For Python, use: [coursework2.ipynb](https://mlg.eng.cam.ac.uk/teaching/4f13/242
 For Matlab, use: [bmm.m](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/cw/bmm.m), [lda.m](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/cw/lda.m), [sampDiscrete.m](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/cw/sampDiscrete.m).  
 For Python, use: [bmm.py](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/cw/bmm.py), [lda.py](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/cw/lda.py), [sampleDiscrete.py](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/cw/sampleDiscrete.py).  
 **Due:** Friday 6th December, 2024 at 12:00 noon (online).
+## How to submit
+DON'T FORGET YOUR COVER SHEET! PLEASE TICK POSTGRADUATE BOX!
+- Upload ONE file only as a pdf. 
+- MPHIL MLMI STUDENTS - make sure that the file name includes your candidate number but not your name or student ID as you are being marked anonymously.  Please use the MPhil coversheet.
 
-
+1. Click on the link for the appropriate piece of coursework
+2. Click on "add submission"
+3. Drag your file (which should all be in one pdf document, with the submission cover sheet at the front) to the File Submission field
+4. Wait until the file is being downloaded (you should see the blue status bar to indicate that this is happening)
+5. After the blue status bar has disappeared, click the "Save Changes" button
+6. Click "CONFIRM SUBMISSION" - this will mean that your coursework is properly submitted
+NB: ONCE YOU CLICK "CONFIRM SUBMISSION" YOU CANNOT RESUBMIT OR CHANGE ANYTHING
