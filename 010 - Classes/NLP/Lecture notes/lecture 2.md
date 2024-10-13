@@ -120,8 +120,19 @@ Going from those to natural language is called **production**
 
 ### Finite State techniques
 The order of things matter a lot in language
+- $\text{talk-ed} \neq \text{ed-talk}$
 
-$\text{talk-ed}!=\text{ed-talk}$
-
-
+A finite state machine is:
+- A symbolic system that can recognise or transform forms.
+	- An automaton remembers only a finite amount of information.
+	- Information is represented by its states.
+	- State changes in response to inputs and may trigger outputs.
+	- Transition rules define how the state changes in response to inputs.
+	- Given a sequence of input symbols, a recognition process starts in the start state and follow the transitions in turn. Input is accepted if this process ends up in an accepting state.
+	- Partial grammars for text preprocessing, tokenisation, named entity recognition etc.
+![[CleanShot 2024-10-13 at 19.58.54.png]]
+- Circles are **states** of the automaton.
+- Arrows are called **transitions**.
+- The automaton changes states by following transitions.
+- The double circle indicates that this state is an **accepting state**. The automaton accepts the string if it ends in an accepting state.
 ### Byte-Pair Encoding
