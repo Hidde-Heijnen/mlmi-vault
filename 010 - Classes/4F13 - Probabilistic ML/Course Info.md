@@ -71,6 +71,9 @@ The organisation of the handouts is changing. This year the material will be str
 
 
 ## Coursework
+DON'T FORGET YOUR COVER SHEET! PLEASE TICK POSTGRADUATE BOX!
+- Upload ONE file only as a pdf. 
+- MPHIL MLMI STUDENTS - make sure that the file name includes your candidate number but not your name or student ID as you are being marked anonymously.  Please use the MPhil coversheet.
 ### Coursework 1
 [Coursework 1](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/cw/coursework1.pdf) is about regression using Gaussian processes. You will need the following files: [cw1a.mat](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/cw/cw1a.mat) and [cw1e.mat](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/cw/cw1e.mat).  
 **Due:** Friday 8th November, 2024 at 12:00 noon (online).
