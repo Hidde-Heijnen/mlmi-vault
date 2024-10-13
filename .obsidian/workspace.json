@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "010 - Classes/4F13 - Probabilistic ML/Course Info.md",
+                "file": "010 - Classes/NLP/Course Info.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "010 - Classes/4F13 - Probabilistic ML/Course Info.md",
+                "file": "010 - Classes/NLP/Course Info.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "010 - Classes/4F13 - Probabilistic ML/Course Info.md",
+                "file": "010 - Classes/NLP/Course Info.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "010 - Classes/4F13 - Probabilistic ML/Course Info.md"
+                "file": "010 - Classes/NLP/Course Info.md"
               }
             }
           }
@@ -162,14 +162,15 @@
       "jupyter:Create Jupyter Notebook": false
     }
   },
-  "active": "1b9c0ca6e568a32b",
+  "active": "1361e652fcd19b14",
   "lastOpenFiles": [
+    "010 - Classes/4F13 - Probabilistic ML/Course Info.md",
+    "010 - Classes/NLP/Course Info.md",
+    "010 - Classes/4F13 - Probabilistic ML/matrix_cookbook.pdf",
+    "010 - Classes/4F13 - Probabilistic ML/cribsheet.pdf",
     "010 - Classes/MLMI1/Notebook/Exercises/9.md",
     "cw/cw1a.mat.md",
-    "010 - Classes/4F13 - Probabilistic ML/Course Info.md",
     "cw",
-    "010 - Classes/4F13 - Probabilistic ML/cribsheet.pdf",
-    "010 - Classes/4F13 - Probabilistic ML/matrix_cookbook.pdf",
     "030 - Notes/Math/Derivatives.md",
     "010 - Classes/4F13 - Probabilistic ML",
     "030 - Notes/Math/Moments of a Probability Distribution.md",
@@ -199,7 +200,6 @@
     "030 - Notes/Math/Matrixes.md",
     "030 - Notes/Math/Vectors.md",
     "z - Attachments/CleanShot 2024-10-10 at 11.39.33.png",
-    "030 - Notes/Math/Logarithms.md",
     "010 - Classes/MLMI1/Notebook/Exercises",
     "010 - Classes/MLMI1/Notebook",
     "z - Attachments/CleanShot 2024-09-29 at 10.04.00@2x.png",
