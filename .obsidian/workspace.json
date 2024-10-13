@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "010 - Classes/NLP/Course Info.md",
+                "file": "010 - Classes/4F13 - Probabilistic ML/Course Info.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "010 - Classes/NLP/Course Info.md",
+                "file": "010 - Classes/4F13 - Probabilistic ML/Course Info.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "010 - Classes/NLP/Course Info.md",
+                "file": "010 - Classes/4F13 - Probabilistic ML/Course Info.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "010 - Classes/NLP/Course Info.md"
+                "file": "010 - Classes/4F13 - Probabilistic ML/Course Info.md"
               }
             }
           }
@@ -164,8 +164,8 @@
   },
   "active": "1361e652fcd19b14",
   "lastOpenFiles": [
-    "010 - Classes/4F13 - Probabilistic ML/Course Info.md",
     "010 - Classes/NLP/Course Info.md",
+    "010 - Classes/4F13 - Probabilistic ML/Course Info.md",
     "010 - Classes/4F13 - Probabilistic ML/matrix_cookbook.pdf",
     "010 - Classes/4F13 - Probabilistic ML/cribsheet.pdf",
     "010 - Classes/MLMI1/Notebook/Exercises/9.md",
