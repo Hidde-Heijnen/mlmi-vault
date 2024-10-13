@@ -8,24 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "fadd28feb2c628f0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "010 - Classes/4F13 - Probabilistic ML/Intro.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "1361e652fcd19b14",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "010 - Classes/MLMI1/Notebook/Exercises/9.md",
+                "file": "010 - Classes/4F13 - Probabilistic ML/Course Info.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "010 - Classes/4F13 - Probabilistic ML/Intro.md",
+                "file": "010 - Classes/4F13 - Probabilistic ML/Course Info.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "010 - Classes/4F13 - Probabilistic ML/Intro.md",
+                "file": "010 - Classes/4F13 - Probabilistic ML/Course Info.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "010 - Classes/4F13 - Probabilistic ML/Intro.md"
+                "file": "010 - Classes/4F13 - Probabilistic ML/Course Info.md"
               }
             }
           }
@@ -174,15 +162,17 @@
       "jupyter:Create Jupyter Notebook": false
     }
   },
-  "active": "fadd28feb2c628f0",
+  "active": "1b9c0ca6e568a32b",
   "lastOpenFiles": [
+    "010 - Classes/MLMI1/Notebook/Exercises/9.md",
+    "cw/cw1a.mat.md",
+    "010 - Classes/4F13 - Probabilistic ML/Course Info.md",
+    "cw",
     "010 - Classes/4F13 - Probabilistic ML/cribsheet.pdf",
-    "010 - Classes/4F13 - Probabilistic ML/Intro.md",
     "010 - Classes/4F13 - Probabilistic ML/matrix_cookbook.pdf",
     "030 - Notes/Math/Derivatives.md",
     "010 - Classes/4F13 - Probabilistic ML",
     "030 - Notes/Math/Moments of a Probability Distribution.md",
-    "010 - Classes/MLMI1/Notebook/Exercises/9.md",
     "010 - Classes/MLMI1/Notebook/Exercises/Medical.md",
     "010 - Classes/MLMI1/Notebook/Exercises/Radioactive.md",
     "030 - Notes/Math/Distributions.md",
@@ -219,7 +209,6 @@
     "z - Attachments/CleanShot 2024-09-20 at 12.19.48.png",
     "010 - Classes/MLMI1",
     "z - Attachments/Pasted image 20240907172755.png",
-    "030 - Notes/Codebasics - Machine Learning Python course/02 - Linear Regression Single Variable.ipynb",
     "z - Attachments/linear regression sv.png"
   ]
 }

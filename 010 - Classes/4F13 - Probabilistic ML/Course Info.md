@@ -25,56 +25,69 @@ Note: the links in the table below aren't up to date. If you want to see lecture
 - [Modelling data](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/modelling%20data.pdf)
 - [Linear in the parameters regression](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/linear%20in%20the%20parameters%20regression.pdf)
 - [Likelihood and the concept of noise](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/likelihood%20and%20noise.pdf)
+
 **lecture 2:**
 - [Probability fundamentals](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/probability%20fundamentals.pdf)
 - [Bayesian inference and prediction with finite regression models](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/bayesian%20finite%20regression.pdf)
 - [Marginal likelihood](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/marginal%20likelihood.pdf)
 
 ### Gaussian Processes (3L)
-**Lecture 1:**
+**Lecture 3:**
 - [Parameters and functions](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/parameters%20and%20functions.pdf)
 - [Gaussian Process](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/gp.pdf), with a [sequential generation demo](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/cw/seq.m)
-**Lecture 2:**
+
+**Lecture 4:**
 - [Correspondence between linear models and GPs](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/correspondence.pdf)
 - [Should we use finite or infinite models?](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/infinite.pdf)
+
+**Lecture 5:**
 - [Covariance functions](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/covariance%20functions.pdf)
 - Quick introduction to the [gpml toolbox](http://www.gaussianprocess.org/gpml/code)
 
 ### Probabilistic Ranking (3L)
-
+**Lecture 6:**
 - [Introduction to ranking](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/ranking.pdf)
+
+**Lecture 7:**
 - [Gibbs sampling](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/gibbs%20sampling.pdf)
 - Gibbs sampling demo: [Matlab script](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/cw/gibbs2.m)
 - [Gibbs sampling in the TrueSkill model](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/gibbs%20in%20TrueSkill.pdf)
 
-### Factor Graphs and Message Passing
-
+**Lecture 8:**
 - [Factor graphs](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/factor%20graphs.pdf)
 - [Message passing in TrueSkill](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/message%20in%20TrueSkill.pdf)
 - [Approximation by moment matching](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/moment%20matching.pdf)
 
-### Modelling Document Collections
-
+### Modelling Document Collections (3L)
+**Lecture 9:**
 - Models of [text](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/text.pdf)
 - Discrete [binary distributions](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/binary.pdf)
 - Categorical, multinomial, and [discrete distributions](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/discrete.pdf)
+
+**Lecture 10:**
 - Simple [categorical and mixture models](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/document%20models.pdf)
 - Learning in models with latent variables: the [Expectation Maximization (EM)](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/expectation%20maximization.pdf) algorithm
+
+**Lecture 11:**
 - [Gibbs sampling in mixture models](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/gibbs%20for%20Bayesian%20mixture.pdf), collapsed Gibbs
 - [Latent Dirichlet Allocation](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/lda.pdf) topic models
 
 
 ## Coursework
 ### Coursework 1
-[Coursework 1](cw/coursework1.pdf) is about regression using Gaussian processes. You will need the following files: [cw1a.mat](cw/cw1a.mat) and [cw1e.mat](cw/cw1e.mat).  
+[Coursework 1](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/cw/coursework1.pdf) is about regression using Gaussian processes. You will need the following files: [cw1a.mat](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/cw/cw1a.mat) and [cw1e.mat](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/cw/cw1e.mat).  
 **Due:** Friday 8th November, 2024 at 12:00 noon (online).
+
 ### Coursework 2
-[Coursework 2](cw/coursework2.pdf) will be about Probabilistic Ranking. You will need the data file: [tennis_data.mat](cw/tennis_data.mat).  
-For Matlab, use: [cw2.m](cw/cw2.m), [gibbsrank.m](cw/gibbsrank.m), [eprank.m](cw/eprank.m).  
-For Python, use: [coursework2.ipynb](cw/coursework2.ipynb), [cw2.py](cw/cw2.py), [gibbsrank.py](cw/gibbsrank.py), [eprank.py](cw/eprank.py).  
+[Coursework 2](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/cw/coursework2.pdf) will be about Probabilistic Ranking. You will need the data file: [tennis_data.mat](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/cw/tennis_data.mat).  
+For Matlab, use: [cw2.m](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/cw/cw2.m), [gibbsrank.m](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/cw/gibbsrank.m), [eprank.m](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/cw/eprank.m).  
+For Python, use: [coursework2.ipynb](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/cw/coursework2.ipynb), [cw2.py](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/cw/cw2.py), [gibbsrank.py](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/cw/gibbsrank.py), [eprank.py](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/cw/eprank.py).  
 **Due:** Friday 22nd November, 2024 at 12:00 noon (online).
+
 ### Coursework 3
-[Coursework 3](cw/coursework3.pdf) is about the Latent Dirichlet Allocation (LDA) model. You will need [kos_doc_data.mat](../1112/cw/kos_doc_data.mat).  
-For Matlab, use: [bmm.m](cw/bmm.m), [lda.m](cw/lda.m), [sampDiscrete.m](cw/sampDiscrete.m).  
-For Python, use: [bmm.py](cw/bmm.py), [lda.py](cw/lda.py), [sampleDiscrete.py](cw/sampleDiscrete.py).  
+[Coursework 3](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/cw/coursework3.pdf) is about the Latent Dirichlet Allocation (LDA) model. You will need [kos_doc_data.mat](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/cw/kos_doc_data.mat).  
+For Matlab, use: [bmm.m](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/cw/bmm.m), [lda.m](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/cw/lda.m), [sampDiscrete.m](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/cw/sampDiscrete.m).  
+For Python, use: [bmm.py](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/cw/bmm.py), [lda.py](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/cw/lda.py), [sampleDiscrete.py](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/cw/sampleDiscrete.py).  
 **Due:** Friday 6th December, 2024 at 12:00 noon (online).
+
+
