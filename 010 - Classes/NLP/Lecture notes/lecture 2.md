@@ -67,8 +67,39 @@ Fe: Computer Science, Climate change
 - **Flexible:** order is flexible: "put on": put on the clothes, put the clothes on
 
 **Compositionality**: How much of the multiword expression can be understood from the meaning of it's individual roots
-- **Compositional**: 
+- **Compositional**: meaning of expression comes directly from it's parts
+	- strong tea => tea that is strong in flavour
 - **Semi-compositional**: partly derived from the roots, but may require some interpretation
+	- Spill the beans => spilling is revealing, but beans doesn't refer to secret
 - **Non-compositional**: cannot be deduced from it's roots. 
 	- Kick the bucket => to die. A learner needs to see this combination of words as a complete new thing
 
+Code mixed languages
+- A speaker alternates between two or more languages in the context of a single conversation
+	- 我唔sure => english word mixed in sentence
+
+## Text normalisation
+- **Not using any punctuation at all**  
+	  _Eh speak english mi malay not tt good_ (Eh, speak English! My Ma-lay is not that good.)
+  
+- **Using spelling/punctuation for emphasis**  
+  _goooooood Sunday morning !!!!!!_ (Good Sunday morning!)
+  
+- **Using phonetic spelling**  
+  _dat iz enuf_ (That is enough)
+  
+- **Dropping vowel**  
+  _i hv cm to c my luv._ (I have come to see my love.)
+  
+- **Introducing local flavour**  
+  _yar lor where u go juz now_ (Yes, where did you go just now?)
+  
+- **Dropping verb**  
+  _I hv 2 go. Dinner w parents._ (I have to go. Have dinner with parents.)
+
+
+## Relevant NLP tasks
+
+### Finite State techniques
+
+### Byte-Pair Encoding

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "010 - Classes/NLP/Lecture notes/lecture 2.md",
+                "file": "010 - Classes/NLP/Course Info.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,13 +25,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "030 - Notes/Math/Moments of a Probability Distribution.md",
+                "file": "010 - Classes/NLP/Lecture notes/lecture 2.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -162,9 +163,10 @@
       "jupyter:Create Jupyter Notebook": false
     }
   },
-  "active": "1361e652fcd19b14",
+  "active": "be01365890b5f917",
   "lastOpenFiles": [
     "030 - Notes/Math/Moments of a Probability Distribution.md",
+    "010 - Classes/NLP/Course Info.md",
     "010 - Classes/NLP/Lecture notes/lecture 2.md",
     "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L2.1 - Probability fundamentals.md",
     "010 - Classes/NLP/Untitled.md",
@@ -177,7 +179,6 @@
     "z - Attachments/CleanShot 2024-10-13 at 16.31.13.png",
     "010 - Classes/4F13 - Probabilistic ML/Course Info.md",
     "010 - Classes/4F13 - Probabilistic ML/Lecture notes",
-    "010 - Classes/NLP/Course Info.md",
     "010 - Classes/4F13 - Probabilistic ML/matrix_cookbook.pdf",
     "010 - Classes/4F13 - Probabilistic ML/cribsheet.pdf",
     "010 - Classes/MLMI1/Notebook/Exercises/9.md",
