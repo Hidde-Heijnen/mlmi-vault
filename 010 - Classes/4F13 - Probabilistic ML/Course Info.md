@@ -77,13 +77,11 @@ Note: the links in the table below aren't up to date. If you want to see lecture
 ### Coursework 1
 [Coursework 1](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/cw/coursework1.pdf) is about regression using Gaussian processes. You will need the following files: [cw1a.mat](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/cw/cw1a.mat) and [cw1e.mat](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/cw/cw1e.mat).  
 **Due:** Friday 8th November, 2024 at 12:00 noon (online).
-
 ### Coursework 2
-[Coursework 2](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/cw/coursework2.pdf) will be about Probabilistic Ranking. You will need the data file: [tennis_data.mat](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/cw/tennis_data.mat).  
+[Coursework 2](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/cw/coursework2.pdf) will be about Probabilistic Ranking. You will need the data file: [tennis_data.mat](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/cw/tennis_data.mat)
 For Matlab, use: [cw2.m](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/cw/cw2.m), [gibbsrank.m](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/cw/gibbsrank.m), [eprank.m](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/cw/eprank.m).  
 For Python, use: [coursework2.ipynb](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/cw/coursework2.ipynb), [cw2.py](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/cw/cw2.py), [gibbsrank.py](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/cw/gibbsrank.py), [eprank.py](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/cw/eprank.py).  
 **Due:** Friday 22nd November, 2024 at 12:00 noon (online).
-
 ### Coursework 3
 [Coursework 3](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/cw/coursework3.pdf) is about the Latent Dirichlet Allocation (LDA) model. You will need [kos_doc_data.mat](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/cw/kos_doc_data.mat).  
 For Matlab, use: [bmm.m](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/cw/bmm.m), [lda.m](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/cw/lda.m), [sampDiscrete.m](https://mlg.eng.cam.ac.uk/teaching/4f13/2425/cw/sampDiscrete.m).  
