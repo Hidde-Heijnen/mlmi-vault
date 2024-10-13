@@ -80,26 +80,48 @@ Code mixed languages
 
 ## Text normalisation
 - **Not using any punctuation at all**  
-	  _Eh speak english mi malay not tt good_ (Eh, speak English! My Ma-lay is not that good.)
-  
+	- _Eh speak english mi malay not tt good_ (Eh, speak English! My Ma-lay is not that good.)
 - **Using spelling/punctuation for emphasis**  
-  _goooooood Sunday morning !!!!!!_ (Good Sunday morning!)
-  
+	- _goooooood Sunday morning !!!!!!_ (Good Sunday morning!)
 - **Using phonetic spelling**  
-  _dat iz enuf_ (That is enough)
-  
+	- _dat iz enuf_ (That is enough)
 - **Dropping vowel**  
-  _i hv cm to c my luv._ (I have come to see my love.)
-  
+	- _i hv cm to c my luv._ (I have come to see my love.)
 - **Introducing local flavour**  
-  _yar lor where u go juz now_ (Yes, where did you go just now?)
-  
+	- _yar lor where u go juz now_ (Yes, where did you go just now?)
 - **Dropping verb**  
-  _I hv 2 go. Dinner w parents._ (I have to go. Have dinner with parents.)
-
+	- _I hv 2 go. Dinner w parents._ (I have to go. Have dinner with parents.)
 
 ## Relevant NLP tasks
+---
+We want to be able to go from natural language expressions to representations $\mathcal{R}$
+- morphological structure
+- syntactic structure
+- semantic structure
+- discourse structure
+- application-related structured
+
+Going from natural language to those is called **comprehension** 
+Going from those to natural language is called **production**
+### Computational tasks
+- Lemmatisation
+	- Word: saw
+	- $\mathcal{R}$: lexeme: {see, saw}
+- Tagging
+	- contextualised word: saw @ J saw M
+	- $\mathcal{R}$: contextualised tag <see, VERB.PAST>
+- Segmentation
+	- word: meaningful
+	- $\mathcal{R}$: morphemes: mean+ing+ful
+		- Word segmentation: Some languages don't have spaces, so it is useful to be able to split a string up into it's component words
+- Generation
+	- $\mathcal{R}$: abstract word: <see, VERB.PAST>
+	- word: saw
 
 ### Finite State techniques
+The order of things matter a lot in language
+
+$\text{talk-ed}!=\text{ed-talk}$
+
 
 ### Byte-Pair Encoding
