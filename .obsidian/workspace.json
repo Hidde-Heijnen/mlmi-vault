@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L1.3 Likelihood and the concept of noise.md",
+                "file": "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L2.2 Bayesian inference and prediction with finite regression models.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L1.3 Likelihood and the concept of noise.md",
+                "file": "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L2.2 Bayesian inference and prediction with finite regression models.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L1.3 Likelihood and the concept of noise.md",
+                "file": "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L2.2 Bayesian inference and prediction with finite regression models.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L1.3 Likelihood and the concept of noise.md"
+                "file": "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L2.2 Bayesian inference and prediction with finite regression models.md"
               }
             }
           }
@@ -164,9 +164,11 @@
   },
   "active": "1361e652fcd19b14",
   "lastOpenFiles": [
-    "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L1.2 - Linear in the parameters regression.md",
-    "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L1.3 Likelihood and the concept of noise.md",
+    "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L2.1 Probability fundamentals.md",
+    "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L2.2 Bayesian inference and prediction with finite regression models.md",
     "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L1.1 - Modelling.md",
+    "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L1.3 Likelihood and the concept of noise.md",
+    "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L1.2 - Linear in the parameters regression.md",
     "010 - Classes/4F13 - Probabilistic ML/Course Info.md",
     "010 - Classes/4F13 - Probabilistic ML/Lecture notes",
     "010 - Classes/NLP/Course Info.md",
@@ -198,8 +200,6 @@
     "010 - Classes/NLP",
     "010 - Classes/Untitled.md",
     "010 - Classes/MLMI1/Notebook/Inference.md",
-    "010 - Classes/test.md",
-    "010 - Classes/MLMI1/Course info.md",
     "z - Attachments/CleanShot 2024-10-10 at 11.39.33.png",
     "010 - Classes/MLMI1/Notebook/Exercises",
     "010 - Classes/MLMI1/Notebook",
