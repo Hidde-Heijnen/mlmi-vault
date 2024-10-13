@@ -17,3 +17,18 @@ The organisation of the handouts is changing. This year the material will be str
 - David J.C. MacKay [Information Theory, Inference, and Learning Algorithms](https://www.inference.org.uk/mackay/itila/), Cambridge University Press (2003), available freely on the web.
 
 ## Coursework
+### Coursework 1
+[Coursework 1](cw/coursework1.pdf) is about regression using Gaussian processes. You will need the following files: [cw1a.mat](cw/cw1a.mat) and [cw1e.mat](cw/cw1e.mat).  
+**Due:** Friday 8th November, 2024 at 12:00 noon (online).
+
+### Coursework 2
+[Coursework 2](cw/coursework2.pdf) will be about Probabilistic Ranking. You will need the data file: [tennis_data.mat](cw/tennis_data.mat).  
+For Matlab, use: [cw2.m](cw/cw2.m), [gibbsrank.m](cw/gibbsrank.m), [eprank.m](cw/eprank.m).  
+For Python, use: [coursework2.ipynb](cw/coursework2.ipynb), [cw2.py](cw/cw2.py), [gibbsrank.py](cw/gibbsrank.py), [eprank.py](cw/eprank.py).  
+**Due:** Friday 22nd November, 2024 at 12:00 noon (online).
+
+### Coursework 3
+[Coursework 3](cw/coursework3.pdf) is about the Latent Dirichlet Allocation (LDA) model. You will need [kos_doc_data.mat](../1112/cw/kos_doc_data.mat).  
+For Matlab, use: [bmm.m](cw/bmm.m), [lda.m](cw/lda.m), [sampDiscrete.m](cw/sampDiscrete.m).  
+For Python, use: [bmm.py](cw/bmm.py), [lda.py](cw/lda.py), [sampleDiscrete.py](cw/sampleDiscrete.py).  
+**Due:** Friday 6th December, 2024 at 12:00 noon (online).
