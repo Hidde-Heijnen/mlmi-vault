@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "030 - Notes/Math/Distributions.md",
+                "file": "010 - Classes/MLMI1/Notebook/Exercises/9.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "030 - Notes/Math/Distributions.md",
+                "file": "010 - Classes/MLMI1/Notebook/Exercises/9.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "030 - Notes/Math/Distributions.md",
+                "file": "010 - Classes/MLMI1/Notebook/Exercises/9.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "030 - Notes/Math/Distributions.md"
+                "file": "010 - Classes/MLMI1/Notebook/Exercises/9.md"
               }
             }
           }
@@ -177,6 +177,8 @@
   },
   "active": "1361e652fcd19b14",
   "lastOpenFiles": [
+    "030 - Notes/Math/Distributions.md",
+    "010 - Classes/MLMI1/Notebook/Exercises/9.md",
     "030 - Notes/Math/Probability.md",
     "010 - Classes/MLMI1/Probabilistic modeling and Inference youtube playlist.md",
     "010 - Classes/MLMI1/Summary of Probabilistic Inference.md",
@@ -200,7 +202,6 @@
     "010 - Classes/MLMI1/Notebook/Inference.md",
     "010 - Classes/test.md",
     "010 - Classes/MLMI1/Course info.md",
-    "030 - Notes/Math/Distributions.md",
     "030 - Notes/Math/Linear transformations.md",
     "030 - Notes/Math/Matrixes.md",
     "030 - Notes/Math/Vectors.md",
@@ -208,7 +209,6 @@
     "030 - Notes/Math/Logarithms.md",
     "030 - Notes/Math/hyperbolic functions.md",
     "030 - Notes/Math/Eulers formula.md",
-    "010 - Classes/MLMI1/Inference intro.md",
     "010 - Classes/MLMI1/Notebook/Exercises",
     "010 - Classes/MLMI1/Notebook",
     "z - Attachments/CleanShot 2024-09-29 at 10.04.00@2x.png",
