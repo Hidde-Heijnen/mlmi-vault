@@ -10,4 +10,13 @@
 
 **Root**: nucleus of the word that affixes attach to
 
-**Inflection**: creates new forms of the same word: bring brought, bringing
+**Inflection**: creates new forms of the same word: 
+- bring, brought, bringing
+- applies to most words in the language except some irregular forms (fully productive)
+- only affect syntactic function
+
+**Derivation**: creates new words
+- logic, logical, logician
+- semi-productive. Applies to some words
+- irregular: the same type of change might change the meaning of different words differently
+- affect meaning of the word
