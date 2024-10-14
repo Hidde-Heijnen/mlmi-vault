@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "010 - Classes/MLMI1/Notebook/Exercises/Linear regression.md",
+                "file": "010 - Classes/MLMI1/notes.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "010 - Classes/MLMI1/Notebook/Exercises/Linear regression.md",
+                "file": "010 - Classes/MLMI1/notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "010 - Classes/MLMI1/Notebook/Exercises/Linear regression.md",
+                "file": "010 - Classes/MLMI1/notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "010 - Classes/MLMI1/Notebook/Exercises/Linear regression.md"
+                "file": "010 - Classes/MLMI1/notes.md"
               }
             }
           }
@@ -164,6 +164,8 @@
   },
   "active": "1361e652fcd19b14",
   "lastOpenFiles": [
+    "010 - Classes/MLMI1/Notebook/Exercises/Linear regression.md",
+    "010 - Classes/MLMI1/notes.md",
     "030 - Notes/Math/Matrixes.md",
     "010 - Classes/NLP/Lecture notes/lecture 2.md",
     "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L1.2 - Linear in the parameters regression.md",
@@ -196,9 +198,7 @@
     "030 - Notes/Math/Probability.md",
     "010 - Classes/MLMI1/Probabilistic modeling and Inference youtube playlist.md",
     "010 - Classes/MLMI1/Summary of Probabilistic Inference.md",
-    "010 - Classes/MLMI1/Notebook/Exercises/Linear regression.md",
     "z - Attachments/CleanShot 2024-10-11 at 17.39.38.png",
-    "030 - Notes/Math/Integral Manipulation.md",
     "010 - Classes/DL",
     "z - Attachments/CleanShot 2024-10-11 at 10.41.24@2x.png",
     "z - Attachments/CleanShot 2024-10-11 at 10.35.04@2x.png",
