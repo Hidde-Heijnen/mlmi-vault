@@ -34,7 +34,7 @@ Sometimes there can be ambiguity
 	- beautiful dance   -er: says something about the dance
 	- beautiful    dance-er: says something about the dancer
 
-### Stem Lexeme 
+### Stem Lexeme and Lemma
 **Stem:** word without its inflectional affixes = roots + all derivational affixes
 - book.shopp.ed: 
 	- stem: book.shopp, 
@@ -47,6 +47,7 @@ Sometimes there can be ambiguity
 
 **Lemma**: cleaned up version of the stem. Bookshopp -> bookshop
 
+### Phonaestheme
 **Etymology**: origin of words, some similar words can be historically related
 
 **phonaestheme:**
@@ -62,7 +63,7 @@ Sometimes there can be ambiguity
 	- post-truth, railway, sunset
 
 ## Multiword expressions
-
+--- 
 combinations of two or more words that exhibit:
 - **Syntactic idiosyncrasy**: The way the words are combined may not follow typical grammatical rules
 - **Semantic idiosyncrasy:** meaning of the phrase as a whole being different from the sum of its parts
