@@ -134,7 +134,7 @@ $$(A + B)^{-1} \neq A^{-1} + B^{-1}$$
 $$
   A = \begin{bmatrix} a & b \\ c & d \end{bmatrix}
   $$
-$$A^{-1} = \frac{1}{det(A)} \begin{bmatrix} d & -b \\ -c & d \end{bmatrix}$$
+$$A^{-1} = \frac{1}{det(A)} \begin{bmatrix} d & -b \\ -c & a \end{bmatrix}$$
 #### Inverse of a 3x3 Matrix using cofactor Method
 
 To find the inverse of a $3 \times 3$ matrix $A$, follow these steps:
