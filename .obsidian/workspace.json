@@ -25,13 +25,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "010 - Classes/MLMI1/Properties of gaussians.md",
+                "file": "010 - Classes/MLMI1/Notebook/Exercises/Linear regression.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "010 - Classes/MLMI1/notes.md",
+                "file": "010 - Classes/MLMI1/Notebook/Exercises/Linear regression.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "010 - Classes/MLMI1/notes.md",
+                "file": "010 - Classes/MLMI1/Notebook/Exercises/Linear regression.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "010 - Classes/MLMI1/notes.md"
+                "file": "010 - Classes/MLMI1/Notebook/Exercises/Linear regression.md"
               }
             }
           }
@@ -162,10 +163,11 @@
       "jupyter:Create Jupyter Notebook": false
     }
   },
-  "active": "1361e652fcd19b14",
+  "active": "be01365890b5f917",
   "lastOpenFiles": [
-    "010 - Classes/MLMI1/Notebook/Exercises/Linear regression.md",
+    "010 - Classes/MLMI1/Properties of gaussians.md",
     "010 - Classes/MLMI1/notes.md",
+    "010 - Classes/MLMI1/Notebook/Exercises/Linear regression.md",
     "030 - Notes/Math/Matrixes.md",
     "010 - Classes/NLP/Lecture notes/lecture 2.md",
     "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L1.2 - Linear in the parameters regression.md",
@@ -175,7 +177,6 @@
     "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L2.1 - Probability fundamentals.md",
     "010 - Classes/MLMI1/Notebook/Exercises/9.md",
     "010 - Classes/NLP/Course Info.md",
-    "010 - Classes/MLMI1/Properties of gaussians.md",
     "010 - Classes/DL/Lecture 2.md",
     "010 - Classes/DL/Lecture 1.md",
     "z - Attachments/CleanShot 2024-10-13 at 19.58.54.png",
