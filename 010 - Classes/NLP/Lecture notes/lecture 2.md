@@ -22,7 +22,7 @@
 **Derivation**: creates new words
 - logic, logical, logician
 - semi-productive. Applies to some words
-- irregular: the same type of change might change the meaning of different words differently
+- irregular: the same type of change might change the meaning of different words differently, and can't be applied to many other words (escapee, cricketee)
 - affect meaning of the word
 	- Would be a different sign in ASL
 
@@ -34,6 +34,7 @@ Sometimes there can be ambiguity
 	- beautiful dance   -er: says something about the dance
 	- beautiful    dance-er: says something about the dancer
 
+### Stem Lexeme 
 **Stem:** word without its inflectional affixes = roots + all derivational affixes
 - book.shopp.ed: 
 	- stem: book.shopp, 
@@ -46,10 +47,11 @@ Sometimes there can be ambiguity
 
 **Lemma**: cleaned up version of the stem. Bookshopp -> bookshop
 
-**Etymology**: origin of words, some similar words can be related
+**Etymology**: origin of words, some similar words can be historically related
 
 **phonaestheme:**
 - a pattern of sounds systemically paired with a certain meaning in a language
+- Even smaller than morphemes
 	- cl-: related to a closing motion
 		- clam, clasp, clip, clutch
 	- gl-: related to light
