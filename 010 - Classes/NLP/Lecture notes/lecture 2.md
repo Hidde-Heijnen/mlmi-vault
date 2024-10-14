@@ -2,7 +2,8 @@
 
 **Morphemes** smallest meaningful units of language. Words are composed of morphemes
 
-**Affix**: Morpheme which only occurs together with other morphemes (3 types)
+**Affix**: Morpheme which only occurs together with other morphemes (3 types) 
+	Can't use them independently 
 - suffix (unit-s)
 - prefix (in-complete)
 - infix (salat: write; s-um-ulat: wrote)
