@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "030 - Notes/Math/Matrixes.md",
+                "file": "010 - Classes/MLMI1/Notebook/Exercises/Linear regression.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "030 - Notes/Math/Matrixes.md",
+                "file": "010 - Classes/MLMI1/Notebook/Exercises/Linear regression.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "030 - Notes/Math/Matrixes.md",
+                "file": "010 - Classes/MLMI1/Notebook/Exercises/Linear regression.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "030 - Notes/Math/Matrixes.md"
+                "file": "010 - Classes/MLMI1/Notebook/Exercises/Linear regression.md"
               }
             }
           }
@@ -164,6 +164,7 @@
   },
   "active": "1361e652fcd19b14",
   "lastOpenFiles": [
+    "030 - Notes/Math/Matrixes.md",
     "010 - Classes/NLP/Lecture notes/lecture 2.md",
     "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L1.2 - Linear in the parameters regression.md",
     "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L1.1 - Modelling.md",
@@ -198,7 +199,6 @@
     "010 - Classes/MLMI1/Notebook/Exercises/Linear regression.md",
     "z - Attachments/CleanShot 2024-10-11 at 17.39.38.png",
     "030 - Notes/Math/Integral Manipulation.md",
-    "030 - Notes/Math/Conjugate priors.md",
     "010 - Classes/DL",
     "z - Attachments/CleanShot 2024-10-11 at 10.41.24@2x.png",
     "z - Attachments/CleanShot 2024-10-11 at 10.35.04@2x.png",
