@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "010 - Classes/MLMI1/Notebook/Exercises/Linear regression.md",
+                "file": "030 - Notes/Math/Matrixes.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "010 - Classes/MLMI1/Notebook/Exercises/Linear regression.md",
+                "file": "030 - Notes/Math/Matrixes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "010 - Classes/MLMI1/Notebook/Exercises/Linear regression.md",
+                "file": "030 - Notes/Math/Matrixes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "010 - Classes/MLMI1/Notebook/Exercises/Linear regression.md"
+                "file": "030 - Notes/Math/Matrixes.md"
               }
             }
           }
@@ -165,30 +165,30 @@
   },
   "active": "be01365890b5f917",
   "lastOpenFiles": [
+    "010 - Classes/4F13 - Probabilistic ML/Course Info.md",
+    "010 - Classes/4F13 - Probabilistic ML/cribsheet.pdf",
+    "010 - Classes/4F13 - Probabilistic ML/matrix_cookbook.pdf",
+    "010 - Classes/MLMI1/Notebook/Exercises/Linear regression.md",
     "010 - Classes/MLMI1/Properties of gaussians.md",
     "010 - Classes/MLMI1/notes.md",
-    "010 - Classes/MLMI1/Notebook/Exercises/Linear regression.md",
     "030 - Notes/Math/Matrixes.md",
-    "010 - Classes/NLP/Lecture notes/lecture 2.md",
+    "010 - Classes/MLMI1/NLP/Lecture notes/lecture 2.md",
     "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L1.2 - Linear in the parameters regression.md",
     "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L1.1 - Modelling.md",
     "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L2.2 - Bayesian inference and prediction with finite regression models.md",
     "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L2.3 - Marginal Likelihood.md",
     "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L2.1 - Probability fundamentals.md",
     "010 - Classes/MLMI1/Notebook/Exercises/9.md",
-    "010 - Classes/NLP/Course Info.md",
+    "010 - Classes/MLMI1/NLP/Course Info.md",
     "010 - Classes/DL/Lecture 2.md",
     "010 - Classes/DL/Lecture 1.md",
     "z - Attachments/CleanShot 2024-10-13 at 19.58.54.png",
     "030 - Notes/Math/Moments of a Probability Distribution.md",
     "010 - Classes/NLP/Untitled.md",
-    "010 - Classes/NLP/Lecture notes",
+    "010 - Classes/MLMI1/NLP/Lecture notes",
     "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L1.3 - Likelihood and the concept of noise.md",
     "z - Attachments/CleanShot 2024-10-13 at 16.31.13.png",
-    "010 - Classes/4F13 - Probabilistic ML/Course Info.md",
     "010 - Classes/4F13 - Probabilistic ML/Lecture notes",
-    "010 - Classes/4F13 - Probabilistic ML/matrix_cookbook.pdf",
-    "010 - Classes/4F13 - Probabilistic ML/cribsheet.pdf",
     "cw/cw1a.mat.md",
     "cw",
     "030 - Notes/Math/Derivatives.md",
@@ -198,12 +198,11 @@
     "030 - Notes/Math/Distributions.md",
     "030 - Notes/Math/Probability.md",
     "010 - Classes/MLMI1/Probabilistic modeling and Inference youtube playlist.md",
-    "010 - Classes/MLMI1/Summary of Probabilistic Inference.md",
     "z - Attachments/CleanShot 2024-10-11 at 17.39.38.png",
     "010 - Classes/DL",
     "z - Attachments/CleanShot 2024-10-11 at 10.41.24@2x.png",
     "z - Attachments/CleanShot 2024-10-11 at 10.35.04@2x.png",
-    "010 - Classes/NLP",
+    "010 - Classes/MLMI1/NLP",
     "z - Attachments/CleanShot 2024-10-10 at 11.39.33.png",
     "010 - Classes/MLMI1/Notebook/Exercises",
     "010 - Classes/MLMI1/Notebook",
