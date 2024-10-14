@@ -11,16 +11,20 @@
 
 **Root**: nucleus of the word that affixes attach to
 
+### Types of morphology
 **Inflection**: creates new forms of the same word: 
 - bring, brought, bringing
-- applies to most words in the language except some irregular forms (fully productive)
-- only affect syntactic function
+- applies to most words in the language except some irregular forms 
+- (fully productive): you can decompose it into smaller meanings, handy for algorithms
+- only affect syntactic function 
+	- (like in ASL all the bringing forms are one sign)
 
 **Derivation**: creates new words
 - logic, logical, logician
 - semi-productive. Applies to some words
 - irregular: the same type of change might change the meaning of different words differently
 - affect meaning of the word
+	- Would be a different sign in ASL
 
 Sometimes there can be ambiguity
 - Unlockable
