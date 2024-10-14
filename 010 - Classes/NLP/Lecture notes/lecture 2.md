@@ -112,17 +112,17 @@ We want to be able to go from natural language expressions to representations $\
 Going from natural language to those is called **comprehension** 
 Going from those to natural language is called **production**
 ### Computational tasks
-- Lemmatisation
+- **Lemmatisation** (getting the standard form)
 	- Word: saw
 	- $\mathcal{R}$: lexeme: {see, saw}
-- Tagging
+- **Tagging**
 	- contextualised word: saw @ J saw M
 	- $\mathcal{R}$: contextualised tag <see, VERB.PAST>
-- Segmentation
+- **Segmentation**
 	- word: meaningful
 	- $\mathcal{R}$: morphemes: mean+ing+ful
 		- Word segmentation: Some languages don't have spaces, so it is useful to be able to split a string up into it's component words
-- Generation
+- **Generation**
 	- $\mathcal{R}$: abstract word: <see, VERB.PAST>
 	- word: saw
 
