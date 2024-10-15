@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "030 - Notes/General ML/Scedasticity.md",
+                "file": "030 - Notes/General ML/Properties of gaussians.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "030 - Notes/General ML/Scedasticity.md",
+                "file": "030 - Notes/General ML/Properties of gaussians.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "030 - Notes/General ML/Scedasticity.md",
+                "file": "030 - Notes/General ML/Properties of gaussians.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "030 - Notes/General ML/Scedasticity.md"
+                "file": "030 - Notes/General ML/Properties of gaussians.md"
               }
             }
           }
@@ -152,13 +152,17 @@
   },
   "active": "1361e652fcd19b14",
   "lastOpenFiles": [
-    "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L2.3 - Marginal Likelihood.md",
+    "010 - Classes/MLMI1/notes.md",
+    "030 - Notes/General ML/Multivariate Gaussian.md",
+    "010 - Classes/MLMI1/Course info.md",
+    "030 - Notes/General ML/Conjugate priors.md",
     "030 - Notes/General ML/Scedasticity.md",
+    "z - Attachments/Pasted image 20241015104351.png",
+    "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L2.3 - Marginal Likelihood.md",
     "030 - Notes/General ML",
     "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L2.2 - Bayesian inference and prediction with finite regression models.md",
     "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L2.1 - Probability fundamentals.md",
     "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L1.3 - Likelihood and the concept of noise.md",
-    "010 - Classes/MLMI1/notes.md",
     "030 - Notes/Codebasics - Machine Learning Python course/Notebooks/05-dummy-var-one-hot.ipynb",
     "030 - Notes/Codebasics - Machine Learning Python course/Notebooks/04-saving-models.md",
     "030 - Notes/Math/Matrixes.md",
@@ -166,18 +170,18 @@
     "010 - Classes/4F13 - Probabilistic ML/cribsheet.pdf",
     "010 - Classes/4F13 - Probabilistic ML/matrix_cookbook.pdf",
     "010 - Classes/MLMI1/Notebook/Exercises/Linear regression.md",
-    "010 - Classes/MLMI1/Properties of gaussians.md",
-    "010 - Classes/MLMI1/NLP/Lecture notes/lecture 2.md",
+    "030 - Notes/General ML/Properties of gaussians.md",
+    "010 - Classes/NLP/Lecture notes/lecture 2.md",
     "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L1.2 - Linear in the parameters regression.md",
     "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L1.1 - Modelling.md",
     "010 - Classes/MLMI1/Notebook/Exercises/9.md",
-    "010 - Classes/MLMI1/NLP/Course Info.md",
+    "010 - Classes/NLP/Course Info.md",
     "010 - Classes/DL/Lecture 2.md",
     "010 - Classes/DL/Lecture 1.md",
     "z - Attachments/CleanShot 2024-10-13 at 19.58.54.png",
     "030 - Notes/Math/Moments of a Probability Distribution.md",
     "010 - Classes/NLP/Untitled.md",
-    "010 - Classes/MLMI1/NLP/Lecture notes",
+    "010 - Classes/NLP/Lecture notes",
     "z - Attachments/CleanShot 2024-10-13 at 16.31.13.png",
     "010 - Classes/4F13 - Probabilistic ML/Lecture notes",
     "cw/cw1a.mat.md",
@@ -185,18 +189,14 @@
     "030 - Notes/Math/Derivatives.md",
     "010 - Classes/4F13 - Probabilistic ML",
     "010 - Classes/MLMI1/Notebook/Exercises/Medical.md",
-    "010 - Classes/MLMI1/Notebook/Exercises/Radioactive.md",
-    "030 - Notes/Math/Distributions.md",
-    "030 - Notes/Math/Probability.md",
     "z - Attachments/CleanShot 2024-10-11 at 17.39.38.png",
     "010 - Classes/DL",
     "z - Attachments/CleanShot 2024-10-11 at 10.41.24@2x.png",
     "z - Attachments/CleanShot 2024-10-11 at 10.35.04@2x.png",
-    "010 - Classes/MLMI1/NLP",
+    "010 - Classes/NLP",
     "z - Attachments/CleanShot 2024-10-10 at 11.39.33.png",
     "z - Attachments/CleanShot 2024-09-29 at 10.04.00@2x.png",
     "z - Attachments/CleanShot 2024-09-28 at 14.45.18@2x.png",
-    "z - Attachments/CleanShot 2024-09-28 at 14.30.44@2x.png",
-    "z - Attachments/CleanShot 2024-09-20 at 12.19.48.png"
+    "z - Attachments/CleanShot 2024-09-28 at 14.30.44@2x.png"
   ]
 }
