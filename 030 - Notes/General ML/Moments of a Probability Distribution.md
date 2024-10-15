@@ -59,6 +59,9 @@ $$
   - **Low Kurtosis ($\gamma_2 < 3$)**: Distribution has lighter tails and a flatter peak (platykurtic).
   - **Normal Kurtosis ($\gamma_2 = 3$)**: Distribution has tails similar to a normal distribution (mesokurtic).
 
+**excess kurtosis**: a statistical measure that describes the shape of a distribution’s tails relative to a normal distribution. 
+- Since the kurtosis of the normal distribution is 3, and another distribution is 4. the excess kurtosis would be $4-3=1$
+
 ---
 ### Higher-Order Moments
 While the first four moments are most commonly used, higher-order moments can provide additional details about the distribution's shape:

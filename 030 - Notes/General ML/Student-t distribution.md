@@ -1,0 +1,4 @@
+- is student-t distribution a general case of many others??
+- laplace distributions
+- sparse vs heavy tailed
+- 

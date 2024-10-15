@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "030 - Notes/General ML/Dirac Delta function.md",
+                "file": "030 - Notes/General ML/Student-t distribution.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "030 - Notes/General ML/Dirac Delta function.md",
+                "file": "030 - Notes/General ML/Student-t distribution.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "030 - Notes/General ML/Dirac Delta function.md",
+                "file": "030 - Notes/General ML/Student-t distribution.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "030 - Notes/General ML/Dirac Delta function.md"
+                "file": "030 - Notes/General ML/Student-t distribution.md"
               }
             }
           }
@@ -152,9 +152,13 @@
   },
   "active": "1361e652fcd19b14",
   "lastOpenFiles": [
-    "030 - Notes/General ML/Leibniz integral rule.md",
     "030 - Notes/General ML/Moments of a Probability Distribution.md",
+    "030 - Notes/General ML/Student-t distribution.md",
+    "030 - Notes/General ML/Sinus function form.md",
+    "030 - Notes/Math/Logarithms.md",
+    "030 - Notes/Math/Integral Manipulation.md",
     "030 - Notes/General ML/Dirac Delta function.md",
+    "030 - Notes/General ML/Leibniz integral rule.md",
     "030 - Notes/General ML/Properties of gaussians.md",
     "010 - Classes/MLMI1/notes.md",
     "030 - Notes/General ML/Multivariate Gaussian.md",
@@ -179,14 +183,10 @@
     "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L1.1 - Modelling.md",
     "010 - Classes/MLMI1/Notebook/Exercises/9.md",
     "010 - Classes/NLP/Course Info.md",
-    "010 - Classes/DL/Lecture 2.md",
-    "010 - Classes/DL/Lecture 1.md",
     "z - Attachments/CleanShot 2024-10-13 at 19.58.54.png",
-    "010 - Classes/NLP/Untitled.md",
     "010 - Classes/NLP/Lecture notes",
     "z - Attachments/CleanShot 2024-10-13 at 16.31.13.png",
     "010 - Classes/4F13 - Probabilistic ML/Lecture notes",
-    "cw/cw1a.mat.md",
     "cw",
     "010 - Classes/4F13 - Probabilistic ML",
     "z - Attachments/CleanShot 2024-10-11 at 17.39.38.png",

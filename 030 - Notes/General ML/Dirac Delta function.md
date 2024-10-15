@@ -3,13 +3,12 @@ link: https://en.wikipedia.org/wiki/Dirac_delta_function
 ---
 ### **Dirac Delta Function Overview**
 
-- **Definition:** The Dirac delta function, denoted as $\delta(x)$, is a **generalized function** or **distribution**. It is zero everywhere except at $x = 0$, where it takes an infinitely large value such that:
+- **Definition:** The Dirac delta function, denoted as $\delta(x)$, is a **generalised function** or **distribution**. It is zero everywhere except at $x = 0$, where it takes an infinitely large value such that:
   $$
   \int_{-\infty}^{\infty} \delta(x) \, dx = 1
   $$
 
-- **Interpretation:** Represents an **idealized point mass** or **unit impulse**. In probability, it can be seen as a distribution with **zero variance**, concentrating all probability at one point.
-
+- **Interpretation:** Represents an **idealised point mass** or **unit impulse**. In probability, it can be seen as a distribution with **zero variance**, concentrating all probability at one point.
 ### **Key Properties**
 
 1. **Sifting Property**:
@@ -39,7 +38,3 @@ link: https://en.wikipedia.org/wiki/Dirac_delta_function
   $$
   \int_{-\infty}^{\infty} \delta(x - a) f(x) \, dx = f(a)
   $$
-
-### **Clarification**
-
-The term **Dirac delta function** (or **distribution**) is more accurate here than "delta operator," which has different uses in other fields like **finite difference methods**.
