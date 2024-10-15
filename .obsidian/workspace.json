@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "030 - Notes/Math/Integration by parts.md",
+                "file": "030 - Notes/General ML/Leibniz integral rule (Feynman's trick).md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "030 - Notes/Math/Integration by parts.md",
+                "file": "030 - Notes/General ML/Leibniz integral rule (Feynman's trick).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "030 - Notes/Math/Integration by parts.md",
+                "file": "030 - Notes/General ML/Leibniz integral rule (Feynman's trick).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "030 - Notes/Math/Integration by parts.md"
+                "file": "030 - Notes/General ML/Leibniz integral rule (Feynman's trick).md"
               }
             }
           }
@@ -152,8 +152,11 @@
   },
   "active": "0f5ba167e34a5007",
   "lastOpenFiles": [
+    "030 - Notes/General ML/Covariance matrix.md",
+    "030 - Notes/General ML/Leibniz integral rule (Feynman's trick).md",
+    "030 - Notes/General ML/Conjugate priors.md",
+    "030 - Notes/General ML/Alternative representation of a gaussian..md",
     "030 - Notes/Math/Integration by parts.md",
-    "030 - Notes/General ML/Leibniz integral rule.md",
     "030 - Notes/Math/Integral Manipulation.md",
     "030 - Notes/General ML/Lagrange multiplier.md",
     "030 - Notes/General ML/Marginal likelihood.md",
@@ -165,9 +168,6 @@
     "030 - Notes/General ML/Monte Carlo Sampling.md",
     "030 - Notes/General ML/Expectation in ML.md",
     "030 - Notes/General ML/Dirac Delta function.md",
-    "030 - Notes/General ML/Covariance matrix.md",
-    "030 - Notes/General ML/Conjugate priors.md",
-    "030 - Notes/General ML/Alternative representation of a gaussian..md",
     "030 - Notes/General ML/Properties of gaussians.md",
     "030 - Notes/General ML/mixture of gaussians.md",
     "030 - Notes/General ML/Student-t distribution.md",
