@@ -9,6 +9,7 @@ link: https://en.wikipedia.org/wiki/Dirac_delta_function
   $$
 
 - **Interpretation:** Represents an **idealised point mass** or **unit impulse**. In probability, it can be seen as a distribution with **zero variance**, concentrating all probability at one point.
+- Make sure the delta function is within the integration limits, otherwise the integral is 0
 ### **Key Properties**
 
 1. **Sifting Property**:
@@ -38,3 +39,5 @@ link: https://en.wikipedia.org/wiki/Dirac_delta_function
   $$
   \int_{-\infty}^{\infty} \delta(x - a) f(x) \, dx = f(a)
   $$
+## Youtube videos
+- https://www.youtube.com/watch?v=Y8y965ZAmQE

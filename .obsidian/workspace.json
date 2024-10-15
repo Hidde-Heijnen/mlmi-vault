@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "010 - Classes/MLMI1/Summary of Probabilistic Inference.md",
+                "file": "030 - Notes/General ML/Untitled.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "010 - Classes/MLMI1/Summary of Probabilistic Inference.md",
+                "file": "030 - Notes/General ML/Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "010 - Classes/MLMI1/Summary of Probabilistic Inference.md",
+                "file": "030 - Notes/General ML/Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "010 - Classes/MLMI1/Summary of Probabilistic Inference.md"
+                "file": "030 - Notes/General ML/Untitled.md"
               }
             }
           }
@@ -152,6 +152,9 @@
   },
   "active": "1361e652fcd19b14",
   "lastOpenFiles": [
+    "030 - Notes/General ML/Dirac Delta function.md",
+    "030 - Notes/General ML/Untitled.md",
+    "010 - Classes/MLMI1/Summary of Probabilistic Inference.md",
     "030 - Notes/General ML/Covariance matrix.md",
     "030 - Notes/General ML/Conjugate priors.md",
     "030 - Notes/General ML/Alternative representation of a gaussian..md",
@@ -163,7 +166,6 @@
     "030 - Notes/General ML/Sinus function form.md",
     "030 - Notes/Math/Logarithms.md",
     "030 - Notes/Math/Integral Manipulation.md",
-    "030 - Notes/General ML/Dirac Delta function.md",
     "030 - Notes/General ML/Leibniz integral rule.md",
     "010 - Classes/MLMI1/notes.md",
     "030 - Notes/General ML/Multivariate Gaussian.md",
@@ -181,8 +183,6 @@
     "010 - Classes/4F13 - Probabilistic ML/Course Info.md",
     "010 - Classes/4F13 - Probabilistic ML/cribsheet.pdf",
     "010 - Classes/4F13 - Probabilistic ML/matrix_cookbook.pdf",
-    "010 - Classes/MLMI1/Notebook/Exercises/Linear regression.md",
-    "010 - Classes/NLP/Lecture notes/lecture 2.md",
     "z - Attachments/CleanShot 2024-10-13 at 19.58.54.png",
     "010 - Classes/NLP/Lecture notes",
     "z - Attachments/CleanShot 2024-10-13 at 16.31.13.png",
