@@ -8,6 +8,13 @@
 - **Single Variable**: $\int a \cdot f(x)\,dx = a \int f(x)\,dx$
 - **Multivariable**: $\int a \cdot f(\mathbf{x})\,d\mathbf{x} = a \int f(\mathbf{x})\,d\mathbf{x}$
 
+## flipping the integral 
+To flip the integral's upper and lower bounds, you multiply the integral by -1:
+$$
+\int_a^b f(x) \, dx = -\int_b^a f(x) \, dx
+$$
+This is because swapping the limits changes the direction of integration.
+
 ---
 
 ## **Splitting the Integral**
