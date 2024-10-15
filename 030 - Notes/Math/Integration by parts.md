@@ -79,11 +79,19 @@ Evaluate $\int \ln x \, dx$.
 
 Evaluate $\int e^x sin(x)dx$
 
-1. Choose $u = sin(x)$, $dv = e^x$
-2. Compute $du = cos(x)$, $v = $
+1. Choose $u = \sin(x)$, $dv = e^xdx$
+2. Compute $du = \cos(x)dx$, $v = e^x$
+3. $\int e^x sin(x)dx = e^x\sin(x) - \int e^x\cos(x)dx$
+
+Now we can do it again on the right part of the solution
+4. Choose $u = \cos(x)$, $dv=e^xdx$
+5. Compute $du = -\sin(x)dx$, $v=e^x$
+6. $\int e^x sin(x)dx = e^x\sin(x) - e^x\cos(x) - \int e^x \sin(x)dx$
+Now we can move this final integral from the right to the left and get
+7. $2\int e^x sin(x)dx = e^x\sin(x) - e^x\cos(x)$
+8. $\int e^x sin(x)dx = \frac{e^x\sin(x) - e^x\cos(x)}2 + C$
 
 ---
-
 ### Summary
 
 Integration by parts simplifies the process of integrating products of functions by leveraging the product rule. Proper selection of $u$ and $dv$ is key, and sometimes multiple iterations are required.
