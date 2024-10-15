@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "030 - Notes/General ML/Properties of gaussians.md",
+                "file": "030 - Notes/General ML/Covariance matrix.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "030 - Notes/General ML/Properties of gaussians.md",
+                "file": "030 - Notes/General ML/Covariance matrix.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "030 - Notes/General ML/Properties of gaussians.md",
+                "file": "030 - Notes/General ML/Covariance matrix.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "030 - Notes/General ML/Properties of gaussians.md"
+                "file": "030 - Notes/General ML/Covariance matrix.md"
               }
             }
           }
@@ -152,7 +152,9 @@
   },
   "active": "1361e652fcd19b14",
   "lastOpenFiles": [
+    "030 - Notes/General ML/Conjugate priors.md",
     "030 - Notes/General ML/Alternative representation of a gaussian..md",
+    "030 - Notes/General ML/Properties of gaussians.md",
     "030 - Notes/General ML/Tricks.md",
     "030 - Notes/General ML/Covariance matrix.md",
     "030 - Notes/General ML/mixture of gaussians.md",
@@ -163,11 +165,9 @@
     "030 - Notes/Math/Integral Manipulation.md",
     "030 - Notes/General ML/Dirac Delta function.md",
     "030 - Notes/General ML/Leibniz integral rule.md",
-    "030 - Notes/General ML/Properties of gaussians.md",
     "010 - Classes/MLMI1/notes.md",
     "030 - Notes/General ML/Multivariate Gaussian.md",
     "010 - Classes/MLMI1/Course info.md",
-    "030 - Notes/General ML/Conjugate priors.md",
     "030 - Notes/General ML/Scedasticity.md",
     "z - Attachments/Pasted image 20241015104351.png",
     "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L2.3 - Marginal Likelihood.md",
