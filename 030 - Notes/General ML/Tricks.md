@@ -1,1 +1,4 @@
 - We don't need to calculate the normalisation constant when multiplying gaussians, since we can just get the mean and variance from the general form and then compute the normalisation constant from that with the formula of the multivariate gaussian. 
+- use the log ($log$ without a base is $ln$ in ML) to turn a product of independent probabilities into a sum. And it will turn $\exp(x)$ into $x$
+	- That's why we use the log-likelihood. easier to compute
+- Partial derivative of a single item in a sum

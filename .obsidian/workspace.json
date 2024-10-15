@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "030 - Notes/General ML/Untitled.md",
+                "file": "030 - Notes/General ML/Tricks.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "030 - Notes/General ML/Untitled.md",
+                "file": "030 - Notes/General ML/Tricks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "030 - Notes/General ML/Untitled.md",
+                "file": "030 - Notes/General ML/Tricks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "030 - Notes/General ML/Untitled.md"
+                "file": "030 - Notes/General ML/Tricks.md"
               }
             }
           }
@@ -152,8 +152,9 @@
   },
   "active": "1361e652fcd19b14",
   "lastOpenFiles": [
+    "030 - Notes/General ML/Monte Carlo Sampling.md",
+    "030 - Notes/General ML/Expectation in ML.md",
     "030 - Notes/General ML/Dirac Delta function.md",
-    "030 - Notes/General ML/Untitled.md",
     "010 - Classes/MLMI1/Summary of Probabilistic Inference.md",
     "030 - Notes/General ML/Covariance matrix.md",
     "030 - Notes/General ML/Conjugate priors.md",
@@ -180,7 +181,6 @@
     "030 - Notes/Codebasics - Machine Learning Python course/Notebooks/05-dummy-var-one-hot.ipynb",
     "030 - Notes/Codebasics - Machine Learning Python course/Notebooks/04-saving-models.md",
     "030 - Notes/Math/Matrixes.md",
-    "010 - Classes/4F13 - Probabilistic ML/Course Info.md",
     "010 - Classes/4F13 - Probabilistic ML/cribsheet.pdf",
     "010 - Classes/4F13 - Probabilistic ML/matrix_cookbook.pdf",
     "z - Attachments/CleanShot 2024-10-13 at 19.58.54.png",
