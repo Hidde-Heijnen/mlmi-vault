@@ -31,7 +31,7 @@ $$
 
 ### 3. Third Moment – Skewness
 
-- **Definition:** The third standardized moment measures the **asymmetry** of the distribution around the mean.
+- **Definition:** The third standardised moment measures the **asymmetry** of the distribution around the mean.
 - **Formula:**
 
 $$
