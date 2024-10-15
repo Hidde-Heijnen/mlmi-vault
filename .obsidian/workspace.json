@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "030 - Notes/General ML/Tricks.md",
+                "file": "030 - Notes/General ML/Untitled.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "030 - Notes/General ML/Tricks.md",
+                "file": "030 - Notes/General ML/Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "030 - Notes/General ML/Tricks.md",
+                "file": "030 - Notes/General ML/Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "030 - Notes/General ML/Tricks.md"
+                "file": "030 - Notes/General ML/Untitled.md"
               }
             }
           }
@@ -150,19 +150,21 @@
       "jupyter:Create Jupyter Notebook": false
     }
   },
-  "active": "1b9c0ca6e568a32b",
+  "active": "1361e652fcd19b14",
   "lastOpenFiles": [
+    "010 - Classes/MLMI1/Summary of Probabilistic Inference.md",
+    "030 - Notes/General ML/Untitled.md",
+    "010 - Classes/MLMI1/Probabilistic modeling and Inference youtube playlist.md",
+    "030 - Notes/General ML/Tricks.md",
     "010 - Classes/MLMI1/Resources/examp1-solutions.pdf",
     "010 - Classes/MLMI1/Resources",
     "030 - Notes/General ML/Monte Carlo Sampling.md",
     "030 - Notes/General ML/Expectation in ML.md",
     "030 - Notes/General ML/Dirac Delta function.md",
-    "010 - Classes/MLMI1/Summary of Probabilistic Inference.md",
     "030 - Notes/General ML/Covariance matrix.md",
     "030 - Notes/General ML/Conjugate priors.md",
     "030 - Notes/General ML/Alternative representation of a gaussian..md",
     "030 - Notes/General ML/Properties of gaussians.md",
-    "030 - Notes/General ML/Tricks.md",
     "030 - Notes/General ML/mixture of gaussians.md",
     "030 - Notes/General ML/Student-t distribution.md",
     "030 - Notes/General ML/Moments of a Probability Distribution.md",
@@ -181,7 +183,6 @@
     "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L2.1 - Probability fundamentals.md",
     "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L1.3 - Likelihood and the concept of noise.md",
     "030 - Notes/Codebasics - Machine Learning Python course/Notebooks/05-dummy-var-one-hot.ipynb",
-    "030 - Notes/Codebasics - Machine Learning Python course/Notebooks/04-saving-models.md",
     "010 - Classes/4F13 - Probabilistic ML/cribsheet.pdf",
     "010 - Classes/4F13 - Probabilistic ML/matrix_cookbook.pdf",
     "z - Attachments/CleanShot 2024-10-13 at 19.58.54.png",
@@ -191,7 +192,6 @@
     "cw",
     "010 - Classes/4F13 - Probabilistic ML",
     "z - Attachments/CleanShot 2024-10-11 at 17.39.38.png",
-    "010 - Classes/DL",
     "z - Attachments/CleanShot 2024-10-11 at 10.41.24@2x.png",
     "z - Attachments/CleanShot 2024-10-11 at 10.35.04@2x.png",
     "z - Attachments/CleanShot 2024-10-10 at 11.39.33.png",
