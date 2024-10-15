@@ -1,0 +1,3 @@
+## Hetero Scedasic
+
+## Homo Scedastic
