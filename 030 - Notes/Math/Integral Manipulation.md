@@ -53,7 +53,7 @@ $$ \int_a^b \left( \int_c^d f(x, y)\,dy \right) dx = \int_c^d \left( \int_a^b f(
 ---
 
 #### 9. **Interchanging Limit and Integration (Dominated Convergence)**
-If $ \{ f_n \} $ converges to $ f $ and is dominated by an integrable function $ g $:
+If $\{ f_n \}$ converges to $f$ and is dominated by an integrable function $g$:
 $$ \lim_{n \to \infty} \int f_n(x)\,dx = \int \lim_{n \to \infty} f_n(x)\,dx = \int f(x)\,dx $$
 
 ---

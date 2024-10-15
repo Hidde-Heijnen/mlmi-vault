@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "030 - Notes/General ML/Marginal likelihood.md",
+                "file": "030 - Notes/Math/Integral Manipulation.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "030 - Notes/General ML/Marginal likelihood.md",
+                "file": "030 - Notes/Math/Integral Manipulation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "030 - Notes/General ML/Marginal likelihood.md",
+                "file": "030 - Notes/Math/Integral Manipulation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "030 - Notes/General ML/Marginal likelihood.md"
+                "file": "030 - Notes/Math/Integral Manipulation.md"
               }
             }
           }
@@ -152,8 +152,10 @@
   },
   "active": "1361e652fcd19b14",
   "lastOpenFiles": [
-    "010 - Classes/MLMI1/Summary of Probabilistic Inference.md",
+    "030 - Notes/General ML/Lagrange multiplier.md",
+    "030 - Notes/General ML/Leibniz integral rule.md",
     "030 - Notes/General ML/Marginal likelihood.md",
+    "010 - Classes/MLMI1/Summary of Probabilistic Inference.md",
     "010 - Classes/MLMI1/Probabilistic modeling and Inference youtube playlist.md",
     "030 - Notes/General ML/Tricks.md",
     "010 - Classes/MLMI1/Resources/examp1-solutions.pdf",
@@ -171,7 +173,6 @@
     "030 - Notes/General ML/Sinus function form.md",
     "030 - Notes/Math/Logarithms.md",
     "030 - Notes/Math/Integral Manipulation.md",
-    "030 - Notes/General ML/Leibniz integral rule.md",
     "010 - Classes/MLMI1/notes.md",
     "030 - Notes/General ML/Multivariate Gaussian.md",
     "010 - Classes/MLMI1/Course info.md",
@@ -181,7 +182,6 @@
     "030 - Notes/General ML",
     "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L2.2 - Bayesian inference and prediction with finite regression models.md",
     "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L2.1 - Probability fundamentals.md",
-    "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L1.3 - Likelihood and the concept of noise.md",
     "030 - Notes/Codebasics - Machine Learning Python course/Notebooks/05-dummy-var-one-hot.ipynb",
     "010 - Classes/4F13 - Probabilistic ML/cribsheet.pdf",
     "010 - Classes/4F13 - Probabilistic ML/matrix_cookbook.pdf",
