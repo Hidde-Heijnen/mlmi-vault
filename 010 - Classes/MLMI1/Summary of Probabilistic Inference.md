@@ -34,7 +34,7 @@ $$
 p(m \mid D) = \frac{p(D \mid m) \, p(m)}{p(D)}
 $$
 - $p(m \mid D)$: posterior probability of model $m$ given data
-	- Models with higher evidence $p(D \mid m)$ are considered more probable given the data. 
+	- Models with higher evidence $p(D \mid m)$ are considered more probable given the data.
 - $p(D \mid m)$: **Evidence**; measures how well model $m$ explains the data
 - $p(m)$: prior probability of model $m$
 - $p(D)$: probability of data under all models; acts as a normalising constant
