@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "8bf255adc183b313",
+        "id": "0fccfcc43052ddc1",
         "type": "tabs",
         "children": [
           {
-            "id": "1361e652fcd19b14",
+            "id": "0f5ba167e34a5007",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -150,10 +150,10 @@
       "jupyter:Create Jupyter Notebook": false
     }
   },
-  "active": "1361e652fcd19b14",
+  "active": "0f5ba167e34a5007",
   "lastOpenFiles": [
-    "030 - Notes/General ML/Leibniz integral rule.md",
     "030 - Notes/Math/Integration by parts.md",
+    "030 - Notes/General ML/Leibniz integral rule.md",
     "030 - Notes/Math/Integral Manipulation.md",
     "030 - Notes/General ML/Lagrange multiplier.md",
     "030 - Notes/General ML/Marginal likelihood.md",
