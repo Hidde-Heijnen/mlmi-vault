@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "030 - Notes/General ML/Untitled.md",
+                "file": "030 - Notes/General ML/Marginal likelihood.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "030 - Notes/General ML/Untitled.md",
+                "file": "030 - Notes/General ML/Marginal likelihood.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "030 - Notes/General ML/Untitled.md",
+                "file": "030 - Notes/General ML/Marginal likelihood.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "030 - Notes/General ML/Untitled.md"
+                "file": "030 - Notes/General ML/Marginal likelihood.md"
               }
             }
           }
@@ -153,7 +153,7 @@
   "active": "1361e652fcd19b14",
   "lastOpenFiles": [
     "010 - Classes/MLMI1/Summary of Probabilistic Inference.md",
-    "030 - Notes/General ML/Untitled.md",
+    "030 - Notes/General ML/Marginal likelihood.md",
     "010 - Classes/MLMI1/Probabilistic modeling and Inference youtube playlist.md",
     "030 - Notes/General ML/Tricks.md",
     "010 - Classes/MLMI1/Resources/examp1-solutions.pdf",
