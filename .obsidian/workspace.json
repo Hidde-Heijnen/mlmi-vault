@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "030 - Notes/General ML/Bayes rule in ML.md",
+                "file": "030 - Notes/General ML/Marginal likelihood for model comparison.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "030 - Notes/General ML/Bayes rule in ML.md",
+                "file": "030 - Notes/General ML/Marginal likelihood for model comparison.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "030 - Notes/General ML/Bayes rule in ML.md",
+                "file": "030 - Notes/General ML/Marginal likelihood for model comparison.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "030 - Notes/General ML/Bayes rule in ML.md"
+                "file": "030 - Notes/General ML/Marginal likelihood for model comparison.md"
               }
             }
           }
@@ -165,9 +165,10 @@
   },
   "active": "38cde6aa7f618710",
   "lastOpenFiles": [
+    "030 - Notes/General ML/Bayes rule in ML.md",
+    "030 - Notes/General ML/Marginal likelihood for model comparison.md",
     "030 - Notes/General ML/When do we call something \"linear regression\".md",
     "z - Attachments/CleanShot 2024-10-16 at 14.51.12.png",
-    "030 - Notes/General ML/Bayes rule in ML.md",
     "030 - Notes/General ML/useful pdf.md",
     "030 - Notes/General ML/Leibniz integral rule (Feynman's trick).md",
     "030 - Notes/General ML/Covariance matrix.md",
