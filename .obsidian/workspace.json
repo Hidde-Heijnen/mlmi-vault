@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "010 - Classes/NLP/Lecture notes/3 - lecture notes.md",
+                "file": "030 - Notes/General ML/Bayes rule in ML.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "010 - Classes/NLP/Lecture notes/3 - lecture notes.md",
+                "file": "030 - Notes/General ML/Bayes rule in ML.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "010 - Classes/NLP/Lecture notes/3 - lecture notes.md",
+                "file": "030 - Notes/General ML/Bayes rule in ML.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "010 - Classes/NLP/Lecture notes/3 - lecture notes.md"
+                "file": "030 - Notes/General ML/Bayes rule in ML.md"
               }
             }
           }
@@ -165,13 +165,13 @@
   },
   "active": "38cde6aa7f618710",
   "lastOpenFiles": [
-    "010 - Classes/NLP/Lecture notes/2 - lecture.md",
-    "010 - Classes/NLP/Lecture notes/3 - lecture notes.md",
-    "010 - Classes/NLP/Lecture notes/1 - lecture notes.md",
     "030 - Notes/General ML/Marginal likelihood for model comparison.md",
-    "030 - Notes/General ML/Marginal likelihood.md",
-    "030 - Notes/General ML/Bayes rule in ML.md",
     "030 - Notes/General ML/Leibniz integral rule (Feynman's trick).md",
+    "030 - Notes/General ML/Marginal likelihood.md",
+    "010 - Classes/NLP/Lecture notes/3 - lecture notes.md",
+    "010 - Classes/NLP/Lecture notes/2 - lecture.md",
+    "010 - Classes/NLP/Lecture notes/1 - lecture notes.md",
+    "030 - Notes/General ML/Bayes rule in ML.md",
     "030 - Notes/General ML/When do we call something \"linear regression\".md",
     "z - Attachments/CleanShot 2024-10-16 at 14.51.12.png",
     "030 - Notes/General ML/useful pdf.md",

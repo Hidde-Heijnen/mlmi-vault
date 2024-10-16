@@ -17,7 +17,10 @@ When comparing different models, the marginal likelihood serves as a natural cri
 
 By computing $P(D \mid M_1)$ and $P(D \mid M_2)$ for models $M_1$ and $M_2$, you can compare the models based on their evidence:
 
-- **Bayes Factor**: The ratio $\frac{P(D \mid M_1)}{P(D \mid M_2)}$ provides a quantitative measure of the support for one model over another.
+### **Bayes Factor**: 
+ $$\frac{P(D \mid M_1)}{P(D \mid M_2)} = $$
+
+The ratio provides a quantitative measure of the support for one model over another.
 
 ## **Comparing Different Model Structures vs. Parameter Sets**
 ---
@@ -27,6 +30,9 @@ By computing $P(D \mid M_1)$ and $P(D \mid M_2)$ for models $M_1$ and $M_2$, you
 
 ## **Practical Considerations and downsides**
 
-- **Computational Complexity**: Calculating the marginal likelihood can be computationally intensive, especially for complex models. Techniques like **Bayesian Information Criterion (BIC)** or **Approximate Bayesian Computation (ABC)** can provide approximations.
+- **Computational Complexity**: Calculating the marginal likelihood can be computationally intensive, especially for complex models (because of the integral). Techniques like **Bayesian Information Criterion (BIC)** or **Approximate Bayesian Computation (ABC)** can provide approximations.
 - **Choice of Priors**: The marginal likelihood is sensitive to the choice of prior distributions. Informative priors can significantly influence the evidence, so it's important to choose priors carefully.
 - **Preference for Simpler Models:** The inherent penalty for complexity can sometimes lead to favouring overly simplistic models that underfit the data.
+
+## Videos
+![](https://www.youtube.com/watch?v=T-kMpA4z-7k)

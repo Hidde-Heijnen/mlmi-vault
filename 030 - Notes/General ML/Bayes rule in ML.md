@@ -13,7 +13,7 @@ $$ p(\theta | \mathcal{D}) =
 	- **Evidence or Marginal likelihood**: What is my belief about the data over all the different parameters sets
 	- Consists of integrating over two parts
 		- $p(\mathcal{D} | \theta)$: Just our likelihood again
-		- $p(\theta)d\theta$: You can think of $d\theta$ as an infinitely small part of theta, and then balances it with the probability of that theta. So theta's that are very probable become really big and things that are not likely become small. 
+		- $p(\theta)d\theta$: You can think of $d\theta$ as an infinitely small part of theta, and then balances it with the probability of that theta. The weighting by the prior $p(\theta)$ ensures that parameter values deemed more plausible a priori (before we s) contribute more to the evidence.
 		- The integral sums over all possible parameter values, effectively averaging the likelihood across the parameter space weighted by the prior.
 			- The marginal likelihood inherently penalises this because the integration over parameters averages out over the prior
 
