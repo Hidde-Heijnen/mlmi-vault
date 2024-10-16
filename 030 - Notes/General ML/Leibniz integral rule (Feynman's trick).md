@@ -11,6 +11,7 @@ Leibniz's rule formalises when you can interchange differentiation and integrati
 $$
 \frac{d}{d\theta} \int_{a}^{b} f(x, \theta) \, dx = \int_{a}^{b} \frac{\partial f(x, \theta)}{\partial \theta} \, dx
 $$
+Most important for us, you can basically always use it over any continuous PDF (so like gaussian) when the limits of integration (so $a$ and $b$) are not depending on the thing you are differentiating on. 
 
 ### Conditions for Use
 
