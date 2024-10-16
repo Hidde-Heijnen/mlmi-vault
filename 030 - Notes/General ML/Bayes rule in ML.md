@@ -10,7 +10,7 @@ $$ p(\theta | \mathcal{D}) =
 - $p(\theta|\mathcal{D})$
 	- **Posterior**: What is my **updated** belief of the parameters after having seen data
 - $\int p(\mathcal{D} | \theta)p(\theta)d\theta = p(\mathcal{D})$
-	- **Evidence**: What is my belief about the data over all the different parameters sets
+	- **Evidence or Marginal likelihood**: What is my belief about the data over all the different parameters sets
 	- Consists of integrating over two parts
 		- $p(\mathcal{D} | \theta)$: Just our likelihood again
 		- $p(\theta)d\theta$: You can think of $d\theta$ as an infinitely small part of theta, and then balances it with the probability of that theta. So theta's that are very probable become really big and things that are not likely become small. 
