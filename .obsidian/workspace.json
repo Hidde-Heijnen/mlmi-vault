@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "030 - Notes/General ML/Independence.md",
+                "file": "030 - Notes/General ML/Independence in ML.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "030 - Notes/General ML/Independence.md",
+                "file": "030 - Notes/General ML/Independence in ML.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "030 - Notes/General ML/Independence.md",
+                "file": "030 - Notes/General ML/Independence in ML.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "030 - Notes/General ML/Independence.md"
+                "file": "030 - Notes/General ML/Independence in ML.md"
               }
             }
           }
@@ -170,7 +170,7 @@
     "030 - Notes/General ML/Leibniz integral rule (Feynman's trick).md",
     "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L2.1 - Probability fundamentals.md",
     "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L1.1 - Modelling.md",
-    "030 - Notes/General ML/Independence.md",
+    "030 - Notes/General ML/Independence in ML.md",
     "030 - Notes/General ML/Marginal likelihood for model comparison.md",
     "030 - Notes/General ML/Marginal likelihood.md",
     "010 - Classes/NLP/Lecture notes/3 - lecture notes.md",
