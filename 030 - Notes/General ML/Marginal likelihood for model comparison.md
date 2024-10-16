@@ -21,6 +21,7 @@ By computing $P(D \mid M_1)$ and $P(D \mid M_2)$ for models $M_1$ and $M_2$, you
  $$\frac{P(D \mid M_1)}{P(D \mid M_2)} = \frac{\int P(D \mid \theta, M_1) P(\theta \mid M_1) \, d\theta}{\int P(D \mid \theta, M_2) P(\theta \mid M_2) \, d\theta} $$
 
 The ratio provides a quantitative measure of the support for one model over another.
+- 
 
 ## **Comparing Different Model Structures vs. Parameter Sets**
 ---

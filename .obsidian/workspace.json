@@ -31,7 +31,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "030 - Notes/General ML/Why we use log likelihood.md",
+                "file": "030 - Notes/General ML/Marginal likelihood for model comparison.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "030 - Notes/General ML/Why we use log likelihood.md",
+                "file": "030 - Notes/General ML/Marginal likelihood for model comparison.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "030 - Notes/General ML/Why we use log likelihood.md"
+                "file": "030 - Notes/General ML/Marginal likelihood for model comparison.md"
               }
             }
           }
@@ -162,10 +163,10 @@
       "jupyter:Create Jupyter Notebook": false
     }
   },
-  "active": "0f5ba167e34a5007",
+  "active": "38cde6aa7f618710",
   "lastOpenFiles": [
-    "030 - Notes/General ML/Moments of a Probability Distribution.md",
     "030 - Notes/General ML/Why we use log likelihood.md",
+    "030 - Notes/General ML/Moments of a Probability Distribution.md",
     "030 - Notes/General ML/Bayes rule in ML.md",
     "030 - Notes/General ML/Marginal likelihood for model comparison.md",
     "030 - Notes/General ML/Leibniz integral rule (Feynman's trick).md",
