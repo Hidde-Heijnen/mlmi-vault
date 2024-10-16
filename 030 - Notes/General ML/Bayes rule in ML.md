@@ -5,6 +5,7 @@ $$ p(\theta | \mathcal{D}) =
 - $\mathcal{D}$: our data
 - $p(\mathcal{D}|\theta)$
 	- **Likelihood**: How much **evidence** is there in the data for a specific parameter set
+	- How likely is it that we see the data we've got given these parameters?
 - $p(\theta)$
 	- **Prior**: What are my beliefs of the parameters before seeing the data
 - $p(\theta|\mathcal{D})$
@@ -20,11 +21,7 @@ $$ p(\theta | \mathcal{D}) =
 We often use the evidence to compare models, downsides of this is that it is heavily dependent on the prior that we pick, even if the prior doesn't impact our posterior that much. 
 
 ## Adding our model
-The above definition is a simplified version of the bayes rule, in reality every one of these probabilities is dependant on the structure of our model. 
-
+The above definition is a simplified version of the bayes rule, in reality every one of these probabilities is dependant on the structure of our model. This doesn't matter (and thus often left out) when we are talking about a single model, but it is very relevant when talking about [[Marginal likelihood for model comparison | Model Comparison]]
 $$ p(\theta | \mathcal{D}, M) =
  \frac{p(\mathcal{D} | \theta, M)p(\theta | M)}
  {\int p(\mathcal{D} | \theta, M)p(\theta | M)d\theta} $$
-
-## Next
-[[Marginal likelihood for model comparison]]
