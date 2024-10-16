@@ -48,9 +48,9 @@ However, if we're interested in the **marginal joint probability** $p(\mathbf{y}
 $$
 p(\mathbf{y}) \neq \prod_{n=1}^{N} p(y_n)
 $$
-## Key Concepts
-
-- **Independence**: Data points do not influence each other; no conditions are applied.
-- **Identically Distributed**: All data points come from the same probability distribution.
-- **Conditional Independence**: Outputs are independent of each other given certain conditions (inputs and parameters).
-- **i.i.d. Assumption**: Combines independence and identical distribution, simplifying calculations.
+## Practical Implications in Machine Learning
+In supervised learning, we're often interested in the likelihood $p(\mathbf{y} \mid \mathbf{X}, \theta)$. Assuming conditional independence and identical distribution **given** $\mathbf{X}$ and $\theta$, we can write:
+$$
+p(\mathbf{y} \mid \mathbf{X}, \theta) = \prod_{n=1}^{N} p(y_n \mid \mathbf{x}_n, \theta)
+$$
+This is acceptable because we're conditioning on known quantities. However, if we aim to compute $p(\mathbf{y})$ without conditioning, we need the i.i.d. assumption to factorise the joint probability into a product of identical terms.
