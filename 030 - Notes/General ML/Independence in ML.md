@@ -10,7 +10,7 @@ p(y_n, y_m) = p(y_n) \cdot p(y_m) \quad \text{for } n \neq m
 $$
 In other words, the occurrence of $y_n$ does not affect the probability of $y_m$.
 
-**Unconditional Independence** is simply referred to as **independence**. It means there's no condition or given information influencing the independence of variables.
+With independence alone, we can write the joint probability as a product. However, if the variables are not identically distributed, each $p(y_n)$ might be different. This complicates modelling because we cannot generalise a single probability distribution across all data points.
 
 ## Identically Distributed
 ---
@@ -18,7 +18,7 @@ Variables are **identically distributed** if they share the same probability dis
 $$
 p(y_n) = p(y_m) \quad \text{for all } n, m
 $$
-This implies that each data point is drawn from the same underlying distribution.
+This implies that each data point is drawn from the same underlying distribution. But without independence, the variables can be dependent. Dependency implies that knowing one variable gives information about another, preventing us from expressing the joint probability as a simple product
 
 ## Independent and Identically Distributed (i.i.d.)
 ---
@@ -33,24 +33,21 @@ p(\mathbf{y}) = \prod_{n=1}^{N} p(y_n)
 $$
 
 ## Conditional Independence
-
+---
 In many machine learning models, especially supervised learning, outputs $y_n$ are assumed to be **conditionally independent** given the inputs $\mathbf{X}$ and model parameters $\theta$. This means:
 $$
 p(y_n \mid y_m, \mathbf{X}, \theta) = p(y_n \mid \mathbf{X}, \theta) \quad \text{for } n \neq m
 $$
-Here, each output $y_n$ is independent of other outputs $y_m$ when we know the inputs and parameters.
+Here, each output $y_n$ is independent of other outputs $y_m$ when we know the inputs and parameters. 
 
-## Joint Likelihood Under Conditional Independence
-
-Assuming conditional independence, the joint likelihood of all outputs given the inputs and parameters simplifies to:
+This allows us to write the **conditional joint probability** as a product:
 $$
 p(\mathbf{y} \mid \mathbf{X}, \theta) = \prod_{n=1}^{N} p(y_n \mid \mathbf{X}, \theta)
 $$
-If each output $y_n$ depends only on its corresponding input $\mathbf{x}_n$, the likelihood further simplifies:
+However, if we're interested in the **marginal joint probability** $p(\mathbf{y})$, conditional independence alone doesn't help because the conditioning variables $\mathbf{X}$ and $\theta$ are not accounted for:
 $$
-p(\mathbf{y} \mid \mathbf{X}, \theta) = \prod_{n=1}^{N} p(y_n \mid \mathbf{x}_n, \theta)
+p(\mathbf{y}) \neq \prod_{n=1}^{N} p(y_n)
 $$
-
 ## Key Concepts
 
 - **Independence**: Data points do not influence each other; no conditions are applied.
