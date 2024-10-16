@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "030 - Notes/General ML/useful pdf.md",
+                "file": "030 - Notes/General ML/Bayes rule in ML.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "030 - Notes/General ML/useful pdf.md",
+                "file": "030 - Notes/General ML/Bayes rule in ML.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "030 - Notes/General ML/useful pdf.md",
+                "file": "030 - Notes/General ML/Bayes rule in ML.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "030 - Notes/General ML/useful pdf.md"
+                "file": "030 - Notes/General ML/Bayes rule in ML.md"
               }
             }
           }
@@ -165,8 +165,9 @@
   },
   "active": "38cde6aa7f618710",
   "lastOpenFiles": [
-    "030 - Notes/General ML/Leibniz integral rule (Feynman's trick).md",
     "030 - Notes/General ML/useful pdf.md",
+    "030 - Notes/General ML/Bayes rule in ML.md",
+    "030 - Notes/General ML/Leibniz integral rule (Feynman's trick).md",
     "030 - Notes/General ML/Covariance matrix.md",
     "030 - Notes/General ML/Conjugate priors.md",
     "030 - Notes/General ML/Alternative representation of a gaussian..md",
@@ -193,7 +194,6 @@
     "010 - Classes/MLMI1/Course info.md",
     "030 - Notes/General ML/Scedasticity.md",
     "z - Attachments/Pasted image 20241015104351.png",
-    "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L2.3 - Marginal Likelihood.md",
     "030 - Notes/General ML",
     "030 - Notes/Codebasics - Machine Learning Python course/Notebooks/05-dummy-var-one-hot.ipynb",
     "010 - Classes/4F13 - Probabilistic ML/cribsheet.pdf",
