@@ -4,7 +4,7 @@ link: https://en.wikipedia.org/wiki/Conjugate_prior
 
 Mathematically, if the prior  $p(\theta)$ and the likelihood  $p(x | \theta)$  are such that the posterior  $p(\theta | x)$  is in the same family as  $p(\theta)$ , then  $p(\theta)$  is a conjugate prior for  $p(x | \theta)$.
 
-All these combinations below you can define models for that you can calculate in closed form. All other combinations are very hard to calculate and 
+All these combinations below you can define models for that you can calculate in closed form. All other combinations are very hard to calculate and we probably get combinations like this most often.
 
 **Self-conjugate**: When the pair of prior and likelihood for the conjugate prior is the same distribution
 
