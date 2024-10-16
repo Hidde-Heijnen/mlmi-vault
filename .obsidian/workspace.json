@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "030 - Notes/General ML/When do we call something \"linear regression\".md",
+                "file": "030 - Notes/General ML/Bayes rule in ML.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "030 - Notes/General ML/When do we call something \"linear regression\".md",
+                "file": "030 - Notes/General ML/Bayes rule in ML.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "030 - Notes/General ML/When do we call something \"linear regression\".md",
+                "file": "030 - Notes/General ML/Bayes rule in ML.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "030 - Notes/General ML/When do we call something \"linear regression\".md"
+                "file": "030 - Notes/General ML/Bayes rule in ML.md"
               }
             }
           }
@@ -165,9 +165,9 @@
   },
   "active": "38cde6aa7f618710",
   "lastOpenFiles": [
+    "030 - Notes/General ML/When do we call something \"linear regression\".md",
     "z - Attachments/CleanShot 2024-10-16 at 14.51.12.png",
     "030 - Notes/General ML/Bayes rule in ML.md",
-    "030 - Notes/General ML/When do we call something \"linear regression\".md",
     "030 - Notes/General ML/useful pdf.md",
     "030 - Notes/General ML/Leibniz integral rule (Feynman's trick).md",
     "030 - Notes/General ML/Covariance matrix.md",
@@ -209,7 +209,6 @@
     "z - Attachments/CleanShot 2024-10-11 at 10.35.04@2x.png",
     "z - Attachments/CleanShot 2024-10-10 at 11.39.33.png",
     "z - Attachments/CleanShot 2024-09-29 at 10.04.00@2x.png",
-    "z - Attachments/CleanShot 2024-09-28 at 14.45.18@2x.png",
-    "z - Attachments/CleanShot 2024-09-28 at 14.30.44@2x.png"
+    "z - Attachments/CleanShot 2024-09-28 at 14.45.18@2x.png"
   ]
 }
