@@ -44,7 +44,6 @@ $$
   - **Zero Skewness ($\gamma_1 = 0$)**: Distribution is symmetric around the mean.
 
 ---
-
 ### 4. Fourth Moment – Kurtosis
 
 - **Definition:** The fourth standardized moment measures the **"tailedness"** or **peakedness** of the distribution.
