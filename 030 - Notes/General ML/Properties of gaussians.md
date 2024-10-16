@@ -175,3 +175,6 @@ $$ \Sigma^{-1} = \Sigma_{11}^{-1} + \Sigma_{22}^{-1} $$
 $$ M = \left( \Sigma_{11}^{-1} + \Sigma_{22}^{-1} \right)^{-1} \left( \Sigma_{11}^{-1} M_1 + \Sigma_{22}^{-1} M_2 \right) $$
 
 You don’t need to memorise these, but they can be derived by completing the square.
+
+## Videos
+![](https://www.youtube.com/watch?v=exq_A9oypP0)

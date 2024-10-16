@@ -25,3 +25,6 @@ where $\sigma_{ij} = \text{Cov}(X_i, X_j) = \mathbb{E}[(X_i - \mu_i)(X_j - \mu_j
 
 ### Conclusion
 The covariance matrix $\Sigma$ is fundamental in understanding the relationships between variables in multivariate data. Its symmetric, positive semi-definite structure supports a wide range of mathematical and statistical applications, such as eigen decomposition, matrix inversion, and advanced machine learning techniques.
+
+## Video
+![](https://www.youtube.com/watch?v=RQKJBpaCCeo)
