@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "030 - Notes/General ML/Why we use log likelihood.md",
+                "file": "030 - Notes/General ML/Independence.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,14 +25,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "030 - Notes/General ML/Independence.md",
+                "file": "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L2.1 - Probability fundamentals.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -163,14 +162,16 @@
       "jupyter:Create Jupyter Notebook": false
     }
   },
-  "active": "38cde6aa7f618710",
+  "active": "0f5ba167e34a5007",
   "lastOpenFiles": [
-    "030 - Notes/General ML/Bayes rule in ML.md",
-    "030 - Notes/General ML/Independence.md",
-    "030 - Notes/General ML/Marginal likelihood for model comparison.md",
     "030 - Notes/General ML/Why we use log likelihood.md",
     "030 - Notes/General ML/Moments of a Probability Distribution.md",
+    "030 - Notes/General ML/Bayes rule in ML.md",
     "030 - Notes/General ML/Leibniz integral rule (Feynman's trick).md",
+    "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L2.1 - Probability fundamentals.md",
+    "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L1.1 - Modelling.md",
+    "030 - Notes/General ML/Independence.md",
+    "030 - Notes/General ML/Marginal likelihood for model comparison.md",
     "030 - Notes/General ML/Marginal likelihood.md",
     "010 - Classes/NLP/Lecture notes/3 - lecture notes.md",
     "010 - Classes/NLP/Lecture notes/2 - lecture.md",
@@ -192,8 +193,6 @@
     "030 - Notes/General ML/Monte Carlo Sampling.md",
     "030 - Notes/General ML/Expectation in ML.md",
     "030 - Notes/General ML/Dirac Delta function.md",
-    "030 - Notes/General ML/Properties of gaussians.md",
-    "030 - Notes/General ML/mixture of gaussians.md",
     "z - Attachments/Pasted image 20241015104351.png",
     "030 - Notes/General ML",
     "030 - Notes/Codebasics - Machine Learning Python course/Notebooks/05-dummy-var-one-hot.ipynb",
