@@ -24,6 +24,15 @@ where $\sigma_{ij} = \text{Cov}(X_i, X_j) = \mathbb{E}[(X_i - \mu_i)(X_j - \mu_j
 - **Mahalanobis Distance**: $D(\mathbf{x}) = \sqrt{(\mathbf{x} - \boldsymbol{\mu})^\top \Sigma^{-1} (\mathbf{x} - \boldsymbol{\mu})}$ accounts for correlations in measuring distance from the mean.
 
 ## Eigenvalue decomposition
+We can write the covariance matrix as:
+$$
+\Sigma = U\Lambda U^\top
+$$
+- $\Sigma$ = original covariance matrix
+- $U$: Matrix of eigenvectors (orthonormal columns)
+- $\Lambda$: Diagonal matrix of eigenvalues
+- $U^\top$: Transpose of $U$
+
 Visual Understanding:
 - The covariance matrix $\Sigma$ can be viewed as stretching and rotating space.
 - Eigenvectors indicate the directions of stretching.
