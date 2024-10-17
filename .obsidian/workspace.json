@@ -13,7 +13,7 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "010 - Classes/MLMI1/Resources/01_introduction.pdf"
+                "file": "010 - Classes/MLMI1/Resources/examp1-solutions.pdf"
               }
             }
           },
@@ -23,13 +23,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L2.1 - Probability fundamentals.md",
+                "file": "030 - Notes/General ML/Eigen Decomposition.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -95,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "010 - Classes/MLMI1/Resources/01_introduction.pdf",
+                "file": "030 - Notes/General ML/Eigen Decomposition.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "010 - Classes/MLMI1/Resources/01_introduction.pdf",
+                "file": "030 - Notes/General ML/Eigen Decomposition.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "010 - Classes/MLMI1/Resources/01_introduction.pdf"
+                "file": "030 - Notes/General ML/Eigen Decomposition.md"
               }
             }
           }
@@ -160,15 +161,16 @@
       "jupyter:Create Jupyter Notebook": false
     }
   },
-  "active": "0f5ba167e34a5007",
+  "active": "38cde6aa7f618710",
   "lastOpenFiles": [
-    "010 - Classes/MLMI1/Resources/matrixid.pdf",
+    "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L2.1 - Probability fundamentals.md",
     "010 - Classes/MLMI1/Resources/examp1-solutions.pdf",
+    "010 - Classes/MLMI1/Resources/01_introduction.pdf",
+    "010 - Classes/MLMI1/Resources/matrixid.pdf",
     "030 - Notes/General ML/Eigen Decomposition.md",
     "030 - Notes/General ML/Covariance matrix.md",
     "030 - Notes/General ML/Properties of gaussians.md",
     "030 - Notes/Math/Trace.md",
-    "010 - Classes/MLMI1/Resources/01_introduction.pdf",
     "030 - Notes/Math/Derivatives.md",
     "030 - Notes/General ML/useful pdf.md",
     "010 - Classes/4F13 - Probabilistic ML/Course Info.md",
@@ -187,7 +189,6 @@
     "030 - Notes/General ML/Dirac Delta function.md",
     "030 - Notes/General ML/Bayes rule in ML.md",
     "030 - Notes/General ML/Conjugate priors.md",
-    "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L2.1 - Probability fundamentals.md",
     "030 - Notes/General ML/Why we use log likelihood.md",
     "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L1.1 - Modelling.md",
     "030 - Notes/General ML/Marginal likelihood.md",
@@ -201,7 +202,6 @@
     "010 - Classes/NLP/Lecture notes",
     "z - Attachments/CleanShot 2024-10-13 at 16.31.13.png",
     "010 - Classes/4F13 - Probabilistic ML/Lecture notes",
-    "cw",
     "z - Attachments/CleanShot 2024-10-11 at 17.39.38.png",
     "z - Attachments/CleanShot 2024-10-11 at 10.41.24@2x.png",
     "z - Attachments/CleanShot 2024-10-11 at 10.35.04@2x.png",
