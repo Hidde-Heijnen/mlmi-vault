@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "030 - Notes/General ML/Monte Carlo Sampling.md",
+                "file": "030 - Notes/General ML/useful pdf.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "030 - Notes/General ML/Monte Carlo Sampling.md",
+                "file": "030 - Notes/General ML/useful pdf.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "030 - Notes/General ML/Monte Carlo Sampling.md",
+                "file": "030 - Notes/General ML/useful pdf.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "030 - Notes/General ML/Monte Carlo Sampling.md"
+                "file": "030 - Notes/General ML/useful pdf.md"
               }
             }
           }
@@ -164,6 +164,13 @@
   },
   "active": "0f5ba167e34a5007",
   "lastOpenFiles": [
+    "010 - Classes/4F13 - Probabilistic ML/Course Info.md",
+    "010 - Classes/4F13 - Probabilistic ML/cribsheet.pdf",
+    "030 - Notes/General ML/Sinus function form.md",
+    "030 - Notes/General ML/Scedasticity.md",
+    "030 - Notes/General ML/Properties of gaussians.md",
+    "030 - Notes/General ML/Predictive distribution.md",
+    "030 - Notes/General ML/Monte Carlo Sampling.md",
     "030 - Notes/General ML/Moments of a Probability Distribution.md",
     "030 - Notes/General ML/mixture of gaussians.md",
     "030 - Notes/General ML/Marginal likelihood for model comparison.md",
@@ -175,10 +182,7 @@
     "030 - Notes/General ML/Covariance matrix.md",
     "030 - Notes/General ML/Bayes rule in ML.md",
     "030 - Notes/General ML/Conjugate priors.md",
-    "030 - Notes/General ML/Scedasticity.md",
-    "030 - Notes/General ML/Properties of gaussians.md",
     "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L2.1 - Probability fundamentals.md",
-    "030 - Notes/General ML/Predictive distribution.md",
     "030 - Notes/General ML/Why we use log likelihood.md",
     "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L1.1 - Modelling.md",
     "030 - Notes/General ML/Marginal likelihood.md",
@@ -188,15 +192,11 @@
     "030 - Notes/General ML/When do we call something \"linear regression\".md",
     "z - Attachments/CleanShot 2024-10-16 at 14.51.12.png",
     "030 - Notes/General ML/useful pdf.md",
-    "030 - Notes/General ML/Alternative representation of a gaussian..md",
-    "030 - Notes/Math/Integration by parts.md",
-    "030 - Notes/Math/Integral Manipulation.md",
     "010 - Classes/MLMI1/Resources/examp1-solutions.pdf",
     "010 - Classes/MLMI1/Resources",
     "z - Attachments/Pasted image 20241015104351.png",
     "030 - Notes/General ML",
     "030 - Notes/Codebasics - Machine Learning Python course/Notebooks/05-dummy-var-one-hot.ipynb",
-    "010 - Classes/4F13 - Probabilistic ML/cribsheet.pdf",
     "010 - Classes/4F13 - Probabilistic ML/matrix_cookbook.pdf",
     "z - Attachments/CleanShot 2024-10-13 at 19.58.54.png",
     "010 - Classes/NLP/Lecture notes",
