@@ -23,6 +23,11 @@ where $\sigma_{ij} = \text{Cov}(X_i, X_j) = \mathbb{E}[(X_i - \mu_i)(X_j - \mu_j
 - **Trace**: The trace $\text{Tr}(\Sigma) = \sum_{i=1}^n \sigma_{ii}$ represents the total variance.
 - **Mahalanobis Distance**: $D(\mathbf{x}) = \sqrt{(\mathbf{x} - \boldsymbol{\mu})^\top \Sigma^{-1} (\mathbf{x} - \boldsymbol{\mu})}$ accounts for correlations in measuring distance from the mean.
 
+## Eigenvalue decomposition
+Visual Understanding:
+- The covariance matrix $\Sigma$ can be viewed as stretching and rotating space.
+- Eigenvectors indicate the directions of stretching.
+- Eigenvalues indicate how much stretching occurs in each direction.
 ### Conclusion
 The covariance matrix $\Sigma$ is fundamental in understanding the relationships between variables in multivariate data. Its symmetric, positive semi-definite structure supports a wide range of mathematical and statistical applications, such as eigen decomposition, matrix inversion, and advanced machine learning techniques.
 
