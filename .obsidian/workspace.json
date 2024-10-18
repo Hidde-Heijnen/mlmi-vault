@@ -21,9 +21,11 @@
             "id": "38cde6aa7f618710",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "010 - Classes/MLMI1/Resources/examp1-solutions.pdf"
+                "file": "030 - Notes/Math/Distributions.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -94,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "010 - Classes/MLMI1/Resources/examp1-solutions.pdf",
+                "file": "030 - Notes/Math/Distributions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "010 - Classes/MLMI1/Resources/examp1-solutions.pdf",
+                "file": "030 - Notes/Math/Distributions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "010 - Classes/MLMI1/Resources/examp1-solutions.pdf"
+                "file": "030 - Notes/Math/Distributions.md"
               }
             }
           }
@@ -161,6 +163,8 @@
   },
   "active": "38cde6aa7f618710",
   "lastOpenFiles": [
+    "030 - Notes/General ML/Properties of gaussians.md",
+    "010 - Classes/MLMI1/Resources/examp1-solutions.pdf",
     "030 - Notes/General ML/Eigen Decomposition.md",
     "010 - Classes/NLP/Practical/MLMI13_Practical2023-24.pdf",
     "010 - Classes/NLP/Practical",
@@ -168,11 +172,9 @@
     "010 - Classes/NLP/Slides/lect04-syntax.pdf",
     "010 - Classes/NLP/Slides",
     "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L2.1 - Probability fundamentals.md",
-    "010 - Classes/MLMI1/Resources/examp1-solutions.pdf",
     "010 - Classes/MLMI1/Resources/01_introduction.pdf",
     "010 - Classes/MLMI1/Resources/matrixid.pdf",
     "030 - Notes/General ML/Covariance matrix.md",
-    "030 - Notes/General ML/Properties of gaussians.md",
     "030 - Notes/Math/Trace.md",
     "030 - Notes/Math/Derivatives.md",
     "030 - Notes/General ML/useful pdf.md",
