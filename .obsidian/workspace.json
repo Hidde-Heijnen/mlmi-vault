@@ -23,7 +23,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "030 - Notes/Math/Distributions.md",
+                "file": "010 - Classes/MLMI1/Probabilistic modeling and Inference youtube playlist.md",
                 "mode": "source",
                 "source": false
               }
@@ -59,7 +59,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "heter",
+                "query": "youtub",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "030 - Notes/Math/Distributions.md",
+                "file": "010 - Classes/MLMI1/Probabilistic modeling and Inference youtube playlist.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "030 - Notes/Math/Distributions.md",
+                "file": "010 - Classes/MLMI1/Probabilistic modeling and Inference youtube playlist.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "030 - Notes/Math/Distributions.md"
+                "file": "010 - Classes/MLMI1/Probabilistic modeling and Inference youtube playlist.md"
               }
             }
           }
@@ -161,10 +161,23 @@
       "jupyter:Create Jupyter Notebook": false
     }
   },
-  "active": "38cde6aa7f618710",
+  "active": "1b9c0ca6e568a32b",
   "lastOpenFiles": [
-    "030 - Notes/General ML/Properties of gaussians.md",
+    "000 - Introduction/004 - Preliminary Reading + Preparation.md",
+    "010 - Classes/MLMI1/Notebook/Inference.md",
+    "010 - Classes/MLMI1/Notebook/Exercises/Radioactive.md",
+    "010 - Classes/MLMI1/Notebook/Exercises/Medical.md",
+    "010 - Classes/MLMI1/Notebook/Exercises/9.md",
+    "010 - Classes/MLMI1/Notebook/Exercises/Linear regression.md",
+    "010 - Classes/MLMI1/Summary of Probabilistic Inference.md",
+    "010 - Classes/MLMI1/Probabilistic modeling and Inference youtube playlist.md",
+    "010 - Classes/MLMI1/notes.md",
+    "010 - Classes/MLMI1/Course info.md",
+    "010 - Classes/MLMI1/Resources/matrixid.pdf",
     "010 - Classes/MLMI1/Resources/examp1-solutions.pdf",
+    "010 - Classes/MLMI1/Resources/01_introduction.pdf",
+    "030 - Notes/Math/Distributions.md",
+    "030 - Notes/General ML/Properties of gaussians.md",
     "030 - Notes/General ML/Eigen Decomposition.md",
     "010 - Classes/NLP/Practical/MLMI13_Practical2023-24.pdf",
     "010 - Classes/NLP/Practical",
@@ -172,8 +185,6 @@
     "010 - Classes/NLP/Slides/lect04-syntax.pdf",
     "010 - Classes/NLP/Slides",
     "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L2.1 - Probability fundamentals.md",
-    "010 - Classes/MLMI1/Resources/01_introduction.pdf",
-    "010 - Classes/MLMI1/Resources/matrixid.pdf",
     "030 - Notes/General ML/Covariance matrix.md",
     "030 - Notes/Math/Trace.md",
     "030 - Notes/Math/Derivatives.md",
@@ -187,16 +198,6 @@
     "030 - Notes/General ML/Moments of a Probability Distribution.md",
     "030 - Notes/General ML/mixture of gaussians.md",
     "030 - Notes/General ML/Marginal likelihood for model comparison.md",
-    "030 - Notes/General ML/Leibniz integral rule (Feynman's trick).md",
-    "030 - Notes/General ML/Lagrange multiplier.md",
-    "030 - Notes/General ML/Independence in ML.md",
-    "030 - Notes/General ML/Expectation in ML.md",
-    "030 - Notes/General ML/Dirac Delta function.md",
-    "030 - Notes/General ML/Bayes rule in ML.md",
-    "030 - Notes/General ML/Conjugate priors.md",
-    "030 - Notes/General ML/Why we use log likelihood.md",
-    "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L1.1 - Modelling.md",
-    "030 - Notes/General ML/Marginal likelihood.md",
     "z - Attachments/CleanShot 2024-10-16 at 14.51.12.png",
     "010 - Classes/MLMI1/Resources",
     "z - Attachments/Pasted image 20241015104351.png",
