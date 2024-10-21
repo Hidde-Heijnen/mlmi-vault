@@ -16,7 +16,7 @@ $$ p(\theta | \mathcal{D}) =
 		- $p(\mathcal{D} | \theta)$: Just our likelihood again
 		- $p(\theta)d\theta$: You can think of $d\theta$ as an infinitely small part of theta, and then balances it with the probability of that theta. The weighting by the prior $p(\theta)$ ensures that parameter values deemed more plausible a priori (before we see data) contribute more to the evidence.
 		- The integral sums over all possible parameter values, effectively averaging the likelihood across the parameter space weighted by the prior.
-			- The marginal likelihood inherently penalises this because the integration over parameters averages out over the prior
+			- The marginal likelihood inherently penalises overfitting because the integration over parameters averages out over the prior
 
 We often use the evidence to compare models, downsides of this is that it is heavily dependent on the prior that we pick, even if the prior doesn't impact our posterior that much. 
 
