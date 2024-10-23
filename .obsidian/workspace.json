@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "030 - Notes/Math/Integral Manipulation.md",
+                "file": "030 - Notes/General ML/Expectation in ML.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Integral Manipulation"
+              "title": "Expectation in ML"
             }
           },
           {
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "030 - Notes/Math/Integral Manipulation.md",
+                "file": "030 - Notes/General ML/Expectation in ML.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +132,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Integral Manipulation"
+              "title": "Backlinks for Expectation in ML"
             }
           },
           {
@@ -141,12 +141,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "030 - Notes/Math/Integral Manipulation.md",
+                "file": "030 - Notes/General ML/Expectation in ML.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Integral Manipulation"
+              "title": "Outgoing links from Expectation in ML"
             }
           },
           {
@@ -168,10 +168,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "030 - Notes/Math/Integral Manipulation.md"
+                "file": "030 - Notes/General ML/Expectation in ML.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Integral Manipulation"
+              "title": "Outline of Expectation in ML"
             }
           }
         ]
@@ -197,6 +197,7 @@
   },
   "active": "42a512fecada5927",
   "lastOpenFiles": [
+    "030 - Notes/Math/Integral Manipulation.md",
     "010 - Classes/MLMI1/Resources/examp1-solutions.pdf",
     "030 - Notes/General ML/Marginal likelihood for model comparison.md",
     "030 - Notes/General ML/Bayes rule in ML.md",
