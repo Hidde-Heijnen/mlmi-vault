@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "030 - Notes/Math/Logarithms.md",
+                "file": "030 - Notes/General ML/Independence in ML.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Logarithms"
+              "title": "Independence in ML"
             }
           },
           {
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "030 - Notes/Math/Logarithms.md",
+                "file": "030 - Notes/General ML/Independence in ML.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +132,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Logarithms"
+              "title": "Backlinks for Independence in ML"
             }
           },
           {
@@ -141,12 +141,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "030 - Notes/Math/Logarithms.md",
+                "file": "030 - Notes/General ML/Independence in ML.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Logarithms"
+              "title": "Outgoing links from Independence in ML"
             }
           },
           {
@@ -168,10 +168,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "030 - Notes/Math/Logarithms.md"
+                "file": "030 - Notes/General ML/Independence in ML.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Logarithms"
+              "title": "Outline of Independence in ML"
             }
           }
         ]
@@ -197,14 +197,17 @@
   },
   "active": "42a512fecada5927",
   "lastOpenFiles": [
-    "030 - Notes/General ML/Bayes rule in ML.md",
     "030 - Notes/General ML/Expectation in ML.md",
     "030 - Notes/General ML/Eigen Decomposition.md",
+    "030 - Notes/General ML/Dirac Delta function.md",
+    "030 - Notes/General ML/Covariance matrix.md",
+    "030 - Notes/General ML/Conjugate priors.md",
+    "030 - Notes/General ML/Alternative representation of a gaussian..md",
+    "030 - Notes/General ML/Bayes rule in ML.md",
+    "030 - Notes/Math/Logarithms.md",
     "030 - Notes/Math/Integral Manipulation.md",
     "010 - Classes/MLMI1/Resources/examp1-solutions.pdf",
     "030 - Notes/General ML/Marginal likelihood for model comparison.md",
-    "030 - Notes/General ML/Conjugate priors.md",
-    "030 - Notes/General ML/Covariance matrix.md",
     "030 - Notes/General ML/Independence in ML.md",
     "010 - Classes/MLMI1/Notebook/Inference.md",
     "010 - Classes/NLP/Lecture notes/2 - lecture.md",
@@ -228,9 +231,6 @@
     "010 - Classes/NLP/Slides/lect03-tagging.pdf",
     "010 - Classes/NLP/Slides/lect04-syntax.pdf",
     "010 - Classes/NLP/Slides",
-    "010 - Classes/4F13 - Probabilistic ML/Lecture notes/L2.1 - Probability fundamentals.md",
-    "030 - Notes/Math/Trace.md",
-    "030 - Notes/Math/Derivatives.md",
     "010 - Classes/4F13 - Probabilistic ML/cribsheet.pdf",
     "z - Attachments/CleanShot 2024-10-16 at 14.51.12.png",
     "010 - Classes/MLMI1/Resources",
