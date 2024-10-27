@@ -25,12 +25,14 @@
             "id": "42a512fecada5927",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "010 - Classes/4F13 - Probabilistic ML/cribsheet.pdf"
+                "file": "030 - Notes/Math/Matrixes.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "cribsheet"
+              "icon": "lucide-file",
+              "title": "Matrixes"
             }
           },
           {
@@ -120,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "010 - Classes/4F13 - Probabilistic ML/cribsheet.pdf",
+                "file": "030 - Notes/Math/Matrixes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +132,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for cribsheet"
+              "title": "Backlinks for Matrixes"
             }
           },
           {
@@ -139,12 +141,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "010 - Classes/4F13 - Probabilistic ML/cribsheet.pdf",
+                "file": "030 - Notes/Math/Matrixes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from cribsheet"
+              "title": "Outgoing links from Matrixes"
             }
           },
           {
@@ -166,10 +168,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "010 - Classes/4F13 - Probabilistic ML/cribsheet.pdf"
+                "file": "030 - Notes/Math/Matrixes.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of cribsheet"
+              "title": "Outline of Matrixes"
             }
           }
         ]
@@ -193,10 +195,10 @@
       "jupyter:Create Jupyter Notebook": false
     }
   },
-  "active": "1b9c0ca6e568a32b",
+  "active": "42a512fecada5927",
   "lastOpenFiles": [
-    "010 - Classes/4F13 - Probabilistic ML/matrix_cookbook.pdf",
     "010 - Classes/4F13 - Probabilistic ML/cribsheet.pdf",
+    "010 - Classes/4F13 - Probabilistic ML/matrix_cookbook.pdf",
     "010 - Classes/MLMI1/Resources/matrixid.pdf",
     "010 - Classes/MLMI1/Resources/examp1-solutions.pdf",
     "010 - Classes/MLMI1/Resources/01_introduction.pdf",
