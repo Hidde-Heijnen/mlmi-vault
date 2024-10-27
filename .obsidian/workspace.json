@@ -27,10 +27,10 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "010 - Classes/MLMI1/Resources/matrixid.pdf"
+                "file": "010 - Classes/4F13 - Probabilistic ML/cribsheet.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "matrixid"
+              "title": "cribsheet"
             }
           },
           {
@@ -120,7 +120,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "010 - Classes/MLMI1/Resources/matrixid.pdf",
+                "file": "010 - Classes/4F13 - Probabilistic ML/cribsheet.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +130,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for matrixid"
+              "title": "Backlinks for cribsheet"
             }
           },
           {
@@ -139,12 +139,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "010 - Classes/MLMI1/Resources/matrixid.pdf",
+                "file": "010 - Classes/4F13 - Probabilistic ML/cribsheet.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from matrixid"
+              "title": "Outgoing links from cribsheet"
             }
           },
           {
@@ -166,10 +166,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "010 - Classes/MLMI1/Resources/matrixid.pdf"
+                "file": "010 - Classes/4F13 - Probabilistic ML/cribsheet.pdf"
               },
               "icon": "lucide-list",
-              "title": "Outline of matrixid"
+              "title": "Outline of cribsheet"
             }
           }
         ]
@@ -193,8 +193,11 @@
       "jupyter:Create Jupyter Notebook": false
     }
   },
-  "active": "42a512fecada5927",
+  "active": "1b9c0ca6e568a32b",
   "lastOpenFiles": [
+    "010 - Classes/4F13 - Probabilistic ML/matrix_cookbook.pdf",
+    "010 - Classes/4F13 - Probabilistic ML/cribsheet.pdf",
+    "010 - Classes/MLMI1/Resources/matrixid.pdf",
     "010 - Classes/MLMI1/Resources/examp1-solutions.pdf",
     "010 - Classes/MLMI1/Resources/01_introduction.pdf",
     "030 - Notes/Math/Vectors.md",
@@ -222,13 +225,11 @@
     "030 - Notes/General ML/Scedasticity.md",
     "030 - Notes/General ML/Properties of gaussians.md",
     "030 - Notes/General ML/Predictive distribution.md",
-    "010 - Classes/MLMI1/Resources/matrixid.pdf",
     "010 - Classes/NLP/Practical/MLMI13_Practical2023-24.pdf",
     "010 - Classes/NLP/Practical",
     "010 - Classes/NLP/Slides/lect03-tagging.pdf",
     "010 - Classes/NLP/Slides/lect04-syntax.pdf",
     "010 - Classes/NLP/Slides",
-    "010 - Classes/4F13 - Probabilistic ML/cribsheet.pdf",
     "z - Attachments/CleanShot 2024-10-16 at 14.51.12.png",
     "010 - Classes/MLMI1/Resources",
     "z - Attachments/Pasted image 20241015104351.png",
