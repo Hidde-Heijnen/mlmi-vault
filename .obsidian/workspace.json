@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "030 - Notes/General ML/Independence in ML.md",
+                "file": "030 - Notes/Math/Vectors.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Independence in ML"
+              "title": "Vectors"
             }
           },
           {
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "030 - Notes/General ML/Independence in ML.md",
+                "file": "030 - Notes/Math/Vectors.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +132,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Independence in ML"
+              "title": "Backlinks for Vectors"
             }
           },
           {
@@ -141,12 +141,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "030 - Notes/General ML/Independence in ML.md",
+                "file": "030 - Notes/Math/Vectors.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Independence in ML"
+              "title": "Outgoing links from Vectors"
             }
           },
           {
@@ -168,10 +168,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "030 - Notes/General ML/Independence in ML.md"
+                "file": "030 - Notes/Math/Vectors.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Independence in ML"
+              "title": "Outline of Vectors"
             }
           }
         ]
@@ -197,35 +197,35 @@
   },
   "active": "42a512fecada5927",
   "lastOpenFiles": [
-    "030 - Notes/General ML/Expectation in ML.md",
-    "030 - Notes/General ML/Eigen Decomposition.md",
-    "030 - Notes/General ML/Dirac Delta function.md",
-    "030 - Notes/General ML/Covariance matrix.md",
-    "030 - Notes/General ML/Conjugate priors.md",
-    "030 - Notes/General ML/Alternative representation of a gaussian..md",
-    "030 - Notes/General ML/Bayes rule in ML.md",
-    "030 - Notes/Math/Logarithms.md",
-    "030 - Notes/Math/Integral Manipulation.md",
-    "010 - Classes/MLMI1/Resources/examp1-solutions.pdf",
-    "030 - Notes/General ML/Marginal likelihood for model comparison.md",
-    "030 - Notes/General ML/Independence in ML.md",
-    "010 - Classes/MLMI1/Notebook/Inference.md",
-    "010 - Classes/NLP/Lecture notes/2 - lecture.md",
+    "030 - Notes/Math/Trigonomitry.md",
+    "030 - Notes/Math/Trig identities.md",
+    "030 - Notes/Math/Trace.md",
+    "030 - Notes/Math/Probability.md",
     "030 - Notes/Math/Matrixes.md",
-    "020 - General content/Great youtube playlists.md",
-    "010 - Classes/MLMI1/Probabilistic modeling and Inference youtube playlist.md",
-    "000 - Introduction/004 - Preliminary Reading + Preparation.md",
-    "010 - Classes/MLMI1/Notebook/Exercises/Radioactive.md",
-    "010 - Classes/MLMI1/Notebook/Exercises/Medical.md",
-    "010 - Classes/MLMI1/Notebook/Exercises/9.md",
-    "010 - Classes/MLMI1/Notebook/Exercises/Linear regression.md",
-    "010 - Classes/MLMI1/Summary of Probabilistic Inference.md",
-    "010 - Classes/MLMI1/notes.md",
-    "010 - Classes/MLMI1/Course info.md",
+    "030 - Notes/Math/Logarithms.md",
+    "030 - Notes/Math/Linear transformations.md",
+    "030 - Notes/Math/Integration by parts.md",
+    "030 - Notes/Math/Integrals.md",
+    "030 - Notes/Math/Integral Manipulation.md",
+    "030 - Notes/Math/hyperbolic functions.md",
+    "030 - Notes/Math/Eulers formula.md",
+    "030 - Notes/Math/Distributions.md",
+    "030 - Notes/Math/Derivatives.md",
+    "030 - Notes/Math/Coordinate systems.md",
+    "030 - Notes/General ML/Why we use log likelihood.md",
+    "030 - Notes/General ML/When do we call something \"linear regression\".md",
+    "030 - Notes/General ML/useful pdf.md",
+    "030 - Notes/General ML/Tricks.md",
+    "030 - Notes/General ML/Student-t distribution.md",
+    "030 - Notes/General ML/Sinus function form.md",
+    "030 - Notes/General ML/Scedasticity.md",
+    "030 - Notes/General ML/Properties of gaussians.md",
+    "030 - Notes/General ML/Predictive distribution.md",
+    "030 - Notes/General ML/Monte Carlo Sampling.md",
+    "030 - Notes/General ML/Moments of a Probability Distribution.md",
+    "010 - Classes/MLMI1/Resources/examp1-solutions.pdf",
     "010 - Classes/MLMI1/Resources/matrixid.pdf",
     "010 - Classes/MLMI1/Resources/01_introduction.pdf",
-    "030 - Notes/Math/Distributions.md",
-    "030 - Notes/General ML/Properties of gaussians.md",
     "010 - Classes/NLP/Practical/MLMI13_Practical2023-24.pdf",
     "010 - Classes/NLP/Practical",
     "010 - Classes/NLP/Slides/lect03-tagging.pdf",
