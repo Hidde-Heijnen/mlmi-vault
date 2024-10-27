@@ -25,14 +25,12 @@
             "id": "42a512fecada5927",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "030 - Notes/Math/Vectors.md",
-                "mode": "source",
-                "source": false
+                "file": "010 - Classes/MLMI1/Resources/matrixid.pdf"
               },
-              "icon": "lucide-file",
-              "title": "Vectors"
+              "icon": "lucide-file-text",
+              "title": "matrixid"
             }
           },
           {
@@ -122,7 +120,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "030 - Notes/Math/Vectors.md",
+                "file": "010 - Classes/MLMI1/Resources/matrixid.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +130,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Vectors"
+              "title": "Backlinks for matrixid"
             }
           },
           {
@@ -141,12 +139,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "030 - Notes/Math/Vectors.md",
+                "file": "010 - Classes/MLMI1/Resources/matrixid.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Vectors"
+              "title": "Outgoing links from matrixid"
             }
           },
           {
@@ -168,10 +166,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "030 - Notes/Math/Vectors.md"
+                "file": "010 - Classes/MLMI1/Resources/matrixid.pdf"
               },
               "icon": "lucide-list",
-              "title": "Outline of Vectors"
+              "title": "Outline of matrixid"
             }
           }
         ]
@@ -197,6 +195,9 @@
   },
   "active": "42a512fecada5927",
   "lastOpenFiles": [
+    "010 - Classes/MLMI1/Resources/examp1-solutions.pdf",
+    "010 - Classes/MLMI1/Resources/01_introduction.pdf",
+    "030 - Notes/Math/Vectors.md",
     "030 - Notes/Math/Trigonomitry.md",
     "030 - Notes/Math/Trig identities.md",
     "030 - Notes/Math/Trace.md",
@@ -221,11 +222,7 @@
     "030 - Notes/General ML/Scedasticity.md",
     "030 - Notes/General ML/Properties of gaussians.md",
     "030 - Notes/General ML/Predictive distribution.md",
-    "030 - Notes/General ML/Monte Carlo Sampling.md",
-    "030 - Notes/General ML/Moments of a Probability Distribution.md",
-    "010 - Classes/MLMI1/Resources/examp1-solutions.pdf",
     "010 - Classes/MLMI1/Resources/matrixid.pdf",
-    "010 - Classes/MLMI1/Resources/01_introduction.pdf",
     "010 - Classes/NLP/Practical/MLMI13_Practical2023-24.pdf",
     "010 - Classes/NLP/Practical",
     "010 - Classes/NLP/Slides/lect03-tagging.pdf",
