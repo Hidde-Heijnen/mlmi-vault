@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "010 - Classes/MLMI1/Notebook/Exercises/Radioactive.md",
+                "file": "030 - Notes/Math/Integral Manipulation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Radioactive"
+              "title": "Integral Manipulation"
             }
           },
           {
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "010 - Classes/MLMI1/Notebook/Exercises/Radioactive.md",
+                "file": "030 - Notes/Math/Integral Manipulation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +132,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Radioactive"
+              "title": "Backlinks for Integral Manipulation"
             }
           },
           {
@@ -141,12 +141,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "010 - Classes/MLMI1/Notebook/Exercises/Radioactive.md",
+                "file": "030 - Notes/Math/Integral Manipulation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Radioactive"
+              "title": "Outgoing links from Integral Manipulation"
             }
           },
           {
@@ -168,10 +168,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "010 - Classes/MLMI1/Notebook/Exercises/Radioactive.md"
+                "file": "030 - Notes/Math/Integral Manipulation.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Radioactive"
+              "title": "Outline of Integral Manipulation"
             }
           }
         ]
@@ -197,6 +197,7 @@
   },
   "active": "42a512fecada5927",
   "lastOpenFiles": [
+    "010 - Classes/MLMI1/Notebook/Exercises/Radioactive.md",
     "010 - Classes/MLMI1/Notebook/Exercises/Medical.md",
     "010 - Classes/MLMI1/Notebook/Exercises/Linear regression.md",
     "030 - Notes/Math/Matrixes.md",
@@ -227,7 +228,6 @@
     "030 - Notes/General ML/Student-t distribution.md",
     "030 - Notes/General ML/Sinus function form.md",
     "030 - Notes/General ML/Scedasticity.md",
-    "030 - Notes/General ML/Properties of gaussians.md",
     "010 - Classes/NLP/Practical/MLMI13_Practical2023-24.pdf",
     "010 - Classes/NLP/Practical",
     "010 - Classes/NLP/Slides/lect03-tagging.pdf",
