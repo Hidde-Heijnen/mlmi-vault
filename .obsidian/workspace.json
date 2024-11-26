@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "030 - Notes/General ML/Properties of gaussians.md",
+                "file": "030 - Notes/General ML/Marginal likelihood for model comparison.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Properties of gaussians"
+              "title": "Marginal likelihood for model comparison"
             }
           },
           {
@@ -211,6 +211,7 @@
   },
   "active": "d71afa97033cd52c",
   "lastOpenFiles": [
+    "030 - Notes/General ML/Properties of gaussians.md",
     "010 - Classes/MLMI1/Resources/matrixid.pdf",
     "010 - Classes/MLMI1/Resources/examp1-solutions.pdf",
     "010 - Classes/MLMI1/Resources/01_introduction.pdf",
@@ -220,7 +221,6 @@
     "030 - Notes/Math/Probability.md",
     "010 - Classes/MLMI1/Notebook/Exercises/9.md",
     "010 - Classes/MLMI1/Notebook/Exercises/Linear regression.md",
-    "030 - Notes/General ML/Properties of gaussians.md",
     "030 - Notes/Math/Derivatives.md",
     "030 - Notes/General ML/Marginal likelihood for model comparison.md",
     "030 - Notes/General ML/Alternative representation of a gaussian..md",
